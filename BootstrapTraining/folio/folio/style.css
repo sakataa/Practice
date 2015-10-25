@@ -1,0 +1,127 @@
+/* reset browser styles */
+html, body, div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp,small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	vertical-align: baseline;
+}
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1.2;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+} 
+
+*, *::before, *::after {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+/* end reset browser styles */
+
+/* Common */
+body{
+	font-family: "Open San extrabold", "Times New Roman", Sans-serif;
+}
+
+.header, menu-header, banner, main-content, about-container, service-container, mywork-container, contact-container{
+	width: 100%;
+}
+
+/* Main Container */
+.main-container{
+	width: 1263px;
+	margin: auto;
+}
+
+/*==========================*/
+/* header */
+/*==========================*/
+.header{
+	height: 790px;
+	background-color: yellow;
+}
+
+/* Horizontal menu header */
+.menu-header{
+	background-color: #02918C;
+	height: 60px;
+	padding-top: 12px;
+}
+/* Logo */
+.logo{
+	text-decoration: none;
+	margin-left: 50px;
+}
+.my, .folio{
+	font-weight: bold;
+	font-size: 26px;
+}
+.my{
+	color: #FFFFFF;
+}
+.folio{
+	color: #CFC91D;
+}
+
+/* Menu top */
+ul.menu-top{
+	float: right:
+	list-style-type: none;
+	text-align: center;
+}
+ul.menu-top li{
+	display: inline;
+	font-weight: bold;
+}
+ul.menu-top li a{
+	text-decoration: none;
+	padding: .2em 1em;
+	color: #FFFFFF;
+	background-color: #036;
+}
+
+ul.menu-top li a:hover{
+	color: #FFFFFF;
+	background-color: #369;
+}
+/* Banner */
+.banner{
+	background-color: blue;
+	height: 730px;
+}
+
+/*==========================*/
+/* Content */
+/*==========================*/
+/* About */
+.about-container{
+	height: 738px;
+}
+/* Service */
+.service-container{
+	height: 728px;
+}
+/* My work */
+.mywork-container{
+	height: 727px;
+}
+/* Contact */
+.contact-container{
+	height: 568px;
+}
+
+/*==========================*/
+/* Footer */
+/*==========================*/
+.footer{
+	height: 72px;
+}
