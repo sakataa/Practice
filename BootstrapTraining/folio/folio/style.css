@@ -25,11 +25,19 @@ table {
   -moz-box-sizing: border-box;
   box-sizing: border-box;
 }
+img {
+    max-width: 100%;
+	vertical-align: middle;
+	border:0;
+}
 /* end reset browser styles */
 
 /* Common */
 body{
 	font-family: "Open Sans Extra", Sans-serif;
+}
+.clear{
+	clear: both;
 }
 
 .header, menu-header, banner, main-content, about-container, service-container, mywork-container, contact-container{
@@ -94,8 +102,10 @@ ul.menu-top li a:hover{
 /* Banner */
 .banner{
 	background-image: url("Images/banner.png");
+	background-repeat: no-repeat;
 	height: 730px;
 }
+/* Text on banner */
 .banner-text{
 	margin:auto;
 	padding-top: 190px;
@@ -117,21 +127,198 @@ ul.menu-top li a:hover{
 .third-line{
 	font-size: 18px;
 }
+/* Icon on banner */
+.banner-icon{
+	margin: 45px auto;
+	text-align: center;
+}
+/* Button on banner */
+.banner-button{
+	margin: auto;
+	text-align: center;
+}
+.banner-button button{
+	background-color: #CFC91D;
+	color: #0B1016;
+	font-size: 14px;
+	font-weight: 800;
+	border: 0px;
+	width: 196px;
+	height: 47px;
+	padding: 16px 42px;
+	cursor: pointer;
+}
 
 /*==========================*/
 /* Content */
 /*==========================*/
+/* Common */
+.guide-title{
+	font-weight: bold;
+	font-size: 16px;
+}
+.title{
+	font-size: 46px;
+	color: #02918C;
+	font-weight: 800;	
+}
+.about-text, .service-text, .mywork-text, .contact-text{
+	color: #7E8287;
+	font-size: 16px;
+	line-height: 40px;
+}
+.guide-title{
+	margin: 30px 0;
+}
+.guide-text{
+	font-size: 12px;
+	line-height: 24px;
+}
+.main-content{
+	font-family: "Open Sans", Sans-serif;
+}
 /* About */
 .about-container{
 	height: 738px;
 }
+.about-container .title, .about-symbol, .about-text{
+	text-align: center;
+	padding: 0 200px;
+}
+.about-container .title{	
+	margin-top: 97px;
+}
+.about-symbol{
+	margin: 31px auto;
+}
+.about-text strong{
+	font-size: 23px;
+}
+
+/* Guide */
+.about-guide{
+	height: 250px;
+	margin: 80px auto;
+	color: #7E8287;
+}
+.about-guide .guide{
+	float: left;
+	height: 100%;
+	width: 25%;
+	padding-left: 40px;
+	padding-right: 40px;
+	border-right: 1px solid #DEDEDE;
+	text-align: center;
+}
+.about-guide .guide4{
+	border-right: 0;
+}
+.about-guide .guide-icon{
+	background: url('Images/folio-sprites.png') no-repeat;
+	margin: auto;
+}
+.about-guide .guide1 .guide-icon{
+	background-position: 0 0;
+	width: 31px;
+	height: 33px;
+}
+.about-guide .guide2 .guide-icon{
+	background-position: -40px 0;
+	width: 32px;
+	height: 33px;
+}
+.about-guide .guide3 .guide-icon{
+	background-position: -81px -1px;
+	width: 32px;
+	height: 33px;
+}
+.about-guide .guide4 .guide-icon{
+	background-position: -122px 0;
+	width: 32px;
+	height: 23px;
+}
+
 /* Service */
 .service-container{
 	height: 728px;
+	background-color: #F0F0E8;
 }
+.service-left, .service-right{
+	width: 50%;
+	float: left;
+}
+.service-left{
+	padding: 70px 20px;
+}
+.service-symbol{
+	margin-top: 40px;
+	margin-bottom: 30px;
+}
+/* Guide */
+.service-guide{
+	height: auto;
+	color: #7E8287;
+}
+.service-guide .guide{
+	float: left;
+	width: 50%;
+	padding: 30px 0;
+	padding-right: 50px;
+}
+.service-guide .guide-icon{
+	background: url('Images/folio-sprites.png') no-repeat;
+}
+.service-guide .guide1 .guide-icon{
+	background-position: -81px -44px;
+	width: 28px;
+	height: 33px;
+}
+.service-guide .guide2 .guide-icon{
+	background-position: -40px -44px;
+	width: 32px;
+	height: 32px;
+}
+.service-guide .guide3 .guide-icon{
+	background-position: 0 -44px;
+	width: 32px;
+	height: 33px;
+}
+.service-guide .guide4 .guide-icon{
+	background-position: -125px -44px;
+	width: 26px;
+	height: 29px;
+}
+.service-guide .guide-title{
+	margin: 15px 0;
+}
+
+.service-right{
+	background-image: url("Images/service.jpg");
+	background-repeat: no-repeat;
+	height: 100%;
+}
+
 /* My work */
 .mywork-container{
-	height: 727px;
+	height: auto;
+}
+.mywork-container .title, .mywork-symbol, .mywork-text, .contact-container .title, .contact-symbol, .contact-text{
+	text-align: center;
+	padding: 0 200px;
+}
+.image-container{
+	margin-top: 60px;
+}
+.mywork-container .title, .contact-container .title{
+	margin: auto;
+	margin-top: 97px;
+}
+.mywork-symbol, .contact-symbol {
+    margin: 31px auto;
+}
+.mywork-container .image-item{
+	width: 25%;
+	float: left;
 }
 /* Contact */
 .contact-container{
