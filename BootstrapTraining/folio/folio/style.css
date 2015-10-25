@@ -29,7 +29,7 @@ table {
 
 /* Common */
 body{
-	font-family: "Open San extrabold", "Times New Roman", Sans-serif;
+	font-family: "Open Sans Extra", Sans-serif;
 }
 
 .header, menu-header, banner, main-content, about-container, service-container, mywork-container, contact-container{
@@ -47,7 +47,6 @@ body{
 /*==========================*/
 .header{
 	height: 790px;
-	background-color: yellow;
 }
 
 /* Horizontal menu header */
@@ -60,10 +59,8 @@ body{
 .logo{
 	text-decoration: none;
 	margin-left: 50px;
-}
-.my, .folio{
-	font-weight: bold;
 	font-size: 26px;
+	font-weight: bold;
 }
 .my{
 	color: #FFFFFF;
@@ -74,9 +71,11 @@ body{
 
 /* Menu top */
 ul.menu-top{
-	float: right:
+	float: right;
 	list-style-type: none;
 	text-align: center;
+	margin-top: 10px;
+	padding-right: 25px;
 }
 ul.menu-top li{
 	display: inline;
@@ -84,19 +83,39 @@ ul.menu-top li{
 }
 ul.menu-top li a{
 	text-decoration: none;
-	padding: .2em 1em;
+	padding-left: 49px;
 	color: #FFFFFF;
-	background-color: #036;
+	font-size: 12px;
 }
 
 ul.menu-top li a:hover{
-	color: #FFFFFF;
-	background-color: #369;
+	color: #CFC91D;
 }
 /* Banner */
 .banner{
-	background-color: blue;
+	background-image: url("Images/banner.png");
 	height: 730px;
+}
+.banner-text{
+	margin:auto;
+	padding-top: 190px;
+	color: #FFFFFF;
+	font-family: "Open Sans", Sans-serif;
+}
+.first-line, .second-line, .third-line{
+	text-align: center;
+	font-weight: normal;
+}
+.first-line{
+	font-size: 30px;
+}
+.second-line{
+	font-size: 68px;
+	font-weight: 800;
+	letter-spacing: 20px;
+}
+.third-line{
+	font-size: 18px;
 }
 
 /*==========================*/
