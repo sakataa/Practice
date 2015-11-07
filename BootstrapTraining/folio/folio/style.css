@@ -39,7 +39,7 @@ body{
 .clear{
 	clear: both;
 }
-.header, menu-header, banner, main-content, about-container, service-container, mywork-container, contact-container{
+menu-header, banner, main-content, about-container, service-container, mywork-container, contact-container{
 	width: 100%;
 }
 .button{
@@ -54,10 +54,11 @@ body{
 	border: 0px;
 	cursor: pointer;
 }
-
+.main-container, .menu-header, .banner{
+	width: 1263px;
+}
 /* Main Container */
 .main-container{
-	width: 1263px;
 	margin: auto;
 	position: relative;
 }
@@ -65,15 +66,12 @@ body{
 /*==========================*/
 /* header */
 /*==========================*/
-.header{
-	height: 790px;
-}
 
 /* Horizontal menu header */
 .menu-header{
 	background-color: #02918C;
 	height: 60px;
-	padding-top: 12px;
+	position: fixed;
 }
 /* Logo */
 .logo{
@@ -81,35 +79,40 @@ body{
 	margin-left: 50px;
 	font-size: 26px;
 	font-weight: bold;
-}
-.my{
 	color: #FFFFFF;
+	line-height: 55px;
 }
+
 .folio{
 	color: #CFC91D;
 }
 
 /* Menu top */
+ul.menu-top, ul.menu-top li a{
+	height: 100%;
+}
 ul.menu-top{
 	float: right;
-	list-style-type: none;
-	text-align: center;
-	margin-top: 10px;
-	padding-right: 25px;
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
 }
 ul.menu-top li{
 	display: inline;
-	font-weight: bold;
 }
 ul.menu-top li a{
+	float: left;
 	text-decoration: none;
-	padding-left: 49px;
 	color: #FFFFFF;
 	font-size: 12px;
+	font-weight: bold;
+	width: 120px;
+	text-align: center;
+	padding: 20px 0;
 }
 
 ul.menu-top li a:hover{
-	color: #CFC91D;
+	background-color: #CFC91D;
 }
 /* Banner */
 .banner{
@@ -155,10 +158,6 @@ ul.menu-top li a:hover{
 /* Content */
 /*==========================*/
 /* Common */
-.guide-title{
-	font-weight: bold;
-	font-size: 16px;
-}
 .title{
 	font-size: 46px;
 	color: #02918C;
@@ -180,9 +179,6 @@ ul.menu-top li a:hover{
 	font-family: "Open Sans", Sans-serif;
 }
 /* About */
-.about-container{
-	height: 738px;
-}
 .about-container .title, .about-symbol, .about-text{
 	text-align: center;
 	padding: 0 200px;
