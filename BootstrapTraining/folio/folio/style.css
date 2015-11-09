@@ -72,6 +72,7 @@ menu-header, banner, main-content, about-container, service-container, mywork-co
 	background-color: #02918C;
 	height: 60px;
 	position: fixed;
+	top: 0;
 }
 /* Logo */
 .logo{
@@ -119,6 +120,7 @@ ul.menu-top li a:hover{
 	background-image: url("Images/banner.png");
 	background-repeat: no-repeat;
 	height: 730px;
+	margin-top: 60px;
 }
 /* Text on banner */
 .banner-text{
