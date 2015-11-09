@@ -32,7 +32,9 @@ img {
 }
 /* end reset browser styles */
 
+/*==========================*/
 /* Common */
+/*==========================*/
 body{
 	font-family: "Open Sans Extra", Sans-serif;
 }
@@ -57,6 +59,15 @@ menu-header, banner, main-content, about-container, service-container, mywork-co
 .main-container, .menu-header, .banner{
 	width: 1263px;
 }
+.content-text{
+	color: #7E8287;
+	font-size: 16px;
+	line-height: 40px;
+}
+.text-center{
+	text-align: center;
+}
+
 /* Main Container */
 .main-container{
 	margin: auto;
@@ -129,9 +140,8 @@ ul.menu-top li a:hover{
 	color: #FFFFFF;
 	font-family: "Open Sans", Sans-serif;
 }
-.first-line, .second-line, .third-line{
+.banner-text p{
 	text-align: center;
-	font-weight: normal;
 }
 .first-line{
 	font-size: 30px;
@@ -165,11 +175,6 @@ ul.menu-top li a:hover{
 	color: #02918C;
 	font-weight: 800;	
 }
-.about-text, .service-text, .mywork-text, .contact-text{
-	color: #7E8287;
-	font-size: 16px;
-	line-height: 40px;
-}
 .guide-title{
 	margin: 30px 0;
 }
@@ -182,7 +187,6 @@ ul.menu-top li a:hover{
 }
 /* About */
 .about-container .title, .about-symbol, .about-text{
-	text-align: center;
 	padding: 0 200px;
 }
 .about-container .title{	
@@ -208,7 +212,6 @@ ul.menu-top li a:hover{
 	padding-left: 40px;
 	padding-right: 40px;
 	border-right: 1px solid #DEDEDE;
-	text-align: center;
 }
 .about-guide .guide4{
 	border-right: 0;
@@ -302,8 +305,12 @@ ul.menu-top li a:hover{
 .mywork-container{
 	height: auto;
 }
-.mywork-container .title, .mywork-symbol, .mywork-text, .contact-container .title, .contact-symbol, .contact-text{
-	text-align: center;
+.mywork-container .title, 
+.mywork-symbol, 
+.mywork-text, 
+.contact-container .title, 
+.contact-symbol, 
+.contact-text{
 	padding: 0 200px;
 }
 .image-container{
