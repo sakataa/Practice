@@ -1,0 +1,47 @@
+.icon{
+	width: 32px;
+	height: 32px;
+	display: inline-block;
+	background: url(../images/folio-sprites.png) no-repeat;
+	
+	&-light{
+		background-position: 0 0;
+	}
+	
+	&-pencil{
+		background-position: -40px 0;
+	}
+	
+	
+	&-gear{
+		background-position: -81px -1px;
+		
+	}
+	
+	
+	&-laptop{
+		background-position: -122px 0;
+		
+	}	
+	
+	&-clock{
+		
+		background-position: 0 -44px;
+	}	
+	
+	&-find{
+		background-position: -40px -44px;
+		
+	}	
+	
+	&-global{
+		background-position: -81px -44px;
+		
+	}	
+	
+	&-chart{
+		background-position: -125px -44px;
+		
+	}
+}
+

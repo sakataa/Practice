@@ -1,0 +1,315 @@
+$font-family : "Open Sans", sans-serif;
+$text-color: #7e8287;
+$primary-color: #02918c;
+$secondary-color: #cfc91d;
+$third-color:#0b1016;
+$dark-color:#000;
+$light-color:#fff;
+$feature-bg-color:#f0f0e8;
+$max-width: 128rem;
+
+html{
+	font-size: 62.5%;
+}
+body{
+	font-family: $font-family;
+	color: $text-color;
+	font-size: 1.6rem;
+	background: url(../images/transparent-dark.png);
+}
+
+*{
+	margin: 0;
+	padding: 0;
+}
+
+%extrabold{	
+	font-weight: 800;
+	text-transform: uppercase;
+}
+
+.container{
+	width: $max-width;
+	margin: 0 auto;
+	background-color: $light-color ;
+}
+
+.btn {
+	@extend %extrabold;	
+	border: 0;
+	background-color: $secondary-color;
+	font-family: $font-family;
+	font-size: 1.4rem;
+	color: $third-color;
+	min-width: 17rem;
+	padding: 1.4rem;
+	display: inline-block;
+	text-decoration: none;
+	cursor: pointer;
+	&:hover{
+		background-color: darken($secondary-color, 10%);
+	}	
+}
+
+.text-secondary{
+	color: $secondary-color;
+}
+
+.fixed-top{
+	position: fixed;
+	width: $max-width;
+	top: 0;
+	z-index: 2000;
+}
+
+.header{
+	.top-bar{
+		background-color:$primary-color;
+		box-sizing: border-box;
+		height: 6rem;
+		
+		.logo{
+			@extend %extrabold;
+			float:left;
+			margin-top: 1rem;
+			margin-left: 4rem;
+			font-size: 2.6rem;
+			color: $light-color;
+			text-decoration: none;
+		}
+		.menu{
+			list-style: none;
+			float:right;
+			font-size: 0;
+			
+			li{
+				display: inline-block;
+				
+				a{
+					height: 6rem;
+					display: block;
+					padding: 0 2.5rem;
+					text-decoration: none;
+					color: $light-color;
+					font-size: 1.2rem;
+					@extend  %extrabold;
+					box-sizing: border-box;
+					padding-top: 2rem;
+					
+					&:hover{
+						background-color: transparentize($dark-color, .8);
+					}	
+				}
+			}
+		}
+	}
+	.banner{
+		position: relative;
+		
+		.background{
+			width: 100%;
+		}
+		
+		.description{
+			position: absolute;
+			top:20rem;
+			width: 100%;
+			text-align: center;
+			color: $light-color;
+			
+			h3{
+				font-size: 3rem;
+				font-weight: 400;
+			}
+			
+			h1{
+				@extend %extrabold;	
+				font-size: 6.8rem;
+				letter-spacing: 2rem;
+			}
+			
+			h4{
+				font-size: 1.8rem;
+				font-weight: 400;
+			}
+			
+			p{
+				margin:5rem 0;
+			}
+		}
+	}
+}
+
+.section{
+	margin-top:5rem;
+	text-align: center;
+	
+	&-header{
+		@extend %extrabold;	
+		color: $primary-color;
+		font-size: 4.6rem;
+	}
+	
+	&-text{
+		line-height: 2.5;
+		margin: 0 auto 5rem auto;
+		width: 68rem;
+	}
+}
+
+.clearfix:after{
+	content:'';
+	display:block;
+	clear: both;
+}
+
+.about-me{
+	.section-text {
+		width: 90rem;
+		
+		strong{
+			font-size: 2.2rem;
+			font-weight: 800;
+		}
+	}
+	
+	.features{
+		width: 120rem;
+		margin: 0 auto;
+		
+		.item{
+			border-left:.1rem solid lighten($text-color, 30%);
+			float: left;
+			width: 24.9%;
+			font-size: 1.2rem;
+			padding: 5rem;
+			box-sizing: border-box;
+			line-height: 1.8;
+			
+			&:first-child{
+				border: 0;
+			} 
+			
+			h3{
+				margin: 1.8rem 0;
+			}
+		}
+	}
+}
+
+.services{
+	.col{
+		float: left;
+		width: 50%;
+		background-color: $feature-bg-color;
+		box-sizing: border-box;
+		height: 73rem;
+		
+		&.left{
+			padding:7rem 7rem 0 9rem;
+		}
+		
+		&.right{
+			img{
+				width: 100%;
+			}
+		}
+	}
+	
+	&.section{
+		text-align: left;
+	}	
+	
+	.section-text{
+		width: auto;
+		margin: 0;
+	}
+	
+	.features{
+		.item{
+			float: left;
+			width: 50%;
+			font-size: 1.2rem;
+			padding: 2rem 5rem 2rem 0;
+			line-height: 1.8;
+			box-sizing: border-box;
+			
+			h3{
+				margin: 1.8rem 0;
+			}
+		}
+	}
+}
+
+.my-work{	
+	.work-items{			
+		.item{
+			position: relative;
+			float: left;
+			width: 25%;
+			height: 23.8rem;
+			overflow: hidden;
+			
+			img{
+				width: 101%;
+				height: 101%;
+				top: -1px;
+				left: -2px;
+				position: absolute;
+				z-index: 0;
+			}
+			
+			.description{
+				position: absolute;
+				background-color: $primary-color;
+				color: $light-color;
+				font-size: 1.3rem;
+				margin: 2rem 3rem;
+				opacity: .8;
+				padding: 5rem 4rem;
+			}
+		}
+	}
+}
+
+.contact-me{
+	.form{
+		background-color: $third-color;
+		text-align: center;
+		padding: 1rem 0;
+		
+		.field{
+			margin-top:4rem;
+			input{
+				border-bottom: .1rem solid $text-color;
+				width: 60rem;				
+			}
+			.message{
+				width: 90rem;
+			}
+		}
+		
+		input{
+			font-family: $font-family;
+			font-size: 1.6rem;
+			border:0;
+			color: $text-color;
+			background-color:  $third-color;
+			text-align: center;
+			padding: 1rem
+		}
+		
+		.buttons{
+			padding: 5rem 0;
+		}
+	}
+}
+
+.footer{
+	.copyright{
+		background-color: $dark-color;
+		padding: 2.6rem 0;
+		font-size: 1.4rem;
+		text-align: center;
+	}
+}
