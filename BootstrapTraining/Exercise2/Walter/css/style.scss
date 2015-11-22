@@ -1,0 +1,127 @@
+@import 'common';
+
+/*==========*/
+/* Header 	*/
+/*==========*/
+.header{
+	background-color: #459BE4;
+	padding-bottom: 80px;
+	border-bottom: 4px solid #396D9D;
+	.top-bar{
+		padding: 30px 100px 20px 0;
+		/* Logo */
+		.logo{
+			.twish-img{
+				@include sprite-position(-14px, -200px, 85px, 24px);
+			}
+
+			.wordpress-img{
+				@include sprite-position(-106px, -205px, 81px, 17px);
+			}
+		}
+
+		/* Menu */
+		.menu{
+			list-style-type: none;
+
+			li{
+				display: inline;
+				padding: 20px 15px;
+
+				a{
+					color: #FFFFFF;
+				}
+
+				&:hover{
+					font-weight: bold;
+				}
+			}
+		}
+	}
+
+	p{
+		font-weight: 100;
+		padding: 20px 0;
+		font-size: 28px;
+		width: 750px;
+	}
+
+	.more-detail-text{
+		font-size: 18px;
+    	font-weight: 300;
+	}
+}
+
+/*==============*/
+/* Latest work 	*/
+/*==============*/
+.latest-work{
+	.clock-box{
+		margin: auto;
+		background-color: #333333;
+		width: 370px;
+		height: 210px;
+		position: relative;
+		margin-bottom: 210px;
+
+		-webkit-box-shadow: 0px 0px 6px 2px rgba(114,35,217,0.5);
+		-moz-box-shadow: 0px 0px 6px 2px rgba(114,35,217,0.5);
+		box-shadow: 0px 0px 6px 2px rgba(114,35,217,0.5);
+
+		.circle-clock {
+			@include circle($clock-radius);
+			background-color: $light-color;
+			position: absolute;
+			top: 25%;
+			left: 35%;
+
+			.icon-clockwise{
+				@include sprite-position(-42px, -3px, 47px, 15px);
+				position: absolute;
+			    top: 45%;
+			    left: 30%;
+			    /* Rotate */
+			    -ms-transform: rotate(90deg); /* IE 9 */
+			    -webkit-transform: rotate(90deg); /* Chrome, Safari, Opera */
+			    transform: rotate(90deg);
+			}
+		}
+	}
+
+	.circle-button{
+		border: 3px solid #B3BFCB;
+	}
+}
+
+/*==============*/
+/* About Us 	*/
+/*==============*/
+.about-us{
+	.content{
+		padding-top: 70px;
+		padding-bottom: 70px;
+		padding-right: 350px;
+
+		.overview-content{
+			margin-bottom: 70px;
+			font-size: 28px;
+			font-weight: 200;
+		}
+
+		.detail-content{
+			line-height: 25px;
+
+			.col-left, .col-right{
+				width: 40%;
+			}
+
+			.col-right{
+				margin-left: 70px;
+			}
+		}
+	}
+
+	.circle-button{
+		border: 3px solid #484F59;
+	}
+}

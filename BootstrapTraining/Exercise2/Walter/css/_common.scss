@@ -1,0 +1,159 @@
+$font-family: "Raleway", sans-serif;
+$light-color: #FFFFFF;
+$dark-color: #000000;
+
+$content-text-color: #8E9399;
+$section-background-color: #454C54;
+
+$title-border-bottom-color: #5B656F;
+$title-background-color: #75818F;
+$title-normal-text-color: #929EAC;
+
+$button-radius: 40px;
+$clock-radius: 55px;
+
+/* reset browser styles */
+html, body, div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp,small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	vertical-align: baseline;
+}
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1.2;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+} 
+
+*, *::before, *::after {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+img {
+    max-width: 100%;
+	vertical-align: middle;
+	border:0;
+}
+/* end reset browser styles */
+
+/* mixin */
+@mixin circle($radius) {
+  	width: $radius * 2;
+	height: $radius * 2;
+	-moz-border-radius: $radius;
+	-webkit-border-radius: $radius;
+	border-radius: $radius;
+	border: 2px solid;
+	display: inline-block;
+}
+
+@mixin sprite-position($x, $y, $width, $height){
+	background-position: $x $y;
+	width: $width;
+	height: $height;
+}
+
+
+body{
+	font-family: $font-family;
+	color: $light-color;
+}
+
+a{
+	text-decoration: none;
+}
+
+.left{
+	float: left;
+}
+
+.right{
+	float: right;
+}
+
+.clearfix{
+	clear: both;
+}
+
+.section-indent{
+	padding-left: 130px;
+}
+
+.content-text{
+	color: $content-text-color;
+}
+
+.section-title{
+	position: relative;
+	height: 142px;
+	background-color: $title-background-color;
+	border: 2px solid #5B656F;
+	font-size: 36px;
+
+	.title-normal-text{
+		color: $title-normal-text-color;
+		width: 50%;
+	}
+
+	.title-emphasis-text{
+		color: $light-color;
+	}
+
+	.icon{
+		@include sprite-position(-42px, -3px, 47px, 15px);
+		margin-top: 25px;
+		margin-bottom: 10px;
+	}
+}
+
+.common-bg{
+	background-color: $section-background-color;
+}
+
+.circle-button {
+	@include circle($button-radius); 
+	background-color: #8895A8;
+	position: absolute;
+	right: 130px;
+	top: 25%;
+
+	.icon-add{
+		@include sprite-position(-99px, -2px, 35px, 35px);
+		position: absolute;
+		top: 25%;   
+    	left: 25%;
+	}
+}
+
+.sprite{
+	background: url('../images/sprites.png') no-repeat;
+	display: inline-block;
+}
+
+.icon-more{
+	@include sprite-position(-4px, -2px, 13px, 35px);
+	margin-left: 10px;
+}
+
+.main-container{
+	margin: auto;
+}
+
+.table-display{
+	display: table;
+}
+
+.table-cell-display{
+	display: table-cell;
+	vertical-align: middle;
+}
