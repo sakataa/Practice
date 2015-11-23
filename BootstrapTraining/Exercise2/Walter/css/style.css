@@ -264,5 +264,60 @@ a {
         font-weight: 200;
         padding: 20px 0;
         text-align: center; }
+.service .circle-button {
+  border: 3px solid #479CDF; }
+
+.price {
+  padding-top: 75px; }
+  .price .price-item {
+    width: 370px;
+    margin-left: 25px;
+    display: inline-block; }
+    .price .price-item .infor {
+      text-align: center;
+      line-height: 30px;
+      background-color: #FFFFFF;
+      font-weight: 200;
+      padding: 25px 80px; }
+      .price .price-item .infor .package-name {
+        font-size: 24px;
+        margin-bottom: 30px; }
+      .price .price-item .infor .dollar {
+        font-size: 56px;
+        font-weight: 900;
+        font-family: Helvetica, Verdana, sans-serif;
+        color: #000000; }
+        .price .price-item .infor .dollar:before {
+          content: '$';
+          font-size: 15px;
+          font-weight: normal;
+          vertical-align: super; }
+        .price .price-item .infor .dollar:after {
+          content: '/month';
+          font-size: 15px;
+          font-weight: normal;
+          vertical-align: sub;
+          font-family: "Raleway", sans-serif;
+          color: #8E9399; }
+    .price .price-item .content-detail {
+      background-color: #595D66;
+      text-align: center;
+      line-height: 30px;
+      font-size: 20px;
+      padding: 10px 0; }
+      .price .price-item .content-detail p {
+        padding: 10px; }
+      .price .price-item .content-detail hr {
+        width: 50px; }
+      .price .price-item .content-detail .table-display {
+        color: #FFFFFF;
+        margin: 15px auto; }
+  .price .description {
+    margin: 60px 0;
+    text-align: center;
+    padding: 0 280px;
+    font-size: 13px; }
+  .price .circle-button {
+    border: 3px solid #484F59; }
 
 /*# sourceMappingURL=style.css.map */

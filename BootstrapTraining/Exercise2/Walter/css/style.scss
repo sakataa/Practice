@@ -186,4 +186,85 @@
 			}
 		}
 	}
+
+	.circle-button{
+		border: 3px solid #479CDF;
+	}
+}
+
+.price{
+	padding-top: 75px;
+	.price-item{
+		width: 370px;
+		margin-left: 25px;
+		display: inline-block;
+
+		.infor{
+			text-align: center;
+			line-height: 30px;
+			background-color: $light-color;
+			font-weight: 200;
+			padding: 25px 80px;
+
+			.package-name{
+				font-size: 24px;
+				margin-bottom: 30px;
+			}
+
+			.dollar{
+			    font-size:56px;
+			    font-weight: 900;
+			    font-family: Helvetica, Verdana, sans-serif;
+			    color: $dark-color;
+
+			    &:before {
+				    content: '$';
+				    font-size: 15px;
+				    font-weight: normal;
+				    vertical-align: super;
+				}
+
+				&:after {
+				    content: '/month';
+				    font-size: 15px;
+				    font-weight: normal;
+				    vertical-align: sub;
+				    font-family: $font-family;
+				    color: $content-text-color;
+				}
+			}		
+		}
+
+		.content-detail{
+			background-color: #595D66;
+			text-align: center;
+			line-height: 30px;
+			font-size: 20px;
+			padding: 10px 0;
+
+			p{
+				padding: 10px;
+			}
+
+			hr{
+				width: 50px;
+			}
+
+			.table-display{
+				color: $light-color;
+				margin: 15px auto;
+			}
+		}
+	}
+
+	.description{
+		margin: 60px 0;
+		text-align: center;
+		padding: 0 280px;
+		font-size: 13px;
+	}
+
+	.circle-button {
+	    border: 3px solid #484F59;
+	}
 }
