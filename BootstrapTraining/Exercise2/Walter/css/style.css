@@ -58,7 +58,7 @@ a {
   height: 142px;
   background-color: #75818F;
   border: 2px solid #5B656F;
-  font-size: 36px; }
+  font-size: 32px; }
   .section-title .title-normal-text {
     color: #929EAC;
     width: 50%; }
@@ -145,7 +145,7 @@ a {
   .header p {
     font-weight: 100;
     padding: 20px 0;
-    font-size: 28px;
+    font-size: 30px;
     width: 750px; }
   .header .more-detail-text {
     font-size: 18px;
@@ -201,15 +201,68 @@ a {
   padding-right: 350px; }
   .about-us .content .overview-content {
     margin-bottom: 70px;
-    font-size: 28px;
+    font-size: 20px;
     font-weight: 200; }
   .about-us .content .detail-content {
-    line-height: 25px; }
+    line-height: 25px;
+    font-size: 12px; }
     .about-us .content .detail-content .col-left, .about-us .content .detail-content .col-right {
-      width: 40%; }
+      width: 45%; }
     .about-us .content .detail-content .col-right {
       margin-left: 70px; }
 .about-us .circle-button {
   border: 3px solid #484F59; }
+
+/*==============*/
+/* Service 		*/
+/*==============*/
+.service .content {
+  background-color: #449CE3; }
+  .service .content .service-item {
+    padding: 60px 13px;
+    width: 260px;
+    display: inline-block; }
+    .service .content .service-item .circle-item {
+      width: 220px;
+      height: 220px;
+      -moz-border-radius: 110px;
+      -webkit-border-radius: 110px;
+      border-radius: 110px;
+      border: 2px solid;
+      display: inline-block;
+      background-color: #FFFFFF;
+      position: relative; }
+      .service .content .service-item .circle-item .icon-service {
+        position: absolute;
+        top: 30%;
+        left: 30%; }
+      .service .content .service-item .circle-item .icon-web-dev {
+        background-position: -274px -66px;
+        width: 84px;
+        height: 84px; }
+      .service .content .service-item .circle-item .icon-ios-dev {
+        background-position: -104px -66px;
+        width: 58px;
+        height: 98px;
+        left: 35%; }
+      .service .content .service-item .circle-item .icon-graphic-design {
+        background-position: -3px -66px;
+        width: 96px;
+        height: 94px; }
+      .service .content .service-item .circle-item .icon-consultancy {
+        background-position: -168px -67px;
+        width: 100px;
+        height: 85px;
+        left: 27%; }
+    .service .content .service-item .description {
+      font-weight: 100; }
+      .service .content .service-item .description .text {
+        font-size: 12px;
+        line-height: 22px; }
+      .service .content .service-item .description .service-title {
+        font-size: 25px;
+        font-weight: 200;
+        padding: 20px 0;
+        text-align: center; }
 
 /*# sourceMappingURL=style.css.map */

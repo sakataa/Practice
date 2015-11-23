@@ -42,7 +42,7 @@
 	p{
 		font-weight: 100;
 		padding: 20px 0;
-		font-size: 28px;
+		font-size: 30px;
 		width: 750px;
 	}
 
@@ -104,15 +104,16 @@
 
 		.overview-content{
 			margin-bottom: 70px;
-			font-size: 28px;
+			font-size: 20px;
 			font-weight: 200;
 		}
 
 		.detail-content{
 			line-height: 25px;
+			font-size: 12px;
 
 			.col-left, .col-right{
-				width: 40%;
+				width: 45%;
 			}
 
 			.col-right{
@@ -123,5 +124,66 @@
 
 	.circle-button{
 		border: 3px solid #484F59;
+	}
+}
+
+/*==============*/
+/* Service 		*/
+/*==============*/
+.service{
+	.content{
+		background-color: #449CE3;
+
+		.service-item{
+			padding: 60px 13px;
+			width: 260px;
+			display: inline-block;
+
+			.circle-item{
+				@include circle($service-item-radius);
+				background-color: $light-color;
+				position: relative;
+
+				.icon-service{
+					position: absolute;
+					top: 30%;
+					left: 30%;
+				}
+
+				.icon-web-dev{
+					@include sprite-position(-274px, -66px, 84px, 84px);					
+				}
+
+				.icon-ios-dev{
+					@include sprite-position(-104px, -66px, 58px, 98px);
+					left: 35%;
+				}
+
+				.icon-graphic-design{
+					@include sprite-position(-3px, -66px, 96px, 94px);
+				}
+
+				.icon-consultancy{
+					@include sprite-position(-168px, -67px, 100px, 85px);
+					left: 27%;
+				}
+			}
+
+			.description{
+				font-weight: 100;
+
+				.text{
+					font-size: 12px;
+					line-height: 22px;
+				}
+
+				.service-title{
+					font-size: 25px;
+					font-weight: 200;
+					padding: 20px 0;
+					text-align: center;
+				}
+			}
+		}
 	}
 }
