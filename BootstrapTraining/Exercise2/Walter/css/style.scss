@@ -98,14 +98,13 @@
 /*==============*/
 .about-us{
 	.content{
-		padding-top: 70px;
-		padding-bottom: 70px;
 		padding-right: 350px;
 
 		.overview-content{
-			margin-bottom: 70px;
+			margin-bottom: 50px;
 			font-size: 20px;
 			font-weight: 200;
+			width: 70%;
 		}
 
 		.detail-content{
@@ -113,7 +112,7 @@
 			font-size: 12px;
 
 			.col-left, .col-right{
-				width: 45%;
+				width: 32%;
 			}
 
 			.col-right{
@@ -135,7 +134,7 @@
 		background-color: #449CE3;
 
 		.service-item{
-			padding: 60px 13px;
+			padding: 0 13px;
 			width: 260px;
 			display: inline-block;
 
@@ -193,9 +192,9 @@
 }
 
 .price{
-	padding-top: 75px;
 	.price-item{
 		width: 370px;
+		padding-top: 15px;
 		margin-left: 25px;
 		display: inline-block;
 
@@ -258,13 +257,143 @@
 	}
 
 	.description{
-		margin: 60px 0;
 		text-align: center;
-		padding: 0 280px;
+		padding-left: 130px;
+		padding-right: 370px;
 		font-size: 13px;
+		margin-top: 60px;
 	}
 
 	.circle-button {
 	    border: 3px solid #484F59;
+	}
+}
+
+.team{
+	.content{
+		background-color: #63D156;
+	}
+	.team-item{
+		.team-bg{	    
+			border-bottom: 4px solid #44923C;
+			@include gradient-bg(#77CD6C, #63BD59);
+
+			&.center-item{
+				border-bottom: 4px solid #5E7559;
+				@include gradient-bg(#9EA09F, #858A84);
+			}
+		}
+
+		.description{
+			padding: 15px 0;
+			margin-top: 10px;
+			color: $light-color;
+			position: relative;
+			h1{
+				font-weight: 500;
+				font-size: 24px;
+			}
+			.title{
+				font-size: 13px;
+				line-height: 25px;
+				font-weight: 200;
+			}
+
+			.share{
+				position: absolute;
+				top: 15px;
+				right: 0;
+				.icon-twitter{
+					@include sprite-position(-161px, -5px, 17px, 13px);
+					margin-right: 8px;
+				}
+				.icon-facebook{
+					@include sprite-position(-144px, -3px, 9px, 16px);
+					margin-right: 8px;
+				}
+				.icon-pinterest{
+					@include sprite-position(-187px, -3px, 14px, 18px);
+				}
+			}
+
+			.detail{
+				font-size: 15px;
+				margin-top: 20px;
+				color: #B2E8AC;
+				line-height: 22px;
+				word-spacing: 1px;
+			}
+		}
+	}
+	.circle-button {
+	    border: 3px solid #61D151;
+	}
+}
+
+.latest-new{
+	.new-item{
+		.new-bg{	    
+			background-color: #6B7076;
+		}
+
+		.description{
+			font-family: Helvetica, Verdana, sans-serif;
+			padding: 15px 0;
+			margin-top: 10px;
+			color: #A2A7AD;
+			position: relative;
+			h1{
+				font-weight: 500;
+				font-size: 24px;
+			}
+			.time{
+				color: #E7EAEF;
+				font-size: 12px;
+				font-weight: 100;
+			}
+
+			.message{
+				position: absolute;
+				top: 15px;
+				right: 0;
+				font-weight: bold;
+				.icon-message{				
+					@include sprite-position(-161px, -5px, 17px, 13px);
+				}
+			}			
+		}
+
+		&.last-item{
+			.new-bg{	    
+				background-color: $dark-color;
+			}
+			h1{
+				color: $light-color;
+			}
+		}
+	}
+
+	.circle-button {
+	    border: 3px solid #454C54;
+	}
+	.icon-clock{
+		@include sprite-position(-4px, -2px, 13px, 35px);
+		position: absolute;
+		top: 30%;
+		left: 42%;
+	}
+}
+
+.contact-us{
+	img{
+		opacity: 0.3;
+		width: 100%;
+	}
+	.content{
+		background-color: #4458E3;
+	}
+
+	.circle-button{
+		border: 3px solid #479CDF;
 	}
 }

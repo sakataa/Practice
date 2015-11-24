@@ -64,6 +64,13 @@ img {
 	height: $height;
 }
 
+@mixin gradient-bg($top, $down){
+	background: -webkit-linear-gradient($top, $down); /* For Safari 5.1 to 6.0 */
+	background: -o-linear-gradient($top, $down); /* For Opera 11.1 to 12.0 */
+	background: -moz-linear-gradient($top, $down); /* For Firefox 3.6 to 15 */
+	background: linear-gradient($top, $down); /* Standard syntax (must be last) */
+}
+
 
 body{
 	font-family: $font-family;
@@ -88,6 +95,11 @@ a{
 
 .section-indent{
 	padding-left: 130px;
+}
+
+.section-padding{
+	padding-top: 70px;
+	padding-bottom: 70px;
 }
 
 .content-text{
@@ -157,4 +169,16 @@ a{
 .table-cell-display{
 	display: table-cell;
 	vertical-align: middle;
+}
+
+.item{
+	display: inline-block;
+	width: 380px;
+	padding: 5px;
+	margin-right: 10px;
+}
+
+.size-item{
+	width: 370px;
+	height: 265px;
 }

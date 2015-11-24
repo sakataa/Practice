@@ -50,6 +50,10 @@ a {
 .section-indent {
   padding-left: 130px; }
 
+.section-padding {
+  padding-top: 70px;
+  padding-bottom: 70px; }
+
 .content-text {
   color: #8E9399; }
 
@@ -113,6 +117,16 @@ a {
 .table-cell-display {
   display: table-cell;
   vertical-align: middle; }
+
+.item {
+  display: inline-block;
+  width: 380px;
+  padding: 5px;
+  margin-right: 10px; }
+
+.size-item {
+  width: 370px;
+  height: 265px; }
 
 /*==========*/
 /* Header 	*/
@@ -196,18 +210,17 @@ a {
 /* About Us 	*/
 /*==============*/
 .about-us .content {
-  padding-top: 70px;
-  padding-bottom: 70px;
   padding-right: 350px; }
   .about-us .content .overview-content {
-    margin-bottom: 70px;
+    margin-bottom: 50px;
     font-size: 20px;
-    font-weight: 200; }
+    font-weight: 200;
+    width: 70%; }
   .about-us .content .detail-content {
     line-height: 25px;
     font-size: 12px; }
     .about-us .content .detail-content .col-left, .about-us .content .detail-content .col-right {
-      width: 45%; }
+      width: 32%; }
     .about-us .content .detail-content .col-right {
       margin-left: 70px; }
 .about-us .circle-button {
@@ -219,7 +232,7 @@ a {
 .service .content {
   background-color: #449CE3; }
   .service .content .service-item {
-    padding: 60px 13px;
+    padding: 0 13px;
     width: 260px;
     display: inline-block; }
     .service .content .service-item .circle-item {
@@ -267,57 +280,164 @@ a {
 .service .circle-button {
   border: 3px solid #479CDF; }
 
-.price {
-  padding-top: 75px; }
-  .price .price-item {
-    width: 370px;
-    margin-left: 25px;
-    display: inline-block; }
-    .price .price-item .infor {
-      text-align: center;
-      line-height: 30px;
-      background-color: #FFFFFF;
-      font-weight: 200;
-      padding: 25px 80px; }
-      .price .price-item .infor .package-name {
-        font-size: 24px;
-        margin-bottom: 30px; }
-      .price .price-item .infor .dollar {
-        font-size: 56px;
-        font-weight: 900;
-        font-family: Helvetica, Verdana, sans-serif;
-        color: #000000; }
-        .price .price-item .infor .dollar:before {
-          content: '$';
-          font-size: 15px;
-          font-weight: normal;
-          vertical-align: super; }
-        .price .price-item .infor .dollar:after {
-          content: '/month';
-          font-size: 15px;
-          font-weight: normal;
-          vertical-align: sub;
-          font-family: "Raleway", sans-serif;
-          color: #8E9399; }
-    .price .price-item .content-detail {
-      background-color: #595D66;
-      text-align: center;
-      line-height: 30px;
-      font-size: 20px;
-      padding: 10px 0; }
-      .price .price-item .content-detail p {
-        padding: 10px; }
-      .price .price-item .content-detail hr {
-        width: 50px; }
-      .price .price-item .content-detail .table-display {
-        color: #FFFFFF;
-        margin: 15px auto; }
-  .price .description {
-    margin: 60px 0;
+.price .price-item {
+  width: 370px;
+  padding-top: 15px;
+  margin-left: 25px;
+  display: inline-block; }
+  .price .price-item .infor {
     text-align: center;
-    padding: 0 280px;
-    font-size: 13px; }
-  .price .circle-button {
-    border: 3px solid #484F59; }
+    line-height: 30px;
+    background-color: #FFFFFF;
+    font-weight: 200;
+    padding: 25px 80px; }
+    .price .price-item .infor .package-name {
+      font-size: 24px;
+      margin-bottom: 30px; }
+    .price .price-item .infor .dollar {
+      font-size: 56px;
+      font-weight: 900;
+      font-family: Helvetica, Verdana, sans-serif;
+      color: #000000; }
+      .price .price-item .infor .dollar:before {
+        content: '$';
+        font-size: 15px;
+        font-weight: normal;
+        vertical-align: super; }
+      .price .price-item .infor .dollar:after {
+        content: '/month';
+        font-size: 15px;
+        font-weight: normal;
+        vertical-align: sub;
+        font-family: "Raleway", sans-serif;
+        color: #8E9399; }
+  .price .price-item .content-detail {
+    background-color: #595D66;
+    text-align: center;
+    line-height: 30px;
+    font-size: 20px;
+    padding: 10px 0; }
+    .price .price-item .content-detail p {
+      padding: 10px; }
+    .price .price-item .content-detail hr {
+      width: 50px; }
+    .price .price-item .content-detail .table-display {
+      color: #FFFFFF;
+      margin: 15px auto; }
+.price .description {
+  text-align: center;
+  padding-left: 130px;
+  padding-right: 370px;
+  font-size: 13px;
+  margin-top: 60px; }
+.price .circle-button {
+  border: 3px solid #484F59; }
+
+.team .content {
+  background-color: #63D156; }
+.team .team-item .team-bg {
+  border-bottom: 4px solid #44923C;
+  background: -webkit-linear-gradient(#77CD6C, #63BD59);
+  /* For Safari 5.1 to 6.0 */
+  background: -o-linear-gradient(#77CD6C, #63BD59);
+  /* For Opera 11.1 to 12.0 */
+  background: -moz-linear-gradient(#77CD6C, #63BD59);
+  /* For Firefox 3.6 to 15 */
+  background: linear-gradient(#77CD6C, #63BD59);
+  /* Standard syntax (must be last) */ }
+  .team .team-item .team-bg.center-item {
+    border-bottom: 4px solid #5E7559;
+    background: -webkit-linear-gradient(#9EA09F, #858A84);
+    /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(#9EA09F, #858A84);
+    /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(#9EA09F, #858A84);
+    /* For Firefox 3.6 to 15 */
+    background: linear-gradient(#9EA09F, #858A84);
+    /* Standard syntax (must be last) */ }
+.team .team-item .description {
+  padding: 15px 0;
+  margin-top: 10px;
+  color: #FFFFFF;
+  position: relative; }
+  .team .team-item .description h1 {
+    font-weight: 500;
+    font-size: 24px; }
+  .team .team-item .description .title {
+    font-size: 13px;
+    line-height: 25px;
+    font-weight: 200; }
+  .team .team-item .description .share {
+    position: absolute;
+    top: 15px;
+    right: 0; }
+    .team .team-item .description .share .icon-twitter {
+      background-position: -161px -5px;
+      width: 17px;
+      height: 13px;
+      margin-right: 8px; }
+    .team .team-item .description .share .icon-facebook {
+      background-position: -144px -3px;
+      width: 9px;
+      height: 16px;
+      margin-right: 8px; }
+    .team .team-item .description .share .icon-pinterest {
+      background-position: -187px -3px;
+      width: 14px;
+      height: 18px; }
+  .team .team-item .description .detail {
+    font-size: 15px;
+    margin-top: 20px;
+    color: #B2E8AC;
+    line-height: 22px;
+    word-spacing: 1px; }
+.team .circle-button {
+  border: 3px solid #61D151; }
+
+.latest-new .new-item .new-bg {
+  background-color: #6B7076; }
+.latest-new .new-item .description {
+  font-family: Helvetica, Verdana, sans-serif;
+  padding: 15px 0;
+  margin-top: 10px;
+  color: #A2A7AD;
+  position: relative; }
+  .latest-new .new-item .description h1 {
+    font-weight: 500;
+    font-size: 24px; }
+  .latest-new .new-item .description .time {
+    color: #E7EAEF;
+    font-size: 12px;
+    font-weight: 100; }
+  .latest-new .new-item .description .message {
+    position: absolute;
+    top: 15px;
+    right: 0;
+    font-weight: bold; }
+    .latest-new .new-item .description .message .icon-message {
+      background-position: -161px -5px;
+      width: 17px;
+      height: 13px; }
+.latest-new .new-item.last-item .new-bg {
+  background-color: #000000; }
+.latest-new .new-item.last-item h1 {
+  color: #FFFFFF; }
+.latest-new .circle-button {
+  border: 3px solid #454C54; }
+.latest-new .icon-clock {
+  background-position: -4px -2px;
+  width: 13px;
+  height: 35px;
+  position: absolute;
+  top: 30%;
+  left: 42%; }
+
+.contact-us img {
+  opacity: 0.3;
+  width: 100%; }
+.contact-us .content {
+  background-color: #4458E3; }
+.contact-us .circle-button {
+  border: 3px solid #479CDF; }
 
 /*# sourceMappingURL=style.css.map */
