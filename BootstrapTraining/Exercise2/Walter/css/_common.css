@@ -86,6 +86,7 @@ a {
   border-radius: 40px;
   border: 2px solid;
   display: inline-block;
+  cursor: pointer;
   background-color: #8895A8;
   position: absolute;
   right: 30px;
@@ -112,7 +113,8 @@ a {
   margin: auto; }
 
 .table-display {
-  display: table; }
+  display: table;
+  cursor: pointer; }
 
 .table-cell-display {
   display: table-cell;
@@ -126,6 +128,14 @@ a {
 
 .size-item {
   width: 350px;
-  height: 265px; }
+  height: 265px;
+  cursor: pointer; }
+
+/* Menu */
+.menu {
+  list-style-type: none; }
+  .menu li {
+    display: inline;
+    padding: 20px 15px; }
 
 /*# sourceMappingURL=_common.css.map */
