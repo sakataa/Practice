@@ -104,7 +104,6 @@
 			margin-bottom: 50px;
 			font-size: 20px;
 			font-weight: 200;
-			width: 70%;
 		}
 
 		.detail-content{
@@ -112,7 +111,7 @@
 			font-size: 12px;
 
 			.col-left, .col-right{
-				width: 32%;
+				width: 45%;
 			}
 
 			.col-right{
@@ -193,7 +192,7 @@
 
 .price{
 	.price-item{
-		width: 370px;
+		width: 340px;
 		padding-top: 15px;
 		margin-left: 25px;
 		display: inline-block;
@@ -203,7 +202,7 @@
 			line-height: 30px;
 			background-color: $light-color;
 			font-weight: 200;
-			padding: 25px 80px;
+			padding: 25px 70px;
 
 			.package-name{
 				font-size: 24px;
@@ -259,8 +258,8 @@
 	.description{
 		text-align: center;
 		padding-left: 130px;
-		padding-right: 370px;
-		font-size: 13px;
+		padding-right: 100px;
+		font-size: 12px;
 		margin-top: 60px;
 	}
 
@@ -317,11 +316,10 @@
 			}
 
 			.detail{
-				font-size: 15px;
+				font-size: 14px;
 				margin-top: 20px;
 				color: #B2E8AC;
 				line-height: 22px;
-				word-spacing: 1px;
 			}
 		}
 	}

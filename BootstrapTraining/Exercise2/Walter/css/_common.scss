@@ -137,7 +137,7 @@ a{
 	@include circle($button-radius); 
 	background-color: #8895A8;
 	position: absolute;
-	right: 130px;
+	right: 30px;
 	top: 25%;
 
 	.icon-add{
@@ -173,12 +173,12 @@ a{
 
 .item{
 	display: inline-block;
-	width: 380px;
+	width: 360px;
 	padding: 5px;
 	margin-right: 10px;
 }
 
 .size-item{
-	width: 370px;
+	width: 350px;
 	height: 265px;
 }

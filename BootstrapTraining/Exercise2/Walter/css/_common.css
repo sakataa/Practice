@@ -88,7 +88,7 @@ a {
   display: inline-block;
   background-color: #8895A8;
   position: absolute;
-  right: 130px;
+  right: 30px;
   top: 25%; }
   .circle-button .icon-add {
     background-position: -99px -2px;
@@ -120,12 +120,12 @@ a {
 
 .item {
   display: inline-block;
-  width: 380px;
+  width: 360px;
   padding: 5px;
   margin-right: 10px; }
 
 .size-item {
-  width: 370px;
+  width: 350px;
   height: 265px; }
 
 /*# sourceMappingURL=_common.css.map */

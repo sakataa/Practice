@@ -88,7 +88,7 @@ a {
   display: inline-block;
   background-color: #8895A8;
   position: absolute;
-  right: 130px;
+  right: 30px;
   top: 25%; }
   .circle-button .icon-add {
     background-position: -99px -2px;
@@ -120,12 +120,12 @@ a {
 
 .item {
   display: inline-block;
-  width: 380px;
+  width: 360px;
   padding: 5px;
   margin-right: 10px; }
 
 .size-item {
-  width: 370px;
+  width: 350px;
   height: 265px; }
 
 /*==========*/
@@ -214,13 +214,12 @@ a {
   .about-us .content .overview-content {
     margin-bottom: 50px;
     font-size: 20px;
-    font-weight: 200;
-    width: 70%; }
+    font-weight: 200; }
   .about-us .content .detail-content {
     line-height: 25px;
     font-size: 12px; }
     .about-us .content .detail-content .col-left, .about-us .content .detail-content .col-right {
-      width: 32%; }
+      width: 45%; }
     .about-us .content .detail-content .col-right {
       margin-left: 70px; }
 .about-us .circle-button {
@@ -281,7 +280,7 @@ a {
   border: 3px solid #479CDF; }
 
 .price .price-item {
-  width: 370px;
+  width: 340px;
   padding-top: 15px;
   margin-left: 25px;
   display: inline-block; }
@@ -290,7 +289,7 @@ a {
     line-height: 30px;
     background-color: #FFFFFF;
     font-weight: 200;
-    padding: 25px 80px; }
+    padding: 25px 70px; }
     .price .price-item .infor .package-name {
       font-size: 24px;
       margin-bottom: 30px; }
@@ -327,8 +326,8 @@ a {
 .price .description {
   text-align: center;
   padding-left: 130px;
-  padding-right: 370px;
-  font-size: 13px;
+  padding-right: 100px;
+  font-size: 12px;
   margin-top: 60px; }
 .price .circle-button {
   border: 3px solid #484F59; }
@@ -386,11 +385,10 @@ a {
       width: 14px;
       height: 18px; }
   .team .team-item .description .detail {
-    font-size: 15px;
+    font-size: 14px;
     margin-top: 20px;
     color: #B2E8AC;
-    line-height: 22px;
-    word-spacing: 1px; }
+    line-height: 22px; }
 .team .circle-button {
   border: 3px solid #61D151; }
 
