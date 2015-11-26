@@ -474,9 +474,12 @@ a {
     right: 0;
     font-weight: bold; }
     .latest-new .new-item .description .message .icon-message {
-      background-position: -161px -5px;
-      width: 17px;
-      height: 13px; }
+      background: url("../images/message.png") no-repeat -329px -4px;
+      display: inline-block;
+      margin-right: 5px;
+      background-position: -329px -4px;
+      width: 16px;
+      height: 14px; }
 .latest-new .new-item.last-item .new-bg {
   background-color: #000000; }
 .latest-new .new-item.last-item h1 {

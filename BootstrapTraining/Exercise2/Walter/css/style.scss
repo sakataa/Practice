@@ -422,8 +422,11 @@
 				top: 15px;
 				right: 0;
 				font-weight: bold;
-				.icon-message{				
-					@include sprite-position(-161px, -5px, 17px, 13px);
+				.icon-message{		
+					background: url('../images/message.png') no-repeat -329px -4px;
+					display: inline-block;
+					margin-right: 5px;
+					@include sprite-position(-329px, -4px, 16px, 14px);
 				}
 			}			
 		}
