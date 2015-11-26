@@ -138,6 +138,20 @@ a {
     display: inline;
     padding: 20px 15px; }
 
+::-webkit-input-placeholder {
+  color: #FFFFFF; }
+
+:-moz-placeholder {
+  /* Firefox 18- */
+  color: #FFFFFF; }
+
+::-moz-placeholder {
+  /* Firefox 19+ */
+  color: #FFFFFF; }
+
+:-ms-input-placeholder {
+  color: #FFFFFF; }
+
 /*==========*/
 /* Header 	*/
 /*==========*/
@@ -564,11 +578,13 @@ a {
       margin-right: 20px; }
     .contact-us .information-container .form-control textarea, .contact-us .information-container .form-control input[type="text"] {
       display: block;
+      border: 0;
       -moz-border-radius: 2px;
       -webkit-border-radius: 2px;
       border-radius: 2px;
       padding: 10px;
-      opacity: 0.3; }
+      background-color: rgba(255, 255, 255, 0.2);
+      color: #FFFFFF; }
     .contact-us .information-container .form-control textarea {
       height: 170px;
       width: 370px;

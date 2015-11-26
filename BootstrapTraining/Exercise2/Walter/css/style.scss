@@ -538,11 +538,13 @@
 
 			textarea, input[type="text"]{
 				display: block;
+				border: 0;
 				-moz-border-radius: 2px;
 				-webkit-border-radius: 2px;
 				border-radius: 2px;
 				padding: 10px;
-				opacity: 0.3;
+				background-color: rgba(255, 255, 255, 0.2);
+    			color: $light-color;
 			}
 
 			textarea{

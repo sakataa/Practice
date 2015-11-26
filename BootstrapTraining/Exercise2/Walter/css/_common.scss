@@ -196,3 +196,19 @@ a{
 		padding: 20px 15px;
 	}
 }
+
+::-webkit-input-placeholder {
+   color: $light-color;
+}
+
+:-moz-placeholder { /* Firefox 18- */
+   color: $light-color;
+}
+
+::-moz-placeholder {  /* Firefox 19+ */
+   color: $light-color;
+}
+
+:-ms-input-placeholder {  
+   color: $light-color;
+}

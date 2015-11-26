@@ -138,4 +138,18 @@ a {
     display: inline;
     padding: 20px 15px; }
 
+::-webkit-input-placeholder {
+  color: #FFFFFF; }
+
+:-moz-placeholder {
+  /* Firefox 18- */
+  color: #FFFFFF; }
+
+::-moz-placeholder {
+  /* Firefox 19+ */
+  color: #FFFFFF; }
+
+:-ms-input-placeholder {
+  color: #FFFFFF; }
+
 /*# sourceMappingURL=_common.css.map */
