@@ -23,12 +23,50 @@
 		/* Menu */
 		.menu{
 			li{
+				position: relative;
 				a{
 					color: #FFFFFF;
 				}
 
 				&:hover{
 					font-weight: bold;
+				}
+
+				.icon-sub-menu{
+					font-size: 13px; 
+					position: absolute;
+					top: 70%;
+					left: 50%;
+					/* Rotate */
+				    -ms-transform: rotate(90deg); /* IE 9 */
+				    -webkit-transform: rotate(90deg); /* Chrome, Safari, Opera */
+				    transform: rotate(90deg);
+				}
+
+				.sub-menu{
+					width: 130px;
+					position: absolute;
+					top: 65px;
+					left: 35px;
+					background-color: #58A6E8;
+					padding: 15px;
+					border-bottom: 4px solid #3D71A0;
+					li{
+						display: block;
+						padding: 5px 0;
+
+						a{
+							font-size: 13px;
+							font-weight: bold;
+							&.selected-item{
+								color: #2C68A4;
+							}
+
+							&:hover{
+								color: #2C68A4;
+							}
+						}
+					}
 				}
 			}
 		}
@@ -37,8 +75,8 @@
 	p{
 		font-weight: 100;
 		padding: 20px 0;
-		font-size: 30px;
-		width: 750px;
+		font-size: 25px;
+		width: 650px;
 	}
 
 	.more-detail-text{
@@ -75,6 +113,7 @@
 			position: absolute;
 			top: 25%;
 			left: 35%;
+			cursor: default;
 
 			.icon-clockwise{
 				@include sprite-position(-42px, -3px, 47px, 15px);
@@ -91,6 +130,10 @@
 
 	.circle-button{
 		border: 3px solid #B3BFCB;
+		&:hover{
+			border: 3px solid #8895A8;
+			background-color: #B3BFCB;
+		}
 	}
 }
 
@@ -123,6 +166,10 @@
 
 	.circle-button{
 		border: 3px solid #484F59;
+		&:hover{
+			border: 3px solid #8895A8;
+			background-color: #484F59;
+		}
 	}
 }
 
@@ -144,6 +191,7 @@
 				border: 10px solid #4990CE;
 				box-shadow: 0px 0px 0px 3px $light-color;
 				position: relative;
+				cursor: default;
 
 				.icon-service{
 					position: absolute;
@@ -190,6 +238,10 @@
 
 	.circle-button{
 		border: 3px solid #479CDF;
+		&:hover{
+			border: 3px solid #8895A8;
+			background-color: #479CDF;
+		}
 	}
 }
 
@@ -272,6 +324,10 @@
 
 	.circle-button {
 	    border: 3px solid #484F59;
+	    &:hover{
+			border: 3px solid #8895A8;
+			background-color: #484F59;
+		}
 	}
 }
 
@@ -332,6 +388,10 @@
 	}
 	.circle-button {
 	    border: 3px solid #61D151;
+	    &:hover{
+			border: 3px solid #8895A8;
+			background-color: #61D151;
+		}
 	}
 }
 
@@ -380,6 +440,10 @@
 
 	.circle-button {
 	    border: 3px solid #454C54;
+	    &:hover{
+			border: 3px solid #8895A8;
+			background-color: #454C54;
+		}
 	}
 	.icon-clock{
 		@include sprite-position(-4px, -2px, 13px, 35px);
@@ -503,13 +567,17 @@
 
 	.circle-button{
 		border: 3px solid #479CDF;
+		&:hover{
+			border: 3px solid #8895A8;
+			background-color: #479CDF;
+		}
 	}
 }
 
 .bottom-content{
 	.content{
 		text-align: center;
-		padding: 0 390px;
+		padding: 0 235px;
 
 		.circle-clock{
 			@include circle($clock-radius);
@@ -518,6 +586,7 @@
 			position: relative;
 			margin: auto;
 			margin-bottom: 20px;
+			cursor: default;
 
 			.icon-twitter{
 				@include sprite-position(-278px, -2px, 37px, 30px);
