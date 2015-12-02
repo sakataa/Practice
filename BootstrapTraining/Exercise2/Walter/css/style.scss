@@ -24,6 +24,17 @@
 		.menu{
 			li{
 				position: relative;
+				.sub-menu-container{
+					width: 130px;
+					position: absolute;
+					top: 65px;
+					left: 25px;
+					background-color: #58A6E8;
+					padding: 15px;
+					border-bottom: 4px solid #3D71A0;
+					display: none;
+				}
+				
 				a{
 					color: #FFFFFF;
 				}
@@ -35,22 +46,15 @@
 				.icon-sub-menu{
 					font-size: 13px; 
 					position: absolute;
-					top: 70%;
-					left: 50%;
+					top: -10%;
+					left: 25%;
 					/* Rotate */
 				    -ms-transform: rotate(90deg); /* IE 9 */
 				    -webkit-transform: rotate(90deg); /* Chrome, Safari, Opera */
 				    transform: rotate(90deg);
 				}
 
-				.sub-menu{
-					width: 130px;
-					position: absolute;
-					top: 65px;
-					left: 35px;
-					background-color: #58A6E8;
-					padding: 15px;
-					border-bottom: 4px solid #3D71A0;
+				.sub-menu{					
 					li{
 						display: block;
 						padding: 5px 0;
@@ -68,6 +72,10 @@
 						}
 					}
 				}
+			}
+
+			.menu-hover:hover .sub-menu-container{
+				display: block;
 			}
 		}
 	}
