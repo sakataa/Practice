@@ -47,6 +47,12 @@ a {
 .clearfix {
   clear: both; }
 
+.align-center {
+  text-align: center; }
+
+.align-left {
+  text-align: left; }
+
 .section-indent {
   padding-left: 130px; }
 
@@ -297,7 +303,7 @@ a {
   background-color: #449CE3; }
   .service .content .service-item {
     padding: 0 13px;
-    width: 260px;
+    width: 275px;
     display: inline-block; }
     .service .content .service-item .circle-item {
       width: 220px;
@@ -338,8 +344,9 @@ a {
     .service .content .service-item .description {
       font-weight: 100; }
       .service .content .service-item .description .text {
-        font-size: 12px;
-        line-height: 22px; }
+        font-size: 13px;
+        line-height: 22px;
+        color: #d9d9d9; }
       .service .content .service-item .description .service-title {
         font-size: 25px;
         font-weight: 200;

@@ -47,6 +47,12 @@ a {
 .clearfix {
   clear: both; }
 
+.align-center {
+  text-align: center; }
+
+.align-left {
+  text-align: left; }
+
 .section-indent {
   padding-left: 130px; }
 
