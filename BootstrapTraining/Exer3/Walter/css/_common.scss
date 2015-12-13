@@ -1,0 +1,235 @@
+$font-family: 'Lato', sans-serif;
+$white: #FFFFFF;
+$black: #000000;
+
+$content-bg: #EEEEEE;
+
+$left-header-bg: #34495E;
+
+$mainmenu-fontsize: 1.5rem;
+$submenu-fontsize: 1.2rem;
+
+$menu-text-color: #929EAC;
+$left-active-bg: #2C3E50;
+
+$notification-current-bg: #F86B4F;
+
+$common-color: #95A0AA; 
+
+$heading-bg: #E5E5E5;
+$heading-text-color: #95A0AA; 
+
+
+/* reset browser styles */
+html, body, div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  vertical-align: baseline; 
+}
+
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+  display: block; 
+}
+
+body {
+  line-height: 1.2; 
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; 
+}
+
+*, *::before, *::after {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box; 
+}
+
+img {
+  max-width: 100%;
+  vertical-align: middle;
+  border: 0; 
+}
+
+/* end reset browser styles */
+
+/* mixin */
+@mixin circle($radius) {
+  width: $radius * 2;
+  height: $radius * 2;
+  -moz-border-radius: $radius;
+  -webkit-border-radius: $radius;
+  border-radius: $radius;
+  display: inline-block;
+  cursor: default;
+}
+
+@mixin sprite-position($x, $y, $width, $height){
+  background: url('../images/sprite.png') no-repeat;
+  display: inline-block;
+  background-position: $x $y;
+  width: $width;
+  height: $height;
+}
+
+@mixin flex-container(){
+  display: -webkit-flex; /* Safari */
+  display: flex;
+}
+
+@mixin flex-item($grow: 1, $shrink: 1, $basis: auto){
+    -webkit-flex: $grow $shrink $basis;
+    flex: $grow $shrink $basis;
+}
+
+
+/*Set root font size*/
+html{
+  font-size: 10px;
+  font-family: $font-family;
+}
+
+html, body, .main-container{
+  width: 100%;
+  height: 100%;
+}
+
+.main-container{
+  @include flex-container();
+  background-color: $content-bg;
+}
+
+a{
+  text-decoration: none;
+}
+
+.left{
+  float: left;
+}
+
+.right{
+  float: right;
+}
+
+.clearfix{
+  clear: both;
+}
+
+.inline-block{
+  display: inline-block;
+}
+
+.icon {
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  display: inline-block;
+  margin-right: 2rem;
+  -webkit-font-smoothing: antialiased;
+}
+
+.circle-notification{
+  @include circle(1.2rem);
+  font-size: 1rem;
+  line-height: 2rem;
+  text-align: center;
+  color: $white;
+  background-color: $menu-text-color;
+}
+
+.left-panel{
+  @include flex-item();
+  -webkit-order: 1;
+  order: 1;
+  background-color: $left-header-bg;
+  color: $menu-text-color;
+  max-width: 45rem;
+  height: 100%;
+
+  .menu-header{
+      background-color: $left-active-bg;
+      position: relative;
+  }
+
+  .left-menu{
+    @include flex-container();
+    flex-direction: column;
+    list-style: none;
+    font-size: $mainmenu-fontsize;
+
+    a{
+      color: $menu-text-color;
+      font-weight: bold;
+
+      .circle-notification{
+          position: absolute;
+          right: 3rem;
+      }
+    }
+
+    li{
+      margin-bottom: 5rem;
+      padding-left: 4rem;
+      padding-right: 3rem;
+      position: relative;
+
+      &.active-menu{
+        background-color: $left-active-bg;
+        padding-top: 4rem;
+        border-left: 0.5rem solid #5FAEE3;
+        margin-bottom: 3rem;
+
+        .circle-notification{
+          background-color: $notification-current-bg;
+        }
+      }
+    }
+
+    .sub-menu{
+      @include flex-container();
+      flex-direction: column;
+      list-style: none;
+      padding-left: 1.5rem;
+      font-size: $submenu-fontsize;
+      margin-bottom: 0.8rem;
+      margin-top: 2.5rem;
+
+      li{
+        margin-bottom: 2rem;
+      }
+    }
+  }
+}
+
+.tile{
+  border: 0;
+}
+
+.heading{
+  height: 7.2rem;
+  background-color: $heading-bg;
+  color: $heading-text-color;
+}
+
+.right-panel{
+  @include flex-item();
+  -webkit-order: 2;
+  order: 2;
+}
+
+.content{
+  padding-right: 3rem;
+}
+
+.new-section{
+  padding: 3rem;
+}

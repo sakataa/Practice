@@ -1,0 +1,43 @@
+@import 'common';
+
+.logo{
+	@include sprite-position(-0.6rem, -42rem, 21.6rem, 3.8rem);
+	margin: 4rem 0;
+	margin-left: 3rem;
+}
+
+.top-header{
+	background-color: $white;
+	padding: 4rem 0;
+}
+
+.icon-dashboard{
+	@include sprite-position(-1.1rem, -8.1rem, 2.2rem, 2rem);
+}
+
+.icon-webmail{
+	@include sprite-position(-4.3rem, -8.5rem, 2.2rem, 1.5rem);
+}
+
+.icon-cloud{
+	@include sprite-position(-7.8rem, -8.4rem, 2.4rem, 1.6rem);
+}
+
+.icon-ui{
+	@include sprite-position(-11.5rem, -8.2rem, 2rem, 1.8rem);
+}
+
+.icon-statistics{
+	@include sprite-position(-15.1rem, -8.1rem, 2.2rem, 1.8rem);
+}
+
+.icon-time{
+	@include sprite-position(-18.7rem, -7.9rem, 2.1rem, 2.1rem);
+}
+
+.icon-menu{
+	@include sprite-position(-46.3rem, -0.1rem, 5.7rem, 6.1rem);
+	position: absolute;
+	top: 3rem;
+	right: -3rem;
+}
