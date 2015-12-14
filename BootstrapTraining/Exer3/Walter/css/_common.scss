@@ -100,6 +100,14 @@ img {
   background-color: $menu-text-color;
 }
 
+@mixin top-notification(){
+  @include circle(1rem);
+  font-size: 1rem;
+  line-height: 2rem;
+  text-align: center;
+  color: $white;
+}
+
 
 /*Set root font size*/
 html{
@@ -222,9 +230,5 @@ a{
 }
 
 .content{
-  padding-right: 3rem;
-}
-
-.new-section{
   padding: 3rem;
 }

@@ -6,12 +6,6 @@
 	margin-left: 3rem;
 }
 
-.top-header{
-	@include flex-container();
-	background-color: $white;
-	padding: 6rem 0;
-}
-
 .icon-dashboard{
 	&:before{
 		content:'';
@@ -85,3 +79,103 @@
 	top: 3rem;
 	right: -3rem;
 }
+
+.top-header{
+	@include flex-container();
+	max-height: 11.5rem;
+	background-color: $white;
+	padding: 5rem 0;
+	color: #95A0AA;
+	font-weight: bold;
+	font-size: 1.5rem;
+
+	.top-left, .top-right{
+		@include flex-item();
+		list-style: none;
+	}
+
+	.top-left{
+		@include flex-container();
+		margin-left: 8rem;
+
+		li{
+			margin-right: 5rem;
+		}
+
+		.notification{
+			position: relative;
+
+			&:after{
+				@include top-notification();
+				content: '19';
+				background-color: #F86B4F;
+				top: -5px;
+    			position: absolute;
+			}
+		}
+	}
+
+	.top-right{
+		@include flex-container();
+		justify-content: flex-end;
+		margin-right: 5rem;
+		position: relative;
+
+		.account-infor{
+			&:before{
+				content: '';
+				@include sprite-position(-40.4rem, 0, 4rem, 4.3rem);
+				position: absolute;
+				right: 15rem;
+    			top: -1rem;
+			}
+
+			&:after{
+				content: '';
+				@include sprite-position(-38.7rem, -8.7rem, 1.3rem, 1.1rem);
+				margin-left: 1.5rem;
+			}
+		}
+	}
+}
+
+.modern-menu{
+	@include flex-container();
+	list-style: none;
+
+	li{
+		@include flex-item(1, 1, 20%);
+		background-color: #5FAEE3;
+		height: 26rem;
+
+		@include flex-container();
+		flex-direction:column;
+		align-items: center;
+
+		p{
+			@include flex-item();
+			color: $white;
+			font-size: 2rem;
+		}
+
+		&.visitor-infor{
+			.icon-visitor-infor{
+				@include flex-item(1, 1, 6.5rem);
+				@include sprite-position(0, 0, 6.5rem, 6.4rem);
+			}
+		}
+		&.upload-stuff{
+			opacity: 0.9;
+		}
+		&.webmail-inbox{
+			opacity: 0.8;
+		}
+		&.freelance-task{
+			opacity: 0.7;
+		}
+		&.logout{
+			opacity: 0.6;
+		}
+	}
+}
+

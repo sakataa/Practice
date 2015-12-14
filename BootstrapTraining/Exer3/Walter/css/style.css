@@ -133,9 +133,6 @@ a {
   order: 2; }
 
 .content {
-  padding-right: 3rem; }
-
-.new-section {
   padding: 3rem; }
 
 .logo {
@@ -146,13 +143,6 @@ a {
   height: 3.8rem;
   margin: 4rem 0;
   margin-left: 3rem; }
-
-.top-header {
-  display: -webkit-flex;
-  /* Safari */
-  display: flex;
-  background-color: #FFFFFF;
-  padding: 6rem 0; }
 
 .icon-dashboard:before {
   content: '';
@@ -308,5 +298,107 @@ a {
   position: absolute;
   top: 3rem;
   right: -3rem; }
+
+.top-header {
+  display: -webkit-flex;
+  /* Safari */
+  display: flex;
+  max-height: 11.5rem;
+  background-color: #FFFFFF;
+  padding: 5rem 0;
+  color: #95A0AA;
+  font-weight: bold;
+  font-size: 1.5rem; }
+  .top-header .top-left, .top-header .top-right {
+    -webkit-flex: 1 1 auto;
+    flex: 1 1 auto;
+    list-style: none; }
+  .top-header .top-left {
+    display: -webkit-flex;
+    /* Safari */
+    display: flex;
+    margin-left: 8rem; }
+    .top-header .top-left li {
+      margin-right: 5rem; }
+    .top-header .top-left .notification {
+      position: relative; }
+      .top-header .top-left .notification:after {
+        width: 2rem;
+        height: 2rem;
+        -moz-border-radius: 1rem;
+        -webkit-border-radius: 1rem;
+        border-radius: 1rem;
+        display: inline-block;
+        cursor: default;
+        font-size: 1rem;
+        line-height: 2rem;
+        text-align: center;
+        color: #FFFFFF;
+        content: '19';
+        background-color: #F86B4F;
+        top: -5px;
+        position: absolute; }
+  .top-header .top-right {
+    display: -webkit-flex;
+    /* Safari */
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 5rem;
+    position: relative; }
+    .top-header .top-right .account-infor:before {
+      content: '';
+      background: url("../images/sprite.png") no-repeat;
+      display: inline-block;
+      background-position: -40.4rem 0;
+      width: 4rem;
+      height: 4.3rem;
+      position: absolute;
+      right: 15rem;
+      top: -1rem; }
+    .top-header .top-right .account-infor:after {
+      content: '';
+      background: url("../images/sprite.png") no-repeat;
+      display: inline-block;
+      background-position: -38.7rem -8.7rem;
+      width: 1.3rem;
+      height: 1.1rem;
+      margin-left: 1.5rem; }
+
+.modern-menu {
+  display: -webkit-flex;
+  /* Safari */
+  display: flex;
+  list-style: none; }
+  .modern-menu li {
+    -webkit-flex: 1 1 20%;
+    flex: 1 1 20%;
+    background-color: #5FAEE3;
+    height: 26rem;
+    display: -webkit-flex;
+    /* Safari */
+    display: flex;
+    flex-direction: column;
+    align-items: center; }
+    .modern-menu li p {
+      -webkit-flex: 1 1 auto;
+      flex: 1 1 auto;
+      color: #FFFFFF;
+      font-size: 2rem; }
+    .modern-menu li.visitor-infor .icon-visitor-infor {
+      -webkit-flex: 1 1 6.5rem;
+      flex: 1 1 6.5rem;
+      background: url("../images/sprite.png") no-repeat;
+      display: inline-block;
+      background-position: 0 0;
+      width: 6.5rem;
+      height: 6.4rem; }
+    .modern-menu li.upload-stuff {
+      opacity: 0.9; }
+    .modern-menu li.webmail-inbox {
+      opacity: 0.8; }
+    .modern-menu li.freelance-task {
+      opacity: 0.7; }
+    .modern-menu li.logout {
+      opacity: 0.6; }
 
 /*# sourceMappingURL=style.css.map */
