@@ -148,8 +148,11 @@ a {
   margin-left: 3rem; }
 
 .top-header {
+  display: -webkit-flex;
+  /* Safari */
+  display: flex;
   background-color: #FFFFFF;
-  padding: 4rem 0; }
+  padding: 6rem 0; }
 
 .icon-dashboard:before {
   content: '';
@@ -170,7 +173,7 @@ a {
   position: absolute;
   right: 3rem;
   font-size: 1rem;
-  line-height: 2rem;
+  line-height: 2.2rem;
   text-align: center;
   color: #FFFFFF;
   background-color: #929EAC;
@@ -195,7 +198,7 @@ a {
   position: absolute;
   right: 3rem;
   font-size: 1rem;
-  line-height: 2rem;
+  line-height: 2.2rem;
   text-align: center;
   color: #FFFFFF;
   background-color: #929EAC; }
@@ -219,7 +222,7 @@ a {
   position: absolute;
   right: 3rem;
   font-size: 1rem;
-  line-height: 2rem;
+  line-height: 2.2rem;
   text-align: center;
   color: #FFFFFF;
   background-color: #929EAC; }
@@ -243,7 +246,7 @@ a {
   position: absolute;
   right: 3rem;
   font-size: 1rem;
-  line-height: 2rem;
+  line-height: 2.2rem;
   text-align: center;
   color: #FFFFFF;
   background-color: #929EAC; }
@@ -267,7 +270,7 @@ a {
   position: absolute;
   right: 3rem;
   font-size: 1rem;
-  line-height: 2rem;
+  line-height: 2.2rem;
   text-align: center;
   color: #FFFFFF;
   background-color: #929EAC; }
@@ -291,7 +294,7 @@ a {
   position: absolute;
   right: 3rem;
   font-size: 1rem;
-  line-height: 2rem;
+  line-height: 2.2rem;
   text-align: center;
   color: #FFFFFF;
   background-color: #929EAC; }
