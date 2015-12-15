@@ -147,34 +147,49 @@
 		@include flex-item(1, 1, 20%);
 		background-color: #5FAEE3;
 		height: 26rem;
+		position: relative;
+		text-align: center;
+		line-height: 6rem;
 
-		@include flex-container();
-		flex-direction:column;
-		align-items: center;
+		.item-wrapper{
+			position: absolute;
+			bottom: 20%;
+    		right: 20%;
 
-		p{
-			@include flex-item();
-			color: $white;
-			font-size: 2rem;
+			p{
+				color: $white;
+				font-size: 2rem;
+			}
 		}
 
 		&.visitor-infor{
 			.icon-visitor-infor{
-				@include flex-item(1, 1, 6.5rem);
 				@include sprite-position(0, 0, 6.5rem, 6.4rem);
 			}
 		}
 		&.upload-stuff{
 			opacity: 0.9;
+			.icon-upload-stuff{
+				@include sprite-position(-8.1rem, 0, 6.6rem, 5.7rem);
+			}
 		}
 		&.webmail-inbox{
 			opacity: 0.8;
+			.icon-webmail-inbox{
+				@include sprite-position(-16.9rem, 0, 6.5rem, 5.9rem);
+			}
 		}
 		&.freelance-task{
 			opacity: 0.7;
+			.icon-freelance-task{
+				@include sprite-position(-25.6rem, 0, 6.6rem, 6.5rem);
+			}
 		}
 		&.logout{
 			opacity: 0.6;
+			.icon-logout{
+				@include sprite-position(-33.8rem, 0, 4.9rem, 5.3rem);
+			}
 		}
 	}
 }

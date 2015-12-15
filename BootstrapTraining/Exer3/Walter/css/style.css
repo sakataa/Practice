@@ -374,19 +374,17 @@ a {
     flex: 1 1 20%;
     background-color: #5FAEE3;
     height: 26rem;
-    display: -webkit-flex;
-    /* Safari */
-    display: flex;
-    flex-direction: column;
-    align-items: center; }
-    .modern-menu li p {
-      -webkit-flex: 1 1 auto;
-      flex: 1 1 auto;
-      color: #FFFFFF;
-      font-size: 2rem; }
+    position: relative;
+    text-align: center;
+    line-height: 6rem; }
+    .modern-menu li .item-wrapper {
+      position: absolute;
+      bottom: 20%;
+      right: 20%; }
+      .modern-menu li .item-wrapper p {
+        color: #FFFFFF;
+        font-size: 2rem; }
     .modern-menu li.visitor-infor .icon-visitor-infor {
-      -webkit-flex: 1 1 6.5rem;
-      flex: 1 1 6.5rem;
       background: url("../images/sprite.png") no-repeat;
       display: inline-block;
       background-position: 0 0;
@@ -394,11 +392,35 @@ a {
       height: 6.4rem; }
     .modern-menu li.upload-stuff {
       opacity: 0.9; }
+      .modern-menu li.upload-stuff .icon-upload-stuff {
+        background: url("../images/sprite.png") no-repeat;
+        display: inline-block;
+        background-position: -8.1rem 0;
+        width: 6.6rem;
+        height: 5.7rem; }
     .modern-menu li.webmail-inbox {
       opacity: 0.8; }
+      .modern-menu li.webmail-inbox .icon-webmail-inbox {
+        background: url("../images/sprite.png") no-repeat;
+        display: inline-block;
+        background-position: -16.9rem 0;
+        width: 6.5rem;
+        height: 5.9rem; }
     .modern-menu li.freelance-task {
       opacity: 0.7; }
+      .modern-menu li.freelance-task .icon-freelance-task {
+        background: url("../images/sprite.png") no-repeat;
+        display: inline-block;
+        background-position: -25.6rem 0;
+        width: 6.6rem;
+        height: 6.5rem; }
     .modern-menu li.logout {
       opacity: 0.6; }
+      .modern-menu li.logout .icon-logout {
+        background: url("../images/sprite.png") no-repeat;
+        display: inline-block;
+        background-position: -33.8rem 0;
+        width: 4.9rem;
+        height: 5.3rem; }
 
 /*# sourceMappingURL=style.css.map */
