@@ -156,18 +156,17 @@ a {
   background-position: -1.1rem -8.1rem;
   width: 2.2rem;
   height: 2rem; }
-.icon-dashboard:after {
-  width: 2.4rem;
-  height: 2.4rem;
-  -moz-border-radius: 1.2rem;
-  -webkit-border-radius: 1.2rem;
-  border-radius: 1.2rem;
+.icon-dashboard span {
+  width: 2.2rem;
+  height: 2.2rem;
+  -moz-border-radius: 1.1rem;
+  -webkit-border-radius: 1.1rem;
+  border-radius: 1.1rem;
   display: inline-block;
   cursor: default;
-  content: "16";
   position: absolute;
   right: 3rem;
-  font-size: 0.9rem;
+  font-size: 1rem;
   line-height: 2.4rem;
   text-align: center;
   color: #FFFFFF;
@@ -181,18 +180,17 @@ a {
   background-position: -4.3rem -8.5rem;
   width: 2.2rem;
   height: 1.5rem; }
-.icon-webmail:after {
-  width: 2.4rem;
-  height: 2.4rem;
-  -moz-border-radius: 1.2rem;
-  -webkit-border-radius: 1.2rem;
-  border-radius: 1.2rem;
+.icon-webmail span {
+  width: 2.2rem;
+  height: 2.2rem;
+  -moz-border-radius: 1.1rem;
+  -webkit-border-radius: 1.1rem;
+  border-radius: 1.1rem;
   display: inline-block;
   cursor: default;
-  content: "95";
   position: absolute;
   right: 3rem;
-  font-size: 0.9rem;
+  font-size: 1rem;
   line-height: 2.4rem;
   text-align: center;
   color: #FFFFFF;
@@ -205,18 +203,17 @@ a {
   background-position: -7.8rem -8.4rem;
   width: 2.4rem;
   height: 1.6rem; }
-.icon-cloud:after {
-  width: 2.4rem;
-  height: 2.4rem;
-  -moz-border-radius: 1.2rem;
-  -webkit-border-radius: 1.2rem;
-  border-radius: 1.2rem;
+.icon-cloud span {
+  width: 2.2rem;
+  height: 2.2rem;
+  -moz-border-radius: 1.1rem;
+  -webkit-border-radius: 1.1rem;
+  border-radius: 1.1rem;
   display: inline-block;
   cursor: default;
-  content: "7";
   position: absolute;
   right: 3rem;
-  font-size: 0.9rem;
+  font-size: 1rem;
   line-height: 2.4rem;
   text-align: center;
   color: #FFFFFF;
@@ -229,18 +226,17 @@ a {
   background-position: -11.5rem -8.2rem;
   width: 2rem;
   height: 1.8rem; }
-.icon-ui:after {
-  width: 2.4rem;
-  height: 2.4rem;
-  -moz-border-radius: 1.2rem;
-  -webkit-border-radius: 1.2rem;
-  border-radius: 1.2rem;
+.icon-ui span {
+  width: 2.2rem;
+  height: 2.2rem;
+  -moz-border-radius: 1.1rem;
+  -webkit-border-radius: 1.1rem;
+  border-radius: 1.1rem;
   display: inline-block;
   cursor: default;
-  content: "7";
   position: absolute;
   right: 3rem;
-  font-size: 0.9rem;
+  font-size: 1rem;
   line-height: 2.4rem;
   text-align: center;
   color: #FFFFFF;
@@ -253,18 +249,17 @@ a {
   background-position: -15.1rem -8.1rem;
   width: 2.2rem;
   height: 1.8rem; }
-.icon-statistics:after {
-  width: 2.4rem;
-  height: 2.4rem;
-  -moz-border-radius: 1.2rem;
-  -webkit-border-radius: 1.2rem;
-  border-radius: 1.2rem;
+.icon-statistics span {
+  width: 2.2rem;
+  height: 2.2rem;
+  -moz-border-radius: 1.1rem;
+  -webkit-border-radius: 1.1rem;
+  border-radius: 1.1rem;
   display: inline-block;
   cursor: default;
-  content: "6";
   position: absolute;
   right: 3rem;
-  font-size: 0.9rem;
+  font-size: 1rem;
   line-height: 2.4rem;
   text-align: center;
   color: #FFFFFF;
@@ -277,18 +272,17 @@ a {
   background-position: -18.7rem -7.9rem;
   width: 2.1rem;
   height: 2.1rem; }
-.icon-time:after {
-  width: 2.4rem;
-  height: 2.4rem;
-  -moz-border-radius: 1.2rem;
-  -webkit-border-radius: 1.2rem;
-  border-radius: 1.2rem;
+.icon-time span {
+  width: 2.2rem;
+  height: 2.2rem;
+  -moz-border-radius: 1.1rem;
+  -webkit-border-radius: 1.1rem;
+  border-radius: 1.1rem;
   display: inline-block;
   cursor: default;
-  content: "24";
   position: absolute;
   right: 3rem;
-  font-size: 0.9rem;
+  font-size: 1rem;
   line-height: 2.4rem;
   text-align: center;
   color: #FFFFFF;
@@ -326,19 +320,18 @@ a {
       margin-right: 5rem; }
     .top-header .top-left .notification {
       position: relative; }
-      .top-header .top-left .notification:after {
-        width: 2rem;
-        height: 2rem;
-        -moz-border-radius: 1rem;
-        -webkit-border-radius: 1rem;
-        border-radius: 1rem;
+      .top-header .top-left .notification span {
+        width: 1.6rem;
+        height: 1.6rem;
+        -moz-border-radius: 0.8rem;
+        -webkit-border-radius: 0.8rem;
+        border-radius: 0.8rem;
         display: inline-block;
         cursor: default;
-        font-size: 1rem;
-        line-height: 2rem;
+        font-size: 0.8rem;
+        line-height: 1.8rem;
         text-align: center;
         color: #FFFFFF;
-        content: '19';
         background-color: #F86B4F;
         top: -5px;
         position: absolute; }

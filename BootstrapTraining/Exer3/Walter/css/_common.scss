@@ -90,12 +90,11 @@ img {
     flex: $grow $shrink $basis;
 }
 
-@mixin circle-notification($content){
-  @include circle(1.2rem);
-  content: $content;
+@mixin circle-notification(){
+  @include circle(1.1rem);
   position: absolute;
   right: 3rem;
-  font-size: 0.9rem;
+  font-size: 1rem;
   line-height: 2.4rem;
   text-align: center;
   color: $white;
@@ -103,9 +102,9 @@ img {
 }
 
 @mixin top-notification(){
-  @include circle(1rem);
-  font-size: 1rem;
-  line-height: 2rem;
+  @include circle(0.8rem);
+  font-size: 0.8rem;
+  line-height: 1.8rem;
   text-align: center;
   color: $white;
 }

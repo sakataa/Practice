@@ -12,8 +12,8 @@
 		@include sprite-position(-1.1rem, -8.1rem, 2.2rem, 2rem);
 	}
 
-	&:after{
-		@include circle-notification('16');
+	span{
+		@include circle-notification();
 		background-color: $notification-current-bg;
 	}
 }
@@ -24,8 +24,8 @@
 		@include sprite-position(-4.3rem, -8.5rem, 2.2rem, 1.5rem);
 	}
 
-	&:after{
-		@include circle-notification('95');
+	span{
+		@include circle-notification();
 	}
 }
 
@@ -35,8 +35,8 @@
 		@include sprite-position(-7.8rem, -8.4rem, 2.4rem, 1.6rem);
 	}	
 
-	&:after{
-		@include circle-notification('7');
+	span{
+		@include circle-notification();
 	}
 }
 
@@ -46,8 +46,8 @@
 		@include sprite-position(-11.5rem, -8.2rem, 2rem, 1.8rem);
 	}	
 
-	&:after{
-		@include circle-notification('7');
+	span{
+		@include circle-notification();
 	}	
 }
 
@@ -57,8 +57,8 @@
 		@include sprite-position(-15.1rem, -8.1rem, 2.2rem, 1.8rem);
 	}	
 
-	&:after{
-		@include circle-notification('6');
+	span{
+		@include circle-notification();
 	}
 }
 
@@ -68,8 +68,8 @@
 		@include sprite-position(-18.7rem, -7.9rem, 2.1rem, 2.1rem);
 	}	
 
-	&:after{
-		@include circle-notification('24');
+	span{
+		@include circle-notification();
 	}
 }
 
@@ -104,9 +104,8 @@
 		.notification{
 			position: relative;
 
-			&:after{
+			span{
 				@include top-notification();
-				content: '19';
 				background-color: #F86B4F;
 				top: -5px;
     			position: absolute;
