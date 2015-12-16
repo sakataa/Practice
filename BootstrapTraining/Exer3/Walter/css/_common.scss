@@ -17,7 +17,9 @@ $notification-current-bg: #F86B4F;
 $common-color: #95A0AA; 
 
 $heading-bg: #E5E5E5;
-$heading-text-color: #95A0AA; 
+$heading-text-color: #95A0AA;
+
+$tile-bg: #5FAEE3;
 
 
 /* reset browser styles */
@@ -62,12 +64,15 @@ img {
 /* end reset browser styles */
 
 /* mixin */
-@mixin circle($radius) {
-  width: $radius * 2;
-  height: $radius * 2;
+@mixin border-radius($radius){
   -moz-border-radius: $radius;
   -webkit-border-radius: $radius;
   border-radius: $radius;
+}
+@mixin circle($radius) {
+  width: $radius * 2;
+  height: $radius * 2;
+  @include border-radius($radius);
   display: inline-block;
   cursor: default;
 }
@@ -91,8 +96,9 @@ img {
 }
 
 @mixin circle-notification(){
-  @include circle(1.1rem);
+  @include circle(1.2rem);
   position: absolute;
+  padding-right: 0.2rem;
   right: 3rem;
   font-size: 1rem;
   line-height: 2.4rem;
@@ -107,6 +113,7 @@ img {
   line-height: 1.8rem;
   text-align: center;
   color: $white;
+  padding-right: 0.2rem;
 }
 
 
@@ -118,12 +125,14 @@ html{
 
 html, body, .main-container{
   width: 100%;
-  height: 100%;
+  height: auto;
 }
 
 .main-container{
   @include flex-container();
+  align-items: stretch;
   background-color: $content-bg;
+  position: relative;
 }
 
 a{
@@ -160,7 +169,7 @@ a{
 }
 
 .left-panel{
-  @include flex-item();
+  @include flex-item(1, 1, 25%);
   -webkit-order: 1;
   order: 1;
   background-color: $left-header-bg;
@@ -235,4 +244,13 @@ a{
 
 .content{
   padding: 3rem;
+}
+
+.new-section{
+  margin-top: 3rem;
+  padding-bottom: 3rem;
+}
+
+.relative-positon{
+  position: relative;
 }

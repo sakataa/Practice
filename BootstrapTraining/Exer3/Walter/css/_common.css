@@ -40,13 +40,15 @@ html {
 
 html, body, .main-container {
   width: 100%;
-  height: 100%; }
+  height: auto; }
 
 .main-container {
   display: -webkit-flex;
   /* Safari */
   display: flex;
-  background-color: #EEEEEE; }
+  align-items: stretch;
+  background-color: #EEEEEE;
+  position: relative; }
 
 a {
   text-decoration: none; }
@@ -76,8 +78,8 @@ a {
   -webkit-font-smoothing: antialiased; }
 
 .left-panel {
-  -webkit-flex: 1 1 auto;
-  flex: 1 1 auto;
+  -webkit-flex: 1 1 25%;
+  flex: 1 1 25%;
   -webkit-order: 1;
   order: 1;
   background-color: #34495E;
@@ -139,5 +141,12 @@ a {
 
 .content {
   padding: 3rem; }
+
+.new-section {
+  margin-top: 3rem;
+  padding-bottom: 3rem; }
+
+.relative-positon {
+  position: relative; }
 
 /*# sourceMappingURL=_common.css.map */
