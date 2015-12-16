@@ -13,7 +13,9 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   display: block; }
 
 body {
-  line-height: 1.2; }
+  line-height: 1.2;
+  font-size: 1.2rem;
+  color: #95A0AA; }
 
 table {
   border-collapse: collapse;
@@ -34,7 +36,7 @@ img {
 /*Set root font size*/
 html {
   font-size: 10px;
-  font-family: "Lato", sans-serif; }
+  font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif; }
 
 html, body, .main-container {
   width: 100%;
@@ -91,7 +93,7 @@ a {
     display: flex;
     flex-direction: column;
     list-style: none;
-    font-size: 1.5rem; }
+    font-size: 1.4rem; }
     .left-panel .left-menu a {
       color: #929EAC;
       font-weight: bold; }
@@ -123,6 +125,9 @@ a {
 
 .heading {
   height: 7.2rem;
+  padding-left: 2rem;
+  padding-top: 3rem;
+  font-size: 1.6rem;
   background-color: #E5E5E5;
   color: #95A0AA; }
 
@@ -162,8 +167,8 @@ a {
   content: "16";
   position: absolute;
   right: 3rem;
-  font-size: 1rem;
-  line-height: 2.2rem;
+  font-size: 0.9rem;
+  line-height: 2.4rem;
   text-align: center;
   color: #FFFFFF;
   background-color: #929EAC;
@@ -187,8 +192,8 @@ a {
   content: "95";
   position: absolute;
   right: 3rem;
-  font-size: 1rem;
-  line-height: 2.2rem;
+  font-size: 0.9rem;
+  line-height: 2.4rem;
   text-align: center;
   color: #FFFFFF;
   background-color: #929EAC; }
@@ -211,8 +216,8 @@ a {
   content: "7";
   position: absolute;
   right: 3rem;
-  font-size: 1rem;
-  line-height: 2.2rem;
+  font-size: 0.9rem;
+  line-height: 2.4rem;
   text-align: center;
   color: #FFFFFF;
   background-color: #929EAC; }
@@ -235,8 +240,8 @@ a {
   content: "7";
   position: absolute;
   right: 3rem;
-  font-size: 1rem;
-  line-height: 2.2rem;
+  font-size: 0.9rem;
+  line-height: 2.4rem;
   text-align: center;
   color: #FFFFFF;
   background-color: #929EAC; }
@@ -259,8 +264,8 @@ a {
   content: "6";
   position: absolute;
   right: 3rem;
-  font-size: 1rem;
-  line-height: 2.2rem;
+  font-size: 0.9rem;
+  line-height: 2.4rem;
   text-align: center;
   color: #FFFFFF;
   background-color: #929EAC; }
@@ -283,8 +288,8 @@ a {
   content: "24";
   position: absolute;
   right: 3rem;
-  font-size: 1rem;
-  line-height: 2.2rem;
+  font-size: 0.9rem;
+  line-height: 2.4rem;
   text-align: center;
   color: #FFFFFF;
   background-color: #929EAC; }
@@ -306,9 +311,8 @@ a {
   max-height: 11.5rem;
   background-color: #FFFFFF;
   padding: 5rem 0;
-  color: #95A0AA;
   font-weight: bold;
-  font-size: 1.5rem; }
+  font-size: 1.3rem; }
   .top-header .top-left, .top-header .top-right {
     -webkit-flex: 1 1 auto;
     flex: 1 1 auto;
@@ -383,7 +387,7 @@ a {
       right: 20%; }
       .modern-menu li .item-wrapper p {
         color: #FFFFFF;
-        font-size: 2rem; }
+        font-size: 1.6rem; }
     .modern-menu li.visitor-infor .icon-visitor-infor {
       background: url("../images/sprite.png") no-repeat;
       display: inline-block;
@@ -422,5 +426,50 @@ a {
         background-position: -33.8rem 0;
         width: 4.9rem;
         height: 5.3rem; }
+
+.todo-section .heading {
+  margin-bottom: 1rem; }
+.todo-section .todo-wrapper {
+  padding: 1.5rem;
+  background-color: #FFFFFF; }
+  .todo-section .todo-wrapper .todo-items {
+    list-style: none;
+    padding-top: 1rem; }
+    .todo-section .todo-wrapper .todo-items li {
+      margin-top: 1.5rem;
+      position: relative; }
+      .todo-section .todo-wrapper .todo-items li input[type="checkbox"] {
+        visibility: hidden;
+        margin-right: 1.2rem; }
+        .todo-section .todo-wrapper .todo-items li input[type="checkbox"] + label {
+          cursor: pointer;
+          position: absolute;
+          width: 25px;
+          height: 25px;
+          top: 0;
+          left: 0;
+          border: 0.2rem solid #E6DEDE;
+          -moz-border-radius: 0.3rem;
+          -webkit-border-radius: 0.3rem;
+          border-radius: 0.3rem; }
+      .todo-section .todo-wrapper .todo-items li input[type="checkbox"]:checked + label {
+        background: #5FAEE3;
+        border: 0.2rem solid #5FAEE3; }
+        .todo-section .todo-wrapper .todo-items li input[type="checkbox"]:checked + label:after {
+          content: '';
+          position: absolute;
+          width: 0.9rem;
+          height: 0.5rem;
+          background: transparent;
+          top: 0.7rem;
+          left: 0.7rem;
+          border: 0.1rem solid #FFFFFF;
+          border-top: none;
+          border-right: none;
+          -webkit-transform: rotate(-45deg);
+          -moz-transform: rotate(-45deg);
+          -o-transform: rotate(-45deg);
+          -ms-transform: rotate(-45deg);
+          transform: rotate(-45deg); }
 
 /*# sourceMappingURL=style.css.map */

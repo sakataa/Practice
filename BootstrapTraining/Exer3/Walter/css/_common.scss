@@ -1,4 +1,4 @@
-$font-family: 'Lato', sans-serif;
+$font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
 $white: #FFFFFF;
 $black: #000000;
 
@@ -6,7 +6,7 @@ $content-bg: #EEEEEE;
 
 $left-header-bg: #34495E;
 
-$mainmenu-fontsize: 1.5rem;
+$mainmenu-fontsize: 1.4rem;
 $submenu-fontsize: 1.2rem;
 
 $menu-text-color: #929EAC;
@@ -37,7 +37,9 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
 }
 
 body {
-  line-height: 1.2; 
+  line-height: 1.2;
+  font-size: 1.2rem;
+  color: $common-color;
 }
 
 table {
@@ -93,8 +95,8 @@ img {
   content: $content;
   position: absolute;
   right: 3rem;
-  font-size: 1rem;
-  line-height: 2.2rem;
+  font-size: 0.9rem;
+  line-height: 2.4rem;
   text-align: center;
   color: $white;
   background-color: $menu-text-color;
@@ -219,6 +221,9 @@ a{
 
 .heading{
   height: 7.2rem;
+  padding-left: 2rem;
+  padding-top: 3rem;
+  font-size: 1.6rem;
   background-color: $heading-bg;
   color: $heading-text-color;
 }

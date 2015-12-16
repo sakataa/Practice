@@ -13,7 +13,9 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   display: block; }
 
 body {
-  line-height: 1.2; }
+  line-height: 1.2;
+  font-size: 1.2rem;
+  color: #95A0AA; }
 
 table {
   border-collapse: collapse;
@@ -34,7 +36,7 @@ img {
 /*Set root font size*/
 html {
   font-size: 10px;
-  font-family: "Lato", sans-serif; }
+  font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif; }
 
 html, body, .main-container {
   width: 100%;
@@ -91,7 +93,7 @@ a {
     display: flex;
     flex-direction: column;
     list-style: none;
-    font-size: 1.5rem; }
+    font-size: 1.4rem; }
     .left-panel .left-menu a {
       color: #929EAC;
       font-weight: bold; }
@@ -123,6 +125,9 @@ a {
 
 .heading {
   height: 7.2rem;
+  padding-left: 2rem;
+  padding-top: 3rem;
+  font-size: 1.6rem;
   background-color: #E5E5E5;
   color: #95A0AA; }
 

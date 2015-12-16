@@ -85,9 +85,8 @@
 	max-height: 11.5rem;
 	background-color: $white;
 	padding: 5rem 0;
-	color: #95A0AA;
 	font-weight: bold;
-	font-size: 1.5rem;
+	font-size: 1.3rem;
 
 	.top-left, .top-right{
 		@include flex-item();
@@ -158,7 +157,7 @@
 
 			p{
 				color: $white;
-				font-size: 2rem;
+				font-size: 1.6rem;
 			}
 		}
 
@@ -189,6 +188,70 @@
 			opacity: 0.6;
 			.icon-logout{
 				@include sprite-position(-33.8rem, 0, 4.9rem, 5.3rem);
+			}
+		}
+	}
+}
+
+.todo-section{
+	.heading{
+		margin-bottom: 1rem;
+	}
+
+	.todo-wrapper{
+		padding: 1.5rem;
+		background-color: $white;
+
+		.todo-items{
+			list-style: none;
+			padding-top: 1rem;
+
+			li{
+				margin-top: 1.5rem;
+				position: relative;
+
+				input[type="checkbox"]{
+					visibility: hidden;
+					margin-right: 1.2rem;
+
+					& + label{
+						cursor: pointer;
+					    position: absolute;
+					    width: 25px;
+					    height: 25px;
+					    top: 0;
+					    left: 0;				    
+					    border: 0.2rem solid #E6DEDE;
+					    -moz-border-radius: 0.3rem;
+					  	-webkit-border-radius: 0.3rem;
+					  	border-radius: 0.3rem;
+					}
+				}
+
+				input[type="checkbox"]:checked{
+					& + label{
+						background: #5FAEE3;
+						border: 0.2rem solid #5FAEE3;
+
+						&:after{
+							content: '';
+						    position: absolute;
+						    width: 0.9rem;
+						    height: 0.5rem;
+						    background: transparent;
+						    top: 0.7rem;
+						    left: 0.7rem;
+						    border: 0.1rem solid $white;
+						    border-top: none;
+						    border-right: none;
+						    -webkit-transform: rotate(-45deg);
+						    -moz-transform: rotate(-45deg);
+						    -o-transform: rotate(-45deg);
+						    -ms-transform: rotate(-45deg);
+						    transform: rotate(-45deg);
+						}
+					}
+				}
 			}
 		}
 	}
