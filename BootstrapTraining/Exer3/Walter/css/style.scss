@@ -99,6 +99,11 @@
 
 		li{
 			margin-right: 5rem;
+			cursor: pointer;
+
+			&:hover{
+		        color: #535658;     
+		     }
 		}
 
 		.notification{
@@ -118,6 +123,11 @@
 		justify-content: flex-end;
 		margin-right: 5rem;
 		position: relative;
+		cursor: pointer;
+
+		&:hover {
+	         color: #535658;     
+	     }
 
 		.account-infor{
 			&:before{
@@ -149,6 +159,11 @@
 		position: relative;
 		text-align: center;
 		line-height: 6rem;
+		cursor: pointer;
+
+		&:hover{
+			background-color: #FBB940;
+		}
 
 		.item-wrapper{
 			position: absolute;
@@ -210,6 +225,11 @@
 			padding: 2.5rem;
 			font-size: 1.6rem;
 			color: $white;
+			cursor: pointer;
+
+			&:hover{
+				background-color: #FBB940;
+			}
 
 			&:after{
 				content: '';
@@ -244,6 +264,10 @@
 		    align-items: center;
 		    .icon-add{
 			    margin-right: 2rem;
+
+			    &:hover{
+					background-color: #2A9AE4;
+				}
 			}
 		}
 
@@ -346,7 +370,7 @@
 		.heading{
 			background-color: $tile-bg;
 			color: $white;
-			height: 6rem;
+			height: 6.4rem;
 			padding-top:2rem;
 			text-align: right;
 			padding-right: 6rem;
@@ -469,7 +493,12 @@
 			background-color: $tile-bg;
 			color: white;
 			@include border-radius(0.4rem);
-			border: 0.1rem solid $black;
+			border: 0.1rem solid #EEEEEE;
+			cursor: pointer;
+
+			&:hover{
+				background-color: #2A9AE4;
+			}
 		}
 	}
 }

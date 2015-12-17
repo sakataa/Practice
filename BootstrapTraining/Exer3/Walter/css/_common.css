@@ -84,8 +84,7 @@ a {
   order: 1;
   background-color: #34495E;
   color: #929EAC;
-  max-width: 35rem;
-  height: 100%; }
+  max-width: 40rem; }
   .left-panel .menu-header {
     background-color: #2C3E50;
     position: relative; }
@@ -104,6 +103,8 @@ a {
       padding-left: 4rem;
       padding-right: 3rem;
       position: relative; }
+      .left-panel .left-menu li:hover > a {
+        color: #D6DDE4; }
       .left-panel .left-menu li.active-menu {
         background-color: #2C3E50;
         padding-top: 4rem;

@@ -84,8 +84,7 @@ a {
   order: 1;
   background-color: #34495E;
   color: #929EAC;
-  max-width: 35rem;
-  height: 100%; }
+  max-width: 40rem; }
   .left-panel .menu-header {
     background-color: #2C3E50;
     position: relative; }
@@ -104,6 +103,8 @@ a {
       padding-left: 4rem;
       padding-right: 3rem;
       position: relative; }
+      .left-panel .left-menu li:hover > a {
+        color: #D6DDE4; }
       .left-panel .left-menu li.active-menu {
         background-color: #2C3E50;
         padding-top: 4rem;
@@ -357,7 +358,10 @@ a {
     display: flex;
     margin-left: 8rem; }
     .top-header .top-left li {
-      margin-right: 5rem; }
+      margin-right: 5rem;
+      cursor: pointer; }
+      .top-header .top-left li:hover {
+        color: #535658; }
     .top-header .top-left .notification {
       position: relative; }
       .top-header .top-left .notification span {
@@ -382,7 +386,10 @@ a {
     display: flex;
     justify-content: flex-end;
     margin-right: 5rem;
-    position: relative; }
+    position: relative;
+    cursor: pointer; }
+    .top-header .top-right:hover {
+      color: #535658; }
     .top-header .top-right .account-infor:before {
       content: '';
       background: url("../images/sprite.png") no-repeat;
@@ -415,7 +422,10 @@ a {
     height: 26rem;
     position: relative;
     text-align: center;
-    line-height: 6rem; }
+    line-height: 6rem;
+    cursor: pointer; }
+    .modern-menu li:hover {
+      background-color: #FBB940; }
     .modern-menu li .item-wrapper {
       position: absolute;
       bottom: 20%;
@@ -478,7 +488,10 @@ a {
       background-color: #5FAEE3;
       padding: 2.5rem;
       font-size: 1.6rem;
-      color: #FFFFFF; }
+      color: #FFFFFF;
+      cursor: pointer; }
+      .statistics-section .storage-usage-statistics .bottom-title:hover {
+        background-color: #FBB940; }
       .statistics-section .storage-usage-statistics .bottom-title:after {
         content: '';
         background: url("../images/sprite.png") no-repeat;
@@ -512,6 +525,8 @@ a {
       align-items: center; }
       .note-section .todo-section .heading .icon-add {
         margin-right: 2rem; }
+        .note-section .todo-section .heading .icon-add:hover {
+          background-color: #2A9AE4; }
     .note-section .todo-section .todo-wrapper {
       padding: 1.5rem;
       background-color: #FFFFFF; }
@@ -593,7 +608,7 @@ a {
     .note-section .forecast-section .heading {
       background-color: #5FAEE3;
       color: #FFFFFF;
-      height: 6rem;
+      height: 6.4rem;
       padding-top: 2rem;
       text-align: right;
       padding-right: 6rem;
@@ -699,7 +714,10 @@ a {
       -moz-border-radius: 0.4rem;
       -webkit-border-radius: 0.4rem;
       border-radius: 0.4rem;
-      border: 0.1rem solid #000000; }
+      border: 0.1rem solid #EEEEEE;
+      cursor: pointer; }
+      .about-section .quick-note .btnSubmit:hover {
+        background-color: #2A9AE4; }
 
 .footer {
   text-align: center; }

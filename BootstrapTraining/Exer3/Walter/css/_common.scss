@@ -174,8 +174,7 @@ a{
   order: 1;
   background-color: $left-header-bg;
   color: $menu-text-color;
-  max-width: 35rem;
-  height: 100%;
+  max-width: 40rem;
 
   .menu-header{
       background-color: $left-active-bg;
@@ -198,6 +197,10 @@ a{
       padding-left: 4rem;
       padding-right: 3rem;
       position: relative;
+
+      &:hover > a{
+          color: #D6DDE4;     
+      }
 
       &.active-menu{
         background-color: $left-active-bg;
