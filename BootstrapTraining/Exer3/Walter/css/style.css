@@ -126,16 +126,16 @@ a {
   border: 0; }
 
 .heading {
-  height: 7.2rem;
+  height: 6rem;
   padding-left: 2rem;
-  padding-top: 3rem;
+  padding-top: 2.5rem;
   font-size: 1.6rem;
   background-color: #E5E5E5;
   color: #95A0AA; }
 
 .right-panel {
-  -webkit-flex: 1 1 100%;
-  flex: 1 1 100%;
+  -webkit-flex: 1 1 0;
+  flex: 1 1 0;
   -webkit-order: 2;
   order: 2; }
 
@@ -143,14 +143,36 @@ a {
   padding: 3rem; }
 
 .new-section {
-  margin-top: 3rem;
+  margin-top: 1rem;
   padding-bottom: 3rem; }
 
-.relative-positon {
+.relative-position {
   position: relative; }
 
 .section-item {
   margin-right: 3rem; }
+
+.icon-add {
+  -moz-border-radius: 0.5rem;
+  -webkit-border-radius: 0.5rem;
+  border-radius: 0.5rem;
+  background-color: #5FAEE3;
+  border: 0.2rem solid #5FAEE3;
+  cursor: pointer;
+  width: 4rem;
+  height: 4rem;
+  position: relative;
+  display: inline-block; }
+  .icon-add:before {
+    content: '';
+    background: url("../images/sprite.png") no-repeat;
+    display: inline-block;
+    background-position: -28.1rem -8.5rem;
+    width: 1.7rem;
+    height: 1.7rem;
+    position: absolute;
+    top: 25%;
+    left: 25%; }
 
 .logo {
   background: url("../images/sprite.png") no-repeat;
@@ -326,8 +348,8 @@ a {
   font-weight: bold;
   font-size: 1.3rem; }
   .top-header .top-left, .top-header .top-right {
-    -webkit-flex: 1 1 100%;
-    flex: 1 1 100%;
+    -webkit-flex: 1 1 0;
+    flex: 1 1 0;
     list-style: none; }
   .top-header .top-left {
     display: -webkit-flex;
@@ -384,7 +406,8 @@ a {
   display: -webkit-flex;
   /* Safari */
   display: flex;
-  list-style: none; }
+  list-style: none;
+  padding: 1rem 0; }
   .modern-menu li {
     -webkit-flex: 1 1 20%;
     flex: 1 1 20%;
@@ -442,103 +465,102 @@ a {
 .statistics-section {
   display: -webkit-flex;
   /* Safari */
-  display: flex;
-  -webkit-justify-content: space-between;
-  justify-content: space-between; }
+  display: flex; }
   .statistics-section .quick-statistics {
-    -webkit-flex: 1 1 100%;
-    flex: 1 1 100%;
+    -webkit-flex: 2 1 0;
+    flex: 2 1 0;
     margin-right: 3rem; }
   .statistics-section .storage-usage-statistics {
-    -webkit-flex: 1 1 100%;
-    flex: 1 1 100%; }
+    -webkit-flex: 1 1 0;
+    flex: 1 1 0; }
+    .statistics-section .storage-usage-statistics .bottom-title {
+      height: 7rem;
+      background-color: #5FAEE3;
+      padding: 2.5rem;
+      font-size: 1.6rem;
+      color: #FFFFFF; }
+      .statistics-section .storage-usage-statistics .bottom-title:after {
+        content: '';
+        background: url("../images/sprite.png") no-repeat;
+        display: inline-block;
+        background-position: -32.1rem -8rem;
+        width: 1.2rem;
+        height: 2.2rem;
+        position: absolute;
+        font-size: 1.2rem;
+        top: 2.5rem;
+        right: 3rem; }
 
 .note-section {
   display: -webkit-flex;
   /* Safari */
-  display: flex;
-  justify-content: space-around; }
+  display: flex; }
   .note-section .section-item {
-    -webkit-flex: 1 1 100%;
-    flex: 1 1 100%; }
+    -webkit-flex: 1 1 0;
+    flex: 1 1 0; }
   .note-section .todo-section, .note-section .forecast-section {
-    margin-right: 3rem; }
-  .note-section .todo-section .heading {
-    padding-top: 0;
-    display: -webkit-flex;
-    /* Safari */
-    display: flex;
-    align-items: center; }
-    .note-section .todo-section .heading .icon-add {
-      -moz-border-radius: 0.5rem;
-      -webkit-border-radius: 0.5rem;
-      border-radius: 0.5rem;
-      background-color: #5FAEE3;
-      border: 0.2rem solid #5FAEE3;
-      cursor: pointer;
-      width: 4rem;
-      height: 4rem;
-      margin-right: 2rem;
-      position: relative;
-      display: inline-block; }
-      .note-section .todo-section .heading .icon-add:before {
-        content: '';
-        background: url("../images/sprite.png") no-repeat;
-        display: inline-block;
-        background-position: -28.1rem -8.5rem;
-        width: 1.7rem;
-        height: 1.7rem;
-        position: absolute;
-        top: 25%;
-        left: 25%; }
-  .note-section .todo-section .todo-wrapper {
-    padding: 1.5rem;
+    margin-right: 1.5rem; }
+  .note-section .forecast-section, .note-section .quote-section {
+    margin-left: 1.5rem; }
+  .note-section .todo-section {
     background-color: #FFFFFF; }
-    .note-section .todo-section .todo-wrapper .heading {
-      -moz-border-radius: 0.3rem;
-      -webkit-border-radius: 0.3rem;
-      border-radius: 0.3rem;
-      height: 5rem;
-      background-color: #EEEEEE; }
-    .note-section .todo-section .todo-wrapper .todo-items {
-      list-style: none;
-      padding-top: 1rem; }
-      .note-section .todo-section .todo-wrapper .todo-items li {
-        margin-top: 1.5rem;
-        position: relative; }
-        .note-section .todo-section .todo-wrapper .todo-items li input[type="checkbox"] {
-          visibility: hidden;
-          margin-right: 1.2rem; }
-          .note-section .todo-section .todo-wrapper .todo-items li input[type="checkbox"] + label {
-            cursor: pointer;
-            position: absolute;
-            width: 2.5rem;
-            height: 2.5rem;
-            top: 0;
-            left: 0;
-            border: 0.2rem solid #E6DEDE;
-            -moz-border-radius: 0.3rem;
-            -webkit-border-radius: 0.3rem;
-            border-radius: 0.3rem; }
-        .note-section .todo-section .todo-wrapper .todo-items li input[type="checkbox"]:checked + label {
-          background: #5FAEE3;
-          border: 0.2rem solid #5FAEE3; }
-          .note-section .todo-section .todo-wrapper .todo-items li input[type="checkbox"]:checked + label:after {
-            content: '';
-            position: absolute;
-            width: 0.9rem;
-            height: 0.5rem;
-            background: transparent;
-            top: 0.7rem;
-            left: 0.7rem;
-            border: 0.1rem solid #FFFFFF;
-            border-top: none;
-            border-right: none;
-            -webkit-transform: rotate(-45deg);
-            -moz-transform: rotate(-45deg);
-            -o-transform: rotate(-45deg);
-            -ms-transform: rotate(-45deg);
-            transform: rotate(-45deg); }
+    .note-section .todo-section .heading {
+      padding-top: 0;
+      display: -webkit-flex;
+      /* Safari */
+      display: flex;
+      align-items: center; }
+      .note-section .todo-section .heading .icon-add {
+        margin-right: 2rem; }
+    .note-section .todo-section .todo-wrapper {
+      padding: 1.5rem;
+      background-color: #FFFFFF; }
+      .note-section .todo-section .todo-wrapper .heading {
+        -moz-border-radius: 0.3rem;
+        -webkit-border-radius: 0.3rem;
+        border-radius: 0.3rem;
+        height: 4rem;
+        background-color: #EEEEEE; }
+      .note-section .todo-section .todo-wrapper .todo-items {
+        list-style: none;
+        padding-top: 1rem; }
+        .note-section .todo-section .todo-wrapper .todo-items li {
+          line-height: 2rem;
+          margin-top: 2rem;
+          position: relative; }
+          .note-section .todo-section .todo-wrapper .todo-items li input[type="checkbox"] {
+            visibility: hidden;
+            margin-right: 1.2rem; }
+            .note-section .todo-section .todo-wrapper .todo-items li input[type="checkbox"] + label {
+              cursor: pointer;
+              position: absolute;
+              width: 2.5rem;
+              height: 2.5rem;
+              top: 0;
+              left: 0;
+              border: 0.2rem solid #E6DEDE;
+              -moz-border-radius: 0.3rem;
+              -webkit-border-radius: 0.3rem;
+              border-radius: 0.3rem; }
+          .note-section .todo-section .todo-wrapper .todo-items li input[type="checkbox"]:checked + label {
+            background: #5FAEE3;
+            border: 0.2rem solid #5FAEE3; }
+            .note-section .todo-section .todo-wrapper .todo-items li input[type="checkbox"]:checked + label:after {
+              content: '';
+              position: absolute;
+              width: 0.9rem;
+              height: 0.5rem;
+              background: transparent;
+              top: 0.7rem;
+              left: 0.7rem;
+              border: 0.1rem solid #FFFFFF;
+              border-top: none;
+              border-right: none;
+              -webkit-transform: rotate(-45deg);
+              -moz-transform: rotate(-45deg);
+              -o-transform: rotate(-45deg);
+              -ms-transform: rotate(-45deg);
+              transform: rotate(-45deg); }
   .note-section .forecast-section {
     color: #FFFFFF;
     background: url("../images/img_03.png") no-repeat;
@@ -571,12 +593,22 @@ a {
     .note-section .forecast-section .heading {
       background-color: #5FAEE3;
       color: #FFFFFF;
-      height: 5rem;
+      height: 6rem;
       padding-top: 2rem;
       text-align: right;
-      padding-right: 2rem;
+      padding-right: 6rem;
       width: 100%;
       clear: both; }
+      .note-section .forecast-section .heading:after {
+        content: '';
+        background: url("../images/sprite.png") no-repeat;
+        display: inline-block;
+        background-position: -23.1rem -7.6rem;
+        width: 3rem;
+        height: 3rem;
+        position: absolute;
+        top: 1.5rem;
+        right: 2rem; }
   .note-section .quote-section {
     margin-right: 0;
     background-color: #5FAEE3;
@@ -584,20 +616,99 @@ a {
     text-align: center;
     font-size: 2.5rem; }
     .note-section .quote-section p {
-      padding-top: 6rem; }
+      padding: 4rem;
+      font-style: italic;
+      margin-top: 5rem;
+      font-size: 3rem; }
+    .note-section .quote-section i {
+      line-height: 10rem;
+      font-size: 1.5rem; }
 
 .about-section {
   display: -webkit-flex;
   /* Safari */
   display: flex; }
+  .about-section .author-section, .about-section .quick-note {
+    -webkit-flex: 1 1 0;
+    flex: 1 1 0;
+    padding-bottom: 2rem; }
   .about-section .author-section {
-    -webkit-flex: 1 1 100%;
-    flex: 1 1 100%; }
+    background-color: #FFFFFF; }
     .about-section .author-section .author-infor {
       background: url("../images/img1_03.png") no-repeat;
-      text-align: center; }
+      height: 40rem;
+      text-align: center;
+      color: #FFFFFF; }
+      .about-section .author-section .author-infor .icon-add {
+        float: right;
+        margin-top: 2rem;
+        margin-right: 2rem; }
+      .about-section .author-section .author-infor h3 {
+        font-size: 2rem; }
+      .about-section .author-section .author-infor .text-content {
+        padding: 3rem 7rem;
+        line-height: 2rem; }
+      .about-section .author-section .author-infor .author-img {
+        background: url("../images/sprite.png") no-repeat;
+        display: inline-block;
+        background-position: -26.1rem -15.2rem;
+        width: 21rem;
+        height: 22.6rem;
+        position: absolute;
+        bottom: -20%;
+        left: 30%; }
+    .about-section .author-section .statistics-infor {
+      font-weight: bold;
+      margin: auto;
+      color: #777777; }
+      .about-section .author-section .statistics-infor table {
+        margin: 0 auto;
+        border: 0;
+        margin-top: 10rem;
+        font-size: 2.5rem; }
+        .about-section .author-section .statistics-infor table th, .about-section .author-section .statistics-infor table td {
+          padding: 1rem;
+          text-align: center; }
   .about-section .quick-note {
-    -webkit-flex: 1 1 100%;
-    flex: 1 1 100%; }
+    background-color: #FFFFFF; }
+    .about-section .quick-note form {
+      padding: 2rem 4rem; }
+    .about-section .quick-note .form-control {
+      -moz-border-radius: 0.4rem;
+      -webkit-border-radius: 0.4rem;
+      border-radius: 0.4rem;
+      display: block;
+      border: 0.3rem solid #EEEEEE;
+      background-color: #EEEEEE;
+      padding: 1.2rem;
+      margin: 2.5rem 0;
+      width: 100%;
+      height: 6rem;
+      font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif; }
+    .about-section .quick-note .form-note-content {
+      margin-top: 4rem;
+      height: 26rem;
+      resize: none; }
+    .about-section .quick-note .btnSubmit {
+      width: 16rem;
+      height: 5rem;
+      margin-top: 2rem;
+      float: right;
+      background-color: #5FAEE3;
+      color: white;
+      -moz-border-radius: 0.4rem;
+      -webkit-border-radius: 0.4rem;
+      border-radius: 0.4rem;
+      border: 0.1rem solid #000000; }
+
+.footer {
+  text-align: center; }
+  .footer .icon-footer {
+    background: url("../images/sprite.png") no-repeat;
+    display: inline-block;
+    background-position: -35rem -7.7rem;
+    width: 2.6rem;
+    height: 2.7rem;
+    margin-right: 1rem; }
 
 /*# sourceMappingURL=style.css.map */

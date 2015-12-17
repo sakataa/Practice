@@ -140,6 +140,7 @@
 .modern-menu{
 	@include flex-container();
 	list-style: none;
+	padding: 1rem 0;
 
 	li{
 		@include flex-item(1, 1, 20%);
@@ -194,52 +195,55 @@
 
 .statistics-section{
 	@include flex-container();
-	-webkit-justify-content: space-between; 
-  	justify-content: space-between;
 
 	.quick-statistics{
-		@include flex-item();
+		@include flex-item(2,1,0);
 		margin-right: 3rem;
 	}
 
 	.storage-usage-statistics{
 		@include flex-item();
+
+		.bottom-title{
+			height: 7rem;
+			background-color: $tile-bg;
+			padding: 2.5rem;
+			font-size: 1.6rem;
+			color: $white;
+
+			&:after{
+				content: '';
+				@include sprite-position(-32.1rem, -8rem, 1.2rem, 2.2rem);
+				position: absolute;
+				font-size: 1.2rem;
+				top: 2.5rem;
+				right: 3rem;
+			}
+		}
 	}
 }
 
 .note-section{
 	@include flex-container();
-	justify-content: space-around;
 
 	.section-item{
 		@include flex-item();
 	}
 	.todo-section, .forecast-section{
-		margin-right: 3rem;
+		margin-right: 1.5rem;
+	}
+	.forecast-section, .quote-section{
+		margin-left: 1.5rem;
 	}
 
 	.todo-section{
+		background-color: $white;
 		.heading{
 			padding-top: 0;
 			@include flex-container();
 		    align-items: center;
-			.icon-add{
-				@include border-radius(0.5rem);
-				background-color: $tile-bg;
-				border: 0.2rem solid $tile-bg;
-				cursor: pointer;
-			    width: 4rem;
-			    height: 4rem;
+		    .icon-add{
 			    margin-right: 2rem;
-			    position: relative;
-			    display: inline-block;
-				&:before{
-					content: '';
-					@include sprite-position(-28.1rem, -8.5rem, 1.7rem, 1.7rem);
-					position: absolute;
-					top: 25%;
-					left: 25%;
-				}
 			}
 		}
 
@@ -249,7 +253,7 @@
 
 			.heading{
 				@include border-radius(0.3rem);
-				height: 5rem;
+				height: 4rem;
 				background-color: #EEEEEE;
 			}
 			.todo-items{
@@ -257,7 +261,8 @@
 				padding-top: 1rem;
 
 				li{
-					margin-top: 1.5rem;
+					line-height: 2rem;
+					margin-top: 2rem;
 					position: relative;
 
 					input[type="checkbox"]{
@@ -341,12 +346,20 @@
 		.heading{
 			background-color: $tile-bg;
 			color: $white;
-			height: 5rem;
+			height: 6rem;
 			padding-top:2rem;
 			text-align: right;
-			padding-right: 2rem;
+			padding-right: 6rem;
 			width: 100%;
 			clear:both;
+
+			&:after{
+				content: '';
+				@include sprite-position(-23.1rem, -7.6rem, 3rem, 3rem);
+				position: absolute;
+				top: 1.5rem;
+				right: 2rem;
+			}
 		}
 	}
 
@@ -357,24 +370,116 @@
 		text-align: center;
 		font-size: 2.5rem;
 		p{
-			padding-top: 6rem;
+			padding: 4rem;
+		    font-style: italic;
+		    margin-top: 5rem;
+		    font-size: 3rem;
+		}
+
+		i{
+			line-height: 10rem;
+    		font-size: 1.5rem;
 		}
 	}
 }
 
 .about-section{
 	@include flex-container();
+	.author-section, .quick-note{
+		@include flex-item();
+		padding-bottom: 2rem;
+	}
 
 	.author-section{
-		@include flex-item();
-
+		background-color: $white;
 		.author-infor{
-			background: url('../images/img1_03.png')  no-repeat;
+		  	background: url('../images/img1_03.png') no-repeat;
+		  	height: 40rem;
 			text-align: center;
+			color: $white;
+
+			.icon-add{
+			    float: right;
+			    margin-top: 2rem;
+			    margin-right: 2rem;
+			}
+
+			h3{
+				font-size: 2rem;
+			}
+
+			.text-content{
+				padding: 3rem 7rem;
+				line-height: 2rem;
+			}
+
+			.author-img{
+				@include sprite-position(-26.1rem, -15.2rem, 21rem, 22.6rem);
+				position: absolute;
+				bottom: -20%;
+				left: 30%;
+			}
+		}
+
+		.statistics-infor{
+			font-weight: bold;
+			margin: auto;
+			color: #777777;
+			table{
+				margin: 0 auto;
+				border: 0;
+				margin-top: 10rem;
+				font-size: 2.5rem;
+
+				th, td {
+				    padding: 1rem;
+				    text-align: center;
+				}
+			}
 		}
 	}
 	.quick-note{
-		@include flex-item();
+		background-color: $white;
+		form{
+			padding: 2rem 4rem;
+		}
+		.form-control {
+			@include border-radius(0.4rem);
+			display: block;
+			border: 0.3rem solid #EEEEEE;
+			background-color: #EEEEEE;
+			padding: 1.2rem;
+			margin: 2.5rem 0;
+			width: 100%;
+			height: 6rem;
+			font-family: $font-family;
+		}
+
+		.form-note-content{
+			margin-top: 4rem;
+			height: 26rem;
+			resize: none;
+		}
+
+		.btnSubmit{
+			width: 16rem;
+			height: 5rem;
+			margin-top: 2rem;
+			float: right;
+			background-color: $tile-bg;
+			color: white;
+			@include border-radius(0.4rem);
+			border: 0.1rem solid $black;
+		}
+	}
+}
+
+.footer{
+	text-align: center;
+	
+	.icon-footer{
+		@include sprite-position(-35rem, -7.7rem, 2.6rem, 2.7rem);
+		margin-right: 1rem;
 	}
 }
 

@@ -126,16 +126,16 @@ a {
   border: 0; }
 
 .heading {
-  height: 7.2rem;
+  height: 6rem;
   padding-left: 2rem;
-  padding-top: 3rem;
+  padding-top: 2.5rem;
   font-size: 1.6rem;
   background-color: #E5E5E5;
   color: #95A0AA; }
 
 .right-panel {
-  -webkit-flex: 1 1 100%;
-  flex: 1 1 100%;
+  -webkit-flex: 1 1 0;
+  flex: 1 1 0;
   -webkit-order: 2;
   order: 2; }
 
@@ -143,13 +143,35 @@ a {
   padding: 3rem; }
 
 .new-section {
-  margin-top: 3rem;
+  margin-top: 1rem;
   padding-bottom: 3rem; }
 
-.relative-positon {
+.relative-position {
   position: relative; }
 
 .section-item {
   margin-right: 3rem; }
+
+.icon-add {
+  -moz-border-radius: 0.5rem;
+  -webkit-border-radius: 0.5rem;
+  border-radius: 0.5rem;
+  background-color: #5FAEE3;
+  border: 0.2rem solid #5FAEE3;
+  cursor: pointer;
+  width: 4rem;
+  height: 4rem;
+  position: relative;
+  display: inline-block; }
+  .icon-add:before {
+    content: '';
+    background: url("../images/sprite.png") no-repeat;
+    display: inline-block;
+    background-position: -28.1rem -8.5rem;
+    width: 1.7rem;
+    height: 1.7rem;
+    position: absolute;
+    top: 25%;
+    left: 25%; }
 
 /*# sourceMappingURL=_common.css.map */

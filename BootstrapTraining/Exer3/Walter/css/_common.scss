@@ -90,7 +90,7 @@ img {
   display: flex;
 }
 
-@mixin flex-item($grow: 1, $shrink: 1, $basis: 100%){
+@mixin flex-item($grow: 1, $shrink: 1, $basis: 0){
     -webkit-flex: $grow $shrink $basis;
     flex: $grow $shrink $basis;
 }
@@ -228,9 +228,9 @@ a{
 }
 
 .heading{
-  height: 7.2rem;
+  height: 6rem;
   padding-left: 2rem;
-  padding-top: 3rem;
+  padding-top: 2.5rem;
   font-size: 1.6rem;
   background-color: $heading-bg;
   color: $heading-text-color;
@@ -247,14 +247,32 @@ a{
 }
 
 .new-section{
-  margin-top: 3rem;
+  margin-top: 1rem;
   padding-bottom: 3rem;
 }
 
-.relative-positon{
+.relative-position{
   position: relative;
 }
 
 .section-item{
   margin-right: 3rem;
+}
+
+.icon-add{
+  @include border-radius(0.5rem);
+  background-color: $tile-bg;
+  border: 0.2rem solid $tile-bg;
+  cursor: pointer;
+    width: 4rem;
+    height: 4rem;
+    position: relative;
+    display: inline-block;
+  &:before{
+    content: '';
+    @include sprite-position(-28.1rem, -8.5rem, 1.7rem, 1.7rem);
+    position: absolute;
+    top: 25%;
+    left: 25%;
+  }
 }
