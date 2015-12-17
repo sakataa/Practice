@@ -134,8 +134,8 @@ a {
   color: #95A0AA; }
 
 .right-panel {
-  -webkit-flex: 1 1 auto;
-  flex: 1 1 auto;
+  -webkit-flex: 1 1 100%;
+  flex: 1 1 100%;
   -webkit-order: 2;
   order: 2; }
 
@@ -148,6 +148,9 @@ a {
 
 .relative-positon {
   position: relative; }
+
+.section-item {
+  margin-right: 3rem; }
 
 .logo {
   background: url("../images/sprite.png") no-repeat;
@@ -323,8 +326,8 @@ a {
   font-weight: bold;
   font-size: 1.3rem; }
   .top-header .top-left, .top-header .top-right {
-    -webkit-flex: 1 1 auto;
-    flex: 1 1 auto;
+    -webkit-flex: 1 1 100%;
+    flex: 1 1 100%;
     list-style: none; }
   .top-header .top-left {
     display: -webkit-flex;
@@ -443,21 +446,21 @@ a {
   -webkit-justify-content: space-between;
   justify-content: space-between; }
   .statistics-section .quick-statistics {
-    -webkit-flex: 1 1 auto;
-    flex: 1 1 auto;
+    -webkit-flex: 1 1 100%;
+    flex: 1 1 100%;
     margin-right: 3rem; }
   .statistics-section .storage-usage-statistics {
-    -webkit-flex: 1 1 auto;
-    flex: 1 1 auto; }
+    -webkit-flex: 1 1 100%;
+    flex: 1 1 100%; }
 
 .note-section {
   display: -webkit-flex;
   /* Safari */
   display: flex;
-  justify-content: space-between; }
+  justify-content: space-around; }
   .note-section .section-item {
-    -webkit-flex: 1 1 33%;
-    flex: 1 1 33%; }
+    -webkit-flex: 1 1 100%;
+    flex: 1 1 100%; }
   .note-section .todo-section, .note-section .forecast-section {
     margin-right: 3rem; }
   .note-section .todo-section .heading {
@@ -536,57 +539,65 @@ a {
             -o-transform: rotate(-45deg);
             -ms-transform: rotate(-45deg);
             transform: rotate(-45deg); }
-
-.forecast-section {
-  color: #FFFFFF;
-  background: url("../images/img_03.png");
-  position: relative; }
-  .forecast-section .top-text {
-    top: 2rem;
-    left: 2rem;
-    font-size: 1.6rem; }
-  .forecast-section .left-bottom-text, .forecast-section .right-bottom-text {
-    width: 50%;
-    float: left;
-    font-size: 1.8rem;
-    padding: 0 2rem;
-    font-weight: 400;
-    margin-bottom: 2rem; }
-  .forecast-section .left-bottom-text {
-    text-align: left; }
-  .forecast-section .right-bottom-text {
-    text-align: right; }
-    .forecast-section .right-bottom-text .temperature:before {
-      content: '\00b0'; }
-  .forecast-section .icon-forecast {
-    background: url("../images/sprite.png") no-repeat;
-    display: inline-block;
-    background-position: -1rem -14rem;
-    width: 22rem;
-    height: 20rem;
-    margin-top: 8%;
-    margin-left: 20%; }
-  .forecast-section .heading {
+  .note-section .forecast-section {
+    color: #FFFFFF;
+    background: url("../images/img_03.png") no-repeat;
+    position: relative; }
+    .note-section .forecast-section .top-text {
+      margin-top: 2rem;
+      margin-left: 2rem;
+      font-size: 1.6rem; }
+    .note-section .forecast-section .left-bottom-text, .note-section .forecast-section .right-bottom-text {
+      width: 50%;
+      float: left;
+      font-size: 1.8rem;
+      padding: 0 2rem;
+      font-weight: 400;
+      margin-bottom: 2rem; }
+    .note-section .forecast-section .left-bottom-text {
+      text-align: left; }
+    .note-section .forecast-section .right-bottom-text {
+      text-align: right; }
+      .note-section .forecast-section .right-bottom-text .temperature:before {
+        content: '\00b0'; }
+    .note-section .forecast-section .icon-forecast {
+      background: url("../images/sprite.png") no-repeat;
+      display: inline-block;
+      background-position: -1rem -14rem;
+      width: 22rem;
+      height: 20rem;
+      margin-top: 8%;
+      margin-left: 20%; }
+    .note-section .forecast-section .heading {
+      background-color: #5FAEE3;
+      color: #FFFFFF;
+      height: 5rem;
+      padding-top: 2rem;
+      text-align: right;
+      padding-right: 2rem;
+      width: 100%;
+      clear: both; }
+  .note-section .quote-section {
+    margin-right: 0;
     background-color: #5FAEE3;
     color: #FFFFFF;
-    height: 5rem;
-    padding-top: 2rem;
-    text-align: right;
-    padding-right: 2rem;
-    width: 100%;
-    clear: both; }
+    text-align: center;
+    font-size: 2.5rem; }
+    .note-section .quote-section p {
+      padding-top: 6rem; }
 
-.quote-section {
+.about-section {
   display: -webkit-flex;
   /* Safari */
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  background-color: #5FAEE3;
-  justify-content: center;
-  color: #FFFFFF;
-  padding: 4rem;
-  padding-top: 5rem;
-  font-size: 3rem; }
+  display: flex; }
+  .about-section .author-section {
+    -webkit-flex: 1 1 100%;
+    flex: 1 1 100%; }
+    .about-section .author-section .author-infor {
+      background: url("../images/img1_03.png") no-repeat;
+      text-align: center; }
+  .about-section .quick-note {
+    -webkit-flex: 1 1 100%;
+    flex: 1 1 100%; }
 
 /*# sourceMappingURL=style.css.map */

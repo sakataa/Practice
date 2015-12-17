@@ -134,8 +134,8 @@ a {
   color: #95A0AA; }
 
 .right-panel {
-  -webkit-flex: 1 1 auto;
-  flex: 1 1 auto;
+  -webkit-flex: 1 1 100%;
+  flex: 1 1 100%;
   -webkit-order: 2;
   order: 2; }
 
@@ -148,5 +148,8 @@ a {
 
 .relative-positon {
   position: relative; }
+
+.section-item {
+  margin-right: 3rem; }
 
 /*# sourceMappingURL=_common.css.map */
