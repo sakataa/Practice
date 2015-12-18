@@ -476,20 +476,26 @@ a {
   display: -webkit-flex;
   /* Safari */
   display: flex; }
+  .statistics-section img {
+    width: 100%; }
   .statistics-section .quick-statistics {
     -webkit-flex: 2 1 0;
     flex: 2 1 0;
     margin-right: 3rem; }
   .statistics-section .storage-usage-statistics {
     -webkit-flex: 1 1 0;
-    flex: 1 1 0; }
+    flex: 1 1 0;
+    background-color: #FFFFFF; }
     .statistics-section .storage-usage-statistics .bottom-title {
       height: 7rem;
       background-color: #5FAEE3;
       padding: 2.5rem;
       font-size: 1.6rem;
       color: #FFFFFF;
-      cursor: pointer; }
+      cursor: pointer;
+      position: absolute;
+      bottom: 0;
+      width: 100%; }
       .statistics-section .storage-usage-statistics .bottom-title:hover {
         background-color: #FBB940; }
       .statistics-section .storage-usage-statistics .bottom-title:after {
@@ -579,6 +585,7 @@ a {
   .note-section .forecast-section {
     color: #FFFFFF;
     background: url("../images/img_03.png") no-repeat;
+    background-size: cover;
     position: relative; }
     .note-section .forecast-section .top-text {
       margin-top: 2rem;
@@ -603,7 +610,7 @@ a {
       background-position: -1rem -14rem;
       width: 22rem;
       height: 20rem;
-      margin-top: 8%;
+      margin-top: 4%;
       margin-left: 20%; }
     .note-section .forecast-section .heading {
       background-color: #5FAEE3;
@@ -613,7 +620,8 @@ a {
       text-align: right;
       padding-right: 6rem;
       width: 100%;
-      clear: both; }
+      position: absolute;
+      bottom: 0; }
       .note-section .forecast-section .heading:after {
         content: '';
         background: url("../images/sprite.png") no-repeat;
@@ -651,6 +659,7 @@ a {
     background-color: #FFFFFF; }
     .about-section .author-section .author-infor {
       background: url("../images/img1_03.png") no-repeat;
+      background-size: cover;
       height: 40rem;
       text-align: center;
       color: #FFFFFF; }

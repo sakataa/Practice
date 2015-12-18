@@ -211,6 +211,10 @@
 .statistics-section{
 	@include flex-container();
 
+	img{
+		width: 100%;
+	}
+
 	.quick-statistics{
 		@include flex-item(2,1,0);
 		margin-right: 3rem;
@@ -218,6 +222,7 @@
 
 	.storage-usage-statistics{
 		@include flex-item();
+		background-color: $white;
 
 		.bottom-title{
 			height: 7rem;
@@ -226,6 +231,9 @@
 			font-size: 1.6rem;
 			color: $white;
 			cursor: pointer;
+			position: absolute;
+		    bottom: 0;
+		    width: 100%;
 
 			&:hover{
 				background-color: #FBB940;
@@ -337,6 +345,7 @@
 	.forecast-section{
 		color: $white;
 		background: url('../images/img_03.png') no-repeat;
+		background-size: cover;
 		position: relative;
 
 		.top-text{
@@ -364,7 +373,7 @@
 		}
 		.icon-forecast{
 			@include sprite-position(-1rem, -14rem, 22rem, 20rem);
-			margin-top: 8%;
+			margin-top: 4%;
 			margin-left: 20%;
 		}
 		.heading{
@@ -375,7 +384,8 @@
 			text-align: right;
 			padding-right: 6rem;
 			width: 100%;
-			clear:both;
+			position:absolute;
+			bottom: 0;
 
 			&:after{
 				content: '';
@@ -418,6 +428,7 @@
 		background-color: $white;
 		.author-infor{
 		  	background: url('../images/img1_03.png') no-repeat;
+		  	background-size: cover;
 		  	height: 40rem;
 			text-align: center;
 			color: $white;
