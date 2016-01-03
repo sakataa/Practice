@@ -24,7 +24,7 @@ $tile-bg: #5FAEE3;
 body {
   color: $common-color;
   min-height: 100%;
-  background-color: yellow;
+  background-color: $content-bg;
 }
 
 /* mixin */
@@ -151,4 +151,13 @@ html{
 
 .navbar, .page-content{
   margin-left: 40rem;
+}
+
+.new-section{
+  margin-top: 1rem;
+  padding-bottom: 3rem;
+}
+
+.tile{
+  border: 0;
 }

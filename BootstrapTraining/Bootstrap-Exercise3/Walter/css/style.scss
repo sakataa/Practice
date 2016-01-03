@@ -83,7 +83,8 @@
 .main-content{
 	.navbar{
 		background-color: $white;
-	  	padding: 5rem 0;
+		margin-bottom: 0;
+	  	padding: 4rem 0;
 	  	font-weight: bold;
 	  	font-size: 1.3rem;
 	  	position: inherit;
@@ -95,11 +96,88 @@
 				@include top-notification();
 			}
 		}
+
+		.top-header{
+			position: relative;
+			margin-right: 3rem;
+			.profile-picture{
+				@include sprite-position(-40.4rem, 0, 4rem, 4.3rem);
+				position: absolute;
+				right: 15rem;
+    			top: -1rem;
+    			margin-right: 1.5rem;
+			}
+
+			.arrow-down{
+				@include sprite-position(-38.7rem, -8.7rem, 1.3rem, 1.1rem);
+				margin-left: 1.5rem;
+			}
+		}
 	}
 
 	.page-content{
-		background-color: $content-bg;
   		padding: 3rem;
+
+  		.modern-menu{
+  			display: -webkit-flex;
+  			display: flex;
+	  		-webkit-justify-content: center;
+	      	justify-content: center;
+
+	      	height: 32rem;
+
+  			.box{
+  				width: 20%;
+  				height: 70%;
+  				flex-grow: 1;
+  				background-color: $tile-bg;
+  				color: $white;
+  				text-align: center;
+  				cursor: pointer;
+  				padding: 5rem;
+
+  				&:hover{
+					background-color: #FBB940;
+				}
+
+				.item-wrapper{
+					p{
+						line-height: 10rem;
+						font-size: 1.6rem;
+					}
+				}
+
+				&.visitor-infor{
+					.icon-visitor-infor{
+						@include sprite-position(0, 0, 6.5rem, 6.4rem);
+					}
+				}
+				&.upload-stuff{
+					opacity: 0.9;
+					.icon-upload-stuff{
+						@include sprite-position(-8.1rem, 0, 6.6rem, 5.7rem);
+					}
+				}
+				&.webmail-inbox{
+					opacity: 0.8;
+					.icon-webmail-inbox{
+						@include sprite-position(-16.9rem, 0, 6.5rem, 5.9rem);
+					}
+				}
+				&.freelance-task{
+					opacity: 0.7;
+					.icon-freelance-task{
+						@include sprite-position(-25.6rem, 0, 6.6rem, 6.5rem);
+					}
+				}
+				&.logout{
+					opacity: 0.6;
+					.icon-logout{
+						@include sprite-position(-33.8rem, 0, 4.9rem, 5.3rem);
+					}
+				}
+  			}
+  		}
 	}
 }
 

@@ -1,7 +1,7 @@
 body {
   color: #95A0AA;
   min-height: 100%;
-  background-color: yellow; }
+  background-color: #EEEEEE; }
 
 /* mixin */
 /*Set root font size*/
@@ -57,6 +57,13 @@ html {
 
 .navbar, .page-content {
   margin-left: 40rem; }
+
+.new-section {
+  margin-top: 1rem;
+  padding-bottom: 3rem; }
+
+.tile {
+  border: 0; }
 
 .logo {
   background: url("../images/sprite.png") no-repeat;
@@ -224,7 +231,8 @@ html {
 
 .main-content .navbar {
   background-color: #FFFFFF;
-  padding: 5rem 0;
+  margin-bottom: 0;
+  padding: 4rem 0;
   font-weight: bold;
   font-size: 1.3rem;
   position: inherit; }
@@ -246,8 +254,85 @@ html {
       color: #FFFFFF;
       padding: 0 0.2rem;
       background-color: #F86B4F; }
+  .main-content .navbar .top-header {
+    position: relative;
+    margin-right: 3rem; }
+    .main-content .navbar .top-header .profile-picture {
+      background: url("../images/sprite.png") no-repeat;
+      display: inline-block;
+      background-position: -40.4rem 0;
+      width: 4rem;
+      height: 4.3rem;
+      position: absolute;
+      right: 15rem;
+      top: -1rem;
+      margin-right: 1.5rem; }
+    .main-content .navbar .top-header .arrow-down {
+      background: url("../images/sprite.png") no-repeat;
+      display: inline-block;
+      background-position: -38.7rem -8.7rem;
+      width: 1.3rem;
+      height: 1.1rem;
+      margin-left: 1.5rem; }
 .main-content .page-content {
-  background-color: #EEEEEE;
   padding: 3rem; }
+  .main-content .page-content .modern-menu {
+    display: -webkit-flex;
+    display: flex;
+    -webkit-justify-content: center;
+    justify-content: center;
+    height: 32rem; }
+    .main-content .page-content .modern-menu .box {
+      width: 20%;
+      height: 70%;
+      flex-grow: 1;
+      background-color: #5FAEE3;
+      color: #FFFFFF;
+      text-align: center;
+      cursor: pointer;
+      padding: 5rem; }
+      .main-content .page-content .modern-menu .box:hover {
+        background-color: #FBB940; }
+      .main-content .page-content .modern-menu .box .item-wrapper p {
+        line-height: 10rem;
+        font-size: 1.6rem; }
+      .main-content .page-content .modern-menu .box.visitor-infor .icon-visitor-infor {
+        background: url("../images/sprite.png") no-repeat;
+        display: inline-block;
+        background-position: 0 0;
+        width: 6.5rem;
+        height: 6.4rem; }
+      .main-content .page-content .modern-menu .box.upload-stuff {
+        opacity: 0.9; }
+        .main-content .page-content .modern-menu .box.upload-stuff .icon-upload-stuff {
+          background: url("../images/sprite.png") no-repeat;
+          display: inline-block;
+          background-position: -8.1rem 0;
+          width: 6.6rem;
+          height: 5.7rem; }
+      .main-content .page-content .modern-menu .box.webmail-inbox {
+        opacity: 0.8; }
+        .main-content .page-content .modern-menu .box.webmail-inbox .icon-webmail-inbox {
+          background: url("../images/sprite.png") no-repeat;
+          display: inline-block;
+          background-position: -16.9rem 0;
+          width: 6.5rem;
+          height: 5.9rem; }
+      .main-content .page-content .modern-menu .box.freelance-task {
+        opacity: 0.7; }
+        .main-content .page-content .modern-menu .box.freelance-task .icon-freelance-task {
+          background: url("../images/sprite.png") no-repeat;
+          display: inline-block;
+          background-position: -25.6rem 0;
+          width: 6.6rem;
+          height: 6.5rem; }
+      .main-content .page-content .modern-menu .box.logout {
+        opacity: 0.6; }
+        .main-content .page-content .modern-menu .box.logout .icon-logout {
+          background: url("../images/sprite.png") no-repeat;
+          display: inline-block;
+          background-position: -33.8rem 0;
+          width: 4.9rem;
+          height: 5.3rem; }
 
 /*# sourceMappingURL=style.css.map */
