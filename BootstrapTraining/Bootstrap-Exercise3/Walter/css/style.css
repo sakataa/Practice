@@ -1,0 +1,253 @@
+body {
+  color: #95A0AA;
+  min-height: 100%;
+  background-color: yellow; }
+
+/* mixin */
+/*Set root font size*/
+html {
+  font-size: 10px;
+  font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif; }
+
+.clearfix {
+  clear: both; }
+
+.pos-relative {
+  position: relative; }
+
+.text-common {
+  color: #95A0AA; }
+
+.icon:before {
+  margin-right: 2rem; }
+
+.nav > li > a:hover, .nav > li > a:focus {
+  background-color: inherit; }
+
+.sidebar {
+  position: fixed;
+  background-color: #34495E;
+  color: #929EAC;
+  width: 40rem;
+  height: 100%; }
+  .sidebar .sidebar-header {
+    background-color: #2C3E50; }
+  .sidebar .left-menu {
+    font-size: 1.4rem; }
+    .sidebar .left-menu a {
+      color: #929EAC;
+      font-weight: bold; }
+    .sidebar .left-menu > li {
+      margin-bottom: 4rem; }
+    .sidebar .left-menu li {
+      position: relative;
+      padding-left: 4rem;
+      padding-right: 3rem; }
+      .sidebar .left-menu li:hover > a {
+        color: #D6DDE4; }
+      .sidebar .left-menu li.active-menu {
+        background-color: #2C3E50;
+        border-left: 0.5rem solid #5FAEE3; }
+    .sidebar .left-menu .sub-menu {
+      font-size: 1.2rem;
+      padding-left: 1.5rem; }
+
+.container-fluid {
+  padding: 0; }
+
+.navbar, .page-content {
+  margin-left: 40rem; }
+
+.logo {
+  background: url("../images/sprite.png") no-repeat;
+  display: inline-block;
+  background-position: -0.6rem -42rem;
+  width: 21.6rem;
+  height: 3.8rem;
+  margin: 4rem 0;
+  margin-left: 3rem; }
+
+.icon-dashboard:before {
+  content: '';
+  background: url("../images/sprite.png") no-repeat;
+  display: inline-block;
+  background-position: -1.1rem -8.1rem;
+  width: 2.2rem;
+  height: 2rem; }
+.icon-dashboard .badge {
+  width: 2.4rem;
+  height: 2.4rem;
+  -moz-border-radius: 1.2rem;
+  -webkit-border-radius: 1.2rem;
+  border-radius: 1.2rem;
+  display: inline-block;
+  cursor: default;
+  position: absolute;
+  right: 0;
+  font-size: 1rem;
+  text-align: center;
+  line-height: 2rem;
+  color: #FFFFFF;
+  background-color: #929EAC;
+  padding: 0.2rem 0.55rem;
+  background-color: #F86B4F; }
+
+.icon-webmail:before {
+  content: '';
+  background: url("../images/sprite.png") no-repeat;
+  display: inline-block;
+  background-position: -4.3rem -8.5rem;
+  width: 2.2rem;
+  height: 1.5rem; }
+.icon-webmail .badge {
+  width: 2.4rem;
+  height: 2.4rem;
+  -moz-border-radius: 1.2rem;
+  -webkit-border-radius: 1.2rem;
+  border-radius: 1.2rem;
+  display: inline-block;
+  cursor: default;
+  position: absolute;
+  right: 0;
+  font-size: 1rem;
+  text-align: center;
+  line-height: 2rem;
+  color: #FFFFFF;
+  background-color: #929EAC;
+  padding: 0.2rem 0.55rem; }
+
+.icon-cloud:before {
+  content: '';
+  background: url("../images/sprite.png") no-repeat;
+  display: inline-block;
+  background-position: -7.8rem -8.4rem;
+  width: 2.4rem;
+  height: 1.6rem; }
+.icon-cloud .badge {
+  width: 2.4rem;
+  height: 2.4rem;
+  -moz-border-radius: 1.2rem;
+  -webkit-border-radius: 1.2rem;
+  border-radius: 1.2rem;
+  display: inline-block;
+  cursor: default;
+  position: absolute;
+  right: 0;
+  font-size: 1rem;
+  text-align: center;
+  line-height: 2rem;
+  color: #FFFFFF;
+  background-color: #929EAC;
+  padding: 0.2rem 0.55rem; }
+
+.icon-ui:before {
+  content: '';
+  background: url("../images/sprite.png") no-repeat;
+  display: inline-block;
+  background-position: -11.5rem -8.2rem;
+  width: 2rem;
+  height: 1.8rem; }
+.icon-ui .badge {
+  width: 2.4rem;
+  height: 2.4rem;
+  -moz-border-radius: 1.2rem;
+  -webkit-border-radius: 1.2rem;
+  border-radius: 1.2rem;
+  display: inline-block;
+  cursor: default;
+  position: absolute;
+  right: 0;
+  font-size: 1rem;
+  text-align: center;
+  line-height: 2rem;
+  color: #FFFFFF;
+  background-color: #929EAC;
+  padding: 0.2rem 0.55rem; }
+
+.icon-statistics:before {
+  content: '';
+  background: url("../images/sprite.png") no-repeat;
+  display: inline-block;
+  background-position: -15.1rem -8.1rem;
+  width: 2.2rem;
+  height: 1.8rem; }
+.icon-statistics .badge {
+  width: 2.4rem;
+  height: 2.4rem;
+  -moz-border-radius: 1.2rem;
+  -webkit-border-radius: 1.2rem;
+  border-radius: 1.2rem;
+  display: inline-block;
+  cursor: default;
+  position: absolute;
+  right: 0;
+  font-size: 1rem;
+  text-align: center;
+  line-height: 2rem;
+  color: #FFFFFF;
+  background-color: #929EAC;
+  padding: 0.2rem 0.55rem; }
+
+.icon-time:before {
+  content: '';
+  background: url("../images/sprite.png") no-repeat;
+  display: inline-block;
+  background-position: -18.7rem -7.9rem;
+  width: 2.1rem;
+  height: 2.1rem; }
+.icon-time .badge {
+  width: 2.4rem;
+  height: 2.4rem;
+  -moz-border-radius: 1.2rem;
+  -webkit-border-radius: 1.2rem;
+  border-radius: 1.2rem;
+  display: inline-block;
+  cursor: default;
+  position: absolute;
+  right: 0;
+  font-size: 1rem;
+  text-align: center;
+  line-height: 2rem;
+  color: #FFFFFF;
+  background-color: #929EAC;
+  padding: 0.2rem 0.55rem; }
+
+.icon-menu {
+  background: url("../images/sprite.png") no-repeat;
+  display: inline-block;
+  background-position: -46.3rem -0.1rem;
+  width: 5.7rem;
+  height: 6.1rem;
+  position: absolute;
+  top: 3rem;
+  right: -3rem; }
+
+.main-content .navbar {
+  background-color: #FFFFFF;
+  padding: 5rem 0;
+  font-weight: bold;
+  font-size: 1.3rem;
+  position: inherit; }
+  .main-content .navbar .top-left {
+    padding-left: 8rem; }
+    .main-content .navbar .top-left .badge {
+      width: 1.6rem;
+      height: 1.6rem;
+      -moz-border-radius: 0.8rem;
+      -webkit-border-radius: 0.8rem;
+      border-radius: 0.8rem;
+      display: inline-block;
+      cursor: default;
+      position: absolute;
+      top: 0;
+      font-size: 0.8rem;
+      line-height: 1.8rem;
+      text-align: center;
+      color: #FFFFFF;
+      padding: 0 0.2rem;
+      background-color: #F86B4F; }
+.main-content .page-content {
+  background-color: #EEEEEE;
+  padding: 3rem; }
+
+/*# sourceMappingURL=style.css.map */

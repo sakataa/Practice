@@ -1,0 +1,154 @@
+$font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+$white: #FFFFFF;
+$black: #000000;
+
+$content-bg: #EEEEEE;
+
+$left-header-bg: #34495E;
+
+$mainmenu-fontsize: 1.4rem;
+$submenu-fontsize: 1.2rem;
+
+$menu-text-color: #929EAC;
+$left-active-bg: #2C3E50;
+
+$notification-current-bg: #F86B4F;
+
+$common-color: #95A0AA; 
+
+$heading-bg: #E5E5E5;
+$heading-text-color: #95A0AA;
+
+$tile-bg: #5FAEE3;
+
+body {
+  color: $common-color;
+  min-height: 100%;
+  background-color: yellow;
+}
+
+/* mixin */
+@mixin border-radius($radius){
+  -moz-border-radius: $radius;
+  -webkit-border-radius: $radius;
+  border-radius: $radius;
+}
+@mixin circle($radius) {
+  width: $radius * 2;
+  height: $radius * 2;
+  @include border-radius($radius);
+  display: inline-block;
+  cursor: default;
+}
+
+@mixin sprite-position($x, $y, $width, $height){
+  background: url('../images/sprite.png') no-repeat;
+  display: inline-block;
+  background-position: $x $y;
+  width: $width;
+  height: $height;
+}
+
+@mixin circle-notification(){
+  @include circle(1.2rem);
+  position: absolute;
+  right: 0;
+  font-size: 1rem;
+  text-align: center;
+  line-height: 2rem;
+  color: $white;
+  background-color: $menu-text-color;
+  padding: 0.2rem 0.55rem;
+}
+
+@mixin top-notification(){
+  @include circle(0.8rem);
+  position: absolute;
+  top: 0;
+  font-size: 0.8rem;
+  line-height: 1.8rem;
+  text-align: center;
+  color: $white;
+  padding: 0 0.2rem;
+  background-color: #F86B4F;
+}
+
+
+/*Set root font size*/
+html{
+  font-size: 10px;
+  font-family: $font-family;
+}
+
+.clearfix{
+  clear: both;
+}
+
+.pos-relative{
+  position: relative;
+}
+
+.text-common{
+  color: $common-color;
+}
+
+.icon:before {
+  margin-right: 2rem;
+}
+
+.nav > li > a:hover, .nav > li > a:focus{
+  background-color: inherit;
+}
+
+.sidebar{
+  position: fixed;
+  background-color: $left-header-bg;
+  color: $menu-text-color;
+  width: 40rem;
+  height: 100%;
+
+  .sidebar-header{
+      background-color: $left-active-bg;
+  }
+
+  .left-menu{
+    font-size: $mainmenu-fontsize;
+
+    a{
+      color: $menu-text-color;
+      font-weight: bold;
+    }
+
+    > li {
+      margin-bottom: 4rem;
+    }
+
+    li{
+      position: relative;
+      padding-left: 4rem;
+      padding-right: 3rem;
+
+      &:hover > a{
+          color: #D6DDE4;     
+      }
+
+      &.active-menu{
+        background-color: $left-active-bg;
+        border-left: 0.5rem solid #5FAEE3;
+      }
+    }
+
+    .sub-menu{
+      font-size: $submenu-fontsize;
+      padding-left: 1.5rem;
+    }
+  }
+}
+
+.container-fluid{
+  padding: 0;
+}
+
+.navbar, .page-content{
+  margin-left: 40rem;
+}

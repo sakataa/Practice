@@ -1,0 +1,105 @@
+@import 'common';
+
+.logo{
+	@include sprite-position(-0.6rem, -42rem, 21.6rem, 3.8rem);
+	margin: 4rem 0;
+	margin-left: 3rem;
+}
+
+.icon-dashboard{
+	&:before{
+		content:'';
+		@include sprite-position(-1.1rem, -8.1rem, 2.2rem, 2rem);
+	}
+
+	.badge{
+		@include circle-notification();
+		background-color: $notification-current-bg;
+	}
+}
+
+.icon-webmail{
+	&:before{
+		content:'';
+		@include sprite-position(-4.3rem, -8.5rem, 2.2rem, 1.5rem);
+	}
+
+	.badge{
+		@include circle-notification();
+	}
+}
+
+.icon-cloud{
+	&:before{
+		content:'';
+		@include sprite-position(-7.8rem, -8.4rem, 2.4rem, 1.6rem);
+	}
+
+	.badge{
+		@include circle-notification();
+	}
+}
+
+.icon-ui{
+	&:before{
+		content:'';
+		@include sprite-position(-11.5rem, -8.2rem, 2rem, 1.8rem);
+	}
+
+	.badge{
+		@include circle-notification();
+	}
+}
+
+.icon-statistics{
+	&:before{
+		content:'';
+		@include sprite-position(-15.1rem, -8.1rem, 2.2rem, 1.8rem);
+	}
+
+	.badge{
+		@include circle-notification();
+	}
+}
+
+.icon-time{
+	&:before{
+		content:'';
+		@include sprite-position(-18.7rem, -7.9rem, 2.1rem, 2.1rem);
+	}
+
+	.badge{
+		@include circle-notification();
+	}
+}
+
+.icon-menu{
+	@include sprite-position(-46.3rem, -0.1rem, 5.7rem, 6.1rem);
+	position: absolute;
+	top: 3rem;
+	right: -3rem;
+}
+
+.main-content{
+	.navbar{
+		background-color: $white;
+	  	padding: 5rem 0;
+	  	font-weight: bold;
+	  	font-size: 1.3rem;
+	  	position: inherit;
+
+		.top-left{
+			padding-left: 8rem;
+
+			.badge{
+				@include top-notification();
+			}
+		}
+	}
+
+	.page-content{
+		background-color: $content-bg;
+  		padding: 3rem;
+	}
+}
+

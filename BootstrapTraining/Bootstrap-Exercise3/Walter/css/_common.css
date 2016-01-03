@@ -1,0 +1,61 @@
+body {
+  color: #95A0AA;
+  min-height: 100%;
+  background-color: yellow; }
+
+/* mixin */
+/*Set root font size*/
+html {
+  font-size: 10px;
+  font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif; }
+
+.clearfix {
+  clear: both; }
+
+.pos-relative {
+  position: relative; }
+
+.text-common {
+  color: #95A0AA; }
+
+.icon:before {
+  margin-right: 2rem; }
+
+.nav > li > a:hover, .nav > li > a:focus {
+  background-color: inherit; }
+
+.sidebar {
+  position: fixed;
+  background-color: #34495E;
+  color: #929EAC;
+  width: 40rem;
+  height: 100%; }
+  .sidebar .sidebar-header {
+    background-color: #2C3E50; }
+  .sidebar .left-menu {
+    font-size: 1.4rem; }
+    .sidebar .left-menu a {
+      color: #929EAC;
+      font-weight: bold; }
+    .sidebar .left-menu > li {
+      margin-bottom: 4rem; }
+    .sidebar .left-menu li {
+      position: relative;
+      padding-left: 4rem;
+      padding-right: 3rem; }
+      .sidebar .left-menu li:hover > a {
+        color: #D6DDE4; }
+      .sidebar .left-menu li.active-menu {
+        background-color: #2C3E50;
+        border-left: 0.5rem solid #5FAEE3; }
+    .sidebar .left-menu .sub-menu {
+      font-size: 1.2rem;
+      padding-left: 1.5rem; }
+
+.container-fluid {
+  padding: 0; }
+
+.navbar, .page-content {
+  margin-left: 40rem; }
+
+/*# sourceMappingURL=_common.css.map */
