@@ -124,11 +124,9 @@
 	  		-webkit-justify-content: center;
 	      	justify-content: center;
 
-	      	height: 32rem;
-
   			.box{
   				width: 20%;
-  				height: 70%;
+  				height: 22rem;
   				flex-grow: 1;
   				background-color: $tile-bg;
   				color: $white;
@@ -178,6 +176,163 @@
 				}
   			}
   		}
+	}
+
+	.storage-usage-statistics{
+		.section-footer{
+			&:hover{
+				background-color: #FBB940;
+			}
+
+			&:after{
+				content: '';
+				@include sprite-position(-32.1rem, -8rem, 1.2rem, 2.2rem);
+				position: absolute;
+				font-size: 1.2rem;
+				top: 2rem;
+				right: 3rem;
+			}
+		}
+	}
+
+	.todo-section{
+		.heading{
+			padding: 1rem 0 1rem 2rem;
+			width: 100%;
+			display: table;
+		    .icon-add{
+			    &:hover{
+					background-color: #2A9AE4;
+				}
+			}
+
+			span{
+				vertical-align: middle;
+  				display: table-cell;
+  				padding-left: 2rem;
+			}
+		}
+
+		.content{
+			padding: 1.5rem;
+			background-color: $white;
+
+			.empty-heading{
+				@include border-radius(0.3rem);
+				height: 4rem;
+				background-color: #EEEEEE;
+			}
+			.list{
+				padding-top: 1.5rem;
+				padding-bottom: 1rem;
+				font-size: 1.3rem;
+				li{
+					position: relative;
+					line-height: 4rem;
+
+					input[type="checkbox"]{
+						visibility: hidden;
+						margin-right: 1.5rem;
+
+						& + label{
+							cursor: pointer;
+						    position: absolute;
+						    width: 2.5rem;
+						    height: 2.5rem;
+						    top: 0;
+						    left: 0;				    
+						    border: 0.2rem solid #E6DEDE;
+						    @include border-radius(0.3rem);
+						}
+					}
+
+					input[type="checkbox"]:checked{
+						& + label{
+							background: $tile-bg;
+							border: 0.2rem solid $tile-bg;
+
+							&:after{
+								content: '';
+							    position: absolute;
+							    width: 0.9rem;
+							    height: 0.5rem;
+							    background: transparent;
+							    top: 0.7rem;
+							    left: 0.7rem;
+							    border: 0.1rem solid $white;
+							    border-top: none;
+							    border-right: none;
+							    -webkit-transform: rotate(-45deg);
+							    -moz-transform: rotate(-45deg);
+							    -o-transform: rotate(-45deg);
+							    -ms-transform: rotate(-45deg);
+							    transform: rotate(-45deg);
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+
+	.forecast-section{
+		color: $white;
+		background: url('../images/img_03.png') no-repeat;
+		background-size: cover;
+		position: relative;
+		padding-left: 0;
+		padding-right: 0;
+		margin-left: 1.5rem;
+
+		.top-text{
+			font-size: 1.6rem;
+			margin-top: 2rem;
+		}
+		.left-bottom-text, .right-bottom-text{
+			font-size: 1.8rem;
+		}
+		.left-bottom-text, .top-text{
+			margin-left: 3rem;
+		}
+		.right-bottom-text{
+			margin-right: 3rem;
+			.temperature:before{
+				content: '\00b0';
+			}
+		}
+		.icon-forecast{
+			@include sprite-position(-1rem, -14rem, 22rem, 20rem);
+			margin-left: 5rem;
+		}
+		.section-footer{
+			padding-right: 6rem;
+			&:after{
+				content: '';
+				@include sprite-position(-23.1rem, -7.6rem, 3rem, 3rem);
+				position: absolute;
+				top: 1.5rem;
+				right: 2rem;
+			}
+		}
+	}
+
+	.quote-section{
+		margin-right: 0;
+		background-color: $tile-bg;
+		color: $white;
+		text-align: center;
+		font-size: 2.5rem;
+		p{
+			padding: 4rem;
+		    font-style: italic;
+		    margin-top: 0.6rem;
+		    font-size: 3rem;
+		}
+
+		i{
+			line-height: 10rem;
+    		font-size: 1.5rem;
+		}
 	}
 }
 

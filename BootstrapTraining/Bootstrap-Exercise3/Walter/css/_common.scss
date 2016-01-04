@@ -104,7 +104,7 @@ html{
   position: fixed;
   background-color: $left-header-bg;
   color: $menu-text-color;
-  width: 40rem;
+  width: 30rem;
   height: 100%;
 
   .sidebar-header{
@@ -125,8 +125,8 @@ html{
 
     li{
       position: relative;
-      padding-left: 4rem;
-      padding-right: 3rem;
+      padding-left: 1rem;
+      padding-right: 2rem;
 
       &:hover > a{
           color: #D6DDE4;     
@@ -150,7 +150,7 @@ html{
 }
 
 .navbar, .page-content{
-  margin-left: 40rem;
+  margin-left: 30rem;
 }
 
 .new-section{
@@ -160,4 +160,46 @@ html{
 
 .tile{
   border: 0;
+}
+
+.heading{
+  height: 6rem;
+  padding-left: 2rem;
+  padding-top: 2.5rem;
+  font-size: 1.6rem;
+  background-color: $heading-bg;
+  color: $heading-text-color;
+  margin: 0;
+}
+
+.section-footer{
+  background-color: $tile-bg;
+  padding: 2rem;
+  font-size: 1.6rem;
+  color: $white;
+  cursor: pointer;
+  width: 100%;
+}
+
+.icon-add{
+  @include border-radius(0.5rem);
+  background-color: $tile-bg;
+  border: 0.2rem solid $tile-bg;
+  cursor: pointer;
+    width: 4rem;
+    height: 4rem;
+    position: relative;
+    display: inline-block;
+  &:before{
+    content: '';
+    @include sprite-position(-28.1rem, -8.5rem, 1.7rem, 1.7rem);
+    position: absolute;
+    top: 25%;
+    left: 25%;
+  }
+}
+
+.todo-section, 
+.forecast-section,
+.quote-section{
 }

@@ -28,7 +28,7 @@ html {
   position: fixed;
   background-color: #34495E;
   color: #929EAC;
-  width: 40rem;
+  width: 30rem;
   height: 100%; }
   .sidebar .sidebar-header {
     background-color: #2C3E50; }
@@ -41,8 +41,8 @@ html {
       margin-bottom: 4rem; }
     .sidebar .left-menu li {
       position: relative;
-      padding-left: 4rem;
-      padding-right: 3rem; }
+      padding-left: 1rem;
+      padding-right: 2rem; }
       .sidebar .left-menu li:hover > a {
         color: #D6DDE4; }
       .sidebar .left-menu li.active-menu {
@@ -56,7 +56,7 @@ html {
   padding: 0; }
 
 .navbar, .page-content {
-  margin-left: 40rem; }
+  margin-left: 30rem; }
 
 .new-section {
   margin-top: 1rem;
@@ -64,5 +64,44 @@ html {
 
 .tile {
   border: 0; }
+
+.heading {
+  height: 6rem;
+  padding-left: 2rem;
+  padding-top: 2.5rem;
+  font-size: 1.6rem;
+  background-color: #E5E5E5;
+  color: #95A0AA;
+  margin: 0; }
+
+.section-footer {
+  background-color: #5FAEE3;
+  padding: 2rem;
+  font-size: 1.6rem;
+  color: #FFFFFF;
+  cursor: pointer;
+  width: 100%; }
+
+.icon-add {
+  -moz-border-radius: 0.5rem;
+  -webkit-border-radius: 0.5rem;
+  border-radius: 0.5rem;
+  background-color: #5FAEE3;
+  border: 0.2rem solid #5FAEE3;
+  cursor: pointer;
+  width: 4rem;
+  height: 4rem;
+  position: relative;
+  display: inline-block; }
+  .icon-add:before {
+    content: '';
+    background: url("../images/sprite.png") no-repeat;
+    display: inline-block;
+    background-position: -28.1rem -8.5rem;
+    width: 1.7rem;
+    height: 1.7rem;
+    position: absolute;
+    top: 25%;
+    left: 25%; }
 
 /*# sourceMappingURL=_common.css.map */

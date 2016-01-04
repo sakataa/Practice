@@ -28,7 +28,7 @@ html {
   position: fixed;
   background-color: #34495E;
   color: #929EAC;
-  width: 40rem;
+  width: 30rem;
   height: 100%; }
   .sidebar .sidebar-header {
     background-color: #2C3E50; }
@@ -41,8 +41,8 @@ html {
       margin-bottom: 4rem; }
     .sidebar .left-menu li {
       position: relative;
-      padding-left: 4rem;
-      padding-right: 3rem; }
+      padding-left: 1rem;
+      padding-right: 2rem; }
       .sidebar .left-menu li:hover > a {
         color: #D6DDE4; }
       .sidebar .left-menu li.active-menu {
@@ -56,7 +56,7 @@ html {
   padding: 0; }
 
 .navbar, .page-content {
-  margin-left: 40rem; }
+  margin-left: 30rem; }
 
 .new-section {
   margin-top: 1rem;
@@ -64,6 +64,45 @@ html {
 
 .tile {
   border: 0; }
+
+.heading {
+  height: 6rem;
+  padding-left: 2rem;
+  padding-top: 2.5rem;
+  font-size: 1.6rem;
+  background-color: #E5E5E5;
+  color: #95A0AA;
+  margin: 0; }
+
+.section-footer {
+  background-color: #5FAEE3;
+  padding: 2rem;
+  font-size: 1.6rem;
+  color: #FFFFFF;
+  cursor: pointer;
+  width: 100%; }
+
+.icon-add {
+  -moz-border-radius: 0.5rem;
+  -webkit-border-radius: 0.5rem;
+  border-radius: 0.5rem;
+  background-color: #5FAEE3;
+  border: 0.2rem solid #5FAEE3;
+  cursor: pointer;
+  width: 4rem;
+  height: 4rem;
+  position: relative;
+  display: inline-block; }
+  .icon-add:before {
+    content: '';
+    background: url("../images/sprite.png") no-repeat;
+    display: inline-block;
+    background-position: -28.1rem -8.5rem;
+    width: 1.7rem;
+    height: 1.7rem;
+    position: absolute;
+    top: 25%;
+    left: 25%; }
 
 .logo {
   background: url("../images/sprite.png") no-repeat;
@@ -280,11 +319,10 @@ html {
     display: -webkit-flex;
     display: flex;
     -webkit-justify-content: center;
-    justify-content: center;
-    height: 32rem; }
+    justify-content: center; }
     .main-content .page-content .modern-menu .box {
       width: 20%;
-      height: 70%;
+      height: 22rem;
       flex-grow: 1;
       background-color: #5FAEE3;
       color: #FFFFFF;
@@ -334,5 +372,129 @@ html {
           background-position: -33.8rem 0;
           width: 4.9rem;
           height: 5.3rem; }
+.main-content .storage-usage-statistics .section-footer:hover {
+  background-color: #FBB940; }
+.main-content .storage-usage-statistics .section-footer:after {
+  content: '';
+  background: url("../images/sprite.png") no-repeat;
+  display: inline-block;
+  background-position: -32.1rem -8rem;
+  width: 1.2rem;
+  height: 2.2rem;
+  position: absolute;
+  font-size: 1.2rem;
+  top: 2rem;
+  right: 3rem; }
+.main-content .todo-section .heading {
+  padding: 1rem 0 1rem 2rem;
+  width: 100%;
+  display: table; }
+  .main-content .todo-section .heading .icon-add:hover {
+    background-color: #2A9AE4; }
+  .main-content .todo-section .heading span {
+    vertical-align: middle;
+    display: table-cell;
+    padding-left: 2rem; }
+.main-content .todo-section .content {
+  padding: 1.5rem;
+  background-color: #FFFFFF; }
+  .main-content .todo-section .content .empty-heading {
+    -moz-border-radius: 0.3rem;
+    -webkit-border-radius: 0.3rem;
+    border-radius: 0.3rem;
+    height: 4rem;
+    background-color: #EEEEEE; }
+  .main-content .todo-section .content .list {
+    padding-top: 1.5rem;
+    padding-bottom: 1rem;
+    font-size: 1.3rem; }
+    .main-content .todo-section .content .list li {
+      position: relative;
+      line-height: 4rem; }
+      .main-content .todo-section .content .list li input[type="checkbox"] {
+        visibility: hidden;
+        margin-right: 1.5rem; }
+        .main-content .todo-section .content .list li input[type="checkbox"] + label {
+          cursor: pointer;
+          position: absolute;
+          width: 2.5rem;
+          height: 2.5rem;
+          top: 0;
+          left: 0;
+          border: 0.2rem solid #E6DEDE;
+          -moz-border-radius: 0.3rem;
+          -webkit-border-radius: 0.3rem;
+          border-radius: 0.3rem; }
+      .main-content .todo-section .content .list li input[type="checkbox"]:checked + label {
+        background: #5FAEE3;
+        border: 0.2rem solid #5FAEE3; }
+        .main-content .todo-section .content .list li input[type="checkbox"]:checked + label:after {
+          content: '';
+          position: absolute;
+          width: 0.9rem;
+          height: 0.5rem;
+          background: transparent;
+          top: 0.7rem;
+          left: 0.7rem;
+          border: 0.1rem solid #FFFFFF;
+          border-top: none;
+          border-right: none;
+          -webkit-transform: rotate(-45deg);
+          -moz-transform: rotate(-45deg);
+          -o-transform: rotate(-45deg);
+          -ms-transform: rotate(-45deg);
+          transform: rotate(-45deg); }
+.main-content .forecast-section {
+  color: #FFFFFF;
+  background: url("../images/img_03.png") no-repeat;
+  background-size: cover;
+  position: relative;
+  padding-left: 0;
+  padding-right: 0;
+  margin-left: 1.5rem; }
+  .main-content .forecast-section .top-text {
+    font-size: 1.6rem;
+    margin-top: 2rem; }
+  .main-content .forecast-section .left-bottom-text, .main-content .forecast-section .right-bottom-text {
+    font-size: 1.8rem; }
+  .main-content .forecast-section .left-bottom-text, .main-content .forecast-section .top-text {
+    margin-left: 3rem; }
+  .main-content .forecast-section .right-bottom-text {
+    margin-right: 3rem; }
+    .main-content .forecast-section .right-bottom-text .temperature:before {
+      content: '\00b0'; }
+  .main-content .forecast-section .icon-forecast {
+    background: url("../images/sprite.png") no-repeat;
+    display: inline-block;
+    background-position: -1rem -14rem;
+    width: 22rem;
+    height: 20rem;
+    margin-left: 5rem; }
+  .main-content .forecast-section .section-footer {
+    padding-right: 6rem; }
+    .main-content .forecast-section .section-footer:after {
+      content: '';
+      background: url("../images/sprite.png") no-repeat;
+      display: inline-block;
+      background-position: -23.1rem -7.6rem;
+      width: 3rem;
+      height: 3rem;
+      position: absolute;
+      top: 1.5rem;
+      right: 2rem; }
+.main-content .quote-section {
+  margin-right: 0;
+  background-color: #5FAEE3;
+  color: #FFFFFF;
+  text-align: center;
+  font-size: 2.5rem; }
+  .main-content .quote-section p {
+    padding: 4rem;
+    font-style: italic;
+    margin-top: 0.6rem;
+    font-size: 3rem; }
+  .main-content .quote-section i {
+    line-height: 10rem;
+    font-size: 1.5rem; }
 
 /*# sourceMappingURL=style.css.map */
