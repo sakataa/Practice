@@ -1,0 +1,46 @@
+@import "../variables";
+$header-height: 121px;
+.header {
+    height: $header-height;
+    line-height: $header-height/2;
+    padding: 30px 35px 30px 80px;
+    border-bottom: 1px solid #C6CBCF;
+    background-color: $light-color;
+    .menu {
+        > li {
+            margin-right: 50px;
+            > a {
+                font-size: 16px;
+                font-weight: 600;
+            }
+            .badges {
+                width: 20px;
+                height: 20px;
+                font-size: 10px;
+                padding-top: 4px;
+                background-color: $secondary-color;
+                margin-top: -20px;
+                vertical-align: middle;
+                line-height: 1;
+            }
+        }
+    }
+    .profile-dropdown {
+        .avatar {
+            height: 43px;
+            width: 43px;
+            background-position: -404px 0;
+            display: inline-block;
+            margin-right: 10px;
+        }
+        .name {
+            display: inline-block;
+            font-size: 16px;
+            font-weight: 600;
+            color: $menu-color;
+            .icon-arrow-down {
+                margin-left: 10px;
+            }
+        }
+    }
+}

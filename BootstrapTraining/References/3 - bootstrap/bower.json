@@ -1,0 +1,20 @@
+{
+  "name": "bootstrap-folio-css",
+  "description": "",
+  "main": "index.html",
+  "authors": [
+    "bruce"
+  ],
+  "license": "MIT",
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap": "~3.3.6"
+  }
+}

@@ -1,0 +1,32 @@
+@import "layouts/sidebar";
+@import "layouts/header";
+@import "layouts/body";
+@import "layouts/grid";
+// default layout
+.sidebar {
+    width: 50px;
+    transition: width 0.2s;
+    .logo, .menu {
+        display: none;
+    }
+}
+
+.main {
+    margin-left: 50px;
+    transition: margin-left 0.2s;
+    min-width: 640px;
+    background-color: #eee;
+}
+
+// less than 1660px
+@media (min-width: 1660px) {
+    .sidebar {
+        width: $sidebar-width;
+        .logo, .menu {
+            display: block;
+        }
+    }
+    .main {
+        margin-left: $sidebar-width;
+    }
+}

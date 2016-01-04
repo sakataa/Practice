@@ -1,0 +1,77 @@
+@import "../variables";
+.sidebar {
+    position: absolute;
+    left: 0;
+    top: 0;
+    /* Logo */
+    .logo {
+        background-color: $sidebar-bg-color2;
+        padding: 40px 35px;
+    }
+    /* End logo */
+    /* Sidebar toggle button */
+    .toggle {
+        position: absolute;
+        top: 30px;
+        right: -33px;
+    }
+    /* End sidebar toggle button */
+    /* Menu */
+    .menu {
+        padding: 0;
+        /* Menu item */
+        > li {
+            padding: 30px 35px 30px 44px;
+            a {
+                font-size: 18px;
+                font-weight: 600;
+            }
+            // hover on menu item
+            &:hover {
+                background-color: $sidebar-bg-color2;
+            }
+            // icon
+            .icon {
+                margin-right: 22px;
+            }
+            // badges
+            .badges {
+                float: right;
+                height: 30px;
+                width: 30px;
+                font-weight: 600;
+                background-color: $menu-color;
+                padding-top: 5px;
+            }
+        }
+        /* End menu item */
+        /* Active item */
+        > .active {
+            padding-left: 38px;
+            background-color: $sidebar-bg-color2;
+            border-left: 6px solid $primary-color;
+            .sub-menu {
+                display: block;
+            }
+            .badges {
+                background-color: $secondary-color;
+            }
+        }
+        /* End active item */
+        /* Sub menu*/
+        .sub-menu {
+            display: none;
+            padding: 15px 0 10px 60px;
+            // sub menu item
+            li {
+                padding: 10px 0;
+                a {
+                    font-size: 14px;
+                    font-weight: 700;
+                }
+            }
+        }
+        /* End sub menu */
+    }
+    /* End menu */
+}

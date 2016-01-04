@@ -1,0 +1,91 @@
+.icon {
+  width: 24px;
+  height: 24px;
+  display: inline-block;
+  vertical-align: middle;
+  background: url(../images/sprite.png) no-repeat;
+  &-home {
+    background-position: -11px -81px;
+  }
+  &-mail {
+    background-position: -43px -85px;
+  }
+  &-cloud {
+    background-position: -78px -84px;
+  }
+  &-layout {
+    background-position: -115px -82px;
+  }
+  &-line-chart {
+    background-position: -151px -81px;
+  }
+  &-pie-chart {
+    background-position: -187px -79px;
+  }
+  &-logo {
+    background-position: -6px -420px;
+    width: 220px;
+    height: 40px;
+  }
+  &-toggle {
+    background-position: -463px -1px;
+    width: 61px;
+    height: 61px;
+  }
+  &-arrow-down {
+    background-position: -382px -80px;
+  }
+  &-arrow-right {
+    background-position: -321px -80px;
+  }
+  &-person {
+    background-position: 0 0;
+    width: 66px;
+    height: 66px;
+  }
+  &-upload {
+    background-position: -81px 0;
+    width: 66px;
+    height: 66px;
+  }
+  &-inbox {
+    background-position: -169px 0;
+    width: 66px;
+    height: 66px;
+  }
+  &-task {
+    background-position: -256px 0;
+    width: 66px;
+    height: 66px;
+  }
+  &-logout {
+    background-position: -330px 7px;
+    width: 66px;
+    height: 66px;
+  }
+  &-plus {
+    background-position: -280px -85px;
+    height: 18px;
+    width: 18px;
+  }
+  &-cloudy {
+    background-position: -10px -140px;
+    height: 200px;
+    width: 220px;
+  }
+  &-map {
+    background-position: -231px -76px;
+    height: 30px;
+    width: 30px;
+  }
+  &-author {
+    background-position: -261px -152px;
+    width: 210px;
+    height: 226px;
+  }
+  &-point {
+    background-position: -350px -77px;
+    width: 26px;
+    height: 27px;
+  }
+}
