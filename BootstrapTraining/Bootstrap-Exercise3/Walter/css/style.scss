@@ -178,12 +178,20 @@
   		}
 	}
 
-	.storage-usage-statistics{
-		.section-footer{
-			&:hover{
-				background-color: #FBB940;
-			}
+	.quick-statistics{
+		.content{
+			height: 40rem;
+			background-color: $white;
+		}
+	}
 
+	.storage-usage-statistics{
+		.content{
+			height: 34rem;
+			padding-top: 3rem;
+			background-color: $white;
+		}
+		.section-footer{
 			&:after{
 				content: '';
 				@include sprite-position(-32.1rem, -8rem, 1.2rem, 2.2rem);
@@ -195,6 +203,11 @@
 		}
 	}
 
+	.todo-section, .forecast-section{
+		.content{
+			height: 30rem;
+		}
+	}
 	.todo-section{
 		.heading{
 			padding: 1rem 0 1rem 2rem;
@@ -307,7 +320,6 @@
 		}
 		.section-footer{
 			padding-right: 6rem;
-			cursor: default;
 			&:after{
 				content: '';
 				@include sprite-position(-23.1rem, -7.6rem, 3rem, 3rem);
@@ -327,6 +339,7 @@
 		.content{
 			background-color: $tile-bg;
 			padding-bottom: 0.6rem;
+			height: 36rem;
 		}
 
 		p{
@@ -338,6 +351,7 @@
 		i{
 			line-height: 10rem;
     		font-size: 1.5rem;
+    		height: 6rem;
 		}
 	}
 }

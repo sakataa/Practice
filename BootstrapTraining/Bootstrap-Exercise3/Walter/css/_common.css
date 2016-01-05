@@ -76,10 +76,9 @@ html {
 
 .section-footer {
   background-color: #5FAEE3;
-  padding: 2rem;
+  padding: 1.8rem 2rem 2rem 2rem;
   font-size: 1.6rem;
   color: #FFFFFF;
-  cursor: pointer;
   width: 100%; }
 
 .icon-add {

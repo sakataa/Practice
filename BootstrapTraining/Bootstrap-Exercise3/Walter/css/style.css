@@ -76,10 +76,9 @@ html {
 
 .section-footer {
   background-color: #5FAEE3;
-  padding: 2rem;
+  padding: 1.8rem 2rem 2rem 2rem;
   font-size: 1.6rem;
   color: #FFFFFF;
-  cursor: pointer;
   width: 100%; }
 
 .icon-add {
@@ -372,8 +371,13 @@ html {
           background-position: -33.8rem 0;
           width: 4.9rem;
           height: 5.3rem; }
-.main-content .storage-usage-statistics .section-footer:hover {
-  background-color: #FBB940; }
+.main-content .quick-statistics .content {
+  height: 40rem;
+  background-color: #FFFFFF; }
+.main-content .storage-usage-statistics .content {
+  height: 34rem;
+  padding-top: 3rem;
+  background-color: #FFFFFF; }
 .main-content .storage-usage-statistics .section-footer:after {
   content: '';
   background: url("../images/sprite.png") no-repeat;
@@ -385,6 +389,8 @@ html {
   font-size: 1.2rem;
   top: 2rem;
   right: 3rem; }
+.main-content .todo-section .content, .main-content .forecast-section .content {
+  height: 30rem; }
 .main-content .todo-section .heading {
   padding: 1rem 0 1rem 2rem;
   width: 100%;
@@ -470,8 +476,7 @@ html {
     height: 20rem;
     margin-left: 5rem; }
   .main-content .forecast-section .section-footer {
-    padding-right: 6rem;
-    cursor: default; }
+    padding-right: 6rem; }
     .main-content .forecast-section .section-footer:after {
       content: '';
       background: url("../images/sprite.png") no-repeat;
@@ -489,13 +494,15 @@ html {
   font-size: 2.5rem; }
   .main-content .quote-section .content {
     background-color: #5FAEE3;
-    padding-bottom: 0.6rem; }
+    padding-bottom: 0.6rem;
+    height: 36rem; }
   .main-content .quote-section p {
     padding: 4rem;
     font-style: italic;
     font-size: 3rem; }
   .main-content .quote-section i {
     line-height: 10rem;
-    font-size: 1.5rem; }
+    font-size: 1.5rem;
+    height: 6rem; }
 
 /*# sourceMappingURL=style.css.map */
