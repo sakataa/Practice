@@ -410,7 +410,8 @@ html {
     font-size: 1.3rem; }
     .main-content .todo-section .content .list li {
       position: relative;
-      line-height: 4rem; }
+      line-height: 2rem;
+      margin-bottom: 1.5rem; }
       .main-content .todo-section .content .list li input[type="checkbox"] {
         visibility: hidden;
         margin-right: 1.5rem; }
@@ -446,12 +447,10 @@ html {
           transform: rotate(-45deg); }
 .main-content .forecast-section {
   color: #FFFFFF;
-  background: url("../images/img_03.png") no-repeat;
-  background-size: cover;
-  position: relative;
-  padding-left: 0;
-  padding-right: 0;
-  margin-left: 1.5rem; }
+  position: relative; }
+  .main-content .forecast-section .content {
+    background: url("../images/img_03.png") no-repeat;
+    background-size: cover; }
   .main-content .forecast-section .top-text {
     font-size: 1.6rem;
     margin-top: 2rem; }
@@ -471,7 +470,8 @@ html {
     height: 20rem;
     margin-left: 5rem; }
   .main-content .forecast-section .section-footer {
-    padding-right: 6rem; }
+    padding-right: 6rem;
+    cursor: default; }
     .main-content .forecast-section .section-footer:after {
       content: '';
       background: url("../images/sprite.png") no-repeat;
@@ -484,14 +484,15 @@ html {
       right: 2rem; }
 .main-content .quote-section {
   margin-right: 0;
-  background-color: #5FAEE3;
   color: #FFFFFF;
   text-align: center;
   font-size: 2.5rem; }
+  .main-content .quote-section .content {
+    background-color: #5FAEE3;
+    padding-bottom: 0.6rem; }
   .main-content .quote-section p {
     padding: 4rem;
     font-style: italic;
-    margin-top: 0.6rem;
     font-size: 3rem; }
   .main-content .quote-section i {
     line-height: 10rem;

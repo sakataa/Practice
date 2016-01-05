@@ -228,7 +228,8 @@
 				font-size: 1.3rem;
 				li{
 					position: relative;
-					line-height: 4rem;
+					line-height: 2rem;
+    				margin-bottom: 1.5rem;
 
 					input[type="checkbox"]{
 						visibility: hidden;
@@ -277,12 +278,12 @@
 
 	.forecast-section{
 		color: $white;
-		background: url('../images/img_03.png') no-repeat;
-		background-size: cover;
 		position: relative;
-		padding-left: 0;
-		padding-right: 0;
-		margin-left: 1.5rem;
+
+		.content{
+			background: url('../images/img_03.png') no-repeat;
+			background-size: cover;
+		}
 
 		.top-text{
 			font-size: 1.6rem;
@@ -306,6 +307,7 @@
 		}
 		.section-footer{
 			padding-right: 6rem;
+			cursor: default;
 			&:after{
 				content: '';
 				@include sprite-position(-23.1rem, -7.6rem, 3rem, 3rem);
@@ -318,14 +320,18 @@
 
 	.quote-section{
 		margin-right: 0;
-		background-color: $tile-bg;
 		color: $white;
 		text-align: center;
 		font-size: 2.5rem;
+
+		.content{
+			background-color: $tile-bg;
+			padding-bottom: 0.6rem;
+		}
+
 		p{
 			padding: 4rem;
 		    font-style: italic;
-		    margin-top: 0.6rem;
 		    font-size: 3rem;
 		}
 
