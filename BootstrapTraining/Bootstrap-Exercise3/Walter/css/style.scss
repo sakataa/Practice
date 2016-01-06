@@ -354,5 +354,84 @@
     		height: 6rem;
 		}
 	}
+
+	.author-section{
+		.content{
+			background: url('../images/img1_03.png') no-repeat;
+		  	background-size: 100% 100%;
+		  	height: 40rem;
+			color: $white;
+
+			.icon-wrapper{
+    			padding: 2rem 2rem 0 0;
+			}
+
+			p{
+				padding-left: 5rem;
+    			padding-right: 9rem;
+			}
+
+			.author-img{
+				@include sprite-position(-26.1rem, -15.2rem, 21rem, 22.6rem);
+				margin-top: 10rem;
+			}
+		}
+
+		.section-footer{
+			background-color: $white;		
+			color: #777777;
+			padding-top: 10rem;
+			font-weight: bold;
+
+			.table{
+				width: auto;
+				margin: 0 auto;
+				font-size: 2.5rem;
+
+				th, td{
+					border: 0;
+					padding: 0.5rem 2rem;
+				}
+			}
+		}
+	}
+
+	.quick-note{
+		height: 61rem;
+
+		.content{
+			padding: 4rem 4rem;
+			background-color: $white;
+
+			.form-control{
+				@include border-radius(0.4rem);
+				border: 0.1rem solid #EEEEEE;
+				background-color: #EEEEEE;
+				padding: 1.2rem;
+			}
+
+			input{
+				height: 6rem;
+				margin-bottom: 3rem;
+			}
+
+			textarea{
+				resize: none;
+				margin-top: 4rem;
+			}
+		}
+
+		.section-footer{
+			background-color: $white;
+			padding: 0 4rem 5.4rem 0;
+
+			.btn{
+				width: 16rem;
+				height: 5rem;
+				background-color: $tile-bg;
+				border: 0;
+			}
+		}
+	}
 }
 

@@ -70,6 +70,7 @@ html {
   padding-left: 2rem;
   padding-top: 2.5rem;
   font-size: 1.6rem;
+  font-weight: bold;
   background-color: #E5E5E5;
   color: #95A0AA;
   margin: 0; }
@@ -102,6 +103,14 @@ html {
     position: absolute;
     top: 25%;
     left: 25%; }
+
+.icon-footer {
+  background: url("../images/sprite.png") no-repeat;
+  display: inline-block;
+  background-position: -35rem -7.7rem;
+  width: 2.6rem;
+  height: 2.7rem;
+  margin-right: 1rem; }
 
 .logo {
   background: url("../images/sprite.png") no-repeat;
@@ -504,5 +513,60 @@ html {
     line-height: 10rem;
     font-size: 1.5rem;
     height: 6rem; }
+.main-content .author-section .content {
+  background: url("../images/img1_03.png") no-repeat;
+  background-size: 100% 100%;
+  height: 40rem;
+  color: #FFFFFF; }
+  .main-content .author-section .content .icon-wrapper {
+    padding: 2rem 2rem 0 0; }
+  .main-content .author-section .content p {
+    padding-left: 5rem;
+    padding-right: 9rem; }
+  .main-content .author-section .content .author-img {
+    background: url("../images/sprite.png") no-repeat;
+    display: inline-block;
+    background-position: -26.1rem -15.2rem;
+    width: 21rem;
+    height: 22.6rem;
+    margin-top: 10rem; }
+.main-content .author-section .section-footer {
+  background-color: #FFFFFF;
+  color: #777777;
+  padding-top: 10rem;
+  font-weight: bold; }
+  .main-content .author-section .section-footer .table {
+    width: auto;
+    margin: 0 auto;
+    font-size: 2.5rem; }
+    .main-content .author-section .section-footer .table th, .main-content .author-section .section-footer .table td {
+      border: 0;
+      padding: 0.5rem 2rem; }
+.main-content .quick-note {
+  height: 61rem; }
+  .main-content .quick-note .content {
+    padding: 4rem 4rem;
+    background-color: #FFFFFF; }
+    .main-content .quick-note .content .form-control {
+      -moz-border-radius: 0.4rem;
+      -webkit-border-radius: 0.4rem;
+      border-radius: 0.4rem;
+      border: 0.1rem solid #EEEEEE;
+      background-color: #EEEEEE;
+      padding: 1.2rem; }
+    .main-content .quick-note .content input {
+      height: 6rem;
+      margin-bottom: 3rem; }
+    .main-content .quick-note .content textarea {
+      resize: none;
+      margin-top: 4rem; }
+  .main-content .quick-note .section-footer {
+    background-color: #FFFFFF;
+    padding: 0 4rem 5.4rem 0; }
+    .main-content .quick-note .section-footer .btn {
+      width: 16rem;
+      height: 5rem;
+      background-color: #5FAEE3;
+      border: 0; }
 
 /*# sourceMappingURL=style.css.map */

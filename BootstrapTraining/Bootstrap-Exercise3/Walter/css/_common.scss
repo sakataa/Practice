@@ -167,6 +167,7 @@ html{
   padding-left: 2rem;
   padding-top: 2.5rem;
   font-size: 1.6rem;
+  font-weight: bold;
   background-color: $heading-bg;
   color: $heading-text-color;
   margin: 0;
@@ -198,7 +199,7 @@ html{
   }
 }
 
-.todo-section, 
-.forecast-section,
-.quote-section{
+.icon-footer{
+  @include sprite-position(-35rem, -7.7rem, 2.6rem, 2.7rem);
+  margin-right: 1rem;
 }
