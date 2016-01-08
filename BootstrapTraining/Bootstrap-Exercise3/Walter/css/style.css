@@ -339,8 +339,10 @@ html {
       padding-top: 5rem; }
       .main-content .page-content .modern-menu .box:hover {
         background-color: #FBB940; }
-      .main-content .page-content .modern-menu .box .item-wrapper p {
-        line-height: 10rem;
+      .main-content .page-content .modern-menu .box .icon-wrapper {
+        height: 10rem; }
+      .main-content .page-content .modern-menu .box p {
+        line-height: 2rem;
         font-size: 1.6rem; }
       .main-content .page-content .modern-menu .box.visitor-infor .icon-visitor-infor {
         background: url("../images/sprite.png") no-repeat;
