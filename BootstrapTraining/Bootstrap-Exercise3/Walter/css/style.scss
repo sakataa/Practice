@@ -77,7 +77,8 @@
 	@include sprite-position(-46.3rem, -0.1rem, 5.7rem, 6.1rem);
 	position: absolute;
 	top: 3rem;
-	right: -3rem;
+	left: 27rem;
+	z-index: 999;
 }
 
 .main-content{
@@ -182,16 +183,18 @@
 
 	.quick-statistics{
 		.content{
-			height: 40rem;
 			background-color: $white;
 		}
 	}
 
 	.storage-usage-statistics{
 		.content{
-			height: 34rem;
 			padding-top: 3rem;
 			background-color: $white;
+
+			img{
+				min-width: 100%;
+			}
 		}
 		.section-footer{
 			&:after{
@@ -243,8 +246,12 @@
 				font-size: 1.3rem;
 				li{
 					position: relative;
-					line-height: 2rem;
-    				margin-bottom: 1.5rem;
+    				padding: 0.1rem 0;
+
+    				.form-checkbox{
+    					float: left;
+    					margin-right: 1rem;
+    				}
 
 					input[type="checkbox"]{
 						visibility: hidden;
@@ -382,7 +389,7 @@
 		.section-footer{
 			background-color: $white;		
 			color: #777777;
-			padding-top: 10rem;
+			padding-top: 8.5rem;
 			font-weight: bold;
 
 			.table{
@@ -425,7 +432,6 @@
 
 		.section-footer{
 			background-color: $white;
-			padding: 0 4rem 5.4rem 0;
 
 			.btn{
 				width: 16rem;
@@ -436,4 +442,7 @@
 		}
 	}
 }
+
+/*Import responsive*/
+@import 'responsive';
 

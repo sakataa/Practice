@@ -1,0 +1,115 @@
+@media (max-width: 1280px) {
+	.main-content{
+		.page-content{
+			.modern-menu{
+				.box{
+					height: 18rem;
+					padding-top: 3rem;
+				}
+			}
+		}
+
+		.storage-usage-statistics{
+			.content{
+				padding-top: 1rem;
+			}
+		}
+
+		.todo-section, .forecast-section{
+			.content{
+				height: 28.5rem;
+			}
+		}
+
+		.todo-section{
+			.content{
+				height: 28rem;
+			}
+		}
+
+		.quote-section{
+			.content{
+				height: 34rem;
+			}
+
+			p{
+				font-size: 2.5rem;
+			}
+		}
+
+		.forecast-section{
+			.left-bottom-text, .top-text{
+				margin-bottom: 0;
+			}
+
+			.top-text{
+				margin-top: 1.5rem;
+			}
+		}
+
+		.author-section {
+		  	.section-footer{
+		  		padding-top: 10rem;
+		  		.table{
+		  			font-size: 2rem;
+		  		}
+		  	}
+		}
+	}
+}
+
+@media (max-width: 992px) {
+	.main-content{
+		.page-content{
+			.modern-menu{
+				flex-wrap: wrap;
+
+				.box{
+					flex-basis: 100%;
+					/*height: 13rem;
+					padding-top: 1rem;*/
+
+					.icon-wrapper{
+						height: 8rem;
+					}
+				}
+			}
+		}
+
+		.secondary {
+		    margin-top: 4rem;
+		}
+	}
+
+}
+
+@media (max-width: 768px) {
+	.icon-menu{
+		left: 1.5rem;
+	}
+
+	.sidebar{
+			display: none;
+	}
+
+	.main-content{
+		.navbar, .page-content{
+		  margin-left: 0;
+		}
+	}
+
+}
+
+@media (max-width: 480px) {
+	.main-content{
+		.author-section {
+		  	.section-footer{
+		  		padding-top: 17rem;
+		  		.table{
+		  			font-size: 1rem;
+		  		}
+		  	}
+		}
+	}
+
+}

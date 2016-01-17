@@ -2,6 +2,8 @@
 <html>
 
 <head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.css" />
 	<link rel="stylesheet" type="text/css" href="css/style.css" />
 	<title></title>
@@ -9,11 +11,11 @@
 
 <body>
 	<div class="container-fluid">
+		<a class="icon-menu" href="#"></a>
 		<div class="sidebar">
 			<div class="sidebar-header">
 				<a class="logo" href="#">
 				</a>
-				<a class="icon-menu" href="#"></a>
 			</div>
 
 			<ul class="nav nav-stacked left-menu">
@@ -126,7 +128,7 @@
 							</div>
 						</div>
 
-						<div class="col-md-4 tile relative-position storage-usage-statistics">
+						<div class="col-md-4 tile secondary storage-usage-statistics">
 							<h4 class="heading">Cloud Storage Usage</h4>
 							<div class="content">
 								<img class="img-responsive" src="images/piechart_05.png" alt="Storage usage statistics" />
@@ -147,34 +149,45 @@
 								<div class="empty-heading"></div>
 								<ul class="list nav nav-stacked">
 									<li>
-										<input id="task1" type="checkbox" checked />
-										<label for="task1"></label>
-										Aliquam metus neque
+										<div class="form-checkbox">
+											<input id="task1" type="checkbox" checked />
+											<label for="task1"></label>
+										</div>
+										<p>Aliquam metus neque</p>
 									</li>
 									<li>
-										<input id="task2" type="checkbox">
-										<label for="task2"></label>
-										In ut turpis non ipsum rhoncus porttior</li>
-									<li>
-										<input id="task3" type="checkbox">
-										<label for="task3"></label>
-										Maecenas interdum dignissim
+										<div class="form-checkbox">
+											<input id="task2" type="checkbox">
+											<label for="task2"></label>
+										</div>
+										<p>In ut turpis non ipsum rhoncus porttior</p>
 									</li>
 									<li>
-										<input id="task4" type="checkbox">
-										<label for="task4"></label>
-										Pellentesque sodales ipsum et enim
+										<div class="form-checkbox">
+											<input id="task3" type="checkbox">
+											<label for="task3"></label>
+										</div>
+										<p>Maecenas interdum dignissim</p>
 									</li>
 									<li>
-										<input id="task5" type="checkbox">
-										<label for="task5"></label>
-										Quisque tincidunt mattis sapien
+										<div class="form-checkbox">
+											<input id="task4" type="checkbox">
+											<label for="task4"></label>
+										</div>
+										<p>Pellentesque sodales ipsum et enim</p>
+									</li>
+									<li>
+										<div class="form-checkbox">
+											<input id="task5" type="checkbox">
+											<label for="task5"></label>
+										</div>
+										<p>Quisque tincidunt mattis sapien</p>
 									</li>
 								</ul>
 							</div>
 						</div>
 
-						<div class="col-md-4 tile forecast-section">
+						<div class="col-md-4 tile secondary forecast-section">
 							<div class="content">
 								<div class="row">
 									<p class="col-md-2 top-text">Forecast</p>
@@ -194,7 +207,7 @@
 							</div>
 						</div>
 
-						<div class="col-md-4 tile quote-section">
+						<div class="col-md-4 tile secondary quote-section">
 							<div class="content">
 								<p>
 									"Art is the only way to run away without leaving home."
@@ -208,7 +221,7 @@
 
 				<div class="new-section">
 					<div class="row">
-						<div class="col-md-6 author-section">
+						<div class="col-md-6 tile author-section">
 							<div class="content text-center">
 								<div class="icon-wrapper text-right"><span class="icon-add"></span></div>
 								<h3>Keith Gardner</h3>
@@ -233,7 +246,7 @@
 							</div>
 						</div>
 
-						<div class="col-md-6 quick-note">
+						<div class="col-md-6 tile secondary quick-note">
 							<h4 class="heading">Quick notes</h4>
 							<div class="content">
 								<input type="text" class="form-control" placeholder="Note title"/>
