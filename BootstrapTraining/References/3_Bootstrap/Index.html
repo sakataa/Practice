@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Exercise 3</title>
+     <link  type="text/css" rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.min.css"/>
+    <link  type="text/css" rel="stylesheet" href="Styles/reset.css"/>
+    <link  type="text/css" rel="stylesheet" href="Styles/css/lib/animate.css"/>
+    <link  type="text/css" rel="stylesheet" href="Styles/css/page.css"/>
+</head>
+<body>
+    <header class="navbar navbar-default navbar-fixed-top">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <a href="javascript:;" class="logo"><img src="Styles/Images/logo.png" alt="logo" class="img-responsive"/></a>
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+              </button>
+            </div>
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav navbar-left menu-hoz">
+                    <li><a href="javascript:;">Activity</a></li>
+                    <li><a href="javascript:;">Notifications<sup>19</sup></a></li>
+                </ul>
+                <div class="nav navbar-nav navbar-right user-info">
+                     <span class="avatar"></span><span>Harold Crawford</span>
+                    <i class="glyphicon glyphicon-triangle-bottom"></i>
+                </div>
+            </div>
+        </div>
+    </header>
+    <aside class="sidebar-left">
+        <ul class="nav sidebar-menu">
+            <li><a href="javascript:;"><span class="icon-dashboard"></span><span class="txt-item hidden-sm hidden-md">Dashboard</span><span class=""></span></a>
+                <ul class="menu-sub">
+                    <li><a href="javascript:;"><span class="">View site</span></a></li>
+                    <li><a href="javascript:;"><span class="">General settings</span></a></li>
+                    <li><a href="javascript:;"><span class="">Help</span></a></li>
+                </ul>
+            </li>
+            <li><a href="javascript:;"><span class="icon-webmail"></span><span class="hidden-sm hidden-md">Webmail Service</span></a></li>
+            <li><a href="javascript:;"><span class="icon-cloud"></span><span class="hidden-sm hidden-md">Cloud Storage</span></a></li>
+            <li><a href="javascript:;"><span class="icon-elements"></span><span class="hidden-sm hidden-md">UI Element</span></a></li>
+            <li><a href="javascript:;"><span class="icon-charts"></span><span class="hidden-sm hidden-md">Static charts</span></a></li>
+            <li><a href="javascript:;"><span class="icon-freelance"></span><span class="hidden-sm hidden-md">Freelance Time Manager</span></a></li>
+        </ul>
+    </aside>
+    <div class="page">
+        <div class="row row-first">
+            <div class="col-lg-20 col-md-4 col-sm-6 feature feature-1">
+                <div class="icon-visitors"></div>
+                <h4>Visitors info</h4>
+            </div>
+            <div class="col-lg-20 col-md-4 col-sm-6 feature feature-2">
+                <div class="icon-upload"></div>
+                <h4>Upload stuff</h4>
+            </div>
+            <div class="col-lg-20 col-md-4 col-sm-6 feature feature-3">
+                <div class="icon-inbox"></div>
+                <h4>Webmail inbox</h4>
+            </div>
+            <div class="col-lg-20 col-md-4 col-sm-6 feature feature-4">
+                <div class="icon-task"></div>
+                <h4>Freelance task</h4>
+            </div>
+            <div class="col-lg-20 col-md-4 col-sm-6 feature feature-5">
+                <div class="icon-logout"></div>
+                <h4>Logout account</h4>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-8 col-sm-7 panel-main left">
+                <div class="panel-title">Quick Statistics</div>
+                <div class="panel-content">
+                    <img src="Styles/Images/piechart_03.png" alt="piechart_03" class="img-responsive">
+                </div>
+            </div>
+            <div class="col-md-4 col-sm-5 panel-main right">
+                <div class="panel-title">Cloud Storage Usage</div>
+                <div class="panel-content">
+                    <img src="Styles/Images/piechart_05.png" alt="piechart_05" class="img-responsive"/> 
+                </div>
+                <div class="panel-footer">Show my files<i class="icon-cherevon-right"></i></div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-4 col-sm-12 panel-main todolist">
+            <div class="panel-title">
+                <div class="plus-box"></div> To do list
+            </div>
+            <div class="panel-content">
+                <div class="box"></div>
+                <form>
+                    <p>
+                        <input type="checkbox" id="chb1" />
+                        <label for="chb1">Aliquam metus neque</label>
+                    </p>
+                    <p>
+                        <input type="checkbox" id="chb2" />
+                        <label for="chb2">In ut turpis non ipsum rhoncus porttitor</label>
+                    </p>
+                    <p>
+                        <input type="checkbox" id="chb3" />
+                        <label for="chb3">Maecenas interdum dignissim</label>
+                    </p>
+                    <p>
+                        <input type="checkbox" id="chb4" />
+                        <label for="chb4">Pellentesque sodales ipsum et enim</label>
+                    </p>
+                    <p>
+                        <input type="checkbox" id="chb5" />
+                        <label for="chb5">Quisque tincidunt mattis sapien</label>
+                    </p>
+                </form>
+            </div>
+            </div>
+            <div class="col-md-4 col-sm-12 panel-main weather">
+                <div class="panel-content">
+                    <img src="Styles/Images/img_03.png" alt="img_03"/>
+                </div>
+                <div class="panel-footer"></div>
+            </div>
+            <div class="col-md-4 col-sm-12 panel-main author">
+                <div class="panel-content">
+                        <p class="text">"Art is the only way to run away without leaving home"</p>
+                        <p class="author-name">-Twyla Tharp -</p>
+                    </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-6 panel-main follower">
+                <div class="panel-content">
+                    <div class="content-top">
+                        <img src="Styles/Images/img1_03.png" alt="follower" class="img-responsive"/>
+                        <h3>Keith Gardner</h3>
+                        <p>Cras et neque vel nunc aliquet dictum vitea aget velit.
+                            Maecenas lobortis leo eu odio viverra pulvinar.
+                        </p>
+                        <span class="author-img"><img src="Styles/Images/avtar.png" /></span>
+                    </div>
+                    <div class="content-bottom table-responsive">
+                        <table class="tbl">
+                            <tbody>
+                                <tr>
+                                    <td>Followers</td>
+                                    <td>Following</td>
+                                    <td>Note</td>
+                                </tr>
+                                <tr>
+                                    <td>9.88</td>
+                                    <td>1397</td>
+                                    <td>17.200</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 panel-main contact">
+                <div class="panel-title">Quick notes</div>
+                    <div class="panel-content">
+                        <textarea placeholder="Note title" class="msg-area"></textarea>
+                        <textarea placeholder="You note here" class="msg-area main-note"></textarea>
+                        <input type="button" value="Submit" class="btnSubmit" name="Submit">
+                    </div>
+            </div>
+        </div>
+    </div>
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="Styles/css/lib/wow/wow.min.js"></script>
+    <script src="Script/page.js"></script>
+    <script>
+        new WOW().init();
+    </script>
+</body>
+</html>

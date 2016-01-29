@@ -1,0 +1,14 @@
+@mixin icon($width, $height, $x, $y) {
+  background: url(../Images/sprite.png) no-repeat $x $y;
+  height: $height;
+  width: $width;
+  display: inline-block;
+
+}
+
+@mixin font($color, $font-size, $font-family: Arial, $font-style: normal) {
+  color: $color;
+  font-family: $font-family;
+  font-size: $font-size;
+  font-style: $font-style;
+}

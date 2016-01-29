@@ -1,0 +1,112 @@
+@import "bourbon";
+@import "variables";
+@import "mixins";
+
+/************ icon *****************/
+.icon-dashboard {
+  @include icon(22px, 20px, -11px, -81px);
+}
+.icon-webmail {
+  @include icon(22px, 15px, -43px, -85px);
+}
+.icon-cloud {
+  @include icon(24px, 16px, -78px, -84px);
+}
+.icon-elements {
+  @include icon(20px, 18px, -115px, -82px);
+}
+.icon-charts {
+  @include icon(22px, 18px, -151px, -81px);
+}
+.icon-freelance {
+  @include icon(21px, 21px, -187px, -79px);
+}
+.icon-visitors {
+  @include icon(65px, 65px, -0, 0);
+}
+.icon-upload {
+  @include icon(66px, 65px, -81px, 0);
+}
+.icon-inbox {
+  @include icon(65px, 65px, -169px, 0);
+}
+.icon-task {
+  @include icon(66px, 65px, -256px, 0);
+}
+.icon-logout {
+  @include icon(49px, 65px, -338px, 0);
+}
+.icon-cherevon-right {
+  @include icon(12px, 22px, -321px, -80px);
+}
+
+/********* Check box *************/
+[type="checkbox"]:not(:checked),
+[type="checkbox"]:checked {
+  position: absolute;
+  left: -9999px;
+}
+[type="checkbox"]:not(:checked) + label,
+[type="checkbox"]:checked + label {
+  position: relative;
+  padding-left: 55px;
+  cursor: pointer;
+}
+
+/* checkbox aspect */
+[type="checkbox"]:not(:checked) + label:before,
+[type="checkbox"]:checked + label:before {
+  content: '';
+  position: absolute;
+  left:0; top: -4px;
+  width: 24px; height: 24px;
+  border: 1px solid #aaa;
+  background: #f8f8f8;
+  border-radius: 3px;
+}
+[type="checkbox"]:checked + label:before {
+  background: $primary-color;
+}
+/* checked mark aspect */
+[type="checkbox"]:not(:checked) + label:after,
+[type="checkbox"]:checked + label:after {
+  content: "\2713 ";
+  position: absolute;
+  top: 2px; left: 7px;
+  font-size: 18px;
+  line-height: 0.8;
+  color: #fff;
+  transition: all .2s;
+}
+/* checked mark aspect changes */
+[type="checkbox"]:not(:checked) + label:after {
+  opacity: 0;
+  transform: scale(0);
+}
+[type="checkbox"]:checked + label:after {
+  opacity: 1;
+  transform: scale(1);
+}
+/* disabled checkbox */
+[type="checkbox"]:disabled:not(:checked) + label:before,
+[type="checkbox"]:disabled:checked + label:before {
+  box-shadow: none;
+  border-color: #bbb;
+  background-color: #ddd;
+}
+[type="checkbox"]:disabled:checked + label:after {
+  color: #999;
+}
+[type="checkbox"]:disabled + label {
+  color: #aaa;
+}
+/* accessibility */
+[type="checkbox"]:checked:focus + label:before,
+[type="checkbox"]:not(:checked):focus + label:before {
+}
+
+/* hover style just for information */
+label:hover:before {
+  border: 1px solid #4778d9!important;
+}
+
