@@ -1,6 +1,8 @@
-$font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+$font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
 $white: #FFFFFF;
 $black: #000000;
+
+$bg-header: #5C1218;
 
 /* mixin */
 @mixin border-radius($radius){
@@ -17,7 +19,7 @@ $black: #000000;
 }
 
 @mixin sprite-position($x, $y, $width, $height){
-  background: url('../images/sprite.png') no-repeat;
+  background: url('../images/sprite_02.png') no-repeat;
   display: inline-block;
   background-position: $x $y;
   width: $width;
@@ -39,4 +41,93 @@ $black: #000000;
 body{
   font-size: 10px;
   font-family: $font-family;
+}
+
+.wrapper{
+  width: 100%;
+}
+
+.header{
+  font-size: 1.2rem;
+  background-color: $bg-header;
+  color: $white;
+  height: 8.5rem;
+
+  &-left, &-right{
+    height: 100%;
+  }
+
+  &-left{
+    float: left;
+    width: 25rem;
+
+    .user-panel{
+      .avatar{
+        @include sprite-position(-12.2rem, -35rem, 6.4rem, 6.3rem);
+        float: left;
+      }
+
+      .info{
+        margin-left: 7.5rem;
+        margin-top: 1rem;
+        padding-top: 1rem;
+
+        p{
+          margin-bottom: 0.5rem;
+        }
+      }
+    }
+  }
+
+  &-right{
+    margin-left: 25rem;
+
+    .nav-top, .nav-bottom{
+      height: 50%;
+    }
+
+    .nav-top{
+      &-left{
+        margin-top: 1.5;
+        @include sprite-position(-7.3rem, -2.1rem, 1.8rem, 1.2rem);
+      }
+
+      &-right{
+        a{
+          color: $white;
+
+          &:hover{
+            background-color: transparent;
+          }
+        }
+        .icon{
+          margin-right: 0.5rem;
+        }
+
+        .time-zone{         
+          .icon{
+            @include sprite-position(-7.1rem, -38.9rem, 1.6rem, 1.6rem);
+          }
+        }
+
+        .language{
+          .icon{
+            @include sprite-position(-7.3rem, -11.5rem, 1.7rem, 1.2rem);
+          }
+        }
+
+        .grid{
+          @include sprite-position(-7.3rem, -30.4rem, 1.6rem, 1.6rem);
+        }
+
+        .logout{
+          @include sprite-position(-7.3rem, -34.9rem, 1.6rem, 1.3rem);
+        }
+      }
+    }
+
+    .nav-bottom{
+      background-color: $white;
+    }
+  }
 }

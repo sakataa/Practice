@@ -1,6 +1,76 @@
 /* mixin */
 body {
   font-size: 10px;
-  font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif; }
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif; }
+
+.wrapper {
+  width: 100%; }
+
+.header {
+  font-size: 1.2rem;
+  background-color: #5C1218;
+  color: #FFFFFF;
+  height: 8.5rem; }
+  .header-left, .header-right {
+    height: 100%; }
+  .header-left {
+    float: left;
+    width: 25rem; }
+    .header-left .user-panel .avatar {
+      background: url("../images/sprite_02.png") no-repeat;
+      display: inline-block;
+      background-position: -12.2rem -35rem;
+      width: 6.4rem;
+      height: 6.3rem;
+      float: left; }
+    .header-left .user-panel .info {
+      margin-left: 7.5rem;
+      margin-top: 1rem;
+      padding-top: 1rem; }
+      .header-left .user-panel .info p {
+        margin-bottom: 0.5rem; }
+  .header-right {
+    margin-left: 25rem; }
+    .header-right .nav-top, .header-right .nav-bottom {
+      height: 50%; }
+    .header-right .nav-top-left {
+      margin-top: 1.5;
+      background: url("../images/sprite_02.png") no-repeat;
+      display: inline-block;
+      background-position: -7.3rem -2.1rem;
+      width: 1.8rem;
+      height: 1.2rem; }
+    .header-right .nav-top-right a {
+      color: #FFFFFF; }
+      .header-right .nav-top-right a:hover {
+        background-color: transparent; }
+    .header-right .nav-top-right .icon {
+      margin-right: 0.5rem; }
+    .header-right .nav-top-right .time-zone .icon {
+      background: url("../images/sprite_02.png") no-repeat;
+      display: inline-block;
+      background-position: -7.1rem -38.9rem;
+      width: 1.6rem;
+      height: 1.6rem; }
+    .header-right .nav-top-right .language .icon {
+      background: url("../images/sprite_02.png") no-repeat;
+      display: inline-block;
+      background-position: -7.3rem -11.5rem;
+      width: 1.7rem;
+      height: 1.2rem; }
+    .header-right .nav-top-right .grid {
+      background: url("../images/sprite_02.png") no-repeat;
+      display: inline-block;
+      background-position: -7.3rem -30.4rem;
+      width: 1.6rem;
+      height: 1.6rem; }
+    .header-right .nav-top-right .logout {
+      background: url("../images/sprite_02.png") no-repeat;
+      display: inline-block;
+      background-position: -7.3rem -34.9rem;
+      width: 1.6rem;
+      height: 1.3rem; }
+    .header-right .nav-bottom {
+      background-color: #FFFFFF; }
 
 /*# sourceMappingURL=_common.css.map */
