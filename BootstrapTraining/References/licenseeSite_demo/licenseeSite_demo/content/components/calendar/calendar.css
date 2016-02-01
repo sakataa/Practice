@@ -1,0 +1,124 @@
+﻿/********************************************************/
+/*					      Common                        */
+/********************************************************/
+/********************************************************/
+/*					      Header                        */
+/********************************************************/
+/********************************************************/
+/*					    Left panel                      */
+/********************************************************/
+/********************************************************/
+/*					      Content                       */
+/********************************************************/
+/********************************************************/
+/*					      Footer                        */
+/********************************************************/
+/********************************************************/
+/*					     Calendar                       */
+/********************************************************/
+/********************************************************/
+/*				      Menu/dropdown                     */
+/********************************************************/
+/********************************************************/
+/*				           Tree                         */
+/********************************************************/
+/********************************************************/
+/*				       Multi Select                     */
+/********************************************************/
+/********************************************************/
+/*				         Datagrid                       */
+/********************************************************/
+/********************************************************/
+/*				      Message Popup                     */
+/********************************************************/
+/********************************************************/
+/*				         Tooltip                        */
+/********************************************************/
+/********************************************************/
+/*				         Popover                        */
+/********************************************************/
+/********************************************************/
+/*				          Tabs                          */
+/********************************************************/
+/********************************************************/
+/*				       Breadcrumbs                      */
+/********************************************************/
+/********************************************************/
+/*				         Spinner                        */
+/********************************************************/
+/********************************************************/
+/*				         Collapse                       */
+/********************************************************/
+/********************************************************/
+/*				           Panel                        */
+/********************************************************/
+/********************************************************/
+/*				      Menu/dropdown                     */
+/********************************************************/
+/********************************************************/
+/*				      Validation Form                   */
+/********************************************************/
+/********************************************************/
+/*					     Customize                      */
+/********************************************************/
+.bootstrap-datetimepicker-widget {
+  font-size: 13px;
+  -webkit-border-radius: 2px;
+  -moz-border-radius: 2px;
+  -o-border-radius: 2px;
+  border-radius: 2px;
+}
+.bootstrap-datetimepicker-widget td.active,
+.bootstrap-datetimepicker-widget td.active:hover {
+  background-color: #ff6619;
+}
+.bootstrap-datetimepicker-widget td.today:before {
+  border-bottom-color: #ff9965;
+}
+.bootstrap-datetimepicker-widget td span.active {
+  background-color: #ff6619;
+}
+.bootstrap-datetimepicker-widget td.old,
+.bootstrap-datetimepicker-widget td.new {
+  color: #888888;
+}
+.bootstrap-datetimepicker-widget .table-condensed thead tr th {
+  color: #666666;
+}
+.bootstrap-datetimepicker-widget .table-condensed thead tr:first-child {
+  background-color: #d9d9d9;
+  color: #666666;
+}
+.bootstrap-datetimepicker-widget .table-condensed thead tr:first-child th {
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  -o-border-radius: 0;
+  border-radius: 0;
+}
+.bootstrap-datetimepicker-widget .table-condensed thead tr:first-child th:hover {
+  background-color: #dddddd;
+  color: #737373;
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  -o-border-radius: 0;
+  border-radius: 0;
+}
+.bootstrap-datetimepicker-widget .table-condensed thead tr:first-child th.next,
+.bootstrap-datetimepicker-widget .table-condensed thead tr:first-child th.prev {
+  color: #e54d00;
+  line-height: 15px;
+  vertical-align: top;
+}
+.bootstrap-datetimepicker-widget .table-condensed thead tr:first-child th.next:hover,
+.bootstrap-datetimepicker-widget .table-condensed thead tr:first-child th.prev:hover {
+  color: #ff5600;
+}
+.inline {
+  display: inline-block;
+  margin-left: 4px;
+}
+.form-inline .form-control.txt-date {
+  width: 115px;
+  padding: 4px 20px 4px 4px;
+}
+/*# sourceMappingURL=calendar.css.map */

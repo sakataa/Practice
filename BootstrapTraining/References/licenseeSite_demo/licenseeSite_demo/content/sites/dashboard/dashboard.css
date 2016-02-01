@@ -1,0 +1,36 @@
+﻿.table-header,
+.table.table-bordered > thead > tr > th.table-header {
+  background-color: #ff6619;
+  color: #fff;
+}
+.title.dashboard {
+  margin: 0 -16px;
+}
+.dashboard-box {
+  border: 1px solid #dddddd;
+  height: 270px;
+  background: #fff;
+  margin: 12px 0;
+}
+.member-static .col-sm-12,
+.member-static .col-sm-6 {
+  padding: 0;
+  background: #fff;
+}
+.member-static .sub-member-static.left {
+  padding-right: 15px;
+  border-right: none;
+}
+.member-static .sub-member-static.right {
+  padding-left: 15px;
+}
+.member-static .sub-member-static {
+  border: 1px solid #ddd;
+  line-height: 36px;
+}
+.member-static .header-table {
+  background-color: #ff6619;
+  color: #fff;
+  padding: 4px 0 5px;
+}
+/*# sourceMappingURL=dashboard.css.map */

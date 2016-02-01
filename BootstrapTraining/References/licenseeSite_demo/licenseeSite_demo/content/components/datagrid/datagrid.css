@@ -1,0 +1,415 @@
+﻿/********************************************************/
+/*					      Common                        */
+/********************************************************/
+/********************************************************/
+/*					      Header                        */
+/********************************************************/
+/********************************************************/
+/*					    Left panel                      */
+/********************************************************/
+/********************************************************/
+/*					      Content                       */
+/********************************************************/
+/********************************************************/
+/*					      Footer                        */
+/********************************************************/
+/********************************************************/
+/*					     Calendar                       */
+/********************************************************/
+/********************************************************/
+/*				      Menu/dropdown                     */
+/********************************************************/
+/********************************************************/
+/*				           Tree                         */
+/********************************************************/
+/********************************************************/
+/*				       Multi Select                     */
+/********************************************************/
+/********************************************************/
+/*				         Datagrid                       */
+/********************************************************/
+/********************************************************/
+/*				      Message Popup                     */
+/********************************************************/
+/********************************************************/
+/*				         Tooltip                        */
+/********************************************************/
+/********************************************************/
+/*				         Popover                        */
+/********************************************************/
+/********************************************************/
+/*				          Tabs                          */
+/********************************************************/
+/********************************************************/
+/*				       Breadcrumbs                      */
+/********************************************************/
+/********************************************************/
+/*				         Spinner                        */
+/********************************************************/
+/********************************************************/
+/*				         Collapse                       */
+/********************************************************/
+/********************************************************/
+/*				           Panel                        */
+/********************************************************/
+/********************************************************/
+/*				      Menu/dropdown                     */
+/********************************************************/
+/********************************************************/
+/*				      Validation Form                   */
+/********************************************************/
+/********************************************************/
+/*					     Customize                      */
+/********************************************************/
+.grid {
+  margin: 16px 0;
+  font-family: 'Roboto', sans-serif, arial, tahoma;
+}
+.freegrid {
+  border-color: #dddddd;
+}
+.freegrid .col_header_content th,
+.freegrid .col_body_content th {
+  background: #7f817a;
+  color: #ffffff;
+  font-family: 'Roboto Medium', sans-serif, arial, tahoma;
+  font-weight: normal;
+  border-color: #dddddd;
+}
+.freegrid .free-top-left table thead th,
+.freegrid .col_header table thead th {
+  background: #7f817a;
+  color: #ffffff;
+  font-family: 'Roboto Medium', sans-serif, arial, tahoma;
+  font-weight: normal;
+  border-color: #dddddd;
+}
+.freegrid .freegrid-even td {
+  background: #f5f5f5;
+}
+.freegrid td,
+.freegrid .grid-fixed-table td {
+  border-color: #dddddd;
+}
+.freegrid a.icon-edit {
+  color: #757575;
+  cursor: pointer;
+  float: right;
+  margin: 10px 8px 0 0;
+  padding: 2px;
+}
+.freegrid a.icon-edit:hover {
+  color: #ff6619;
+}
+.freegrid a.icon-delete {
+  color: #757575;
+  cursor: pointer;
+  margin: 10px 8px 0 0;
+  padding: 2px;
+}
+.freegrid a.link-site {
+  border: 1px solid #dddddd;
+  display: block;
+  margin: 0 4px;
+}
+.freegrid a.link-site:hover {
+  background-color: #fff;
+}
+.freegrid .no-data-frozen {
+  color: #ff6619;
+  font-family: 'Roboto Bold', sans-serif, arial, tahoma;
+  font-weight: normal;
+}
+.grid-title {
+  height: 24px;
+  background: #f6f4e5;
+  border-color: #e0e0e0;
+  margin-bottom: 0;
+  font-weight: normal;
+  font-size: 14px;
+  text-transform: uppercase;
+}
+.grid-title .grid-title-label {
+  color: #cd4e0e;
+  padding-top: 7px;
+}
+.freegrid tr.highlight-row:hover td {
+  background-color: #fcfbca;
+}
+.freegrid .mousehoverbeyond td {
+  background-color: #fcfbca !important;
+}
+.freegrid .row_footer table thead th,
+.freegrid .col_footer table thead th {
+  background: #f2ece9 !important;
+  font-family: 'Roboto', sans-serif, arial, tahoma;
+  font-weight: normal;
+  border-color: #cccccc;
+}
+/********************************************************/
+/*					       Icon                         */
+/********************************************************/
+.grid-title .grid-toolbox {
+  padding-right: 4px;
+}
+.grid-title .grid-toolbox .btnExcel,
+.grid-title .grid-toolbox .btnBack,
+.grid-title .grid-toolbox .btnSendMail,
+.grid-title .grid-toolbox .expanded,
+.grid-title .grid-toolbox .collapsed {
+  background-image: url("images/fanex-grid-icon.png") !important;
+  height: 14px;
+  width: 15px;
+  display: inline-block;
+  margin: 0px 2px;
+}
+.grid-title .grid-toolbox .btnExcel {
+  background-position: -51px -15px;
+}
+.grid-title .grid-toolbox .btnExcel:hover {
+  background-position: -51px -42px;
+}
+.grid-title .grid-toolbox .btnBack {
+  background-position: -15px -15px;
+}
+.grid-title .grid-toolbox .btnBack:hover {
+  background-position: -15px -42px;
+}
+.grid-title .grid-toolbox .btnSendMail {
+  background-position: -69px -15px;
+}
+.grid-title .grid-toolbox .btnSendMail:hover {
+  background-position: -69px -42px;
+}
+.grid-title .grid-toolbox .expanded {
+  background-position: -32px -15px;
+}
+.grid-title .grid-toolbox .expanded:hover {
+  background-position: -32px -42px;
+}
+/********************************************************/
+/*					       Pager                        */
+/********************************************************/
+.freegrid .grid-pager {
+  height: 35px;
+  background: #ffffff;
+}
+#pagination {
+  font-family: 'Roboto', sans-serif, arial, tahoma;
+  font-size: 11px;
+}
+#pagination a:hover,
+#pagination .current,
+#pagination .current.prev,
+#pagination .current.next {
+  background: #757575;
+  font-weight: normal;
+}
+#pagination a,
+#pagination span {
+  font-size: 11px;
+  padding: 0 4px 1px;
+}
+#pagination div.itemperpage {
+  color: #212121;
+  margin-top: 1px;
+  font-weight: normal;
+}
+#pagination .numberlist {
+  padding: 4px 2px;
+  border-color: #dddddd;
+}
+#pagination #itemperpage {
+  height: 20px;
+  margin-top: 2px;
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  -o-border-radius: 0;
+  border-radius: 0;
+}
+#pagination div.detailtext {
+  margin: 0;
+}
+#pagination .gotopage_box td {
+  padding: 0 5px !important;
+}
+#pagination .txt {
+  height: 15px;
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  -o-border-radius: 0;
+  border-radius: 0;
+}
+#pagenav_ibtn {
+  background: url("images/fanex-grid-icon.png") -15px -70px;
+  height: 14px;
+  position: relative;
+  top: 4px;
+}
+#pagenav_ibtn:hover {
+  background-position: -15px -95px !important;
+}
+.freegrid .table-cell {
+  position: relative;
+}
+.freegrid .icon-status {
+  float: right;
+  font-size: 12px;
+  color: #757575;
+  margin: 4px 2px 0 0;
+  cursor: pointer;
+  position: relative;
+}
+.freegrid .icon-status:hover,
+.freegrid .icon-status:focus {
+  font-size: 12px;
+  color: #ff6619;
+}
+.freegrid .list-status {
+  position: absolute;
+  font-family: 'Roboto', sans-serif, arial, tahoma;
+  top: 20px;
+  right: -6px;
+  left: auto;
+  min-width: inherit;
+  z-index: 100;
+  padding: 4px 0;
+  background-color: #fafafa;
+  list-style: none;
+  border: 1px solid #acacac;
+  color: #212121;
+  -webkit-border-radius: 2px;
+  -moz-border-radius: 2px;
+  -o-border-radius: 2px;
+  border-radius: 2px;
+  -webkit-box-shadow: 1px 1px 2px #cccccc;
+  -moz-box-shadow: 1px 1px 2px #cccccc;
+  -o-box-shadow: 1px 1px 2px #cccccc;
+  box-shadow: 1px 1px 2px #cccccc;
+}
+.freegrid .list-status li {
+  white-space: nowrap;
+  min-width: 80px;
+}
+.freegrid .list-status li a {
+  padding: 4px 8px;
+  text-align: left;
+}
+.freegrid .list-status li a:hover {
+  color: #ff6619;
+}
+.freegrid .list-status li.row_none {
+  background: #fff;
+  border-bottom: 1px solid #aaa;
+  border-top: 1px solid #aaa;
+  text-align: center;
+  cursor: pointer;
+}
+.freegrid .list-status li.row_none.row_C,
+.freegrid .list-status li.row_none.row_D {
+  border-top: none;
+}
+.freegrid .list-status li.row_1 {
+  background: #98b516;
+  text-align: center;
+  padding: 2px 0;
+  cursor: pointer;
+}
+.freegrid .list-status li.row_2,
+.freegrid .list-status li.row_A {
+  background: #007d00;
+  text-align: center;
+  padding: 2px 0;
+  cursor: pointer;
+}
+.freegrid .list-status li.row_3 {
+  background: #b87856;
+  text-align: center;
+  padding: 2px 0;
+  cursor: pointer;
+}
+.freegrid .list-status li.row_4 {
+  background: #fcc50f;
+  text-align: center;
+  padding: 2px 0;
+  cursor: pointer;
+}
+.freegrid .list-status li.row_5 {
+  background: #418a86;
+  text-align: center;
+  padding: 2px 0;
+  cursor: pointer;
+}
+.freegrid .list-status li.row_6 {
+  background: #969036;
+  text-align: center;
+  padding: 2px 0;
+  cursor: pointer;
+}
+.freegrid .list-status li.row_7 {
+  background: #944937;
+  text-align: center;
+  padding: 2px 0;
+  cursor: pointer;
+}
+.freegrid .list-status li.row_8,
+.freegrid .list-status li.row_B {
+  background: #3297fc;
+  text-align: center;
+  padding: 2px 0;
+  cursor: pointer;
+}
+.freegrid .list-status li.row_9 {
+  background: #c98402;
+  text-align: center;
+  padding: 2px 0;
+  cursor: pointer;
+}
+.freegrid .list-status li.row_10 {
+  background: #fc0000;
+  text-align: center;
+  padding: 2px 0;
+  cursor: pointer;
+}
+.freegrid .list-status:before,
+.freegrid .list-status:after {
+  content: "";
+  border-color: transparent transparent #fff transparent;
+  border-style: solid;
+  border-width: 5px;
+  width: 0;
+  height: 0;
+  position: absolute;
+  top: -10px;
+  right: 6px;
+  z-index: 102;
+}
+.freegrid .list-status:after {
+  border-color: transparent transparent #acacac transparent;
+  border-width: 6px;
+  top: -12px;
+  right: 5px;
+  z-index: 101;
+}
+/********************************************************/
+/*					  Fix bug on IE                     */
+/********************************************************/
+.eq-ie8 .grid {
+  font-family: arial, tahoma;
+}
+.eq-ie8 .freegrid .col_header_content th,
+.eq-ie8 .freegrid .col_body_content th,
+.eq-ie8 .freegrid .free-top-left table thead th,
+.eq-ie8 .freegrid .col_header table thead th,
+.eq-ie8 .freegrid .row_footer table thead th,
+.eq-ie8 .freegrid .col_footer table thead th {
+  font-family: arial, tahoma;
+  font-weight: bold;
+}
+.eq-ie8 #pagination {
+  font-family: arial, tahoma;
+}
+.eq-ie9 .grid * {
+  box-sizing: content-box;
+}
+/*# sourceMappingURL=datagrid.css.map */

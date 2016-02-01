@@ -1,0 +1,185 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Common UI</title>
+    <!-- Bootstrap -->
+    <link href="../../../content/bootstrap3.3.2/css/bootstrap.min.css" rel="stylesheet">
+    <link href="../../../content/common.css" rel="stylesheet">
+    
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="../../../javascript/libraries/head.js"></script>
+      <script src="../../../javascript/libraries/respond.min.js"></script>
+    <![endif]-->
+
+</head>
+<body>
+    <div class="container-fluid">
+        <ol class="breadcrumb">
+            <li><a class="mdi-action-home icon-home" href="#"></a></li>
+            <li><a href="#">Member Management</a></li>
+            <li><span>Manage Member</span></li>
+        </ol>
+        <div class="favorite">
+            <span class="glyphicon glyphicon-star-empty icon-none-favorite"></span>
+            <!--<span class="glyphicon glyphicon-star icon-favorite"></span>-->
+        </div>
+        <div class="row">
+            <div class="col-sm-12">
+                 <form class="form-inline form-common filter member-filter">
+                    <div class="filter-item">
+                        <div class="form-group">
+                            <label for="memberName" class="lb control-label">Member Name/ ID</label>
+                            <input type="text" id="Text1" class="form-control field">
+                        </div>
+                        <div class="form-group">
+                            <label for="site" class="lb shortlb control-label">Site</label>
+                            <input type="text" id="Text2" class="form-control field" />
+                        </div>
+                        <div class="form-group">
+                            <label class="lb mediumlb control-label" for="status">Status</label>
+                            <select id="Select1" class="form-control field">
+                                <option value="1">All</option>
+                                <option value="2">Integrating</option>
+                                <option value="3" selected="selected">Active</option>
+                                <option value="4">Inactive</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label class="lb control-label">Based</label>
+                            <select id="Select2" class="form-control field">
+                                <option>EUR</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="filter-item">
+                        <div class="form-group">
+                            <label for="currency" class="lb control-label">Currency</label>
+                            <select id="currency" class="form-control field">
+                                <option value="1">Currency</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="BA" class="lb shortlb control-label">BA</label>
+                            <select class="form-control field" id="BA">
+                                <option>All</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            
+                            <label for="specialLevel" class="lb mediumlb control-label">Special Level</label>
+                            <select class="form-control field" id="specialLevel">
+                                <option>All</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label class="lb control-label">Show/Hide Column</label>
+                            <select class="form-control field">
+                                <option>All</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <div class="">
+                                <button class="btn btn-primary" type="button">SEARCH</button>
+                            </div>
+                    </div>
+                    </div>
+
+                </form>
+            </div>
+            <div class="col-sm-12 header-table">
+                <a href="javascript:;" class="btn btn-fourth"><span class=""></span>Assign Comm Group</a>
+                <a href="javascript:;" class="btn btn-fourth"><span class=""></span>De-assign Comm Group</a>
+                <a href="javascript:;" class="btn btn-fourth"><span class=""></span>Update Commission</a>
+            </div>
+            <div class="col-sm-12">
+                <div id="gridContainer" class="grid has-header-table">
+                    <div id="gridId" class="freegrid content-grid">
+                    </div>
+                </div>
+            </div>
+        </div>  
+        <!-- view history -->
+        <div class="view-history modal fade" role="dialog" tabindex="-1" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                    <h4 class="modal-title" id="myModalLabel">Delete Commission Group</h4>
+                  </div>
+                  <div class="modal-body">
+                    <table class="table table-bordered table-medium">
+                        <thead>
+                            <tr>
+                                <th>ID</th>
+                                <th>Operation</th>
+                                <th>Remark</th>
+                                <th>User</th>
+                                <th>Date</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td class="text-center">1</td>
+                                <td class="text-center">Create</td>
+                                <td>Create comm group gA</td>
+                                <td>Admin</td>
+                                <td>01/21/2015 11:13:30 PM</td>
+                            </tr>
+                            <tr>
+                                <td class="text-center">2</td>
+                                <td class="text-center">Update</td>
+                                <td>Turn on BA on member 000US07</td>
+                                <td>Admin</td>
+                                <td>01/21/2015 11:13:30 PM</td>
+                            </tr>
+                             <tr>
+                                <td class="text-center">3</td>
+                                <td class="text-center">Update</td>
+                                <td>Disable RnG Casino</td>
+                                <td>Admin</td>
+                                <td>01/21/2015 11:13:30 PM</td>
+                            </tr>
+                             <tr>
+                                <td class="text-center">4</td>
+                                <td class="text-center">Update</td>
+                                <td>Update bet limit: CS, SB</td>
+                                <td>Admin</td>
+                                <td>01/21/2015 11:13:30 PM</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                  </div>
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                  </div>
+                </div>
+          </div>
+        </div>      
+    </div>
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="../../../javascript/libraries/jquery.min.js"></script>
+    <script src="../../../javascript/libraries/jquery-migrate-1.2.1.js"></script>
+    <script src="../../../javascript/libraries/Namespace/namespace.js"></script>    
+    <script src="../../../javascript/libraries/bootstrap-switch-master/bootstrap-switch.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="../../../javascript/libraries/Fanex.Grid/Language/Fanex.Gird.Lang.en-US.js"></script>
+    <script src="../../../javascript/libraries/Fanex.Grid/Language/Fanex.Gird.Lang.ja-JP.js"></script>
+    <script src="../../../javascript/libraries/Fanex.Grid/Language/Fanex.Gird.Lang.ko-KR.js"></script>
+    <script src="../../../javascript/libraries/Fanex.Grid/Language/Fanex.Gird.Lang.th-TH.js"></script>
+    <script src="../../../javascript/libraries/Fanex.Grid/Language/Fanex.Gird.Lang.vi-VN.js"></script>
+    <script src="../../../javascript/libraries/Fanex.Grid/Language/Fanex.Gird.Lang.zh-CN.js"></script>
+    <script src="../../../javascript/libraries/Fanex.Grid/Language/Fanex.Gird.Lang.zh-TW.js"></script>
+    <script src="../../../javascript/libraries/Fanex.Grid/Fanex.Pagination.js"></script>
+    <script src="../../../javascript/libraries/Fanex.Grid/Fanex.Grid.js"></script>
+    <script src="../../../javascript/libraries/Fanex.Grid/numeral.min.js"></script>
+    <script src="../../../javascript/libraries/Fanex.Grid/moment.min.js"></script>    
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="../../../javascript/libraries/bootstrap3.3.2/bootstrap.min.js"></script>
+    <script src="../../../javascript/manage-member/manage-member.js"></script>
+</body>
+</html>

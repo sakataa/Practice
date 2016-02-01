@@ -1,0 +1,258 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Licensee Management</title>
+    <!-- Bootstrap -->
+    <link href="content/bootstrap3.3.2/css/bootstrap.min.css" rel="stylesheet">
+    <link href="content/material-wfont.css" rel="stylesheet">
+    <link href="content/fonts.css" rel="stylesheet">
+    <link href="content/icons.css" rel="stylesheet">
+    <link href="content/subsite.css" rel="stylesheet">
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="javascript/libraries/head.js"></script>
+      <script src="javascript/libraries/respond.min.js"></script>
+    <![endif]-->
+</head>
+<body>
+    <header class="header affix-top">
+		<div class="container-fluid">
+			<div class="row">
+				<div class="header-left">
+                    <span class="mdi-navigation-menu icon-left-panel" id="icon-navside-left"></span>
+					<a href="member-management.html" class="logo">Member Management</a>
+				</div>
+                <nav class="navbar navbar-default menu-horizontal" role="navigation">
+                    <!-- Brand and toggle get grouped for better mobile display -->
+                    <div class="navbar-header">
+                        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                            <span class="sr-only">Toggle navigation</span>
+                            <span class="mdi-navigation-expand-more icon-arrow-down"></span>
+                        </button>
+                    </div>
+
+                    <!-- Collect the nav links, forms, and other content for toggling -->
+                    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                        <ul class="nav navbar-nav">
+                            <li class="active"><a href="components/member-management/manage-member/index.html" target="iframe-content">Manage Member</a></li>
+                            <li><a href="components/member-management/manage-group/index.html" target="iframe-content">Manage Group</a></li>
+                        </ul>
+                    </div><!-- /.navbar-collapse -->
+                </nav>
+				<div class="header-right">
+                    <div class="info">
+                        <div class="dropdown">
+                            <span class="dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-expanded="true">
+                                <span class="mdi-social-person icon-user"></span>
+                                <span class="caret"></span>
+                            </span>
+                            <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu1">
+                                <li><a role="menuitem" tabindex="-1" href="#"><span class="mdi-social-person icon-user"></span>User Name</a></li>
+                                <li>
+                                    <a role="menuitem" tabindex="-2" href="#">
+                                        <div class="announcement">
+                                            <span class="mdi-social-notifications icon-announcement"></span>
+                                            <span class="badge lbl-number">2</span>
+                                        </div>Notification
+                                    </a>
+                                </li>
+                                <li><a role="menuitem" tabindex="-3" href="#"><span class="mdi-action-settings icon-setting"></span>Setting</a></li>
+                                <li><a role="menuitem" tabindex="-4" href="components/login/login.html"><span class="mdi-action-exit-to-app icon-logout"></span>Logout</a></li>
+                            </ul>
+                        </div>
+                    </div>
+				</div>
+			</div>
+		</div>
+    </header>
+    <div class="navside-left" id="navside-left">
+        <div class="scroll-bar">
+            <div class="search-box">
+                <input type="text" class="txt-search" id="txt-search" />
+                <span class="mdi-action-search icon-search" id="icon-search"></span>
+            </div>
+            <ul class="left-menu" id="left-menu">
+                <li>
+                    <div class="menu">
+                        <a href="javascript:;">
+                            <span class="mdi-action-settings custome-icon" title="Administration"></span>
+                            <span class="txt">Landing Page</span>
+                        </a>
+                    </div>
+                </li>
+                <li>
+                    <div class="menu">
+                        <a href="javascript:;">
+                            <span class="mdi-social-person icon-user custome-icon" title="Administration"></span>
+                            <span class="txt">Administration</span>
+                            <span class="mdi-hardware-keyboard-arrow-down icon-submenu"></span>
+                        </a>
+                        <ul class="submenu">
+                            <li><a href="javascript:;" target="iframe-content"><span class="mdi-image-lens icon-circle"></span>Manage User Groups</a></li>
+                            <li><a href="javascript:;" target="iframe-content"><span class="mdi-image-lens icon-circle"></span>Manage Users</a></li>
+                            <li><a href="javascript:;" target="iframe-content"><span class="mdi-image-lens icon-circle"></span>Manage Logs</a></li>
+                        </ul>
+                    </div>
+                </li>
+                <li>
+                    <div class="menu">
+                        <a href="javascript:;">
+                            <span class="icon-customer custome-icon-img" title="Messages and Announcement"></span>
+                            <span class="txt">Messages and Announcement</span>
+                        </a>
+                    </div>
+                </li>
+                <li>
+                    <div class="menu">
+                        <a href="javascript:;">
+                            <span class="mdi-notification-event-available custome-icon" title="Marketing Management"></span>
+                            <span class="txt">Marketing Management</span>
+                        </a>
+                    </div>
+                </li>
+                <li>
+                    <div class="menu">
+                        <a href="javascript:;">
+                            <span class="mdi-communication-location-on custome-icon" title="Site Management"></span>
+                            <span class="txt">Site Management</span>
+                            <span class="mdi-hardware-keyboard-arrow-down icon-submenu"></span>
+                        </a>
+                        <ul class="submenu">
+                            <li><a href="javascript:;" target="iframe-content"><span class="mdi-image-lens icon-circle"></span>Manage Sites</a></li>
+                        </ul>
+                    </div>
+                </li>
+                <li>
+                    <div class="menu">
+                        <a href="javascript:;">
+                            <span class="mdi-action-assignment custome-icon" title="Member Management"></span>
+                            <span class="txt">Member Management</span>
+                            <span class="mdi-hardware-keyboard-arrow-down icon-submenu"></span>
+                        </a>
+                        <ul class="submenu">
+                            <li><a href="javascript:;" target="iframe-content"><span class="mdi-image-lens icon-circle"></span>Manage Members</a></li>
+                            <li><a href="javascript:;" target="iframe-content"><span class="mdi-image-lens icon-circle"></span>Manage Groups</a></li>
+                        </ul>
+                    </div>
+                </li>
+                <li>
+                    <div class="menu">
+                        <a href="javascript:;">
+                            <span class="icon-customer custome-icon-img" title="Customer Management"></span>
+                            <span class="txt">Finance</span>
+                            <span class="mdi-hardware-keyboard-arrow-down icon-submenu"></span>
+                        </a>
+                        <ul class="submenu">
+                            <li><a href="javascript:;" target="iframe-content"><span class="mdi-image-lens icon-circle"></span>Deposit Management</a></li>
+                            <li><a href="javascript:;" target="iframe-content"><span class="mdi-image-lens icon-circle"></span>Withdrawal Management</a></li>
+                            <li><a href="javascript:;" target="iframe-content"><span class="mdi-image-lens icon-circle"></span>Payment Adjustment</a></li>
+                            <li><a href="javascript:;" target="iframe-content"><span class="mdi-image-lens icon-circle"></span>Payment Limit</a></li>
+                        </ul>
+                    </div>
+                </li>
+                <li>
+                    <div class="menu">
+                        <a href="javascript:;">
+                            <span class="icon-bet custome-icon-img" title="Affiliate Management"></span>
+                            <span class="txt">Affiliate Management</span>
+                            <span class="mdi-hardware-keyboard-arrow-down icon-submenu"></span>
+                        </a>
+                        <ul class="submenu">
+                            <li><a href="javascript:;" target="iframe-content"><span class="mdi-image-lens icon-circle"></span>Manage Affiliates</a></li>
+                            <li><a href="javascript:;" target="iframe-content"><span class="mdi-image-lens icon-circle"></span>Affiliate Commission Settings</a></li>
+                            <li><a href="javascript:;" target="iframe-content"><span class="mdi-image-lens icon-circle"></span>Feedback Management</a></li>
+                            <li><a href="javascript:;" target="iframe-content"><span class="mdi-image-lens icon-circle"></span>Payment Request</a></li>
+                        </ul>
+                    </div>
+                </li>
+                <li>
+                    <div class="menu">
+                        <a href="javascript:;">
+                            <span class="icon-bet custome-icon-img" title=""></span>
+                            <span class="txt">Risk Management</span>
+                            <span class="mdi-hardware-keyboard-arrow-down icon-submenu"></span>
+                        </a>
+                        <ul class="submenu">
+                            <li><a href="javascript:;" target="iframe-content"><span class="mdi-image-lens icon-circle"></span>Total Bets</a></li>
+                            <li><a href="javascript:;" target="iframe-content"><span class="mdi-image-lens icon-circle"></span>Forecast</a></li>
+                            <li><a href="javascript:;" target="iframe-content"><span class="mdi-image-lens icon-circle"></span>Parlay Payout Settings</a></li>
+                            <li><a href="javascript:;" target="iframe-content"><span class="mdi-image-lens icon-circle"></span>Last Bets Monitoring</a></li>
+                            <li><a href="javascript:;" target="iframe-content"><span class="mdi-image-lens icon-circle"></span>Match Controller</a></li>
+                            <li><a href="javascript:;" target="iframe-content"><span class="mdi-image-lens icon-circle"></span>Bet Limit Controller</a></li>
+                        </ul>
+                    </div>                        
+                </li>
+                <li>
+                    <div class="menu">
+                        <a href="#">
+                            <span class="icon-risk custome-icon-img" title=""></span>
+                            <span class="txt">Bet Query</span>
+                            <span class="mdi-hardware-keyboard-arrow-down icon-submenu"></span>
+                        </a>
+                        <ul class="submenu">
+                            <li><a href="javascript:;" target="iframe-content"><span class="mdi-image-lens icon-circle"></span>Bet Query</a></li>
+                        </ul>
+                    </div>                        
+                </li>
+                <li>
+                    <div class="menu">
+                        <a href="javascript:;">
+                            <span class="icon-customer custome-icon-img" title=""></span>
+                            <span class="txt">Reports</span>
+                            <span class="mdi-hardware-keyboard-arrow-down icon-submenu"></span>
+                        </a>
+                        <ul class="submenu">
+                            <li><a href="javascript:;" target="iframe-content"><span class="mdi-image-lens icon-circle"></span>Bonus Report</a></li>
+                            <li><a href="javascript:;" target="iframe-content"><span class="mdi-image-lens icon-circle"></span>Financial Transactions</a></li>
+                            <li><a href="javascript:;" target="iframe-content"><span class="mdi-image-lens icon-circle"></span>Online Member</a></li>
+                            <li><a href="javascript:;" target="iframe-content"><span class="mdi-image-lens icon-circle"></span>Early Events</a></li>
+                            <li><a href="javascript:;" target="iframe-content"><span class="mdi-image-lens icon-circle"></span>Licensee Win Loss</a></li>
+                            <li><a href="javascript:;" target="iframe-content"><span class="mdi-image-lens icon-circle"></span>Member Win Loss</a></li>
+                            <li><a href="javascript:;" target="iframe-content"><span class="mdi-image-lens icon-circle"></span>Win Loss by Platform</a></li>
+                            <li><a href="javascript:;" target="iframe-content"><span class="mdi-image-lens icon-circle"></span>Member Turnover and Balance</a></li>
+                            <li><a href="javascript:;" target="iframe-content"><span class="mdi-image-lens icon-circle"></span>Match/League Win Loss</a></li>
+                            <li><a href="javascript:;" target="iframe-content"><span class="mdi-image-lens icon-circle"></span>Result</a></li>
+                            <li><a href="javascript:;" target="iframe-content"><span class="mdi-image-lens icon-circle"></span>Member Turnover by Odds</a></li>
+                            <li><a href="javascript:;" target="iframe-content"><span class="mdi-image-lens icon-circle"></span>Number Game Win Loss</a></li>
+                            <li><a href="javascript:;" target="iframe-content"><span class="mdi-image-lens icon-circle"></span>Racing Win Loss</a></li>
+                            <li><a href="javascript:;" target="iframe-content"><span class="mdi-image-lens icon-circle"></span>Virtual Sports Win Loss</a></li>
+                            <li><a href="javascript:;" target="iframe-content"><span class="mdi-image-lens icon-circle"></span>Affiliate Commission</a></li>
+                            <li><a href="javascript:;" target="iframe-content"><span class="mdi-image-lens icon-circle"></span>Live Casino Win Loss</a></li>
+                            <li><a href="javascript:;" target="iframe-content"><span class="mdi-image-lens icon-circle"></span>RNG Win Loss</a></li>
+                            <li><a href="javascript:;" target="iframe-content"><span class="mdi-image-lens icon-circle"></span>AG Casino Win Loss</a></li>
+                            <li><a href="javascript:;" target="iframe-content"><span class="mdi-image-lens icon-circle"></span>Keno Win Loss</a></li>
+                        </ul>
+                    </div>                        
+                </li>
+                <li>
+                    <div class="menu">
+                        <a href="javascript:;">
+                            <span class="mdi-maps-layers custome-icon" title=""></span>
+                            <span class="txt">Agent Management</span>
+                            <span class="mdi-hardware-keyboard-arrow-down icon-submenu"></span>
+                        </a>
+                        <ul class="submenu">
+                            <li><a href="javascript:;" target="iframe-content"><span class="mdi-image-lens icon-circle"></span>Agent List</a></li>
+                        </ul>
+                    </div>                        
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="page">        
+        <iframe src="components/member-management/manage-member/index.html" id="iframe-content" name="iframe-content"></iframe>
+    </div>
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="javascript/libraries/jquery.min.js"></script>
+    <script src="javascript/libraries/jquery-migrate-1.2.1.js"></script>
+    <script src="javascript/libraries/Namespace/namespace.js"></script>
+    <script src="javascript/libraries/jQuery/jquery-slim-scroll/jquery.slimscroll.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="javascript/libraries/bootstrap3.3.2/bootstrap.min.js"></script>    
+    <script src="javascript/subsite/subsite.js"></script>
+</body>
+</html>

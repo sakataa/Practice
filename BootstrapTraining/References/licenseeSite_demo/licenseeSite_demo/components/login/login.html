@@ -1,0 +1,68 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Asgard</title>
+    <link href="../../content/bootstrap3.3.2/css/bootstrap.min.css" rel="stylesheet">
+    <link href="../../content/fonts.css" rel="stylesheet">
+    <link href="../../content/sites/login/login.css" rel="stylesheet">
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="../../javascript/libraries/head.js"></script>
+      <script src="../../javascript/libraries/respond.min.js"></script>
+    <![endif]-->
+
+</head>
+<body>
+    <div class="login-container">
+        <div class="container-fluid">   
+            <div class="row system-name">
+                Service Provider Site
+            </div>
+            <div class="row login-panel">
+                <div class="col-sm-12 header-panel">
+                    <div class="sign-in">Sign in</div>
+                </div>
+                <form class="form-horizontal col-sm-12 content-panel" role="form" col-sm-12 content-panel">
+                    <div class="form-group">
+                        <div class="col-sm-12 input-box username-box">
+                            <input type="text" class="form-control txttextbox username" placeholder="Username" />
+                            <span class="icon-username"></span>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="col-sm-12 input-box">
+                            <input type="password" class="form-control txttextbox password" placeholder="Password"/>
+                            <span class="icon-password"></span>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="col-sm-12">
+                            <div class="img-box">
+                                <img src="../../content/sites/login/images/captcha.jpg" />
+                            </div>
+                            <span class="icon-refresh"></span>
+                            <input type="text" class="txttextbox txtCaptcha" placeholder="Verification code"/>
+                            <input type="button" class="btnSubmit" value="Submit" id="btnLogin"/>
+                        </div>
+                    </div>
+                </form>
+            </div>
+            <div class="row err-msg">
+                <span class="icon-note"></span>
+                <span class="text-note"></span>
+            </div>
+        </div>
+    </div>
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="../../javascript/libraries/jquery.min.js"></script>
+    <script src="../../javascript/libraries/jquery-migrate-1.2.1.js"></script>
+    <script src="../../javascript/libraries/Namespace/namespace.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="../../javascript/libraries/bootstrap3.3.2/bootstrap.min.js"></script>
+    <script src="../../javascript/login/login.js"></script>
+</body>
+</html>

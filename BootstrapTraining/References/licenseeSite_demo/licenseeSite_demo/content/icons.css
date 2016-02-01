@@ -1,0 +1,120 @@
+﻿/********************************************************/
+/*					      Icons                         */
+/********************************************************/
+.icon {
+  background: url(images/sprites.png) no-repeat;
+  display: inline-block;
+}
+.icon-time {
+  background: url(images/sprites.png) no-repeat;
+  display: inline-block;
+  background-position: -25px -16px;
+  height: 16px;
+  width: 16px;
+}
+.icon-customer-hover {
+  background-position: -100px -57px;
+}
+.icon-customer {
+  background: url(images/sprites.png) no-repeat;
+  display: inline-block;
+  background-position: -100px -16px;
+  height: 16px;
+  width: 16px;
+}
+.icon-customer:hover {
+  background-position: -100px -57px;
+}
+.icon-bet-hover {
+  background-position: -180px -56px;
+}
+.icon-bet {
+  background: url(images/sprites.png) no-repeat;
+  display: inline-block;
+  background-position: -180px -15px;
+  height: 16px;
+  width: 16px;
+}
+.icon-bet:hover {
+  background-position: -180px -56px;
+}
+.icon-risk-hover {
+  background-position: -258px -53px;
+}
+.icon-risk {
+  background: url(images/sprites.png) no-repeat;
+  display: inline-block;
+  background-position: -258px -12px;
+  height: 16px;
+  width: 16px;
+}
+.icon-risk:hover {
+  background-position: -258px -53px;
+}
+.icon-invoice-hover {
+  background-position: -343px -56px;
+}
+.icon-invoice {
+  background: url(images/sprites.png) no-repeat;
+  display: inline-block;
+  background-position: -343px -15px;
+  height: 16px;
+  width: 16px;
+}
+.icon-invoice:hover {
+  background-position: -343px -56px;
+}
+.icon-report-hover {
+  background-position: -426px -56px;
+}
+.icon-report {
+  background: url(images/sprites.png) no-repeat;
+  display: inline-block;
+  background-position: -426px -15px;
+  height: 16px;
+  width: 16px;
+}
+.icon-report:hover {
+  background-position: -426px -56px;
+}
+.icon-settle-hover {
+  background-position: -508px -56px;
+}
+.icon-settle {
+  background: url(images/sprites.png) no-repeat;
+  display: inline-block;
+  background-position: -508px -15px;
+  height: 16px;
+  width: 16px;
+}
+.icon-settle:hover {
+  background-position: -508px -56px;
+}
+.icon-trader-hover {
+  background-position: -25px -135px;
+}
+.icon-trader {
+  background: url(images/sprites.png) no-repeat;
+  display: inline-block;
+  background-position: -25px -96px;
+  height: 16px;
+  width: 16px;
+}
+.icon-trader:hover {
+  background-position: -25px -135px;
+}
+.icon-button-add {
+  background: url(images/sprites.png) no-repeat;
+  display: inline-block;
+  background-position: -100px -96px;
+  height: 16px;
+  width: 16px;
+}
+.icon-excel {
+  background: url(images/sprites.png) no-repeat;
+  display: inline-block;
+  background-position: -180px -96px;
+  height: 16px;
+  width: 16px;
+}
+/*# sourceMappingURL=icons.css.map */

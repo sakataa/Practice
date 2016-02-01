@@ -1,0 +1,215 @@
+﻿/********************************************************/
+/*					      Common                        */
+/********************************************************/
+/********************************************************/
+/*					      Header                        */
+/********************************************************/
+/********************************************************/
+/*					    Left panel                      */
+/********************************************************/
+/********************************************************/
+/*					      Content                       */
+/********************************************************/
+/********************************************************/
+/*					      Footer                        */
+/********************************************************/
+/********************************************************/
+/*					     Calendar                       */
+/********************************************************/
+/********************************************************/
+/*				      Menu/dropdown                     */
+/********************************************************/
+/********************************************************/
+/*				           Tree                         */
+/********************************************************/
+/********************************************************/
+/*				       Multi Select                     */
+/********************************************************/
+/********************************************************/
+/*				         Datagrid                       */
+/********************************************************/
+/********************************************************/
+/*				      Message Popup                     */
+/********************************************************/
+/********************************************************/
+/*				         Tooltip                        */
+/********************************************************/
+/********************************************************/
+/*				         Popover                        */
+/********************************************************/
+/********************************************************/
+/*				          Tabs                          */
+/********************************************************/
+/********************************************************/
+/*				       Breadcrumbs                      */
+/********************************************************/
+/********************************************************/
+/*				         Spinner                        */
+/********************************************************/
+/********************************************************/
+/*				         Collapse                       */
+/********************************************************/
+/********************************************************/
+/*				           Panel                        */
+/********************************************************/
+/********************************************************/
+/*				      Menu/dropdown                     */
+/********************************************************/
+/********************************************************/
+/*				      Validation Form                   */
+/********************************************************/
+/********************************************************/
+/*					     Customize                      */
+/********************************************************/
+.breadcrumb {
+  background-color: #ffffff;
+  color: #ff6619;
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  -o-border-radius: 0;
+  border-radius: 0;
+}
+.breadcrumb a {
+  color: #666666;
+}
+.breadcrumb a:hover {
+  color: #ff6619;
+}
+.breadcrumb li + li:before {
+  color: #808080;
+  padding: 0 4px;
+}
+.breadcrumb .active {
+  color: #ff6619;
+}
+/********************************************************/
+/*			       Advanced breadcrumbs                 */
+/********************************************************/
+.icon-home {
+  color: #fff;
+}
+/* Breadcrumbs from http://bootsnipp.com/snippets/featured/triangle-breadcrumbs-arrows */
+.btn-breadcrumb {
+  margin: 0 0 16px;
+  padding: 0;
+  display: table;
+  clear: both;
+  /* The responsive part */
+}
+.btn-breadcrumb .btn {
+  padding: 6px 12px 6px 24px;
+  /* background of divider icon */
+  /* border of divider icon */
+  /* background button */
+}
+.btn-breadcrumb .btn:not(:last-child):after {
+  content: " ";
+  display: block;
+  width: 0;
+  height: 0;
+  border-top: 17px solid transparent;
+  border-bottom: 17px solid transparent;
+  border-left: 10px solid #ffffff;
+  position: absolute;
+  top: 50%;
+  margin-top: -17px;
+  left: 100%;
+  z-index: 3;
+}
+.btn-breadcrumb .btn:not(:last-child):before {
+  content: " ";
+  display: block;
+  width: 0;
+  height: 0;
+  border-top: 17px solid transparent;
+  border-bottom: 17px solid transparent;
+  border-left: 10px solid #cccccc;
+  position: absolute;
+  top: 50%;
+  margin-top: -17px;
+  margin-left: 1px;
+  left: 100%;
+  z-index: 3;
+}
+.btn-breadcrumb .btn.btn-root {
+  background-color: #ff6619;
+  /* background button */
+}
+.btn-breadcrumb .btn.btn-root:not(:last-child):before {
+  border-left-color: #ff6619;
+}
+.btn-breadcrumb .btn.btn-root.btn-default:not(:last-child):after {
+  border-left-color: #ff6619;
+}
+.btn-breadcrumb .btn.btn-root.btn-default:hover:not(:last-child):after {
+  border-left-color: #ff5500;
+}
+.btn-breadcrumb .btn.btn-root.btn-default:hover {
+  background-color: #ff5500;
+}
+.btn-breadcrumb .btn:first-child {
+  padding: 6px 6px 6px 10px;
+}
+.btn-breadcrumb .btn:last-child {
+  padding: 6px 18px 6px 24px;
+}
+.btn-breadcrumb .btn.btn-default:not(:last-child):after {
+  border-left: 10px solid #ffffff;
+}
+.btn-breadcrumb .btn.btn-default:not(:last-child):before {
+  border-left: 10px solid #cccccc;
+}
+.btn-breadcrumb .btn.btn-default:hover:not(:last-child):after {
+  border-left: 10px solid #f3f3f3;
+}
+.btn-breadcrumb .btn.btn-default:hover:not(:last-child):before {
+  border-left: 10px solid #adadad;
+}
+.btn-breadcrumb .btn.btn-default:hover {
+  background-color: #f3f3f3;
+}
+.btn-breadcrumb .btn.btn-default:focus,
+.btn-breadcrumb .btn.btn-default:active {
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  -o-box-shadow: none;
+  box-shadow: none;
+  background-color: #f3f3f3;
+}
+.btn-breadcrumb > * > div {
+  /* With less: .text-overflow(); */
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.btn-breadcrumb > *:nth-child(n+2) {
+  display: none;
+}
+/* === For phones =================================== */
+@media (max-width: 767px) {
+  .btn-breadcrumb > *:nth-last-child(-n+2) {
+    display: block;
+  }
+  .btn-breadcrumb > * div {
+    max-width: 60px;
+  }
+}
+/* === For tablets ================================== */
+@media (min-width: 768px) and (max-width: 991px) {
+  .btn-breadcrumb > *:nth-last-child(-n+4) {
+    display: block;
+  }
+  .btn-breadcrumb > * div {
+    max-width: 100px;
+  }
+}
+/* === For desktops ================================== */
+@media (min-width: 992px) {
+  .btn-breadcrumb > *:nth-last-child(-n+6) {
+    display: block;
+  }
+  .btn-breadcrumb > * div {
+    max-width: 170px;
+  }
+}
+/*# sourceMappingURL=breadcrumbs.css.map */

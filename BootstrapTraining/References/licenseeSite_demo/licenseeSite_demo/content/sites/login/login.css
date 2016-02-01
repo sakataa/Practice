@@ -1,0 +1,184 @@
+﻿/********************************************************/
+/*					  Login container                   */
+/********************************************************/
+/********************************************************/
+/*					       Font                         */
+/********************************************************/
+body {
+  background-color: #e1e4e4;
+  font-size: 14px;
+  height: 100%;
+  left: 0;
+  bottom: 0;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+.login-container {
+  width: 480px;
+  height: 350px;
+  margin: auto;
+  position: relative;
+  top: 19%;
+}
+.login-container .system-name {
+  font-size: 36px;
+  color: #4d4d4d;
+  font-family: 'Roboto Thin', sans-serif, arial, tahoma;
+  margin-bottom: 20px;
+  text-align: center;
+}
+.login-container .login-panel {
+  background: #ffffff;
+}
+.login-container .login-panel .header-panel {
+  display: inline-block;
+  background-color: #4d4d4d;
+  width: 100%;
+}
+.login-container .login-panel .header-panel .sign-in {
+  font-size: 28px;
+  font-family: 'Roboto Light', sans-serif, arial, tahoma;
+  color: #ffffff;
+  padding: 7px 15px;
+  float: left;
+}
+.login-container .login-panel .content-panel {
+  padding: 25px 30px;
+  margin-bottom: 0;
+}
+.login-container .login-panel .content-panel .form-group .input-box {
+  position: relative;
+}
+.login-container .login-panel .content-panel .form-group .input-box.username-box {
+  margin-bottom: 10px;
+}
+.login-container .login-panel .content-panel .form-group .input-box .icon-username,
+.login-container .login-panel .content-panel .form-group .input-box .icon-password {
+  position: absolute;
+  right: 15px;
+  top: 2px;
+}
+.login-container .login-panel .content-panel .form-group .txttextbox {
+  height: 38px;
+  background-color: #f0eef0;
+  border: 1px solid #dcdcdc;
+  font-family: 'Roboto Bold', sans-serif, arial, tahoma;
+  color: #999999;
+  padding: 6px 28px 6px 12px;
+  -webkit-box-shadow: 0 0 #ffffff;
+  -moz-box-shadow: 0 0 #ffffff;
+  -o-box-shadow: 0 0 #ffffff;
+  box-shadow: 0 0 #ffffff;
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  -o-border-radius: 0;
+  border-radius: 0;
+}
+.login-container .login-panel .content-panel .form-group .txttextbox.txtCaptcha {
+  height: 34px;
+  margin-right: 18px;
+  text-align: center;
+  width: 155px;
+  display: none;
+}
+.login-container .login-panel .content-panel .form-group .img-box {
+  display: inline-block;
+  padding: 3px 10px;
+  border: 1px solid #dcdcdc;
+  display: none;
+}
+.login-container .login-panel .content-panel .form-group .icon-refresh {
+  height: 32px;
+  position: relative;
+  top: 9px;
+  margin: 0 4px;
+  cursor: pointer;
+  display: none;
+}
+.login-container .login-panel .content-panel .form-group .btnSubmit {
+  color: #fff;
+  font-size: 15px;
+  font-family: 'Roboto Medium', sans-serif, arial, tahoma;
+  background-color: #ff6619;
+  border: none;
+  padding: 7px 28px 6px;
+  margin-top: 9px;
+  float: right;
+}
+.login-container .err-msg {
+  background-color: #f8b49a;
+  text-align: center;
+  margin-top: 25px;
+  padding: 3px;
+  color: #4d4d4d;
+  font-size: 13px;
+  font-family: 'Roboto Medium', sans-serif, arial, tahoma;
+  display: none;
+  -webkit-box-shadow: 0 0 4px 3px #c5c7c7;
+  -moz-box-shadow: 0 0 4px 3px #c5c7c7;
+  -o-box-shadow: 0 0 4px 3px #c5c7c7;
+  box-shadow: 0 0 4px 3px #c5c7c7;
+}
+.login-container .err-msg .text-note {
+  position: relative;
+  top: -8px;
+  left: 5px;
+}
+.login-container .err-msg-show {
+  display: block;
+}
+/********************************************************/
+/*					   Message Popup                    */
+/********************************************************/
+.icon {
+  background: url(Images/login_sprites.png);
+  width: 29px;
+  height: 29px;
+  display: inline-block;
+}
+.icon-refresh {
+  background: url(Images/login_sprites.png);
+  width: 29px;
+  height: 29px;
+  display: inline-block;
+  background-position: 0 -22px;
+}
+.icon-note {
+  background: url(Images/login_sprites.png);
+  width: 29px;
+  height: 29px;
+  display: inline-block;
+  background-position: -77px -28px;
+  width: 25px;
+}
+.icon-username {
+  background: url(Images/login_sprites.png);
+  width: 29px;
+  height: 29px;
+  display: inline-block;
+  background-position: -28px -28px;
+  width: 25px;
+}
+.icon-password {
+  background: url(Images/login_sprites.png);
+  width: 29px;
+  height: 29px;
+  display: inline-block;
+  background-position: -55px -28px;
+  width: 25px;
+}
+/********************************************************/
+/*					    Resolution                      */
+/********************************************************/
+@media (max-width: 768px) {
+  .login-container {
+    width: 100%;
+    padding: 16px;
+  }
+  .login-container .login-panel .header-panel .sign-in {
+    float: none;
+    text-align: center;
+  }
+}
+/*# sourceMappingURL=login.css.map */

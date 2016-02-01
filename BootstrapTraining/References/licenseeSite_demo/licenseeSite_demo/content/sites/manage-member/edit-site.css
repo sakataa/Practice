@@ -1,0 +1,45 @@
+﻿.site-info {
+  background-color: #ffffff;
+  border: 1px solid #dedede;
+  border-radius: 2px;
+  -webkit-border-radius: 2px;
+  -moz-border-radius: 2px;
+  -o-border-radius: 2px;
+  box-shadow: 0 0 2px rgba(0, 0, 0, 0.1);
+  -webkit-box-shadow: 0 0 2px rgba(0, 0, 0, 0.1);
+  -moz-box-shadow: 0 0 2px rgba(0, 0, 0, 0.1);
+  -o-box-shadow: 0 0 2px rgba(0, 0, 0, 0.1);
+  display: block;
+  float: left;
+  margin: 0 0 16px;
+  padding: 12px 16px;
+  width: auto;
+}
+.site-info label {
+  margin-right: 4px;
+  font-weight: normal;
+}
+.site-info .item {
+  display: inline-block;
+  margin-right: 10px;
+  line-height: 24px;
+}
+.tab-custom .tab-content {
+  border-top: medium none;
+  bottom: 16px;
+  left: 16px;
+  position: fixed;
+  right: 16px;
+  top: 162px;
+}
+.tab-custom .tab-content .tab-pane {
+  height: 100%;
+  padding: 0;
+  width: 100%;
+}
+.txt-warning .icon-warning {
+  font-size: 15px;
+  position: relative;
+  top: 2px;
+}
+/*# sourceMappingURL=edit-site.css.map */

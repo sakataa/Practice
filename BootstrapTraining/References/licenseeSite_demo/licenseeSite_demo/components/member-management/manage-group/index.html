@@ -1,0 +1,348 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Common UI</title>
+    <!-- Bootstrap -->
+    <link href="../../../content/bootstrap3.3.2/css/bootstrap.min.css" rel="stylesheet">
+    <link href="../../../content/material-wfont.css" rel="stylesheet">
+    <link href="../../../content/Fanex.Grid/Fanex.Pagination.css" rel="stylesheet">
+    <link href="../../../content/Fanex.Grid/Fanex.Grid.css" rel="stylesheet">
+    <link href="../../../content/fonts.css" rel="stylesheet">
+    <link href="../../../content/icons.css" rel="stylesheet">
+    <link href="../../../content/common.css" rel="stylesheet">
+    <link href="../../../content/components/form/form.css" rel="stylesheet">
+    <link href="../../../content/components/breadcrumbs/breadcrumbs.css" rel="stylesheet">
+    <link href="../../../content/components/datagrid/datagrid.css" rel="stylesheet">
+   <link href="../../../content/sites/manage-member/common.css" rel="stylesheet" type="text/css">
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="../../../javascript/libraries/head.js"></script>
+      <script src="../../../javascript/libraries/respond.min.js"></script>
+    <![endif]-->
+    
+</head>
+<body>
+    <div class="container-fluid">
+        <ol class="breadcrumb">
+            <li><a class="mdi-action-home icon-home" href="#"></a></li>
+            <li><a href="#">Licensee Management</a></li>
+            <li><span>Manage Group</span></li>
+        </ol>
+        <div class="favorite">
+            <span class="glyphicon glyphicon-star-empty icon-none-favorite"></span>
+            <!--<span class="glyphicon glyphicon-star icon-favorite"></span>-->
+        </div>
+        <div class="row">
+            <div class="col-sm-12">
+                <form class="form-inline form-common filter">
+                    <div class="form-group">
+                        <label for="licenseeName">Group Name/ID</label>
+                        <input type="text" id="licenseeName" class="form-control">
+                    </div>
+                    <div class="form-group">
+                        <label for="type">Site</label>
+                        <select id="type" class="form-control">
+                            <option value="1">All</option>
+                            <option value="2">12Bet</option>
+                            <option value="3">12Bet12</option>
+                        </select>
+                    </div>                    
+                    <button class="btn btn-primary" type="button">SEARCH</button>    
+                </form>
+            </div>
+            <div class="col-sm-12 header-table">
+                <a href="javascript:;" class="btn btn-fourth" data-toggle="modal" data-target=".create_group"><span class="icon-button-add"></span>Create Commission Group</a>
+                <a href="new.html" class="btn btn-fourth"><span class="icon-excel"></span>Export To Excel</a>                
+            </div>
+            <div class="col-sm-12">
+                <div id="gridContainer" class="grid has-header-table">
+                    <p>If default group is selected, all newly registered members will be automatically assigned to this commission group. There will be no change to existing members. </p>
+                    <div id="gridId" class="freegrid content-grid">
+                    </div>
+                </div>
+            </div>
+        </div>
+                <!-- view history -->
+        <div id="deleteComm" class="modal fade" role="dialog" tabindex="-1" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                    <h4 class="modal-title" id="myModalLabel">Delete Commission Group</h4>
+                  </div>
+                  <div class="modal-body">
+                    Are you sure you want to delete group: VIPcomm?
+                    <div class="rd-box">
+                        <div class="radio">
+                            <input type="radio" name="style" id="optionsCheckboxs1" value="option1" checked />
+                            <label class="radio-label" for="optionsCheckboxs1">Keep current commission</label>
+                        </div>
+                        <div class="radio">
+                            <input type="radio" name="style" id="optionsCheckboxs2" value="option2" />
+                            <label class="radio-label" for="optionsCheckboxs2">Clear member's commission</label>
+                        </div>
+                    </div>
+                  </div>
+                  <div class="modal-footer">
+                     <button type="submit" class="btn btn-primary">OK</button>
+                        <button type="submit" class="btn btn-third">Cancel</button>
+                  </div>
+                </div>
+          </div>
+        </div>   
+         <!-- create Comm -->
+         <div  class="create_group modal fade" role="dialog" tabindex="-1" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                    <h4 class="modal-title" id="H2">Create Commission Group</h4>
+                  </div>
+                  <div class="modal-body">
+                      <div class="form-horizontal form-common none">
+				        <div class="form-group">
+                            <label class="col-sm-4 control-label">Commission Group</label>
+                            <div class="col-sm-6">
+                                <select class="form-control">
+                                    <option>gA</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label class="col-sm-4 control-label">Group Name</label>
+                            <div class="col-sm-6">
+                                <input type="text" class="form-control" value="VIP Comm"/>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label class="col-sm-4 control-label">SB Comm (%)</label>
+                            <div class="col-sm-6">
+                                <select class="sel-comm">
+                                    <option>14</option>
+                                </select>
+                                <select class="sel-comm">
+                                    <option>14</option>
+                                </select>
+                                <select class="sel-comm">
+                                    <option>14</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label class="col-sm-4 control-label">NG Comm (%)</label>
+                            <div class="col-sm-6">
+                                <select class="sel-comm">
+                                    <option>0</option>
+                                </select>
+                                <select class="sel-comm">
+                                    <option>0</option>
+                                </select>
+                                <select class="sel-comm">
+                                    <option>0</option>
+                                </select>
+                            </div>
+                        </div>
+                         <div class="form-group">
+                            <label class="col-sm-4 control-label">LC Comm (%)</label>
+                            <div class="col-sm-6">
+                                <select class="sel-comm">
+                                    <option>0</option>
+                                </select>
+                                <select class="sel-comm">
+                                    <option>0</option>
+                                </select>
+                                <select class="sel-comm">
+                                    <option>0</option>
+                                </select>
+                            </div>
+                        </div>
+                         <div class="form-group">
+                            <label class="col-sm-4 control-label">RnG Comm (%)</label>
+                            <div class="col-sm-6">
+                                <select class="sel-comm">
+                                    <option>0</option>
+                                </select>
+                                <select class="sel-comm">
+                                    <option>0</option>
+                                </select>
+                                <select class="sel-comm">
+                                    <option>0</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label class="col-sm-4 control-label">Set as Default Group</label>
+                            <div class="col-sm-2">
+                               <div class="checkbox"><input type="checkbox" id="Checkbox1" /><label class="checkbox-label" for="chbgroup"></label></div>
+                            </div>
+                        </div>
+                         <div class="form-group">
+                            <div class="col-sm-offset-4 col-sm-8 text-light-red txt-warning">
+                               Note: If "Set as Default Group" is checked, all newly registered members will be
+                               automatically assigned to this commission group. There will be no changed to existing members.
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label class="col-sm-4 control-label">Group Color</label>
+                            <div class="col-sm-2">
+                                <select class="form-control color-group">
+                                    <option class="box-level1">1</option>
+                                    <option class="box-level2">2</option>
+                                </select>
+                            </div>
+                        </div>
+
+                    </div>
+                  </div>
+                  <div class="modal-footer">
+                     <button type="submit" class="btn btn-primary">OK</button>
+                        <button type="submit" class="btn btn-third">Cancel</button>
+                  </div>
+                </div>
+          </div>
+        </div>      
+         <!-- edit Comm -->
+        <div id="editComm" class="modal fade" role="dialog" tabindex="-1" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                    <h4 class="modal-title" id="H1">Edit Commission Group</h4>
+                  </div>
+                  <div class="modal-body">
+                      <div class="form-horizontal form-common none">
+				        <div class="form-group">
+                            <label class="col-sm-4 control-label">Commission Group</label>
+                            <div class="col-sm-6">
+                                <select class="form-control">
+                                    <option>gA</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label class="col-sm-4 control-label">Group Name</label>
+                            <div class="col-sm-6">
+                                <input type="text" class="form-control" value="VIP Comm"/>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label class="col-sm-4 control-label">SB Comm (%)</label>
+                            <div class="col-sm-6">
+                                <select class="sel-comm">
+                                    <option>14</option>
+                                </select>
+                                <select class="sel-comm">
+                                    <option>14</option>
+                                </select>
+                                <select class="sel-comm">
+                                    <option>14</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label class="col-sm-4 control-label">NG Comm (%)</label>
+                            <div class="col-sm-6">
+                                <select class="sel-comm">
+                                    <option>0</option>
+                                </select>
+                                <select class="sel-comm">
+                                    <option>0</option>
+                                </select>
+                                <select class="sel-comm">
+                                    <option>0</option>
+                                </select>
+                            </div>
+                        </div>
+                         <div class="form-group">
+                            <label class="col-sm-4 control-label">LC Comm (%)</label>
+                            <div class="col-sm-6">
+                                <select class="sel-comm">
+                                    <option>0</option>
+                                </select>
+                                <select class="sel-comm">
+                                    <option>0</option>
+                                </select>
+                                <select class="sel-comm">
+                                    <option>0</option>
+                                </select>
+                            </div>
+                        </div>
+                         <div class="form-group">
+                            <label class="col-sm-4 control-label">RnG Comm (%)</label>
+                            <div class="col-sm-6">
+                                <select class="sel-comm">
+                                    <option>0</option>
+                                </select>
+                                <select class="sel-comm">
+                                    <option>0</option>
+                                </select>
+                                <select class="sel-comm">
+                                    <option>0</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label class="col-sm-4 control-label">Set as Default Group</label>
+                            <div class="col-sm-2">
+                               <div class="checkbox"><input type="checkbox" id="chbgroup" /><label class="checkbox-label" for="chbgroup"></label></div>
+                            </div>
+                        </div>
+                         <div class="form-group">
+                            <div class="col-sm-offset-4 col-sm-8 text-light-red txt-warning">
+                               Note: If "Set as Default Group" is checked, all newly registered members will be
+                               automatically assigned to this commission group. There will be no changed to existing members.
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label class="col-sm-4 control-label">Group Color</label>
+                            <div class="col-sm-2">
+                                <select class="form-control color-group">
+                                    <option class="box-level1">1</option>
+                                    <option class="box-level2">2</option>
+                                </select>
+                            </div>
+                        </div>
+
+                    </div>
+                  </div>
+                  <div class="modal-footer">
+                     <button type="submit" class="btn btn-primary">OK</button>
+                        <button type="submit" class="btn btn-third">Cancel</button>
+                  </div>
+                </div>
+          </div>
+        </div>        
+    </div>
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="../../../javascript/libraries/jquery.min.js"></script>
+    <script src="../../../javascript/libraries/jquery-migrate-1.2.1.js"></script>
+    <script src="../../../javascript/libraries/Namespace/namespace.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="../../../javascript/libraries/bootstrap3.3.1/bootstrap.min.js"></script>
+    <script src="../../../javascript/libraries/Fanex.Grid/Language/Fanex.Gird.Lang.en-US.js"></script>
+    <script src="../../../javascript/libraries/Fanex.Grid/Language/Fanex.Gird.Lang.ja-JP.js"></script>
+    <script src="../../../javascript/libraries/Fanex.Grid/Language/Fanex.Gird.Lang.ko-KR.js"></script>
+    <script src="../../../javascript/libraries/Fanex.Grid/Language/Fanex.Gird.Lang.th-TH.js"></script>
+    <script src="../../../javascript/libraries/Fanex.Grid/Language/Fanex.Gird.Lang.vi-VN.js"></script>
+    <script src="../../../javascript/libraries/Fanex.Grid/Language/Fanex.Gird.Lang.zh-CN.js"></script>
+    <script src="../../../javascript/libraries/Fanex.Grid/Language/Fanex.Gird.Lang.zh-TW.js"></script>
+    <script src="../../../javascript/libraries/Fanex.Grid/Fanex.Pagination.js"></script>
+    <script src="../../../javascript/libraries/Fanex.Grid/Fanex.Grid.js"></script>
+    <script src="../../../javascript/libraries/Fanex.Grid/numeral.min.js"></script>
+    <script src="../../../javascript/libraries/Fanex.Grid/moment.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="../../../javascript/libraries/bootstrap3.3.2/bootstrap.min.js"></script>
+    <script src="../../../javascript/manage-group/manage-group.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $("dropdown").click(function () {
+                $("select").addClass("show");
+            });
+        }); 
+    </script>
+</body>
+</html>

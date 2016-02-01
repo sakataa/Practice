@@ -1,0 +1,96 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Common UI</title>
+    <!-- Bootstrap -->
+    <link href="../../../content/bootstrap3.3.2/css/bootstrap.min.css" rel="stylesheet">
+    <link href="../../../content/material-wfont.css" rel="stylesheet">
+    <link href="../../../content/Datepicker/bootstrap-datetimepicker.min.css" rel="stylesheet">
+    <link href="../../../content/fonts.css" rel="stylesheet">
+    <link href="../../../content/common.css" rel="stylesheet">
+    <link href="../../../content/components/calendar/calendar.css" rel="stylesheet">
+    <link href="../../../content/components/breadcrumbs/breadcrumbs.css" rel="stylesheet">
+    <link href="../../../content/components/form/form.css" rel="stylesheet">
+    <link href="../../../content/components/tabs/tabs.css" rel="stylesheet">
+    <link href="../../../content/sites/manage-member/common.css" rel="stylesheet">
+    <link href="../../../content/sites/manage-member/edit-site.css" rel="stylesheet">
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="../../../javascript/libraries/head.js"></script>
+      <script src="../../../javascript/libraries/respond.min.js"></script>
+    <![endif]-->
+
+</head>
+<body>
+    <div class="container-fluid">
+        <ol class="breadcrumb">
+            <li><a class="mdi-action-home icon-home" href="#"></a></li>
+            <li><a href="#">Member Management</a></li>
+            <li><a href="index.html">Manage Member</a></li>
+            <li><span>Edit Member</span></li>
+        </ol>
+        <div class="favorite">
+            <span class="glyphicon glyphicon-star-empty icon-none-favorite"></span>
+            <!--<span class="glyphicon glyphicon-star icon-favorite"></span>-->
+        </div>
+        <div class="row">
+            <div class="col-sm-12 col-xs-12">
+                <div class="site-info">
+                    <div class="item">
+                        <label>Licensee Name:</label> <span class="text-bold">Asiabet88</span>
+                    </div>
+                    <div class="item">
+                        <label>Site Name:</label><span class="text-bold">Asiabet88</span>
+                    </div>
+                </div>
+            </div>   
+            <div class="col-sm-12 col-xs-12">
+                <div class="tab-custom" role="tabpanel">
+                    <!-- Nav tabs -->
+                    <ul role="tablist" class="nav nav-tabs">
+                        <li class="active" role="presentation"><a data-toggle="tab" role="tab" aria-controls="memberInfo" href="#memberInfo">Member Info</a></li>
+                        <li role="presentation"><a data-toggle="tab" role="tab" aria-controls="betSetting" href="#betSetting">Bet Limit</a></li>
+                        <li role="presentation"><a data-toggle="tab" role="tab" aria-controls="commission" href="#commission">Commission</a></li>
+                        <li role="presentation"><a data-toggle="tab" role="tab" aria-controls="betlist" href="#betlist">Statement & Bet List</a></li>
+                        <li role="presentation"><a data-toggle="tab" role="tab" aria-controls="transferHistory" href="#transferHistory">Transfer History</a></li>
+                        <li role="presentation"><a data-toggle="tab" role="tab" aria-controls="history" href="#depositHistory">Deposit/Withdrawal History</a></li>
+                    </ul>
+                    <!-- Tab panes -->
+                    <div class="tab-content">
+                        <div id="memberInfo" class="tab-pane fade in active clearfix" role="tabpanel">
+                            <iframe src="member-info.html" id="iframe-content" name="iframe-content" class="iframe-edit"></iframe>
+                        </div>
+                        <div id="betSetting" class="tab-pane fade clearfix" role="tabpanel">
+                            <iframe src="bet-setting.html" id="iframe-content" name="iframe-content" class="iframe-edit"></iframe>
+                        </div>
+                        <div id="commission" class="tab-pane fade clearfix" role="tabpanel">
+                           <iframe src="commission.html" id="iframe-content" name="iframe-content" class="iframe-edit"></iframe>
+                        </div>
+                        <div id="betlist" class="tab-pane fade clearfix" role="tabpanel">
+                            <iframe src="betlist.html" id="iframe-content" name="iframe-content" class="iframe-edit"></iframe>
+                        </div>
+                        <div id="transferHistory" class="tab-pane fade clearfix" role="tabpanel">
+                            <iframe src="transfer-history.html" id="iframe1" name="iframe-content" class="iframe-edit"></iframe>
+                        </div>
+                        <div id="depositHistory" class="tab-pane fade clearfix" role="tabpanel">
+                             <iframe src="deposit-history.html" id="iframe2" name="iframe-content" class="iframe-edit"></iframe>
+                        </div>
+                    </div>
+                </div>
+            </div>             
+        </div>
+    </div>
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="../../../javascript/libraries/jquery.min.js"></script>
+    <script src="../../../javascript/libraries/jquery-migrate-1.2.1.js"></script>
+    <script src="../../../javascript/libraries/Namespace/namespace.js"></script>
+    <script src="../../../javascript/libraries/Moment/moment-with-locales.min.js"></script>
+    <script src="../../../javascript/libraries/Datepicker/bootstrap-datetimepicker.min.js"></script>
+    <script src="../../../javascript/libraries/bootstrap3.3.2/bootstrap.min.js"></script>
+    <script src="../../../javascript/manage-site/edit-site.js"></script>
+</body>
+</html>

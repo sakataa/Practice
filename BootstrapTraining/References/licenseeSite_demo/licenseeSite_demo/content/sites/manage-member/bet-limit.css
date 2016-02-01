@@ -1,0 +1,56 @@
+﻿.panel-group .panel {
+  max-width: 1220px;
+}
+.panel-group .panel.panel-medium {
+  max-width: 900px;
+}
+.table .checkbox,
+.table .radio {
+  display: inline;
+  margin: 0 8px 0 0;
+}
+.table .width-last-modified {
+  width: 170px;
+}
+.table.bet-limit input[type="text"] {
+  height: 24px;
+  text-align: center;
+  width: 110px;
+}
+.table.bet-limit .txt-character {
+  display: inline-block;
+  margin-top: 2px;
+}
+.table.bet-limit .width-200 {
+  width: 220px;
+}
+.table.bet-limit .col-bet-limit {
+  width: 250px;
+}
+.filter {
+  display: inline-block;
+  margin-bottom: 16px;
+  max-width: initial;
+}
+.txt-transfer-amount {
+  margin: 4px 0 0;
+}
+.max-transfer-limit {
+  margin-bottom: 4px;
+}
+.max-transfer-limit .txt-transfer {
+  height: 24px;
+  margin: 0 4px;
+  width: 100px;
+  border-color: #acacac;
+}
+.max-transfer-limit .checkbox {
+  display: inline-block;
+  margin-left: 16px;
+}
+.max-transfer-limit select {
+  height: 24px;
+  padding: 2px 4px;
+  border-color: #acacac;
+}
+/*# sourceMappingURL=bet-limit.css.map */

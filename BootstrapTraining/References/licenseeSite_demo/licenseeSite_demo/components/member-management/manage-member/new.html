@@ -1,0 +1,161 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Common UI</title>
+    <!-- Bootstrap -->
+    <link href="../../../content/bootstrap3.3.2/css/bootstrap.min.css" rel="stylesheet">
+    <link href="../../../content/material-wfont.css" rel="stylesheet">
+    <link href="../../../content/Fanex.Grid/Fanex.Pagination.css" rel="stylesheet">
+    <link href="../../../content/Fanex.Grid/Fanex.Grid.css" rel="stylesheet">
+    <link href="../../../content/fonts.css" rel="stylesheet">
+    <link href="../../../content/common.css" rel="stylesheet">
+    <link href="../../../content/components/breadcrumbs/breadcrumbs.css" rel="stylesheet">
+    <link href="../../../content/components/form/form.css" rel="stylesheet">
+    <link href="../../../content/sites/manage-site/common.css" rel="stylesheet">
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="../../../javascript/libraries/head.js"></script>
+      <script src="../../../javascript/libraries/respond.min.js"></script>
+    <![endif]-->
+
+</head>
+<body>
+    <div class="container-fluid">
+        <ol class="breadcrumb">
+            <li><a class="mdi-action-home icon-home" href="#"></a></li>
+            <li><a href="#">Licensee Management</a></li>
+            <li><a href="index.html">Manage Site</a></li>
+            <li><span>Create Site</span></li>
+        </ol>
+        <div class="favorite">
+            <span class="glyphicon glyphicon-star-empty icon-none-favorite"></span>
+            <!--<span class="glyphicon glyphicon-star icon-favorite"></span>-->
+        </div>
+        <div class="row">
+            <form method="post" novalidate="novalidate">
+                <div class="form-horizontal form-common none col-sm-10 col-md-9 form-create-edit">
+                    <div class="form-group">
+                        <label for="licenseeName" class="col-sm-4 control-label">Licensee Name</label>
+                        <div class="col-sm-4">
+                            <select id="licenseeName" class="form-control">
+                                <option>Asiabet88</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="siteName" class="col-sm-4 control-label">Site Name <span class="txt-required">(*)</span></label>
+                        <div class="col-sm-4">
+                            <input type="text" class="form-control" id="siteName" value="Asiabet88">
+                        </div>
+                    </div>
+					<div class="form-group">
+                        <label for="siteCode" class="col-sm-4 control-label">Site Code</label>
+                        <div class="col-sm-4">
+                            <input type="text" class="form-control" id="siteCode" value="8800001">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="payment" class="col-sm-4 control-label">Payment Model</label>
+                        <div class="col-sm-4">
+                            <select id="payment" class="form-control">
+                                <option>Deposit</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="sizeType" class="col-sm-4 control-label">Size Type</label>
+                        <div class="col-sm-4">
+                            <select id="sizeType" class="form-control">
+                                <option>Boping API</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="siteStatus" class="col-sm-4 control-label">Site Status</label>
+                        <div class="col-sm-4">
+                            <span>Integrating</span>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="minFee" class="col-sm-4 control-label">Min Fee</label>
+                        <div class="col-sm-4">
+                            <input class="form-control txt-large" id="minFee" name="MinFee" value="0" type="text">
+                            <select class="form-control txt-small">
+                                <option value="3">GBP</option>
+                            </select>
+
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="noMonths" class="col-sm-4 control-label">No. of Months for Fee Waiver</label>
+                        <div class="col-sm-4">
+                            <select class="form-control txt-small" id="noMonths">
+                                <option>3</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="defaultCurrency" class="col-sm-4 control-label">Default Base Currency</label>
+                        <div class="col-sm-4">
+                            <select class="form-control txt-small" id="defaultCurrency">
+                                <option>EUR</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="style" class="col-sm-4 control-label">Style <span class="txt-required">(*)</span></label>
+                        <div class="col-sm-4">
+                            <div class="checkbox">
+                                <input type="checkbox" name="style" id="optionsCheckboxs1" value="option1" checked />
+                                <label class="checkbox-label" for="optionsCheckboxs1">Asia View</label>
+                            </div>
+                            <div class="checkbox">
+                                <input type="checkbox" name="style" id="optionsCheckboxs2" value="option2" />
+                                <label class="checkbox-label" for="optionsCheckboxs2">European View</label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="defaultStyle" class="col-sm-4 control-label">Default Style</label>
+                        <div class="col-sm-4">
+                            <select class="form-control" id="defaultStyle">
+                                <option>Asian View</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="col-sm-offset-4 col-sm-4">
+                            <button type="submit" class="btn btn-primary">Save</button>
+                            <button type="submit" class="btn btn-third">Cancel</button>
+                        </div>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="../../../javascript/libraries/jquery.min.js"></script>
+    <script src="../../../javascript/libraries/jquery-migrate-1.2.1.js"></script>
+    <script src="../../../javascript/libraries/Namespace/namespace.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="../../../javascript/libraries/bootstrap3.3.1/bootstrap.min.js"></script>
+    <script src="../../../javascript/libraries/Fanex.Grid/Language/Fanex.Gird.Lang.en-US.js"></script>
+    <script src="../../../javascript/libraries/Fanex.Grid/Language/Fanex.Gird.Lang.ja-JP.js"></script>
+    <script src="../../../javascript/libraries/Fanex.Grid/Language/Fanex.Gird.Lang.ko-KR.js"></script>
+    <script src="../../../javascript/libraries/Fanex.Grid/Language/Fanex.Gird.Lang.th-TH.js"></script>
+    <script src="../../../javascript/libraries/Fanex.Grid/Language/Fanex.Gird.Lang.vi-VN.js"></script>
+    <script src="../../../javascript/libraries/Fanex.Grid/Language/Fanex.Gird.Lang.zh-CN.js"></script>
+    <script src="../../../javascript/libraries/Fanex.Grid/Language/Fanex.Gird.Lang.zh-TW.js"></script>
+    <script src="../../../javascript/libraries/Fanex.Grid/Fanex.Pagination.js"></script>
+    <script src="../../../javascript/libraries/Fanex.Grid/Fanex.Grid.js"></script>
+    <script src="../../../javascript/libraries/Fanex.Grid/numeral.min.js"></script>
+    <script src="../../../javascript/libraries/Fanex.Grid/moment.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="../../../javascript/libraries/bootstrap3.3.2/bootstrap.min.js"></script>
+    <script src="../../../javascript/manage-site/manage-site.js"></script>
+</body>
+</html>

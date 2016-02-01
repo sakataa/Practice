@@ -1,0 +1,12 @@
+﻿.form-common label.lbstate,
+.form-common label.lbzipcode,
+.form-common label.lbfax {
+  width: 100px;
+}
+.expand-box {
+  padding: 0;
+}
+.lnkbonus {
+  padding-left: 10px;
+}
+/*# sourceMappingURL=member-info.css.map */

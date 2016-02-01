@@ -1,0 +1,317 @@
+
+/********************************************************/
+/*					      Common                        */
+/********************************************************/
+@font-normal: arial, tahoma;
+@font-roboto-light: 'Roboto Light', sans-serif, arial, tahoma;
+@font-roboto-normal: 'Roboto', sans-serif, arial, tahoma;
+@font-roboto-thin: 'Roboto Thin', sans-serif, arial, tahoma;
+@font-roboto-medium: 'Roboto Medium', sans-serif, arial, tahoma;
+@font-roboto-bold: 'Roboto Bold', sans-serif, arial, tahoma;
+@font-family: @font-roboto-normal;
+@text-color: #212121;
+@text-light-color: #4d4d4d;
+@font-size: 13px;
+@line-height: 20px;
+@bg-color: #f7f7f7;
+@primary-color: #ff6619;
+@second-color: #4d4d4d;
+@border-color: #e3e3e3;
+@border-dark-color: #acacac;
+@link-color: #0000ee;
+@link-hover-color: @primary-color;
+@green-color: #55a104;
+@red-color: #ef0000;
+@light-red-color: #d44950;
+@header-height: 48px;
+@breadcrumb-height: 36px;
+@left-panel-width: 240px;
+
+/********************************************************/
+/*					      Header                        */
+/********************************************************/
+@header-bg: @second-color;
+@header-color: #e6e6e6;
+@header-icon-color: #fff;
+@header-icon-hover-color: #ff7530;
+@header-site-bg: #fff;
+
+/********************************************************/
+/*					    Left panel                      */
+/********************************************************/
+@left-panel-bg: #fff;
+@left-panel-link-color: @text-color;
+@left-panel-link-current-color: @primary-color;
+@left-panel-favorite-bg: @primary-color;
+@left-panel-favorite-color: #fff;
+
+@left-panel-current-bg: #f0f0f0;
+@left-panel-current-color: @text-color;
+
+/********************************************************/
+/*					      Content                       */
+/********************************************************/
+
+@form-bg: #fff;
+@form-border: #dedede;
+@form-has-success: #52a153;
+@form-has-focus-success: lighten(@form-has-success, 15%);
+@form-has-warning: #a98004;
+@form-has-focus-warning: lighten(@form-has-warning, 15%);
+@form-has-error: #d02513;
+@form-has-focus-error: lighten(@form-has-error, 15%);
+
+@txt-required: #ef0000;
+
+@btn-primary-bg: @primary-color;
+@btn-primary-color: #fbe4d9;
+@btn-primary-border: @primary-color;
+@btn-primary-hover-bg: @btn-primary-bg;
+@btn-primary-hover-color: #fff;
+@btn-primary-hover-border: @btn-primary-hover-bg;
+@btn-primary-disabled-bg: #f98c69;
+@btn-primary-disabled-border: #f1a178;
+@btn-primary-disabled-color: #fff2eb;
+
+@btn-second-bg: #595959;
+@btn-second-color: #eae7e7;
+@btn-second-border: #595959;
+@btn-second-hover-bg: @btn-second-bg;
+@btn-second-hover-color: #fff;
+@btn-second-hover-border: @btn-second-hover-bg;
+@btn-second-disabled-bg: #adadad;
+@btn-second-disabled-border: #adadad;
+@btn-second-disabled-color: #eae7e7;
+
+@btn-third-bg: #e6e6e6;
+@btn-third-color: #757575;
+@btn-third-border: #ccc;
+@btn-third-hover-bg: @btn-third-bg;
+@btn-third-hover-color: #555;
+@btn-third-hover-border: #ccc;
+@btn-third-disabled-bg: @bg-color;
+@btn-third-disabled-border: #e0dede;
+@btn-third-disabled-color: #a7a7a7;
+
+@btn-fourth-bg: #fff;
+@btn-fourth-color: #5f5f5f;
+@btn-fourth-border: #ddd;
+@btn-fourth-hover-bg: @btn-fourth-bg;
+@btn-fourth-hover-color: #5f5f5f;
+@btn-fourth-hover-border: #ddd;
+@btn-fourth-disabled-bg: @bg-color;
+@btn-fourth-disabled-border: #e0dede;
+@btn-fourth-disabled-color: #a7a7a7;
+
+@title-color: #6f6f6f;
+@title-button-bg: @btn-second-bg;
+@title-button-color: @btn-second-color;
+@title-button-hover-bg: @btn-second-hover-bg;
+@title-button-hover-color: @btn-second-hover-color;
+@title-favorite-color: @primary-color;
+@title-favorite-hover-color: darken(@title-favorite-color, 5%);
+@title-none-favorite-color: #4d4d4d;
+@title-none-favorite-hover-color: @primary-color;
+
+@icon-circle-color: #abafb3;
+
+/********************************************************/
+/*					      Footer                        */
+/********************************************************/
+
+@footer-bg: #f5f5f5;
+@footer-color: @text-color;
+
+/********************************************************/
+/*					     Calendar                       */
+/********************************************************/
+
+@datetime-active-bg: @primary-color;
+@datetime-today-bg: #FF9965;
+@datetime-old-new-color: #888;
+
+@datetime-header-bg: #d9d9d9;
+@datetime-header-color: #666;
+@datetime-header-hover-bg: #ddd;
+@datetime-header-hover-color: lighten(@datetime-header-color, 5%);
+@datetime-header-icon-color: #e54d00;
+@datetime-header-icon-hover-color: lighten(@datetime-header-icon-color, 5%);
+
+/********************************************************/
+/*				      Menu/dropdown                     */
+/********************************************************/
+
+@navbar-topmenu-bg: #7f817a;
+@navbar-topmenu-color: #fff;
+@navbar-topmenu-brand-color: #fff;
+@navbar-topmenu-brand-hover-color: darken(#fff, 15%);
+@navbar-topmenu-brand-size: @font-size;
+@navbar-topmenu-active-bg: lighten(@navbar-topmenu-bg, 10%);
+@navbar-topmenu-active-color: #fff;
+@navbar-submenu-bg: #fff;
+@navbar-submenu-color: @text-color;
+@navbar-submenu-hover-bg: @primary-color;
+@navbar-submenu-hover-color: #fff;
+
+/********************************************************/
+/*				           Tree                         */
+/********************************************************/
+
+@tree-bg: #fff;
+@tree-clicked-bg: @primary-color;
+@tree-clicked-color: #fff;
+@tree-hover-color: @text-color;
+@tree-hover-bg: #e6e6e6;
+@tree-disabled-color: #999;
+
+/********************************************************/
+/*				       Multi Select                     */
+/********************************************************/
+
+@multiselect-color: @text-color;
+@multiselect-border: @border-color;
+
+/********************************************************/
+/*				         Datagrid                       */
+/********************************************************/
+
+@grid-bg: #fff;
+@grid-border: #ddd;
+@grid-title-bg: #f6f4e5;
+@grid-title-border: #e0e0e0;
+@grid-title-color: #cd4e0e;
+@grid-header-bg: #7f817a;
+@grid-header-color: #fff;
+@grid-row-even-bg: #f5f5f5;
+@grid-row-hover-bg: #fcfbca;
+@grid-footer-bg: #f2ece9;
+@grid-footer-border: #ccc;
+@grid-pager-bg: #fff;
+@grid-pager-text-hover-bg: #757575;
+@grid-pager-text-color: #757575;
+@grid-row-icon-color: #757575;
+@grid-row-icon-disabled-color: #aaa;
+@grid-no-data-color: @primary-color;
+
+/********************************************************/
+/*				      Message Popup                     */
+/********************************************************/
+
+@popup-header-bg: #fff;
+@popup-border: @border-color;
+@popup-header-color: #e55c17;
+@popup-header-icon-color: #000;
+@popup-footer-bg: #fff;
+
+/********************************************************/
+/*				         Tooltip                        */
+/********************************************************/
+
+@tooltip-bg: @second-color;
+@tooltip-color: #fff;
+
+/********************************************************/
+/*				         Popover                        */
+/********************************************************/
+
+@popover-bg: #fff;
+@popover-border: rgba(0, 0, 0, .2);
+@popover-title-bg: #7f817a;
+@popover-title-color: #e55c17;
+@popover-border: @border-color;
+@popover-arrow-after: #fff;
+
+/********************************************************/
+/*				          Tabs                          */
+/********************************************************/
+
+@tab-content-bg: #fff;
+@tab-border: #ccc;
+@tab-bg: #e5e5e5;
+@tab-hover-bg: #f5f5f5;
+@tab-color: @text-color;
+@tab-active-bg: #fff;
+@tab-active-color: @primary-color;
+@tab-active-border: @primary-color;
+
+/********************************************************/
+/*				       Breadcrumbs                      */
+/********************************************************/
+
+@breadcrumbs-normal-bg: #fff;
+@breadcrumbs-normal-link-color: #666;
+@breadcrumbs-normal-link-hover-color: @primary-color;
+@breadcrumbs-normal-text-color: @primary-color;
+@breadcrumbs-normal-icon-color: #808080;
+
+@breadcrumbs-advanced-bg: #fff;
+@breadcrumbs-advanced-hover-bg: #f3f3f3;
+@breadcrumbs-advanced-icon-border: #ccc;
+@breadcrumbs-advanced-icon-hover-border: #adadad;
+@breadcrumbs-advanced-root-bg: @primary-color;
+@breadcrumbs-advanced-root-border: @primary-color;
+@breadcrumbs-advanced-root-hover-bg: darken(@primary-color, 5%);
+
+/********************************************************/
+/*				         Spinner                        */
+/********************************************************/
+
+@spinner-btn-bg: #e6e6e6;
+@spinner-btn-color: @second-color;
+
+/********************************************************/
+/*				         Collapse                       */
+/********************************************************/
+
+@collapse-panel-bg: #fff;
+@collapse-panel-color: @text-color;
+@collapse-panel-border: #808080;
+@collapse-panel-dark-heading-bg: #7f817a;
+@collapse-panel-dark-heading-color: #fff;
+@collapse-panel-dark-heading-hover-color: #ddd;
+@collapse-panel-light-heading-bg: #eee;
+@collapse-panel-light-heading-color: @text-color;
+@collapse-panel-light-heading-hover-color: #e55c17;
+
+/********************************************************/
+/*				           Panel                        */
+/********************************************************/
+
+@panel-bg: #fff;
+@panel-color: @text-color;
+@panel-border: @border-color;
+@panel-dark-heading-bg: #7f817a;
+@panel-dark-heading-color: #fff;
+@panel-dark-heading-hover-color: #ddd;
+@panel-light-heading-bg: #eee;
+@panel-light-heading-color: @text-color;
+@panel-light-heading-hover-color: #e55c17;
+
+/********************************************************/
+/*				      Menu/dropdown                     */
+/********************************************************/
+
+@dropdown-bg: #fff;
+@dropdown-color: #262626;
+@dropdown-hover-bg: #eee;
+@dropdown-hover-color: #262626;
+
+/********************************************************/
+/*				      Validation Form                   */
+/********************************************************/
+
+@validation-error-bg: #E8350B;
+@validation-error-border: #E8350B;
+@validation-error-color: #fff;
+
+@message-error-bg: #f2dede;
+@message-error-border: #ebccd1;
+@message-error-color: #d02513;
+
+@message-success-bg: #dff0d8;
+@message-success-border: #d6e9c6;
+@message-success-color: #3c763d;
+
+@message-warning-bg: #fff5df;
+@message-warning-border: #faebcc;
+@message-warning-color: #be8c1b;

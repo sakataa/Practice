@@ -33,8 +33,8 @@ body {
     margin-left: 25rem; }
     .header-right .nav-top, .header-right .nav-bottom {
       height: 50%; }
-    .header-right .nav-top-left {
-      margin-top: 1.5;
+    .header-right .nav-top .menu-toggle {
+      margin-top: 1.5rem;
       background: url("../images/sprite_02.png") no-repeat;
       display: inline-block;
       background-position: -7.3rem -2.1rem;
@@ -52,6 +52,8 @@ body {
       background-position: -7.1rem -38.9rem;
       width: 1.6rem;
       height: 1.6rem; }
+    .header-right .nav-top-right .time-zone .time-text {
+      vertical-align: top; }
     .header-right .nav-top-right .language .icon {
       background: url("../images/sprite_02.png") no-repeat;
       display: inline-block;

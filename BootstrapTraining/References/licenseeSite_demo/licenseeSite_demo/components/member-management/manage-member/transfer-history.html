@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Site Info</title>
+    <!-- Bootstrap -->
+    <link href="../../../content/bootstrap3.3.2/css/bootstrap.min.css" rel="stylesheet">
+    <link href="../../../content/material-wfont.css" rel="stylesheet">
+    <link href="../../../content/Datepicker/bootstrap-datetimepicker.min.css" rel="stylesheet">
+    <link href="../../../content/Fanex.Grid/Fanex.Pagination.css" rel="stylesheet">
+    <link href="../../../content/Fanex.Grid/Fanex.Grid.css" rel="stylesheet">
+    <link href="../../../content/fonts.css" rel="stylesheet">
+    <link href="../../../content/common.css" rel="stylesheet">
+    <link href="../../../content/components/calendar/calendar.css" rel="stylesheet">
+    <link href="../../../content/components/form/form.css" rel="stylesheet">
+    <link href="../../../content/components/tabs/tabs.css" rel="stylesheet">
+    <link href="../../../content/sites/manage-member/common.css" rel="stylesheet">
+    <link href="../../../content/components/datagrid/datagrid.css" rel="stylesheet">
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="../../../javascript/libraries/head.js"></script>
+      <script src="../../../javascript/libraries/respond.min.js"></script>
+    <![endif]-->
+
+</head>
+<body class="site-iframe">
+    <div class="container-fluid container-site-iframe">
+        <div class="col-sm-12">
+            <form class="form-inline form-common filter">
+                <div class="form-group">
+                    <label for="lbfromdate">From</label>
+                    <div class="filter-date">
+                        <input type="datetime" value="" name="FromDate" id="fromdate" class="form-control txt-date" />
+                        <span class="mdi-notification-event-note icon-calendar-before"></span>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="lbtodate">To</label>
+                        <div class="filter-date">
+                        <input type="datetime" value="" name="ToDate" id="todate" class="form-control txt-date" />
+                        <span class="mdi-notification-event-note icon-calendar-before"></span>
+                    </div>
+                </div>
+                <button class="btn btn-primary" type="button">SEARCH</button>
+            </form>
+        </div>
+        <div class="col-sm-12">
+            <div id="gridContainer" class="grid has-header-table">
+                <div id="gridId" class="freegrid content-grid">
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="../../../javascript/libraries/jquery.min.js"></script>
+    <script src="../../../javascript/libraries/jquery-migrate-1.2.1.js"></script>
+    <script src="../../../javascript/libraries/Namespace/namespace.js"></script>
+    
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="../../../javascript/libraries/Fanex.Grid/Language/Fanex.Gird.Lang.en-US.js"></script>
+    <script src="../../../javascript/libraries/Fanex.Grid/Language/Fanex.Gird.Lang.ja-JP.js"></script>
+    <script src="../../../javascript/libraries/Fanex.Grid/Language/Fanex.Gird.Lang.ko-KR.js"></script>
+    <script src="../../../javascript/libraries/Fanex.Grid/Language/Fanex.Gird.Lang.th-TH.js"></script>
+    <script src="../../../javascript/libraries/Fanex.Grid/Language/Fanex.Gird.Lang.vi-VN.js"></script>
+    <script src="../../../javascript/libraries/Fanex.Grid/Language/Fanex.Gird.Lang.zh-CN.js"></script>
+    <script src="../../../javascript/libraries/Fanex.Grid/Language/Fanex.Gird.Lang.zh-TW.js"></script>
+    <script src="../../../javascript/libraries/Fanex.Grid/Fanex.Pagination.js"></script>
+    <script src="../../../javascript/libraries/Fanex.Grid/Fanex.Grid.js"></script>
+
+    <script src="../../../javascript/libraries/Moment/moment-with-locales.min.js"></script>
+    <script src="../../../javascript/libraries/Datepicker/bootstrap-datetimepicker.min.js"></script>
+    <script src="../../../javascript/libraries/bootstrap3.3.2/bootstrap.min.js"></script>
+    <script src="../../../javascript/manage-member/transfer-history.js"></script>
+</body>
+</html>

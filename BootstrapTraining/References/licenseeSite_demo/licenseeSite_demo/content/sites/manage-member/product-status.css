@@ -1,0 +1,53 @@
+﻿.table {
+  margin-top: 8px;
+}
+.table .checkbox,
+.table .radio {
+  display: inline;
+  margin: auto;
+}
+.table .width-status {
+  width: 90px;
+}
+.table .width-last-modified,
+.table .width-style {
+  width: 130px;
+}
+.filter {
+  float: left;
+  max-width: initial;
+}
+.link-back {
+  float: left;
+  margin: 20px 12px;
+  text-decoration: underline;
+  text-transform: uppercase;
+}
+.list-odds-type {
+  margin: 20px 0 4px;
+}
+.list-odds-type .checkbox {
+  display: inline-block;
+  margin: 0 4px;
+}
+.list-odds-type .checkbox-label:before,
+.list-odds-type .checkbox-label:after {
+  transform: translateY(-42%);
+  -webkit-transform: translateY(-42%);
+  -moz-transform: translateY(-42%);
+  -o-transform: translateY(-42%);
+  -ms-transform: translateY(-42%);
+}
+.panel-small,
+.table-small {
+  max-width: 600px;
+}
+.panel-medium,
+.table-medium {
+  max-width: 700px;
+}
+.panel-large,
+.table-large {
+  max-width: 800px;
+}
+/*# sourceMappingURL=product-status.css.map */

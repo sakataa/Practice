@@ -1,0 +1,162 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Site Info</title>
+    <!-- Bootstrap -->
+    <link href="../../../content/bootstrap3.3.2/css/bootstrap.min.css" rel="stylesheet">
+    <link href="../../../content/material-wfont.css" rel="stylesheet">
+    <link href="../../../content/Datepicker/bootstrap-datetimepicker.min.css" rel="stylesheet">
+    <link href="../../../content/fonts.css" rel="stylesheet">
+    <link href="../../../content/common.css" rel="stylesheet">
+    <link href="../../../content/components/calendar/calendar.css" rel="stylesheet">
+    <link href="../../../content/components/form/form.css" rel="stylesheet">
+    <link href="../../../content/components/tabs/tabs.css" rel="stylesheet">
+    <link href="../../../content/sites/manage-member/common.css" rel="stylesheet">
+    <link href="../../../content/sites/manage-member/member-info.css" rel="stylesheet">
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="../../../javascript/libraries/head.js"></script>
+      <script src="../../../javascript/libraries/respond.min.js"></script>
+    <![endif]-->
+
+</head>
+<body class="site-iframe">
+    <div class="container-fluid container-site-iframe">
+        <form method="post" novalidate="novalidate">
+            <div class="form-horizontal form-common none col-sm-12 col-md-11 form-create-edit">
+				<div class="form-group">
+                    <label for="firstName" class="col-sm-3 control-label">First Name and Middle Name</label>
+                    <div class="col-sm-2">
+                        <input type="text" class="form-control" id="firstName" value="Lisa">
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="lastName" class="col-sm-3 control-label">Last Name</label>
+                    <div class="col-sm-2">
+                        <input type="text" class="form-control" id="lastName" value="Nguyen">
+                    </div>
+                    <div class="col-sm-4 resetpass-box">
+                        <a href="javascript:;">Reset Password</a>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <div class="col-sm-offset-3 col-sm-5">
+                        The full name must match member's bank account name for deposit/ withdrawal.
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="sizeType" class="col-sm-3 control-label">Security Question</label>
+                    <div class="col-sm-4">
+                        Mother's first name?
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="dateofbirth" class="col-sm-3 control-label">Date of Birth</label>
+                    <div class="col-sm-2">
+                      <div class="date">
+                            <input type="datetime" value="" name="LaunchDate" id="TerminationDate" class="form-control txt-date" />
+                            <span class="mdi-notification-event-note icon-calendar-before"></span>
+                        </div>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label class="control-label col-sm-3">Gender</label>
+                    <div class="col-sm-2">
+                         <select class="form-control" id="gender">
+                            <option>Male</option>
+                            <option>Female</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="country" class="col-sm-3 control-label">Country</label>
+                    <div class="col-sm-2">
+                        <select class="form-control">
+                            <option value="3">Vietnam</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="cityTown" class="col-sm-3 control-label">CityTown</label>
+                    <div class="col-sm-2">
+                        <input type="text" class="form-control" id="cityTown" value="">
+                    </div>
+                    <label for="state" class="col-sm-1 control-label lbstate  text-right">State</label>
+                    <div class="col-sm-2 expand-box">
+                        <input type="text" class="form-control" id="state" />
+                    </div>
+                    <label for="zipcode" class="col-sm-2 control-label lbzipcode text-right">Zip Code</label>
+                    <div class="col-sm-2 expand-box">
+                        <input type="text" class="form-control" id="zipcode" />
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="email" class="col-sm-3 control-label">Email <span class="txt-required">(*)</span></label>
+                    <div class="col-sm-2">
+                        <input type="text" class="form-control" id="email" value="">
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="phone" class="col-sm-3 control-label">Phone</label>
+                    <div class="col-sm-2">
+                        <div class="checkbox">
+                             <input type="text" class="form-control" id="phone" value="">
+                        </div>
+                    </div>
+                    <label for="fax" class="col-sm-1 control-label lbfax text-right">Fax</label>
+                    <div class="col-sm-2 expand-box">
+                        <input type="text" class="form-control" id="fax"/>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="registrationDate" class="col-sm-3 control-label">Registration Date</label>
+                    <div class="col-sm-3">
+                        05/15/1985
+                    </div>
+                </div>
+                 <div class="form-group">
+                    <label for="currency" class="col-sm-3 control-label">Currency</label>
+                    <div class="col-sm-3">
+                        US$
+                    </div>
+                </div>
+                 <div class="form-group">
+                    <label for="oddType" class="col-sm-3 control-label">Preferred Odds Type</label>
+                    <div class="col-sm-3">
+                        Decimal
+                    </div>
+                </div>
+                 <div class="form-group">
+                    <label for="bonusCode" class="col-sm-3 control-label">Bonus Code</label>
+                    <div class="col-sm-3">
+                        12456 <a href="javascript:;" class="lnkbonus">Reset Bonus Code</a>
+                    </div>
+                </div>
+                 <div class="form-group">
+                    <label for="remark" class="col-sm-3 control-label">Remark</label>
+                    <div class="col-sm-4">
+                        <textarea class="form-control"></textarea>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <div class="col-sm-offset-3 col-sm-4">
+                        <button type="submit" class="btn btn-primary">Save</button>
+                    </div>
+                </div>
+            </div>
+        </form>
+    </div>
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="../../../javascript/libraries/jquery.min.js"></script>
+    <script src="../../../javascript/libraries/jquery-migrate-1.2.1.js"></script>
+    <script src="../../../javascript/libraries/Namespace/namespace.js"></script>
+    <script src="../../../javascript/libraries/Moment/moment-with-locales.min.js"></script>
+    <script src="../../../javascript/libraries/Datepicker/bootstrap-datetimepicker.min.js"></script>
+    <script src="../../../javascript/libraries/bootstrap3.3.2/bootstrap.min.js"></script>
+    <script src="../../../javascript/manage-member/member-info.js"></script>
+</body>
+</html>

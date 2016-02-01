@@ -1,0 +1,60 @@
+﻿.iframe-edit {
+  border: medium none;
+  height: 100%;
+  width: 100%;
+}
+.container-site-iframe {
+  box-shadow: none;
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  -o-box-shadow: none;
+  padding: 20px 16px;
+}
+.site-iframe {
+  background: none repeat scroll 0 0 #fff;
+  overflow: auto;
+}
+.item-inline .radio,
+.item-inline .checkbox {
+  display: inline-block;
+  margin-right: 8px;
+}
+.txt-character {
+  display: inline-block;
+  padding: 0 4px;
+}
+.panel-group .panel .table {
+  margin: 0;
+}
+.panel-group .panel .panel-body {
+  display: none;
+}
+.panel-group .panel .panel-body.first-body {
+  display: block;
+}
+.btn-save-all {
+  margin: 0 0 16px;
+}
+.btn-save {
+  margin: 12px 0 0;
+}
+.icon_color {
+  width: 70%;
+  display: inline-block;
+}
+.freegrid td,
+.freegrid .grid-fixed-table td {
+  overflow: initial;
+}
+.bootstrap-switch .bootstrap-switch-handle-on.bootstrap-switch-primary {
+  background: #ca3838 !important;
+}
+.bootstrap-switch .bootstrap-switch-handle-off.bootstrap-switch-primary {
+  background: #989995;
+}
+@media (max-width: 768px) {
+  .member-filter {
+    width: 768px;
+  }
+}
+/*# sourceMappingURL=common.css.map */

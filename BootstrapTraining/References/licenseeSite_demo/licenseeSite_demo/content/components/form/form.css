@@ -1,0 +1,249 @@
+﻿/********************************************************/
+/*					      Common                        */
+/********************************************************/
+/********************************************************/
+/*					      Header                        */
+/********************************************************/
+/********************************************************/
+/*					    Left panel                      */
+/********************************************************/
+/********************************************************/
+/*					      Content                       */
+/********************************************************/
+/********************************************************/
+/*					      Footer                        */
+/********************************************************/
+/********************************************************/
+/*					     Calendar                       */
+/********************************************************/
+/********************************************************/
+/*				      Menu/dropdown                     */
+/********************************************************/
+/********************************************************/
+/*				           Tree                         */
+/********************************************************/
+/********************************************************/
+/*				       Multi Select                     */
+/********************************************************/
+/********************************************************/
+/*				         Datagrid                       */
+/********************************************************/
+/********************************************************/
+/*				      Message Popup                     */
+/********************************************************/
+/********************************************************/
+/*				         Tooltip                        */
+/********************************************************/
+/********************************************************/
+/*				         Popover                        */
+/********************************************************/
+/********************************************************/
+/*				          Tabs                          */
+/********************************************************/
+/********************************************************/
+/*				       Breadcrumbs                      */
+/********************************************************/
+/********************************************************/
+/*				         Spinner                        */
+/********************************************************/
+/********************************************************/
+/*				         Collapse                       */
+/********************************************************/
+/********************************************************/
+/*				           Panel                        */
+/********************************************************/
+/********************************************************/
+/*				      Menu/dropdown                     */
+/********************************************************/
+/********************************************************/
+/*				      Validation Form                   */
+/********************************************************/
+/********************************************************/
+/*					     Customize                      */
+/********************************************************/
+.has-success.help-block,
+.has-success .control-label,
+.has-success .radio,
+.has-success .checkbox,
+.has-success .radio-inline,
+.has-success .checkbox-inline,
+.has-success.radio label,
+.has-success.checkbox label,
+.has-success.radio-inline label,
+.has-success.checkbox-inline label {
+  color: #52a153;
+}
+.has-success .form-control {
+  border-color: #52a153;
+}
+.has-success .form-control:focus {
+  border-color: #81bf82;
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.075) inset, 0 0 6px #81bf82;
+}
+.has-warning.help-block,
+.has-warning .control-label,
+.has-warning .radio,
+.has-warning .checkbox,
+.has-warning .radio-inline,
+.has-warning .checkbox-inline,
+.has-warning.radio label,
+.has-warning.checkbox label,
+.has-warning.radio-inline label,
+.has-warning.checkbox-inline label {
+  color: #a98004;
+}
+.has-warning .form-control {
+  border-color: #a98004;
+}
+.has-warning .form-control:focus {
+  border-color: #f4b906;
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.075) inset, 0 0 6px #f4b906;
+}
+.has-error.help-block,
+.has-error .control-label,
+.has-error .radio,
+.has-error .checkbox,
+.has-error .radio-inline,
+.has-error .checkbox-inline,
+.has-error.radio label,
+.has-error.checkbox label,
+.has-error.radio-inline label,
+.has-error.checkbox-inline label {
+  color: #d02513;
+}
+.has-error .form-control {
+  border-color: #d02513;
+}
+.has-error .form-control:focus {
+  border-color: #ee5242;
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.075) inset, 0 0 6px #ee5242;
+}
+/********************************************************/
+/*			     Validation with tooltip                */
+/********************************************************/
+.form-common .has-error .form-control.error {
+  border-color: #d02513;
+  color: #d02513;
+}
+.form-common .has-error .form-control.error:focus {
+  border-color: #ee5242;
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  -o-box-shadow: none;
+  box-shadow: none;
+}
+.form-common .has-error .tooltip .tooltip-inner {
+  background-color: #e8350b;
+  color: #ffffff;
+  padding: 4px 12px;
+  -webkit-border-radius: 2px;
+  -moz-border-radius: 2px;
+  -o-border-radius: 2px;
+  border-radius: 2px;
+}
+.form-common .has-error .tooltip.top .tooltip-arrow {
+  border-top-color: #e8350b;
+}
+.form-common .has-error .tooltip.top-left .tooltip-arrow {
+  border-top-color: #e8350b;
+}
+.form-common .has-error .tooltip.top-right .tooltip-arrow {
+  border-top-color: #e8350b;
+}
+.form-common .has-error .tooltip.right .tooltip-arrow {
+  border-right-color: #e8350b;
+}
+.form-common .has-error .tooltip.left .tooltip-arrow {
+  border-left-color: #e8350b;
+}
+.form-common .has-error .tooltip.bottom .tooltip-arrow {
+  border-bottom-color: #e8350b;
+}
+.form-common .has-error .tooltip.bottom-left .tooltip-arrow {
+  border-bottom-color: #e8350b;
+}
+.form-common .has-error .tooltip.bottom-right .tooltip-arrow {
+  border-bottom-color: #e8350b;
+}
+.form-common .txt-required {
+  font-family: 'Roboto Bold', sans-serif, arial, tahoma;
+}
+.form-common .input-validation-error {
+  border-color: #d02513 !important;
+}
+.error-box {
+  background: #FAD3C4;
+  border: 1px solid #A75B4E;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  color: #444444;
+  display: none;
+  font-size: 13px;
+  margin: 0px 0px 15px 0px;
+  padding: 8px 8px;
+  width: 672px;
+}
+/********************************************************/
+/*					    Message                         */
+/********************************************************/
+.alert {
+  padding: 12px 16px 12px 40px;
+  position: relative;
+}
+.alert.alert-danger {
+  background-color: #f2dede;
+  border-color: #ebccd1;
+  color: #d02513;
+}
+.alert.alert-success {
+  background-color: #dff0d8;
+  border-color: #d6e9c6;
+  color: #3c763d;
+}
+.alert.alert-warning {
+  background-color: #fff5df;
+  border-color: #faebcc;
+  color: #be8c1b;
+}
+.alert .icon-error,
+.alert .icon-success,
+.alert .icon-warning {
+  font-size: 20px;
+  left: 12px;
+  position: absolute;
+}
+.alert * {
+  vertical-align: middle;
+}
+/********************************************************/
+/*					   Message Popup                    */
+/********************************************************/
+.alert.message-popup {
+  position: relative;
+  display: table;
+  margin: 60px auto;
+  padding: 12px 36px 12px 12px;
+  -webkit-box-shadow: 0 0 4px rgba(0, 0, 0, 0.3);
+  -moz-box-shadow: 0 0 4px rgba(0, 0, 0, 0.3);
+  -o-box-shadow: 0 0 4px rgba(0, 0, 0, 0.3);
+  box-shadow: 0 0 4px rgba(0, 0, 0, 0.3);
+}
+.alert.message-popup .alert-message-content {
+  white-space: nowrap;
+}
+.alert.message-popup.alert-success {
+  border-color: #3c763d;
+}
+.alert.message-popup.alert-danger {
+  border-color: #d02513;
+}
+.alert.message-popup.alert-warning {
+  border-color: #be8c1b;
+}
+.alert .close {
+  font-size: 20px;
+  position: absolute;
+  right: 12px;
+}
+/*# sourceMappingURL=form.css.map */
