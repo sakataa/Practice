@@ -1,6 +1,7 @@
 $font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
 $white: #FFFFFF;
 $black: #000000;
+$blue: blue;
 
 $bg-header: #5C1218;
 
@@ -27,15 +28,15 @@ $bg-header: #5C1218;
 }
 
 @mixin circle-notification(){
-  @include circle(1.2rem);
+  @include circle(0.8rem);
   position: absolute;
-  right: 0;
+  right: -0.3rem;
+  top: 0.5rem;
   font-size: 1rem;
+  line-height: 1.5rem;
   text-align: center;
-  line-height: 2rem;
   color: $white;
-  background-color: $menu-text-color;
-  padding: 0.2rem 0.55rem;
+  background-color: #F86B4F;
 }
 
 body{
@@ -47,6 +48,27 @@ body{
   width: 100%;
 }
 
-.nav-top{
-  
+.navbar-nav{
+  li > a{
+    color: $white;
+    padding-bottom: 0;
+
+    &:hover, &:focus{
+      background-color: transparent;
+    }
+  }
+}
+
+.nav-top, .nav-bottom{
+  height: 50%;
+  padding-left: 1rem;
+  padding-right: 1.5rem;
+}
+
+.nav-bottom{
+  background-color: $white;
+}
+
+.header-first-item{
+  margin-left: 1rem;
 }

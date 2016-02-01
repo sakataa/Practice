@@ -6,6 +6,23 @@ body {
 .wrapper {
   width: 100%; }
 
+.navbar-nav li > a {
+  color: #FFFFFF;
+  padding-bottom: 0; }
+  .navbar-nav li > a:hover, .navbar-nav li > a:focus {
+    background-color: transparent; }
+
+.nav-top, .nav-bottom {
+  height: 50%;
+  padding-left: 1rem;
+  padding-right: 1.5rem; }
+
+.nav-bottom {
+  background-color: #FFFFFF; }
+
+.header-first-item {
+  margin-left: 1rem; }
+
 .header {
   font-size: 1.2rem;
   background-color: #5C1218;
@@ -31,8 +48,6 @@ body {
         margin-bottom: 0.5rem; }
   .header-right {
     margin-left: 25rem; }
-    .header-right .nav-top, .header-right .nav-bottom {
-      height: 50%; }
     .header-right .nav-top .menu-toggle {
       margin-top: 1.5rem;
       background: url("../images/sprite_02.png") no-repeat;
@@ -40,10 +55,6 @@ body {
       background-position: -7.3rem -2.1rem;
       width: 1.8rem;
       height: 1.2rem; }
-    .header-right .nav-top-right a {
-      color: #FFFFFF; }
-      .header-right .nav-top-right a:hover {
-        background-color: transparent; }
     .header-right .nav-top-right .icon {
       margin-right: 0.5rem; }
     .header-right .nav-top-right .time-zone .icon {
@@ -72,7 +83,47 @@ body {
       background-position: -7.3rem -34.9rem;
       width: 1.6rem;
       height: 1.3rem; }
-    .header-right .nav-bottom {
-      background-color: #FFFFFF; }
+    .header-right .nav-bottom-left {
+      color: blue;
+      padding-top: 1.5rem; }
+      .header-right .nav-bottom-left .icon-home {
+        margin-right: 0.5rem;
+        background: url("../images/sprite_02.png") no-repeat;
+        display: inline-block;
+        background-position: -7.3rem -6.4rem;
+        width: 1.6rem;
+        height: 1.4rem; }
+    .header-right .nav-bottom-right li > a {
+      padding-right: 0.5rem; }
+      .header-right .nav-bottom-right li > a .count {
+        width: 1.6rem;
+        height: 1.6rem;
+        -moz-border-radius: 0.8rem;
+        -webkit-border-radius: 0.8rem;
+        border-radius: 0.8rem;
+        display: inline-block;
+        cursor: default;
+        position: absolute;
+        right: -0.3rem;
+        top: 0.5rem;
+        font-size: 1rem;
+        line-height: 1.5rem;
+        text-align: center;
+        color: #FFFFFF;
+        background-color: #F86B4F;
+        z-index: 1000; }
+    .header-right .nav-bottom-right .add {
+      background: url("../images/sprite_02.png") no-repeat;
+      display: inline-block;
+      background-position: -7.3rem -15.8rem;
+      width: 1.6rem;
+      height: 1.6rem; }
+    .header-right .nav-bottom-right .email {
+      background: url("../images/sprite_02.png") no-repeat;
+      display: inline-block;
+      background-position: -7.3rem -21.3rem;
+      width: 1.8rem;
+      height: 1.4rem;
+      z-index: 100; }
 
 /*# sourceMappingURL=style.css.map */

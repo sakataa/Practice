@@ -6,4 +6,14 @@ body {
 .wrapper {
   width: 100%; }
 
+.nav-top, .nav-bottom {
+  height: 50%; }
+
+.nav-bottom {
+  background-color: #FFFFFF;
+  margin-right: -15px; }
+
+.header-first-item {
+  margin-left: 1rem; }
+
 /*# sourceMappingURL=_common.css.map */

@@ -11,7 +11,7 @@
   &-left{
     float: left;
     width: 25rem;
-
+    
     .user-panel{
       .avatar{
         @include sprite-position(-12.2rem, -35rem, 6.4rem, 6.3rem);
@@ -33,10 +33,6 @@
   &-right{
     margin-left: 25rem;
 
-    .nav-top, .nav-bottom{
-      height: 50%;
-    }
-
     .nav-top{
       .menu-toggle{
         margin-top: 1.5rem;
@@ -44,13 +40,6 @@
       }
 
       &-right{
-        a{
-          color: $white;
-
-          &:hover{
-            background-color: transparent;
-          }
-        }
         .icon{
           margin-right: 0.5rem;
         }
@@ -82,7 +71,35 @@
     }
 
     .nav-bottom{
-      background-color: $white;
+      &-left{
+        color: $blue;
+        padding-top: 1.5rem;
+
+        .icon-home{
+          margin-right: 0.5rem;
+          @include sprite-position(-7.3rem, -6.4rem, 1.6rem, 1.4rem);
+        }
+      }
+
+      &-right{
+        li > a{
+          padding-right: 0.5rem;
+
+          .count{
+            @include circle-notification();
+            z-index: 1000;
+          }
+        }
+
+        .add{
+          @include sprite-position(-7.3rem, -15.8rem, 1.6rem, 1.6rem);
+        }
+
+        .email{
+          @include sprite-position(-7.3rem, -21.3rem, 1.8rem, 1.4rem);
+          z-index: 100;
+        }
+      }
     }
   }
 }
