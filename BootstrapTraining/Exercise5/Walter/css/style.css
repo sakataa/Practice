@@ -3,6 +3,13 @@ body {
   font-size: 10px;
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif; }
 
+.left-side {
+  float: left;
+  width: 25rem; }
+
+.right-side {
+  margin-left: 25rem; }
+
 .wrapper {
   width: 100%; }
 
@@ -30,100 +37,110 @@ body {
   height: 8.5rem; }
   .header-left, .header-right {
     height: 100%; }
-  .header-left {
+  .header-left .user-panel .avatar {
+    background: url("../images/sprite_02.png") no-repeat;
+    display: inline-block;
+    background-position: -12.2rem -35rem;
+    width: 6.4rem;
+    height: 6.3rem;
+    float: left; }
+  .header-left .user-panel .info {
+    margin-left: 7.5rem;
+    margin-top: 1rem;
+    padding-top: 1rem; }
+    .header-left .user-panel .info p {
+      margin-bottom: 0.5rem; }
+  .header-right .nav-top .menu-toggle {
+    margin-top: 1.5rem;
+    background: url("../images/sprite_02.png") no-repeat;
+    display: inline-block;
+    background-position: -7.3rem -2.1rem;
+    width: 1.8rem;
+    height: 1.2rem; }
+  .header-right .nav-top-right .icon {
+    margin-right: 0.5rem; }
+  .header-right .nav-top-right .time-zone .icon {
+    background: url("../images/sprite_02.png") no-repeat;
+    display: inline-block;
+    background-position: -7.1rem -38.9rem;
+    width: 1.6rem;
+    height: 1.6rem; }
+  .header-right .nav-top-right .time-zone .time-text {
+    vertical-align: top; }
+  .header-right .nav-top-right .language .icon {
+    background: url("../images/sprite_02.png") no-repeat;
+    display: inline-block;
+    background-position: -7.3rem -11.5rem;
+    width: 1.7rem;
+    height: 1.2rem; }
+  .header-right .nav-top-right .grid {
+    background: url("../images/sprite_02.png") no-repeat;
+    display: inline-block;
+    background-position: -7.3rem -30.4rem;
+    width: 1.6rem;
+    height: 1.6rem; }
+  .header-right .nav-top-right .logout {
+    background: url("../images/sprite_02.png") no-repeat;
+    display: inline-block;
+    background-position: -7.3rem -34.9rem;
+    width: 1.6rem;
+    height: 1.3rem; }
+  .header-right .nav-bottom-left {
+    color: blue;
+    padding-top: 1.5rem; }
+    .header-right .nav-bottom-left .icon-home {
+      margin-right: 0.5rem;
+      background: url("../images/sprite_02.png") no-repeat;
+      display: inline-block;
+      background-position: -7.3rem -6.4rem;
+      width: 1.6rem;
+      height: 1.4rem; }
+  .header-right .nav-bottom-right li > a {
+    padding-right: 0.5rem; }
+    .header-right .nav-bottom-right li > a .count {
+      width: 1.6rem;
+      height: 1.6rem;
+      -moz-border-radius: 0.8rem;
+      -webkit-border-radius: 0.8rem;
+      border-radius: 0.8rem;
+      display: inline-block;
+      cursor: default;
+      position: absolute;
+      right: -0.3rem;
+      top: 0.5rem;
+      font-size: 1rem;
+      line-height: 1.5rem;
+      text-align: center;
+      color: #FFFFFF;
+      background-color: #F86B4F;
+      z-index: 1000; }
+  .header-right .nav-bottom-right .add {
+    background: url("../images/sprite_02.png") no-repeat;
+    display: inline-block;
+    background-position: -7.3rem -15.8rem;
+    width: 1.6rem;
+    height: 1.6rem; }
+  .header-right .nav-bottom-right .email {
+    background: url("../images/sprite_02.png") no-repeat;
+    display: inline-block;
+    background-position: -7.3rem -21.3rem;
+    width: 1.8rem;
+    height: 1.4rem;
+    z-index: 100; }
+
+.left-panel .tab {
+  height: 4.5rem; }
+  .left-panel .tab-left, .left-panel .tab-right {
+    width: 50%;
     float: left;
-    width: 25rem; }
-    .header-left .user-panel .avatar {
-      background: url("../images/sprite_02.png") no-repeat;
-      display: inline-block;
-      background-position: -12.2rem -35rem;
-      width: 6.4rem;
-      height: 6.3rem;
-      float: left; }
-    .header-left .user-panel .info {
-      margin-left: 7.5rem;
-      margin-top: 1rem;
-      padding-top: 1rem; }
-      .header-left .user-panel .info p {
-        margin-bottom: 0.5rem; }
-  .header-right {
-    margin-left: 25rem; }
-    .header-right .nav-top .menu-toggle {
-      margin-top: 1.5rem;
-      background: url("../images/sprite_02.png") no-repeat;
-      display: inline-block;
-      background-position: -7.3rem -2.1rem;
-      width: 1.8rem;
-      height: 1.2rem; }
-    .header-right .nav-top-right .icon {
-      margin-right: 0.5rem; }
-    .header-right .nav-top-right .time-zone .icon {
-      background: url("../images/sprite_02.png") no-repeat;
-      display: inline-block;
-      background-position: -7.1rem -38.9rem;
-      width: 1.6rem;
-      height: 1.6rem; }
-    .header-right .nav-top-right .time-zone .time-text {
-      vertical-align: top; }
-    .header-right .nav-top-right .language .icon {
-      background: url("../images/sprite_02.png") no-repeat;
-      display: inline-block;
-      background-position: -7.3rem -11.5rem;
-      width: 1.7rem;
-      height: 1.2rem; }
-    .header-right .nav-top-right .grid {
-      background: url("../images/sprite_02.png") no-repeat;
-      display: inline-block;
-      background-position: -7.3rem -30.4rem;
-      width: 1.6rem;
-      height: 1.6rem; }
-    .header-right .nav-top-right .logout {
-      background: url("../images/sprite_02.png") no-repeat;
-      display: inline-block;
-      background-position: -7.3rem -34.9rem;
-      width: 1.6rem;
-      height: 1.3rem; }
-    .header-right .nav-bottom-left {
-      color: blue;
-      padding-top: 1.5rem; }
-      .header-right .nav-bottom-left .icon-home {
-        margin-right: 0.5rem;
-        background: url("../images/sprite_02.png") no-repeat;
-        display: inline-block;
-        background-position: -7.3rem -6.4rem;
-        width: 1.6rem;
-        height: 1.4rem; }
-    .header-right .nav-bottom-right li > a {
-      padding-right: 0.5rem; }
-      .header-right .nav-bottom-right li > a .count {
-        width: 1.6rem;
-        height: 1.6rem;
-        -moz-border-radius: 0.8rem;
-        -webkit-border-radius: 0.8rem;
-        border-radius: 0.8rem;
-        display: inline-block;
-        cursor: default;
-        position: absolute;
-        right: -0.3rem;
-        top: 0.5rem;
-        font-size: 1rem;
-        line-height: 1.5rem;
-        text-align: center;
-        color: #FFFFFF;
-        background-color: #F86B4F;
-        z-index: 1000; }
-    .header-right .nav-bottom-right .add {
-      background: url("../images/sprite_02.png") no-repeat;
-      display: inline-block;
-      background-position: -7.3rem -15.8rem;
-      width: 1.6rem;
-      height: 1.6rem; }
-    .header-right .nav-bottom-right .email {
-      background: url("../images/sprite_02.png") no-repeat;
-      display: inline-block;
-      background-position: -7.3rem -21.3rem;
-      width: 1.8rem;
-      height: 1.4rem;
-      z-index: 100; }
+    padding: 1.5rem; }
+  .left-panel .tab-active {
+    background-color: #FFFFFF;
+    color: #5C1218; }
+  .left-panel .tab-normal {
+    background-color: #5C1218;
+    color: #FFFFFF; }
+.left-panel .main-menu {
+  padding: 1.5rem; }
 
 /*# sourceMappingURL=style.css.map */

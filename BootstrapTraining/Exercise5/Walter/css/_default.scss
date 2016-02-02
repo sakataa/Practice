@@ -8,10 +8,7 @@
     height: 100%;
   }
 
-  &-left{
-    float: left;
-    width: 25rem;
-    
+  &-left{    
     .user-panel{
       .avatar{
         @include sprite-position(-12.2rem, -35rem, 6.4rem, 6.3rem);
@@ -31,8 +28,6 @@
   }
 
   &-right{
-    margin-left: 25rem;
-
     .nav-top{
       .menu-toggle{
         margin-top: 1.5rem;
@@ -101,5 +96,30 @@
         }
       }
     }
+  }
+}
+
+.left-panel{
+  .tab{
+    height: 4.5rem;
+    &-left, &-right{
+      width: 50%;
+      float: left;
+      padding: 1.5rem;
+    }
+
+    &-active{
+      background-color: $white;
+      color: $bg-header;
+    }
+
+    &-normal{
+      background-color: $bg-header;
+      color: $white;
+    }
+  }
+
+  .main-menu{
+    padding: 1.5rem;
   }
 }

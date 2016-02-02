@@ -44,6 +44,15 @@ body{
   font-family: $font-family;
 }
 
+.left-side{
+  float: left;
+  width: 25rem;
+}
+
+.right-side{
+  margin-left: 25rem;
+}
+
 .wrapper{
   width: 100%;
 }
