@@ -1,3 +1,8 @@
-
+@media (min-width: 768px) {
+  .slider-section {
+    margin-left: 0; } }
+@media (max-width: 767px) {
+  .right-side {
+    margin-left: 0; } }
 
 /*# sourceMappingURL=_responsive.css.map */

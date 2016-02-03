@@ -3,3 +3,17 @@
 		margin-left: 0;
 	}
 }
+
+@media (max-width: 767px){
+	.right-side{
+		margin-left: 0;
+	}
+
+	.nav-top-right, .nav-bottom-right{
+		float: right;
+
+		> li{
+			float: left;
+		}
+	}
+}
