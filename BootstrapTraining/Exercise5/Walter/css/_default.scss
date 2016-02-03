@@ -101,7 +101,7 @@
 
 .left-panel{
   height: 100%;
-  position: fixed;
+  position: absolute;
   top: 8.5rem;
   left: 0;
   font-size: 1.1rem;
@@ -115,6 +115,7 @@
       width: 50%;
       float: left;
       padding: 1.5rem;
+      cursor: pointer;
     }
 
     &-active{
@@ -129,9 +130,6 @@
   }
 
   .main-menu{
-    border-right: 0.2rem solid $border-color;
-    height: 100%;
-
     li{
       a{
         color: $black;
@@ -204,12 +202,7 @@
 }
 
 .slider-section{
-  margin-left: -1.5rem;
-  border: 0;
-
-  .panel-body{
-    padding-left: 0;
-  }
+  margin-left: -2rem;
 }
 
 .announcement-section{
