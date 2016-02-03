@@ -3,15 +3,29 @@ body {
   font-size: 10px;
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif; }
 
+.left-side {
+  float: left;
+  width: 25rem; }
+
+.right-side {
+  margin-left: 25rem; }
+
 .wrapper {
   width: 100%; }
 
+.navbar-nav li > a {
+  color: #FFFFFF;
+  padding-bottom: 0; }
+  .navbar-nav li > a:hover, .navbar-nav li > a:focus {
+    background-color: transparent; }
+
 .nav-top, .nav-bottom {
-  height: 50%; }
+  height: 50%;
+  padding-left: 1rem;
+  padding-right: 3rem; }
 
 .nav-bottom {
-  background-color: #FFFFFF;
-  margin-right: -15px; }
+  background-color: #FFFFFF; }
 
 .header-first-item {
   margin-left: 1rem; }

@@ -2,9 +2,12 @@ $font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
 $white: #FFFFFF;
 $black: #000000;
 $blue: blue;
+$border-color: #ddd;
 
 $bg-header: #5C1218;
+$bg-menu-active: #EFDBDB;
 
+$color-submenu: #503333;
 /* mixin */
 @mixin border-radius($radius){
   -moz-border-radius: $radius;
@@ -39,6 +42,16 @@ $bg-header: #5C1218;
   background-color: #F86B4F;
 }
 
+[class^="iconl"]{
+  margin-right: 2rem;
+  margin-top: -0.5rem;
+}
+
+[class^="iconr"]{
+  margin-top: 0.4rem;
+  margin-right: 0;
+}
+
 body{
   font-size: 10px;
   font-family: $font-family;
@@ -71,7 +84,7 @@ body{
 .nav-top, .nav-bottom{
   height: 50%;
   padding-left: 1rem;
-  padding-right: 1.5rem;
+  padding-right: 3rem;
 }
 
 .nav-bottom{
@@ -80,4 +93,21 @@ body{
 
 .header-first-item{
   margin-left: 1rem;
+}
+
+.panel{
+  font-size: 1.2rem;
+  border: 0.2rem solid $border-color;
+
+  .panel-heading{
+    padding-left: 3rem;
+
+    h5{
+      font-weight: bold;
+    }
+  }
+
+  .panel-body{
+    padding-top: 0;
+  }
 }

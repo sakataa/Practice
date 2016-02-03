@@ -100,8 +100,17 @@
 }
 
 .left-panel{
+  height: 100%;
+  position: fixed;
+  top: 8.5rem;
+  left: 0;
+  font-size: 1.1rem;
+  font-weight: 600;
+
   .tab{
     height: 4.5rem;
+    border-top: 0.1rem solid #511015;
+
     &-left, &-right{
       width: 50%;
       float: left;
@@ -120,6 +129,115 @@
   }
 
   .main-menu{
-    padding: 1.5rem;
+    border-right: 0.2rem solid $border-color;
+    height: 100%;
+
+    li{
+      a{
+        color: $black;
+        padding: 1.5rem 2rem;
+
+        &:hover, &:focus{
+          background-color: $bg-menu-active;
+        }
+
+        * {
+          vertical-align: middle;
+        }
+
+        .h6{
+          font-weight: bold;
+        }
+
+        .iconr{
+          &-collapse{
+            @include sprite-position(-1.7rem, -25.9rem, 1rem, 0.6rem);
+          }
+          &-expand{
+            @include sprite-position(-1.7rem, -30.6rem, 0.6rem, 1rem);
+          }
+        }
+
+        .iconl{
+          &-report{
+            @include sprite-position(-1.7rem, -11.1rem, 1.6rem, 1.7rem);
+          }
+          &-totalbet{
+            @include sprite-position(-1.8rem, -2rem, 1.1rem, 1.3rem);
+          }
+          &-forecast{
+            @include sprite-position(-1.7rem, -6.4rem, 1.6rem, 1.5rem);
+          }
+          &-memberinfo{
+            @include sprite-position(-1.7rem, -16rem, 1.6rem, 1.6rem);
+          }
+          &-transfer{
+            @include sprite-position(-21.9rem, -25.1rem, 1.7rem, 1.7rem);
+          }
+          &-viewlog{
+            @include sprite-position(-21.9rem, -15.5rem, 1.6rem, 1.8rem);
+          }
+          &-announcement{
+                font-size: 2.5rem;
+                margin-right: 1rem;
+          }
+          &-statistics{
+            @include sprite-position(-13.4rem, -6.3rem, 1.8rem, 1.8rem);
+          }
+        }
+      }
+
+      .sub-menu{
+        margin-left: 3.5rem;
+        a{
+          color: $color-submenu;
+        }
+      }
+    }
+  }
+}
+
+.balance-info-section{
+  .tb-balance{
+    margin-bottom: 0;
+  }
+}
+
+.slider-section{
+  margin-left: -1.5rem;
+  border: 0;
+
+  .panel-body{
+    padding-left: 0;
+  }
+}
+
+.announcement-section{
+  .tb-announcement{
+    border: 0;
+
+    .date{
+      font-weight: bold;
+      cursor: none;
+
+      &:hover{
+        background: transparent;
+      }
+    }
+
+    td{
+      border: 0;
+
+      &:hover{
+        cursor: pointer;
+      }
+    }
+
+    .viewmore{
+      &:hover{
+        background: transparent;
+        font-weight: bold;
+      }
+    }
   }
 }
