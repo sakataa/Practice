@@ -1,0 +1,14 @@
+/* mixin */
+[class^="iconl"] {
+  margin-right: 2rem;
+  margin-top: -0.5rem; }
+
+[class^="iconr"] {
+  margin-top: 0.4rem;
+  margin-right: 0; }
+
+body {
+  font-size: 10px;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif; }
+
+/*# sourceMappingURL=_common.css.map */

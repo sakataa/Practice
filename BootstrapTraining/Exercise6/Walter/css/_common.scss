@@ -1,0 +1,60 @@
+$font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+$white: #FFFFFF;
+$black: #000000;
+$blue: blue;
+$border-color: #DCD1D1;
+
+$bg-header: #5C1218;
+$bg-menu-active: #EFDBDB;
+$bg-content: #F4F4F4;
+
+$color-submenu: #503333;
+/* mixin */
+@mixin border-radius($radius){
+  -moz-border-radius: $radius;
+  -webkit-border-radius: $radius;
+  border-radius: $radius;
+}
+@mixin circle($radius) {
+  width: $radius * 2;
+  height: $radius * 2;
+  @include border-radius($radius);
+  display: inline-block;
+  cursor: default;
+}
+
+@mixin sprite-position($x, $y, $width, $height){
+  background: url('../images/sprite_02.png') no-repeat;
+  display: inline-block;
+  background-position: $x $y;
+  width: $width;
+  height: $height;
+}
+
+@mixin circle-notification(){
+  @include circle(0.8rem);
+  position: absolute;
+  right: -0.3rem;
+  top: 0.5rem;
+  font-size: 1rem;
+  line-height: 1.5rem;
+  text-align: center;
+  color: $white;
+  background-color: #F86B4F;
+}
+
+[class^="iconl"]{
+  margin-right: 2rem;
+  margin-top: -0.5rem;
+}
+
+[class^="iconr"]{
+  margin-top: 0.4rem;
+  margin-right: 0;
+}
+
+body{
+  font-size: 10px;
+  font-family: $font-family;
+}
+
