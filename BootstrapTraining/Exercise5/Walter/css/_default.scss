@@ -8,7 +8,8 @@
     height: 100%;
   }
 
-  &-left{    
+  &-left{
+    z-index: 2001;  
     .user-panel{
       .avatar{
         @include sprite-position(-12.2rem, -35rem, 6.4rem, 6.3rem);
@@ -106,6 +107,7 @@
   left: 0;
   font-size: 1.1rem;
   font-weight: 600;
+  z-index: 2001;
 
   .tab{
     height: 4.5rem;

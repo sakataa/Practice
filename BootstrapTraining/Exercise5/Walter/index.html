@@ -12,7 +12,7 @@
 <body>
 	<div class="wrapper">
 		<header class="header">
-			<div class="hidden-xs container-fluid left-side header-left">
+			<div class="hidden-xs container-fluid left-side header-left" id="header-left">
 				<div class="user-panel">
 					<span class="avatar"></span>
 					<div class="info">
@@ -23,17 +23,17 @@
 			</div>
 			<div class="right-side header-right">
 				<div class="nav-top">
-					<a href="#" class="menu-toggle"></a>
+					<a href="#" class="menu-toggle" id="menu-toggle"></a>
 
 					<ul class="nav navbar-nav navbar-right nav-top-right">
-						<li>
-							<a class="time-zone">
+						<li class="time-zone">
+							<a>
 								<span class="icon"></span>
 								<span class="time-text">AM Oct 14, 2015 GMT-4 2:00:47</span>
 							</a>
 						</li>
-						<li>
-							<a class="language"><span class="icon"></span>English</a>
+						<li class="language">
+							<a><span class="icon"></span>English</a>
 						</li>
 						<li>
 							<a href="#"><span class="grid"></span></a>
@@ -61,20 +61,20 @@
 			</div>
 		</header>
 
-		<aside class="hidden-xs left-side left-panel">
+		<aside class="hidden-xs left-side left-panel" id="left-panel">
 			<div class="tab">
 				<div class="tab-left tab-active text-center">MAIN MENU</div>
 				<div class="tab-right tab-normal text-center">ACCOUNT INFO</div>
 			</div>
 
-			<ul class="nav main-menu">
+			<ul class="nav main-menu" id="main-menu">
 				<li>
-					<a href="#">
+					<a data-toggle="collapse" href="#submenu-report" aria-expanded="true" aria-controls="submenu-report">
 						<span class="iconl-report"></span>
 						<span class="h6">REPORTS</span>
 						<span class="pull-right iconr-collapse"></span>
 					</a>
-					<ul class="nav sub-menu">
+					<ul class="nav sub-menu collapse in" id="submenu-report">
 						<li><a href="#">Master Win Loss</a></li>
 						<li><a href="#">Master Win Loss Detail</a></li>
 						<li><a href="#">Master Outstanding</a></li>
@@ -255,6 +255,10 @@
 			</section>
 		</div>
 	</div>
+
+	<script type="text/javascript" src="js/jquery-2.2.0.min.js"></script>
+	<script type="text/javascript" src="js/bootstrap.min.js"></script>
+	<script type="text/javascript" src="js/page.js"></script>
 </body>
 
 </html>

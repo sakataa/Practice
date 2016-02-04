@@ -11,9 +11,20 @@
 
 	.nav-top-right, .nav-bottom-right{
 		float: right;
+		margin: 0.5rem -1.5rem;
 
 		> li{
 			float: left;
 		}
+	}
+
+	.slider-section {
+	    margin-left: 0;
+	}
+}
+
+@media (max-width: 465px){
+	.nav-top-right .time-zone {
+	    display: none;
 	}
 }

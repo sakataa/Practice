@@ -1,7 +1,18 @@
 /* mixin */
+[class^="iconl"] {
+  margin-right: 2rem;
+  margin-top: -0.5rem; }
+
+[class^="iconr"] {
+  margin-top: 0.4rem;
+  margin-right: 0; }
+
 body {
   font-size: 10px;
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif; }
+
+section {
+  margin-bottom: 1.5rem; }
 
 .left-side {
   float: left;
@@ -29,5 +40,34 @@ body {
 
 .header-first-item {
   margin-left: 1rem; }
+
+.page {
+  background-color: #F4F4F4;
+  padding-top: 2rem;
+  border-top: 0.2rem solid #DCD1D1;
+  border-left: 0.2rem solid #DCD1D1; }
+
+.border-shadow {
+  -webkit-box-shadow: 0 0 0.6rem #DCD1D1;
+  box-shadow: 0 0 0.6rem #DCD1D1; }
+
+.panel {
+  font-size: 1.2rem;
+  border: 0.2rem solid #DCD1D1; }
+  .panel .panel-heading {
+    padding-left: 3rem; }
+    .panel .panel-heading h5 {
+      font-weight: bold; }
+  .panel .panel-body {
+    padding-top: 0; }
+
+.left-collapsed {
+  display: none !important; }
+
+.right-side-expand {
+  margin-left: 0; }
+
+.right-side-collapse {
+  margin-left: 25rem; }
 
 /*# sourceMappingURL=_common.css.map */
