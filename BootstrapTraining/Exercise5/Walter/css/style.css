@@ -61,6 +61,11 @@ section {
   .panel .panel-body {
     padding-top: 0; }
 
+.expand .right-side {
+  margin-left: 25rem; }
+.expand .header-left, .expand .left-panel {
+  display: block; }
+
 .header {
   font-size: 1.2rem;
   background-color: #5C1218;
@@ -275,12 +280,23 @@ section {
     background: transparent;
     font-weight: bold; }
 
+.small-body .right-collapse.right-side {
+  margin-left: 25rem; }
+
 @media (min-width: 768px) {
   .slider-section {
-    margin-left: 0; } }
+    margin-left: 0; }
+
+  .expand .right-side {
+    margin-left: 0; }
+  .expand .header-left, .expand .left-panel {
+    display: none; } }
 @media (max-width: 767px) {
   .right-side {
     margin-left: 0; }
+
+  .header-left, .left-panel {
+    display: none; }
 
   .nav-top-right, .nav-bottom-right {
     float: right;
@@ -292,6 +308,28 @@ section {
     margin-left: 0; } }
 @media (max-width: 465px) {
   .nav-top-right .time-zone {
-    display: none; } }
+    display: none; }
+
+  .header-left, .left-panel {
+    display: none; }
+
+  .expand .left-panel {
+    top: 4.25rem;
+    width: 100%;
+    border: none; }
+  .expand .right-side {
+    display: none; }
+  .expand .nav-bottom {
+    display: none; }
+  .expand .header-left {
+    display: none; }
+  .expand .header-right {
+    display: block; }
+  .expand .menu-toggle {
+    position: absolute;
+    left: 1rem; }
+  .expand .nav-top-right {
+    position: absolute;
+    left: 5rem; } }
 
 /*# sourceMappingURL=style.css.map */

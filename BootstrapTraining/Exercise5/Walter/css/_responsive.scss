@@ -2,11 +2,25 @@
 	.slider-section{
 		margin-left: 0;
 	}
+
+	.expand{
+	  .right-side{
+	    margin-left: 0;
+	  }
+
+	  .header-left, .left-panel{
+	    display: none;
+	  }
+	}
 }
 
 @media (max-width: 767px){
 	.right-side{
 		margin-left: 0;
+	}
+
+	.header-left, .left-panel{
+		display: none;
 	}
 
 	.nav-top-right, .nav-bottom-right{
@@ -26,5 +40,45 @@
 @media (max-width: 465px){
 	.nav-top-right .time-zone {
 	    display: none;
+	}
+
+	.header-left, .left-panel{
+		display: none;
+	}
+
+	.expand{
+		.left-panel{
+			top: 4.25rem;
+		  	width: 100%;
+		  	border: none;
+		}
+
+		.right-side{
+			display: none;
+		}
+
+		.nav-bottom{
+			display: none;
+		}
+
+		.header{
+		  &-left{
+		  	display: none;
+		  }
+
+		  &-right{
+		  	display: block;
+		  }
+		}
+
+		.menu-toggle{
+			position: absolute;
+			left: 1rem;
+		}
+
+		.nav-top-right{
+			position: absolute;
+			left: 5rem;
+		}
 	}
 }
