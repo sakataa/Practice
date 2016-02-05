@@ -1,0 +1,60 @@
+.header{
+	&-menu{
+		background: $bg-header-menu;
+		border: none;
+
+		.navbar-nav{
+			font-size: $size-header-menu;
+			margin-bottom: 0;
+		}
+
+		.navbar-toggle{
+			border-radius: 0;
+			float: left;
+
+			&:hover, &:focus{
+				background: #185D0F;
+			}
+
+			.icon-bar{
+				background: $white;
+			}
+		}
+
+		.search-form{
+			margin-top: 1rem;
+
+			.form-control{
+				border-radius: 2rem;
+			}
+
+			.form-control-feedback{
+				top: 1rem;
+				right: 2rem;
+				font-size: 1.5rem;
+			}
+		}
+
+		.cart{
+			img{
+				float: right;
+				height: 4rem;
+				margin-top: 1rem;
+				margin-right: 3rem;
+			}
+
+			.badge{
+				@include circle-cart(1rem);
+				top: 2.2rem;
+  				right: 5.7rem;
+  				padding-top: 0.4rem;
+			}
+
+			.glyphicon-chevron-down{
+				position: absolute;
+				top: 3rem;
+  				right: 3rem;
+			}
+		}
+	}
+}

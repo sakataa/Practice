@@ -1,14 +1,13 @@
 /* mixin */
-[class^="iconl"] {
-  margin-right: 2rem;
-  margin-top: -0.5rem; }
-
-[class^="iconr"] {
-  margin-top: 0.4rem;
-  margin-right: 0; }
-
 body {
   font-size: 10px;
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif; }
+
+.header ul li {
+  border-bottom: 0.1rem solid #FFFFFF; }
+  .header ul li > a {
+    color: #FFFFFF; }
+    .header ul li > a:hover, .header ul li > a:focus {
+      background-color: #486F24; }
 
 /*# sourceMappingURL=_common.css.map */

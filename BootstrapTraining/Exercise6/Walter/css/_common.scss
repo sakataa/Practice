@@ -2,9 +2,11 @@ $font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
 $white: #FFFFFF;
 $black: #000000;
 $blue: blue;
-$border-color: #DCD1D1;
 
-$bg-header: #5C1218;
+$bg-header-menu: url("../images/banner-2.jpg") repeat;
+$bg-item-header-menu: #486F24;
+$size-header-menu: 1.5rem;
+
 $bg-menu-active: #EFDBDB;
 $bg-content: #F4F4F4;
 
@@ -23,38 +25,33 @@ $color-submenu: #503333;
   cursor: default;
 }
 
-@mixin sprite-position($x, $y, $width, $height){
-  background: url('../images/sprite_02.png') no-repeat;
+@mixin sprite-position($url, $x, $y, $width, $height){
+  background: url($url) no-repeat;
   display: inline-block;
   background-position: $x $y;
   width: $width;
   height: $height;
 }
 
-@mixin circle-notification(){
-  @include circle(0.8rem);
-  position: absolute;
-  right: -0.3rem;
-  top: 0.5rem;
-  font-size: 1rem;
-  line-height: 1.5rem;
-  text-align: center;
-  color: $white;
+@mixin circle-cart($radius){
+  @include circle($radius);
   background-color: #F86B4F;
-}
-
-[class^="iconl"]{
-  margin-right: 2rem;
-  margin-top: -0.5rem;
-}
-
-[class^="iconr"]{
-  margin-top: 0.4rem;
-  margin-right: 0;
+  position: absolute;
 }
 
 body{
   font-size: 10px;
   font-family: $font-family;
+}
+
+.header ul li{
+    border-bottom: 0.1rem solid $white; 
+  > a{
+    color: $white;
+
+    &:hover, &:focus{
+      background-color: $bg-item-header-menu;
+    }
+  }
 }
 
