@@ -3,13 +3,46 @@ body {
   font-size: 10px;
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif; }
 
-.header ul li {
+nav ul li {
   border-bottom: 0.1rem solid #FFFFFF; }
-  .header ul li > a {
+  nav ul li > a {
     color: #FFFFFF; }
-    .header ul li > a:hover, .header ul li > a:focus {
+    nav ul li > a:hover, nav ul li > a:focus {
       background-color: #486F24; }
 
+section {
+  margin-top: 15px; }
+
+.page {
+  background: #f7f7f7; }
+
+.header .top-right {
+  position: absolute;
+  right: 1rem;
+  top: 1rem; }
+  .header .top-right .nav > li {
+    float: left;
+    margin: 0; }
+    .header .top-right .nav > li a {
+      color: #000000; }
+      .header .top-right .nav > li a:hover, .header .top-right .nav > li a:focus {
+        background: transparent; }
+      .header .top-right .nav > li a .glyphicon-chevron-down {
+        font-size: 0.8rem;
+        margin-left: 0.5rem; }
+.header-banner {
+  background: url("../images/banner-1.jpg") repeat;
+  padding-top: 0.5rem;
+  height: 5rem; }
+  .header-banner a:hover, .header-banner a:focus {
+    text-decoration: none; }
+  .header-banner .logo {
+    font-size: 3rem;
+    color: #000000;
+    padding-left: 2rem; }
+    .header-banner .logo span {
+      color: #FFFFFF;
+      font-weight: bold; }
 .header-menu {
   background: url("../images/banner-2.jpg") repeat;
   border: none; }
@@ -35,7 +68,8 @@ body {
     float: right;
     height: 4rem;
     margin-top: 1rem;
-    margin-right: 3rem; }
+    margin-right: 3rem;
+    min-width: 3.5rem; }
   .header-menu .cart .badge {
     width: 2rem;
     height: 2rem;
@@ -53,5 +87,102 @@ body {
     position: absolute;
     top: 3rem;
     right: 3rem; }
+.header .xs-category {
+  background: url("../images/banner-3.jpg") repeat;
+  color: #FFFFFF;
+  margin-top: -20px; }
+  .header .xs-category .category-toggle {
+    width: 2rem;
+    height: 2rem;
+    -moz-border-radius: 1rem;
+    -webkit-border-radius: 1rem;
+    border-radius: 1rem;
+    display: inline-block;
+    cursor: default;
+    border: 0.2rem solid #FFFFFF;
+    cursor: pointer; }
+    .header .xs-category .category-toggle .glyphicon-plus {
+      font-size: 1.2rem;
+      position: absolute;
+      right: 0.35rem;
+      top: 0.25rem; }
+  .header .xs-category .list-category {
+    margin-bottom: 0; }
+    .header .xs-category .list-category > li > a {
+      font-size: 1.5rem; }
+
+.offer {
+  color: #FFFFFF; }
+  .offer-item {
+    padding: 2rem 2rem 4rem 2rem;
+    position: relative; }
+    .offer-item h1, .offer-item h2 {
+      margin: 0; }
+    .offer-item h1 {
+      font-weight: 400;
+      font-size: 6rem; }
+    .offer-item h2 {
+      font-weight: 300; }
+    .offer-item h6 {
+      color: #000000; }
+    .offer-item:after {
+      content: '';
+      position: absolute;
+      left: 0;
+      bottom: 0;
+      width: 100%;
+      height: 2rem;
+      background: url("../images/shadow-specials.png");
+      background-size: 100%; }
+  .offer #item1 {
+    background: url("../images/banner-1.jpg") repeat; }
+  .offer #item2 {
+    background: url("../images/banner-2.jpg") repeat; }
+  .offer #item3 {
+    background: url("../images/banner-3.jpg") repeat; }
+    .offer #item3 h1 {
+      font-size: 4.5rem; }
+    .offer #item3 h2 {
+      color: #91C537; }
+    .offer #item3 h6 {
+      color: #777; }
+
+.products .title {
+  background: #FFFFFF;
+  padding: 1.5rem 1.5rem 3rem 1.5rem;
+  position: relative; }
+  .products .title:after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 2rem;
+    background: url("../images/shadow-specials.png");
+    background-size: 100%; }
+.products .product-item {
+  font-size: 1.3rem;
+  border: none;
+  border-radius: 0;
+  padding-top: 3rem; }
+  .products .product-item h4 {
+    font-weight: 500; }
+  .products .product-item .price {
+    font-weight: bold; }
+  .products .product-item .selection {
+    margin-top: 1rem; }
+  .products .product-item .btn-cart .icon-cart {
+    background: url("../images/cart.png");
+    width: 41px;
+    height: 41px;
+    display: inline-block; }
+  .products .product-item .btn-detail {
+    background: url("../images/banner-3.jpg") repeat;
+    color: #FFFFFF;
+    font-weight: 300;
+    border-radius: 0;
+    border-color: black;
+    margin-bottom: 3rem;
+    margin-left: 1rem; }
 
 /*# sourceMappingURL=style.css.map */

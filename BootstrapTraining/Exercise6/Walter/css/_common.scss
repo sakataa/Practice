@@ -3,6 +3,8 @@ $white: #FFFFFF;
 $black: #000000;
 $blue: blue;
 
+$bg-category: url("../images/banner-3.jpg") repeat;
+$bg-banner: url("../images/banner-1.jpg") repeat;
 $bg-header-menu: url("../images/banner-2.jpg") repeat;
 $bg-item-header-menu: #486F24;
 $size-header-menu: 1.5rem;
@@ -44,7 +46,7 @@ body{
   font-family: $font-family;
 }
 
-.header ul li{
+nav ul li{
     border-bottom: 0.1rem solid $white; 
   > a{
     color: $white;
@@ -53,5 +55,13 @@ body{
       background-color: $bg-item-header-menu;
     }
   }
+}
+
+section{
+  margin-top: 15px;
+}
+
+.page{
+  background: #f7f7f7;
 }
 
