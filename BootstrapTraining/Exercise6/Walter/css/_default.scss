@@ -46,6 +46,14 @@
 	&-menu{
 		background: $bg-header-menu;
 		border: none;
+		opacity: 0.9;
+
+		.horizontal-menu{
+			li > a:hover, li > a:focus{
+				background: #7BB11C;
+				color: $white;
+			}
+		}
 
 		.navbar-nav{
 			font-size: $size-header-menu;
@@ -66,39 +74,50 @@
 		}
 
 		.search-form{
-			margin-top: 1rem;
+			position: absolute;
+			top: 0.8rem;
+			left: 5rem;
+			width: 50%;
 
 			.form-control{
 				border-radius: 2rem;
 			}
 
-			.form-control-feedback{
-				top: 1rem;
-				right: 2rem;
+			.icon-search{
 				font-size: 1.5rem;
+				position: absolute;
+			    right: 1rem;
+			    top: 1.2rem;
+			    cursor: pointer;
 			}
 		}
 
 		.cart{
+			height: 5rem;
+    		width: 7rem;
+    		position: absolute;
+    		top: 0;
+    		right: 2rem;
+
 			img{
 				float: right;
 				height: 4rem;
-				margin-top: 1rem;
+				margin-top: 0.7rem;
 				margin-right: 3rem;
 				min-width: 3.5rem;
 			}
 
 			.badge{
 				@include circle-cart(1rem);
-				top: 2.2rem;
-  				right: 5.7rem;
+				top: 2rem;
+  				right: 4.3rem;
   				padding-top: 0.4rem;
 			}
 
 			.glyphicon-chevron-down{
 				position: absolute;
 				top: 3rem;
-  				right: 3rem;
+  				right: 1.5rem;
 			}
 		}
 	}
@@ -124,8 +143,11 @@
 		.list-category{
 			margin-bottom: 0;
 
-			> li > a{
-				font-size: 1.5rem;
+			> li{
+				border-bottom-color: #E2D3D3;
+				> a{
+					font-size: 1.5rem;
+				}
 			}
 		}
 	}

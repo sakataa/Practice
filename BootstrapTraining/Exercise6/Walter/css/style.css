@@ -4,7 +4,7 @@ body {
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif; }
 
 nav ul li {
-  border-bottom: 0.1rem solid #FFFFFF; }
+  border-bottom: 0.1rem solid #BFD893; }
   nav ul li > a {
     color: #FFFFFF; }
     nav ul li > a:hover, nav ul li > a:focus {
@@ -25,7 +25,7 @@ section {
     left: 0;
     bottom: 0;
     width: 100%;
-    height: 2rem;
+    height: 1.5rem;
     background: url("../images/shadow-specials.png");
     background-size: 100%; }
 
@@ -83,7 +83,11 @@ section {
       font-weight: bold; }
 .header-menu {
   background: url("../images/banner-2.jpg") repeat;
-  border: none; }
+  border: none;
+  opacity: 0.9; }
+  .header-menu .horizontal-menu li > a:hover, .header-menu .horizontal-menu li > a:focus {
+    background: #7BB11C;
+    color: #FFFFFF; }
   .header-menu .navbar-nav {
     font-size: 1.5rem;
     margin-bottom: 0; }
@@ -95,36 +99,47 @@ section {
     .header-menu .navbar-toggle .icon-bar {
       background: #FFFFFF; }
   .header-menu .search-form {
-    margin-top: 1rem; }
+    position: absolute;
+    top: 0.8rem;
+    left: 5rem;
+    width: 50%; }
     .header-menu .search-form .form-control {
       border-radius: 2rem; }
-    .header-menu .search-form .form-control-feedback {
-      top: 1rem;
-      right: 2rem;
-      font-size: 1.5rem; }
-  .header-menu .cart img {
-    float: right;
-    height: 4rem;
-    margin-top: 1rem;
-    margin-right: 3rem;
-    min-width: 3.5rem; }
-  .header-menu .cart .badge {
-    width: 2rem;
-    height: 2rem;
-    -moz-border-radius: 1rem;
-    -webkit-border-radius: 1rem;
-    border-radius: 1rem;
-    display: inline-block;
-    cursor: default;
-    background-color: #F86B4F;
+    .header-menu .search-form .icon-search {
+      font-size: 1.5rem;
+      position: absolute;
+      right: 1rem;
+      top: 1.2rem;
+      cursor: pointer; }
+  .header-menu .cart {
+    height: 5rem;
+    width: 7rem;
     position: absolute;
-    top: 2.2rem;
-    right: 5.7rem;
-    padding-top: 0.4rem; }
-  .header-menu .cart .glyphicon-chevron-down {
-    position: absolute;
-    top: 3rem;
-    right: 3rem; }
+    top: 0;
+    right: 2rem; }
+    .header-menu .cart img {
+      float: right;
+      height: 4rem;
+      margin-top: 0.7rem;
+      margin-right: 3rem;
+      min-width: 3.5rem; }
+    .header-menu .cart .badge {
+      width: 2rem;
+      height: 2rem;
+      -moz-border-radius: 1rem;
+      -webkit-border-radius: 1rem;
+      border-radius: 1rem;
+      display: inline-block;
+      cursor: default;
+      background-color: #F86B4F;
+      position: absolute;
+      top: 2rem;
+      right: 4.3rem;
+      padding-top: 0.4rem; }
+    .header-menu .cart .glyphicon-chevron-down {
+      position: absolute;
+      top: 3rem;
+      right: 1.5rem; }
 .header .xs-category {
   background: url("../images/banner-3.jpg") repeat;
   color: #FFFFFF;
@@ -146,8 +161,10 @@ section {
       top: 0.25rem; }
   .header .xs-category .list-category {
     margin-bottom: 0; }
-    .header .xs-category .list-category > li > a {
-      font-size: 1.5rem; }
+    .header .xs-category .list-category > li {
+      border-bottom-color: #E2D3D3; }
+      .header .xs-category .list-category > li > a {
+        font-size: 1.5rem; }
 
 .offer {
   color: #FFFFFF; }
@@ -196,5 +213,40 @@ section {
 .special-product .price-new {
   text-decoration: none;
   color: #FE7132; }
+
+@media (min-width: 767px) {
+  nav ul li {
+    border-right: 0.1rem solid #BFD893;
+    border-bottom: none; }
+
+  .header .language-bar {
+    height: 3rem; }
+    .header .language-bar .top-right {
+      top: 0; }
+  .header-menu {
+    border-radius: 0; }
+    .header-menu .horizontal-menu {
+      margin-left: -30px; }
+    .header-menu .search-form {
+      left: inherit;
+      right: 1rem;
+      width: 30%; }
+    .header-menu .cart {
+      top: -5rem; }
+
+  .left-side {
+    margin-bottom: 1rem; }
+    .left-side .category-sidebar {
+      font-size: 1.4rem; }
+      .left-side .category-sidebar .title {
+        color: #FFFFFF;
+        background: url("../images/banner-3.jpg") repeat;
+        border: none; }
+      .left-side .category-sidebar li {
+        border-bottom: 0.1rem solid #E2D3D3; }
+        .left-side .category-sidebar li > a {
+          color: #000000; }
+        .left-side .category-sidebar li:last-child {
+          border-bottom: none; } }
 
 /*# sourceMappingURL=style.css.map */
