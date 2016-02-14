@@ -13,11 +13,14 @@ nav ul li {
 section {
   margin-top: 15px; }
 
-.main-content {
+section.slider {
+  margin-top: 0; }
+
+.wrapper {
   background: #f7f7f7; }
 
 .title {
-  padding: 1.5rem 1.5rem 3rem 1.5rem;
+  padding: 1rem 1.5rem 2rem 1.5rem;
   position: relative; }
   .title:after {
     content: '';
@@ -54,37 +57,43 @@ section {
     margin-bottom: 3rem;
     margin-left: 1rem; }
 
-.header .top-right {
-  position: absolute;
-  right: 1rem;
-  top: 1rem; }
-  .header .top-right .nav > li {
-    float: left;
-    margin: 0; }
-    .header .top-right .nav > li a {
-      color: #000000; }
-      .header .top-right .nav > li a:hover, .header .top-right .nav > li a:focus {
-        background: transparent; }
-      .header .top-right .nav > li a .glyphicon-chevron-down {
-        font-size: 0.8rem;
-        margin-left: 0.5rem; }
+.language-bar ul {
+  margin-left: 0;
+  margin-right: 0; }
+  .language-bar ul li > a {
+    padding-top: 0.7rem;
+    font-size: 1.2rem;
+    color: #000000; }
+    .language-bar ul li > a:hover, .language-bar ul li > a:focus {
+      background-color: transparent; }
+
+.header .language-bar {
+  background: #FFFFFF; }
 .header-banner {
   background: url("../images/banner-1.jpg") repeat;
   padding-top: 0.5rem;
-  height: 5rem; }
+  height: 5rem;
+  font-size: 2rem; }
   .header-banner a:hover, .header-banner a:focus {
     text-decoration: none; }
   .header-banner .logo {
     font-size: 3rem;
-    color: #000000;
-    padding-left: 2rem; }
+    color: #000000; }
     .header-banner .logo span {
       color: #FFFFFF;
       font-weight: bold; }
+  .header-banner .contact-info {
+    padding-top: 1.5rem; }
+    .header-banner .contact-info .label {
+      color: #FFFFFF; }
+    .header-banner .contact-info .phone-number {
+      font-weight: bold; }
+      .header-banner .contact-info .phone-number .icon-phone {
+        color: #FFFFFF;
+        margin-right: 1rem; }
 .header-menu {
   background: url("../images/banner-2.jpg") repeat;
-  border: none;
-  opacity: 0.9; }
+  border: none; }
   .header-menu .horizontal-menu li > a:hover, .header-menu .horizontal-menu li > a:focus {
     background: #7BB11C;
     color: #FFFFFF; }
@@ -101,7 +110,7 @@ section {
   .header-menu .search-form {
     position: absolute;
     top: 0.8rem;
-    left: 5rem;
+    left: 8rem;
     width: 50%; }
     .header-menu .search-form .form-control {
       border-radius: 2rem; }
@@ -186,7 +195,7 @@ section {
       left: 0;
       bottom: 0;
       width: 100%;
-      height: 2rem;
+      height: 1.4rem;
       background: url("../images/shadow-specials.png");
       background-size: 100%; }
   .offer #item1 {
@@ -223,16 +232,56 @@ section {
     height: 3rem; }
     .header .language-bar .top-right {
       top: 0; }
+  .header-banner {
+    height: 12rem; }
+    .header-banner .logo {
+      font-size: 5rem; }
   .header-menu {
+    z-index: 1001;
+    bottom: 2.5rem;
     border-radius: 0; }
     .header-menu .horizontal-menu {
-      margin-left: -30px; }
+      margin-left: -15px;
+      height: 7rem; }
+      .header-menu .horizontal-menu li {
+        height: 100%; }
+        .header-menu .horizontal-menu li > a {
+          height: 100%;
+          padding-top: 2.5rem;
+          font-size: 1.6rem; }
     .header-menu .search-form {
       left: inherit;
+      top: 2rem;
       right: 1rem;
-      width: 30%; }
+      width: 25%; }
     .header-menu .cart {
-      top: -5rem; }
+      top: -6.5rem; }
+      .header-menu .cart img {
+        height: initial;
+        margin-top: -1.5rem; }
+      .header-menu .cart .badge {
+        width: 3rem;
+        height: 3rem;
+        -moz-border-radius: 1.5rem;
+        -webkit-border-radius: 1.5rem;
+        border-radius: 1.5rem;
+        display: inline-block;
+        cursor: default;
+        background-color: #F86B4F;
+        position: absolute;
+        top: 1rem;
+        right: 5.5rem;
+        padding-top: 0.7rem;
+        font-size: 1.8rem; }
+    .header-menu:after {
+      content: '';
+      position: absolute;
+      left: 0;
+      bottom: -1.8rem;
+      width: 100%;
+      height: 1.8rem;
+      background: url("../images/shadow-menu.png");
+      background-size: 100%; }
 
   .left-side {
     margin-bottom: 1rem; }
@@ -248,5 +297,41 @@ section {
           color: #000000; }
         .left-side .category-sidebar li:last-child {
           border-bottom: none; } }
+@media (min-width: 992px) {
+  .header-menu .horizontal-menu {
+    height: 7.5rem; }
+  .header-menu:after {
+    height: 2.4rem; }
+
+  .offer-item h1 {
+    font-size: 3rem; }
+  .offer-item h2 {
+    font-size: 2.5rem; }
+  .offer-item h6 {
+    font-size: 1.1rem; }
+  .offer #item3 h1 {
+    font-size: 2.2rem; }
+  .offer #item3 h2 {
+    font-size: 2rem; } }
+@media (max-width: 767px) {
+  .top-right {
+    position: absolute;
+    right: 1rem;
+    top: 0; }
+    .top-right .nav > li {
+      float: left;
+      margin: 0; }
+      .top-right .nav > li a {
+        color: #000000; }
+        .top-right .nav > li a:hover, .top-right .nav > li a:focus {
+          background: transparent; }
+        .top-right .nav > li a .glyphicon-chevron-down {
+          font-size: 0.8rem;
+          margin-left: 0.5rem; }
+
+  .header-banner {
+    font-size: 1.4rem; }
+    .header-banner .contact-info {
+      padding-top: 0; } }
 
 /*# sourceMappingURL=style.css.map */

@@ -1,32 +1,13 @@
 .header{
-	.top-right{
-		position: absolute;
-		right: 1rem;
-		top: 1rem;
-
-		.nav{
-			> li{
-				float: left;
-				margin: 0;
-
-				a{
-					color: $black;
-					&:hover, &:focus{
-						background: transparent;
-					}
-					.glyphicon-chevron-down{
-						font-size: 0.8rem;
-						margin-left: 0.5rem;
-					}
-				}
-			}
-		}
+	.language-bar{
+		background: $white;
 	}
 
 	&-banner{
 		background: $bg-banner;
 		padding-top: 0.5rem;
 		height: 5rem;
+		font-size: 2rem;
 
 		a:hover, a:focus{
 			text-decoration: none;
@@ -35,10 +16,26 @@
 		.logo{
 			font-size: 3rem;
 			color: $black;
-			padding-left: 2rem;
 			span{
 				color: $white;
 				font-weight: bold;
+			}
+		}
+
+		.contact-info{
+			padding-top: 1.5rem;
+
+			.label{
+				color: $white;
+			}
+
+			.phone-number{
+				font-weight: bold;
+
+				.icon-phone{
+					color: $white;
+					margin-right: 1rem;
+				}
 			}
 		}
 	}
@@ -46,7 +43,6 @@
 	&-menu{
 		background: $bg-header-menu;
 		border: none;
-		opacity: 0.9;
 
 		.horizontal-menu{
 			li > a:hover, li > a:focus{
@@ -76,7 +72,7 @@
 		.search-form{
 			position: absolute;
 			top: 0.8rem;
-			left: 5rem;
+			left: 8rem;
 			width: 50%;
 
 			.form-control{
@@ -183,7 +179,7 @@
 			left: 0;
 			bottom: 0;
 			width: 100%;
-			height: 2rem;
+			height: 1.4rem;
 			background: url('../images/shadow-specials.png');
 			background-size: 100%;
 		}

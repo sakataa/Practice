@@ -61,12 +61,16 @@ section{
   margin-top: 15px;
 }
 
-.main-content{
+section.slider{
+  margin-top: 0;
+}
+
+.wrapper{
   background: #f7f7f7;
 }
 
 .title{
-  padding: 1.5rem 1.5rem 3rem 1.5rem;
+  padding: 1rem 1.5rem 2rem 1.5rem;
   position: relative;
 
   &:after{
@@ -115,6 +119,22 @@ section{
     border-color: black;
     margin-bottom: 3rem;
     margin-left: 1rem;
+  }
+}
+
+.language-bar{
+  ul{
+    margin-left: 0;
+    margin-right: 0;
+    li > a{
+      padding-top: 0.7rem;
+      font-size: 1.2rem;
+      color: $black;
+
+      &:hover, &:focus{
+        background-color: transparent;
+      }
+    }
   }
 }
 

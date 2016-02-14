@@ -12,22 +12,69 @@
 				top: 0;
 			}
 		}
+
+		&-banner{
+			height: 12rem;
+
+			.logo{
+				font-size: 5rem;
+			}
+		}
+
 		&-menu{
+		    z-index: 1001;
+		    bottom: 2.5rem;
 			border-radius: 0;
 
 			.horizontal-menu{
-				margin-left: -30px;
+				margin-left: -15px;
+				height: 7rem;
+
+				li{
+					height: 100%;
+
+					> a{
+						height: 100%;
+						padding-top: 2.5rem;
+						font-size: 1.6rem;
+					}
+				}
 			}
 
 			.search-form{
 				left: inherit;
+				top: 2rem;
 				right: 1rem;
-				width: 30%;
+				width: 25%;
 			}
 
 			.cart{
-				top: -5rem;
+				top: -6.5rem;
+
+				img{
+					height: initial;
+					margin-top: -1.5rem;
+				}
+
+				.badge{
+					@include circle-cart(1.5rem);
+				   	top: 1rem;
+    				right: 5.5rem;
+    				padding-top: 0.7rem;
+    				font-size: 1.8rem;
+				}
 			}
+
+			&:after{
+			    content: '';
+			    position: absolute;
+			    left: 0;
+			    bottom: -1.8rem;
+			    width: 100%;
+			    height: 1.8rem;
+			    background: url('../images/shadow-menu.png');
+			    background-size: 100%;
+			 }
 		}
 	}
 
@@ -58,4 +105,78 @@
 }
 
 @media (min-width: 992px){
+	.header{
+		&-menu{
+			.horizontal-menu {
+			    height: 7.5rem;
+			}
+
+			&:after{
+			    height: 2.4rem;
+			}
+		}
+
+	}
+
+	.offer{
+		&-item{
+			h1{
+				font-size: 3rem;
+			}
+
+			h2{
+				font-size: 2.5rem;
+			}
+
+			h6{
+				font-size: 1.1rem;
+			}
+		}
+
+		#item3{
+			h1{
+				font-size: 2.2rem;
+			}
+
+			h2{
+				font-size: 2rem;
+			}
+		}
+	}
+}
+
+@media (max-width: 767px){
+	.top-right{
+		position: absolute;
+		right: 1rem;
+		top: 0;
+
+		.nav{
+			> li{
+				float: left;
+				margin: 0;
+
+				a{
+					color: $black;
+					&:hover, &:focus{
+						background: transparent;
+					}
+					.glyphicon-chevron-down{
+						font-size: 0.8rem;
+						margin-left: 0.5rem;
+					}
+				}
+			}
+		}
+	}
+
+	.header{
+		&-banner{
+			font-size: 1.4rem;
+
+			.contact-info{
+				padding-top: 0;
+			}
+		}
+	}
 }
