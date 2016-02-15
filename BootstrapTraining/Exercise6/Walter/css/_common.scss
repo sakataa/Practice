@@ -6,7 +6,7 @@ $blue: blue;
 $bg-category: url("../images/banner-3.jpg") repeat;
 $bg-banner: url("../images/banner-1.jpg") repeat;
 $bg-header-menu: url("../images/banner-2.jpg") repeat;
-$bg-item-header-menu: #486F24;
+$bg-item-header-menu: #6A9818;
 $size-header-menu: 1.5rem;
 
 $bg-menu-active: #EFDBDB;
@@ -79,9 +79,10 @@ section.slider{
     left: 0;
     bottom: 0;
     width: 100%;
-    height: 1.5rem;
+    height: 1.4rem;
     background: url('../images/shadow-specials.png');
     background-size: 100%;
+    background-position: 0;
   }
 }
 .product-item{

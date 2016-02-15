@@ -37,7 +37,7 @@
 							<a class="logo" href="#"><span>Drug</span>Store</a>
 						</div>
 
-						<div class="col-xs-6 col-sm-4 col-md-4 text-center contact-info">
+						<div class="col-xs-offset-1 col-xs-5 col-sm-4 col-md-4 text-center contact-info">
 							<p class="label">Call us now toll free:</p>
 							<p class="phone-number"><span class="glyphicon glyphicon-earphone icon-phone"></span><span class="text">(800) 2345-6789</span></p>
 						</div>
@@ -48,19 +48,17 @@
 			<nav class="container navbar header-menu">
 				<div class="row">
 					<div class="navbar-header">
-						<div class="btn-toggle">
-							<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#nav-horizontal" aria-expanded="false">
-								<span class="icon-bar"></span>
-								<span class="icon-bar"></span>
-								<span class="icon-bar"></span>
-							</button>
-						</div>
+						<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#nav-horizontal" aria-expanded="false">
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span>
+						</button>
 					</div>					
 
 					<div class="navbar-collapse collapse" aria-expand="false" id="nav-horizontal">
 						<ul class="nav navbar-nav horizontal-menu">
 							<li class="active"><a href="#">Home</a></li>
-							<li><a href="#">Wish List</a></li>
+							<li><a href="#">Wish List <span class="badge">0</span></a></li>
 							<li><a href="#">My Account</a></li>
 							<li><a href="#">Shopping Cart</a></li>
 							<li><a href="#">Checkout</a></li>
@@ -95,10 +93,24 @@
 
 					<div class="navbar-collapse collapse" aria-expand="false" id="nav-category">
 						<ul class="nav navbar-nav list-category">
-							<li><a href="#">Baby & Child Care</a></li>
+							<li>
+								<a href="#">
+									<span>Baby &amp; Child Care</span>
+									<button class="category-expand">
+										<span class="glyphicon glyphicon-plus"></span>
+									</button>
+								</a>
+							</li>
 							<li><a href="#">Cosmetics</a></li>
-							<li><a href="#">Diet & Nutrition</a></li>
-							<li><a href="#">Gifts & Specialty</a></li>
+							<li>
+								<a href="#">
+									<span>Diet &amp; Nutrition</span>
+									<button class="category-expand">
+										<span class="glyphicon glyphicon-plus"></span>
+									</button>
+								</a>
+							</li>
+							<li><a href="#">Gifts &amp; Specialty</a></li>
 							<li><a href="#">Household Items</a></li>
 							<li><a href="#">Medicine Cabinet</a></li>
 							<li><a href="#">Natural Product</a></li>
@@ -293,10 +305,24 @@
 					<aside class="hidden-xs left-side left-panel" id="left-panel">
 						<ul class="nav nav-stacked category-sidebar">
 							<li class="title"><h4>Categories</h4></li>
-							<li><a href="#">Baby & Child Care</a></li>
+							<li>
+								<a href="#">
+									<span>Baby &amp; Child Care</span>
+									<button class="category-expand">
+										<span class="glyphicon glyphicon-plus"></span>
+									</button>									
+								</a>
+							</li>
 							<li><a href="#">Cosmetics</a></li>
-							<li><a href="#">Diet & Nutrition</a></li>
-							<li><a href="#">Gifts & Specialty</a></li>
+							<li>
+								<a href="#">
+									<span>Diet &amp; Nutrition</span>
+									<button class="category-expand">
+										<span class="glyphicon glyphicon-plus"></span>
+									</button>
+								</a>
+							</li>
+							<li><a href="#">Gifts &amp; Specialty</a></li>
 							<li><a href="#">Household Items</a></li>
 							<li><a href="#">Medicine Cabinet</a></li>
 							<li><a href="#">Natural Product</a></li>

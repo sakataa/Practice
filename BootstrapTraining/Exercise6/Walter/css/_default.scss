@@ -41,13 +41,26 @@
 	}
 
 	&-menu{
-		background: $bg-header-menu;
+		background: #82B232;
+		background: -webkit-linear-gradient(#8BBD35, #82B232, #8BBD35); /* For Safari 5.1 to 6.0 */
+	    background: -o-linear-gradient(#8BBD35, #82B232, #8BBD35); /* For Opera 11.1 to 12.0 */
+	    background: -moz-linear-gradient(#8BBD35, #82B232, #8BBD35); /* For Firefox 3.6 to 15 */
+	    background: linear-gradient(#8BBD35, #82B232, #8BBD35); /* Standard syntax */
 		border: none;
 
 		.horizontal-menu{
-			li > a:hover, li > a:focus{
-				background: #7BB11C;
-				color: $white;
+			li{
+				> a{
+					.badge{
+						background: $white;
+    					color: #10C110;
+					}
+
+					&:hover, &:focus{
+						background: $bg-item-header-menu;
+						color: $white;
+					}
+				}
 			}
 		}
 
@@ -61,7 +74,7 @@
 			float: left;
 
 			&:hover, &:focus{
-				background: #185D0F;
+				background-color: transparent;
 			}
 
 			.icon-bar{
@@ -163,10 +176,11 @@
 
 		h1{
 			font-weight: 400;
-			font-size: 6rem;
+			font-size: 5rem;
 		}
 
 		h2{
+			font-size: 2.5rem;
 			font-weight: 300;
 		}
 
@@ -212,10 +226,6 @@
 .products{
 	.title{
 		background: $white;
-
-		&:after{
-		    background-position: 0 -3rem;
-		}
 	}
 }
 
@@ -271,4 +281,14 @@ footer{
 			@include sprite-position(-8rem, -0.3rem, 7.3rem, 2rem);
 		}
 	}
+}
+
+.category-expand{
+	@include circle(0.8rem);
+	background-color: #777777;
+	border: 0.1rem solid #777777;
+	color: $white;
+	font-size: 0.8rem;
+	float:right;
+	padding: 0.1rem 0.4rem;
 }
