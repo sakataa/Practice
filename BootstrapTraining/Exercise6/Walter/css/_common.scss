@@ -27,8 +27,8 @@ $color-submenu: #503333;
   cursor: default;
 }
 
-@mixin sprite-position($url, $x, $y, $width, $height){
-  background: url($url) no-repeat;
+@mixin sprite-position($x, $y, $width, $height){
+  background: url('../images/mainsprite.png') no-repeat;
   display: inline-block;
   background-position: $x $y;
   width: $width;
@@ -129,7 +129,12 @@ section.slider{
     li > a{
       padding-top: 0.7rem;
       font-size: 1.2rem;
-      color: $black;
+      color: #777;
+
+      .down-arrow{
+        font-size: 0.8rem;
+        margin-left: 0.5rem;
+      }
 
       &:hover, &:focus{
         background-color: transparent;

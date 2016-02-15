@@ -122,6 +122,7 @@
 		background: $bg-category;
 		color: $white;
 		margin-top: -20px;
+		margin-bottom: 15px;
 
 		.category-toggle{
 			@include circle(1rem);
@@ -211,6 +212,10 @@
 .products{
 	.title{
 		background: $white;
+
+		&:after{
+		    background-position: 0 -3rem;
+		}
 	}
 }
 
@@ -227,5 +232,43 @@
 	.price-new{
 		text-decoration: none;
 		color: #FE7132;;
+	}
+}
+
+.menu-bottom{
+	position: relative;
+	background: $white;
+	font-size: 1.2rem;
+	padding-top: 2rem;
+    padding-bottom: 2rem;
+	
+	a{
+		display: block;
+		color: #777;
+		line-height: 2rem;
+	}
+
+	&:after{
+		content: '';
+	    position: absolute;
+	    left: 0;
+	    bottom: 0;
+	    width: 100%;
+	    height: 0.6rem;
+	    background: url('../images/shadow-footer.png');
+	    background-size: 100%;
+	}
+}
+
+footer{
+	height: 6rem;
+	padding-top: 2.5rem;
+	padding-bottom: 2.5rem;
+	color: #777;
+
+	.social-network{
+		.icon-social{
+			@include sprite-position(-8rem, -0.3rem, 7.3rem, 2rem);
+		}
 	}
 }
