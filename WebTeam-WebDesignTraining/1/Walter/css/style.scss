@@ -1,0 +1,34 @@
+@import 'common';
+
+.main-container{
+	width: 1170px;
+}
+
+header{
+	.header-container{
+		height: 60rem;
+		display: table;
+
+		.menu{
+			top: 1.5rem;
+			left: 2rem;
+			list-style: none;
+			font-size: 1.2rem;
+			color: $black;
+
+			> li{
+				float: left;
+
+				> a{
+					padding: 1.5rem;
+					color: $black;
+				}
+			}
+		}
+
+		.greeting{
+			display: table-cell;
+			vertical-align: middle;
+		}
+	}
+}
