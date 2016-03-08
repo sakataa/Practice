@@ -224,6 +224,16 @@ header .header-container {
 
 .recent-post {
   margin-top: 10rem; }
+  .recent-post .panel-heading {
+    display: table;
+    width: 100%; }
+    .recent-post .panel-heading .button-group {
+      display: table-cell;
+      vertical-align: middle;
+      text-align: right;
+      padding-right: 3rem; }
+      .recent-post .panel-heading .button-group button {
+        padding: 0 1.5rem; }
   .recent-post .panel-content .post-content {
     position: relative;
     margin-right: -15px;
