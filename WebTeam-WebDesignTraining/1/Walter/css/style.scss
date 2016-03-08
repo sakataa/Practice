@@ -4,29 +4,31 @@
 	width: 1170px;
 }
 
+.menu{
+	font-size: 1.2rem;
+	background: $white;
+	padding: 1.5rem;
+	position: fixed;
+	top: 3rem;
+    left: 15%;
+    z-index: 1111;
+
+	a{
+		color: $text-color;
+
+		&:hover{
+			color: $dark-color;
+		}
+	}
+}
+
 header{
 	.header-container{
 		height: 60rem;
 
-		.menu{
-			display: inline-block;
-			margin-top: 1.5rem;
-			margin-left: 2rem;
-			font-size: 1.2rem;
-			background: $white;
-			padding: 1.5rem;
-
-			a{
-				color: $text-color;
-
-				&:hover{
-					color: $dark-color;
-				}
-			}
-		}
-
 		.greeting{
-			margin-top: 20rem;
+			position: relative;
+			top: 40%;
 
 			h1{
 				font-size: 6.4rem;
