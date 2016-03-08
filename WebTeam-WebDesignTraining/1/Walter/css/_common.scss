@@ -4,6 +4,7 @@ $black: #000000;
 
 $text-color: #a0a0a0;
 $dark-color: #1e1e1e;
+$default-color: #505050;
 
 /* reset browser styles */
 html, body, div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp,small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend,
@@ -67,7 +68,7 @@ html{
 
 body{
 	font-family: $font-family;
-	color: $text-color;
+	color: $default-color;
 }
 
 a{
@@ -120,7 +121,14 @@ a{
     background-size: cover;
     width: 100%;
     height: 100%;
+
+    .transbox{
+		background: rgba(255, 255, 255, 0.9);
+		height: 100%;
+	}
 }
+
+
 
 .horizontal-menu{
 	list-style: none;
@@ -129,6 +137,21 @@ a{
 
 		> a{
 			padding: 1.5rem;
+		}
+	}
+}
+
+.social{
+	li{
+		> a{
+			color: $text-color;
+			padding: 0.6rem 0;
+			@include circle(2rem);
+
+			&:hover{
+				color: $white;
+				background-color: $text-color;
+			}
 		}
 	}
 }
@@ -142,6 +165,7 @@ a{
 			padding-left: 3rem;
 		    padding-bottom: 1rem;
 		    line-height: 3.5rem;
+		    color: $text-color;
 
 			h1{
 				color: $black;
@@ -164,4 +188,32 @@ a{
 	background-color: $dark-color;
 	color: $white;
 	padding: 1.5rem;
+	font-weight: 900;
+	text-transform: uppercase;
+
+	&:hover{
+		background-color: $white;
+		color: $default-color;
+	}
+}
+
+input[type="text"]{
+	border: 0;
+	border-bottom: 1px solid #ECE5E5;
+	padding: 1.5rem;
+	margin: 1.5rem;
+	display: block;
+	outline: 0;
+}
+
+textarea{
+	border-radius: 0.3rem;
+    display: block;
+    border: 0.3rem solid #F5ECEC;
+    background-color: #EEEEEE;
+    padding: 1.2rem;
+    margin: 1.5rem 0;
+    width: 100%;
+    text-align: left;
+    height: 17rem;
 }

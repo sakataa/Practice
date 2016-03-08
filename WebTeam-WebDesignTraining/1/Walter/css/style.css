@@ -39,7 +39,7 @@ html {
 
 body {
   font-family: "Lato", sans-serif;
-  color: #a0a0a0; }
+  color: #505050; }
 
 a {
   text-decoration: none; }
@@ -81,6 +81,9 @@ a {
   background-size: cover;
   width: 100%;
   height: 100%; }
+  .bg-img .transbox {
+    background: rgba(255, 255, 255, 0.9);
+    height: 100%; }
 
 .horizontal-menu {
   list-style: none; }
@@ -89,13 +92,29 @@ a {
     .horizontal-menu > li > a {
       padding: 1.5rem; }
 
+.social li > a {
+  color: #a0a0a0;
+  padding: 0.6rem 0;
+  width: 4rem;
+  height: 4rem;
+  -moz-border-radius: 2rem;
+  -webkit-border-radius: 2rem;
+  border-radius: 2rem;
+  border: 2px solid;
+  display: inline-block;
+  cursor: pointer; }
+  .social li > a:hover {
+    color: #FFFFFF;
+    background-color: #a0a0a0; }
+
 .page {
   background-color: #FFFFFF;
   font-size: 1.4rem; }
   .page .panel-heading {
     padding-left: 3rem;
     padding-bottom: 1rem;
-    line-height: 3.5rem; }
+    line-height: 3.5rem;
+    color: #a0a0a0; }
     .page .panel-heading h1 {
       color: #000000;
       font-size: 3.2rem; }
@@ -109,16 +128,37 @@ a {
   border: 0.1rem solid #1e1e1e;
   background-color: #1e1e1e;
   color: #FFFFFF;
-  padding: 1.5rem; }
+  padding: 1.5rem;
+  font-weight: 900;
+  text-transform: uppercase; }
+  .btn:hover {
+    background-color: #FFFFFF;
+    color: #505050; }
+
+input[type="text"] {
+  border: 0;
+  border-bottom: 1px solid #ECE5E5;
+  padding: 1.5rem;
+  margin: 1.5rem;
+  display: block;
+  outline: 0; }
+
+textarea {
+  border-radius: 0.3rem;
+  display: block;
+  border: 0.3rem solid #F5ECEC;
+  background-color: #EEEEEE;
+  padding: 1.2rem;
+  margin: 1.5rem 0;
+  width: 100%;
+  text-align: left;
+  height: 17rem; }
 
 .main-container {
   width: 1170px; }
 
 header .header-container {
   height: 60rem; }
-  header .header-container .transbox {
-    background: rgba(255, 255, 255, 0.9);
-    height: 100%; }
   header .header-container .menu {
     display: inline-block;
     margin-top: 1.5rem;
@@ -163,7 +203,8 @@ header .header-container {
     line-height: 2.5rem; }
     .profile .panel-content-right .about {
       font-size: 1.8rem;
-      line-height: 4rem; }
+      line-height: 4rem;
+      color: #a0a0a0; }
       .profile .panel-content-right .about h1 {
         color: #1e1e1e;
         font-size: 2.4rem; }
@@ -173,20 +214,6 @@ header .header-container {
         display: inline-block;
         text-align: center;
         margin-right: 1rem; }
-        .profile .panel-content-right .social li a {
-          color: #a0a0a0;
-          padding: 0.6rem 0;
-          width: 4rem;
-          height: 4rem;
-          -moz-border-radius: 2rem;
-          -webkit-border-radius: 2rem;
-          border-radius: 2rem;
-          border: 2px solid;
-          display: inline-block;
-          cursor: pointer; }
-          .profile .panel-content-right .social li a:hover {
-            color: #FFFFFF;
-            background-color: #a0a0a0; }
 
 .recent-post {
   margin-top: 10rem; }
@@ -218,5 +245,108 @@ header .header-container {
     .recent-post .panel-footer button {
       font-weight: bold;
       font-size: 1.2rem; }
+
+.service {
+  height: 28rem; }
+  .service .transbox {
+    padding: 8rem 4rem; }
+  .service-item {
+    padding: 2rem; }
+    .service-item .heading {
+      display: table;
+      width: 100%; }
+      .service-item .heading h1 {
+        color: #000000;
+        font-size: 1.6rem;
+        display: table-cell;
+        vertical-align: bottom; }
+    .service-item .content-text {
+      font-size: 1.3rem;
+      padding-top: 1rem;
+      line-height: 1.8rem; }
+
+.portfolio .panel-heading {
+  display: table;
+  width: 100%;
+  background-color: #1e1e1e;
+  padding: 8rem 2rem 3rem 2rem; }
+  .portfolio .panel-heading .heading-content {
+    display: table-cell;
+    vertical-align: bottom;
+    padding-bottom: 0; }
+    .portfolio .panel-heading .heading-content h1 {
+      color: #FFFFFF; }
+  .portfolio .panel-heading .button-group {
+    display: table-cell;
+    vertical-align: middle;
+    text-align: right;
+    padding-right: 3rem; }
+    .portfolio .panel-heading .button-group button {
+      padding: 0 1rem;
+      margin-right: 0.5rem;
+      color: #505050;
+      border: 0.2rem solid #505050;
+      font-size: 1.2rem; }
+      .portfolio .panel-heading .button-group button:hover {
+        border: none; }
+.portfolio .panel-content {
+  background-color: #FFFFFF; }
+  .portfolio .panel-content .portfolio-item {
+    padding: 2.5rem;
+    border: 0.1rem solid #EAE2E2; }
+    .portfolio .panel-content .portfolio-item .heading {
+      overflow: hidden; }
+      .portfolio .panel-content .portfolio-item .heading img {
+        border-radius: 50%; }
+      .portfolio .panel-content .portfolio-item .heading .infor {
+        padding-top: 0.5rem;
+        line-height: 2rem; }
+        .portfolio .panel-content .portfolio-item .heading .infor p {
+          color: #a0a0a0;
+          font-size: 1.2rem; }
+    .portfolio .panel-content .portfolio-item .content-text {
+      padding: 1.5rem;
+      font-size: 1.3rem; }
+      .portfolio .panel-content .portfolio-item .content-text blockquote {
+        font-style: italic;
+        position: relative;
+        margin-left: 3rem; }
+        .portfolio .panel-content .portfolio-item .content-text blockquote:before {
+          display: block;
+          padding-left: 10px;
+          content: "\201C";
+          font-size: 4rem;
+          position: absolute;
+          left: -45px;
+          top: -10px;
+          color: #DED3D3;
+          font-weight: 800; }
+
+.contact {
+  padding-top: 8rem;
+  padding-bottom: 5rem; }
+  .contact .panel-content .form-left {
+    padding-right: 5rem; }
+    .contact .panel-content .form-left input {
+      width: 100%; }
+  .contact .panel-content .form-right button {
+    font-weight: bold;
+    font-size: 1.2rem;
+    padding-left: 2.5rem;
+    padding-right: 2.5rem; }
+
+footer {
+  background-color: #1e1e1e;
+  padding-top: 3rem;
+  padding-bottom: 4rem;
+  font-size: 1.4rem; }
+  footer p {
+    padding: 3rem 28rem; }
+  footer .social {
+    display: inline-block; }
+    footer .social li {
+      margin-right: 1.5rem; }
+      footer .social li > a {
+        padding: 1rem 0; }
 
 /*# sourceMappingURL=style.css.map */
