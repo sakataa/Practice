@@ -114,17 +114,16 @@ a{
 
 .bg-img{
 	background-image: url('../images/bg-img.jpg');
-	-webkit-background-size: cover;
-    -moz-background-size: cover;
-    -ms-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
+	background-position: top center;
+	background-repeat: no-repeat;
+    background-attachment: fixed;
     width: 100%;
     height: 100%;
 
     .transbox{
 		background: rgba(255, 255, 255, 0.9);
 		height: 100%;
+		position: relative;
 	}
 }
 
@@ -137,6 +136,7 @@ a{
 
 		> a{
 			padding: 1.5rem;
+			text-decoration: none;
 		}
 	}
 }
@@ -162,7 +162,7 @@ a{
 
 	.panel{
 		&-heading{
-			padding-left: 3rem;
+			padding-left: 4rem;
 		    padding-bottom: 1rem;
 		    line-height: 3.5rem;
 		    color: $text-color;
@@ -170,6 +170,10 @@ a{
 			h1{
 				color: $black;
 				font-size: 3.2rem;
+
+				i{
+					margin-right: 1rem;
+				}
 			}
 		}
 

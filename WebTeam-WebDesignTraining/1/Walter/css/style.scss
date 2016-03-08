@@ -37,6 +37,13 @@ header{
 				font-size: 1.8rem;
 			}
 		}
+
+		.icon-arrow{
+			position: absolute;
+			bottom: 2rem;
+			left: 50%;
+			cursor: pointer;
+		}
 	}
 }
 
@@ -197,7 +204,7 @@ header{
 			display: table;
 			width: 100%;
 			background-color: $dark-color;
-			padding: 8rem 2rem 3rem 2rem;
+			padding: 8rem 2rem 3rem 4rem;
 
 			.heading-content{
 				display: table-cell;

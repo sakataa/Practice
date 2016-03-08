@@ -83,7 +83,8 @@ a {
   height: 100%; }
   .bg-img .transbox {
     background: rgba(255, 255, 255, 0.9);
-    height: 100%; }
+    height: 100%;
+    position: relative; }
 
 .horizontal-menu {
   list-style: none; }
@@ -118,6 +119,8 @@ a {
     .page .panel-heading h1 {
       color: #000000;
       font-size: 3.2rem; }
+      .page .panel-heading h1 i {
+        margin-right: 1rem; }
   .page .panel-content {
     padding-top: 2rem; }
 
