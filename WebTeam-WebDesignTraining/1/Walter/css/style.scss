@@ -124,4 +124,54 @@ header{
 
 .recent-post{
 	margin-top: 10rem;
+
+	.panel{
+		&-heading{
+
+		}
+
+		&-content{
+			.post-content{
+				position: relative;
+				margin-right: -15px;
+    			margin-left: -15px;
+
+				img{
+					min-width: 100%;
+				}
+
+				.img-title{
+					position: absolute;
+					top: 2rem;
+					left: 2rem;
+					background-color: $white;
+					color: $dark-color;
+					padding: 1rem;
+				}
+
+				.note{
+					position: absolute;
+					bottom: 2rem;
+					left: 2rem;
+					color: $white;
+					font-size: 1rem;
+					line-height: 2.5rem;
+
+					h1{
+						font-size: 2rem;
+					}
+				}
+			}
+		}
+
+		&-footer{
+			padding-top: 5rem;
+    		padding-bottom: 3rem;
+
+    		button{
+    			font-weight: bold;
+    			font-size: 1.2rem;
+    		}
+		}
+	}
 }

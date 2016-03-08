@@ -102,6 +102,15 @@ a {
   .page .panel-content {
     padding-top: 2rem; }
 
+.panel-content {
+  overflow: hidden; }
+
+.btn {
+  border: 0.1rem solid #1e1e1e;
+  background-color: #1e1e1e;
+  color: #FFFFFF;
+  padding: 1.5rem; }
+
 .main-container {
   width: 1170px; }
 
@@ -181,5 +190,33 @@ header .header-container {
 
 .recent-post {
   margin-top: 10rem; }
+  .recent-post .panel-content .post-content {
+    position: relative;
+    margin-right: -15px;
+    margin-left: -15px; }
+    .recent-post .panel-content .post-content img {
+      min-width: 100%; }
+    .recent-post .panel-content .post-content .img-title {
+      position: absolute;
+      top: 2rem;
+      left: 2rem;
+      background-color: #FFFFFF;
+      color: #1e1e1e;
+      padding: 1rem; }
+    .recent-post .panel-content .post-content .note {
+      position: absolute;
+      bottom: 2rem;
+      left: 2rem;
+      color: #FFFFFF;
+      font-size: 1rem;
+      line-height: 2.5rem; }
+      .recent-post .panel-content .post-content .note h1 {
+        font-size: 2rem; }
+  .recent-post .panel-footer {
+    padding-top: 5rem;
+    padding-bottom: 3rem; }
+    .recent-post .panel-footer button {
+      font-weight: bold;
+      font-size: 1.2rem; }
 
 /*# sourceMappingURL=style.css.map */

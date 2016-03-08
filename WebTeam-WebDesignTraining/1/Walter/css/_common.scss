@@ -142,7 +142,7 @@ a{
 			padding-left: 3rem;
 		    padding-bottom: 1rem;
 		    line-height: 3.5rem;
-		    
+
 			h1{
 				color: $black;
 				font-size: 3.2rem;
@@ -153,4 +153,15 @@ a{
 			padding-top: 2rem;
 		}
 	}
+}
+
+.panel-content{
+	overflow: hidden;
+}
+
+.btn{
+	border: 0.1rem solid $dark-color;
+	background-color: $dark-color;
+	color: $white;
+	padding: 1.5rem;
 }
