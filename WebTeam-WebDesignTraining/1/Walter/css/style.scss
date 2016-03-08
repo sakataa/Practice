@@ -7,28 +7,121 @@
 header{
 	.header-container{
 		height: 60rem;
-		display: table;
+
+		.transbox{
+			background: rgba(255, 255, 255, 0.9);
+			height: 100%;
+		}
 
 		.menu{
-			top: 1.5rem;
-			left: 2rem;
-			list-style: none;
+			display: inline-block;
+			margin-top: 1.5rem;
+			margin-left: 2rem;
 			font-size: 1.2rem;
-			color: $black;
+			background: $white;
+			padding: 1.5rem;
 
-			> li{
-				float: left;
+			a{
+				color: $text-color;
 
-				> a{
-					padding: 1.5rem;
-					color: $black;
+				&:hover{
+					color: $dark-color;
 				}
 			}
 		}
 
 		.greeting{
-			display: table-cell;
-			vertical-align: middle;
+			margin-top: 20rem;
+
+			h1{
+				font-size: 6.4rem;
+				color: $black;
+			}
+
+			p{
+				font-size: 1.8rem;
+			}
 		}
 	}
+}
+
+.profile{
+	margin-top: 8rem;
+
+	.panel{
+		&-content{
+			&-left{
+				.avatar{
+					img{
+						min-width: 100%;
+					}
+				}
+
+				.person-infor{
+					padding-left: 1rem;
+					padding-right: 3rem;
+
+					.infor-item{
+						padding-top: 1.2rem;
+						padding-bottom: 1.2rem;
+						line-height: 1.7rem;
+						border-bottom: 0.1rem solid #D8CECE;
+
+						&:first-child{
+							padding-top: 0;
+						}
+
+						&:last-child{
+							border-bottom: none;
+						}
+
+						label{
+							color: $dark-color;
+							font-weight: bold;
+						}
+					}
+				}
+			}
+
+			&-right{
+				background-color: #eee;
+				padding: 2rem;
+				line-height: 2.5rem;
+
+				.about{
+					font-size: 1.8rem;
+					line-height: 4rem;
+
+					h1{
+						color: $dark-color;
+						font-size: 2.4rem;
+					}
+				}
+
+				.social{
+					margin-top: 1.6rem;
+					li{
+						display: inline-block;
+						text-align: center;
+						margin-right: 1rem;
+
+						a{
+							color: $text-color;
+							padding: 0.6rem 0;
+							@include circle(2rem);
+
+							&:hover{
+								color: $white;
+								background-color: $text-color;
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+}
+
+.recent-post{
+	margin-top: 10rem;
 }

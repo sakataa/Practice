@@ -2,7 +2,9 @@
 <html>
 
 <head>
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+	<meta name=viewport content="width=device-width,initial-scale=1">
+	<link rel="stylesheet" href="css/font-awesome.min.css">
+	<link rel="stylesheet" type="text/css" href="css/grid.css" />
 	<link rel="stylesheet" type="text/css" href="css/style.css" />
 
 	<title></title>
@@ -13,28 +15,134 @@
 		<!--Header-->
 		<header>
 			<div class="header-container bg-img">
-				<ul class="menu fixed upper-case">
-					<li><a href="#"><i class="fa fa-times"></i></a></li>
-					<li><a href="#">Home</a></li>
-					<li><a href="#">About</a></li>
-					<li><a href="#">Blog</a></li>
-					<li><a href="#">Resume</a></li>
-					<li><a href="#">PortFolio</a></li>
-					<li><a href="#">Contact</a></li>
-					<li><a href="#">404 Page</a></li>
-				</ul>
-				<div class="greeting text-center">
-					<h1 class="upper-case">hello, i'm john luna</h1>
-					<p>I have more than 5 years of experience of working as a web developer</p>
-				</div>
+				<div class="transbox">
+					<ul class="menu horizontal-menu upper-case">
+						<li><a href="#"><i class="fa fa-times"></i></a></li>
+						<li><a href="#" class="bold">Home</a></li>
+						<li><a href="#" class="bold">About</a></li>
+						<li><a href="#" class="bold">Blog</a></li>
+						<li><a href="#" class="bold">Resume</a></li>
+						<li><a href="#" class="bold">PortFolio</a></li>
+						<li><a href="#" class="bold">Contact</a></li>
+						<li><a href="#" class="bold">404 Page</a></li>
+					</ul>
+					<div class="greeting align-center">
+						<h1 class="upper-case">hello, i'm john luna</h1>
+						<p>I have more than 5 years of experience of working as a web developer</p>
+					</div>
+				</div>				
 			</div>
 		</header>
 		<!--End Header-->
 
 		<!--Main Content-->
 		<div class="page">
+			<section class="profile container-fluid">
+				<div class="panel row">
+					<div class="panel-heading">
+						<h1>About me</h1>
+						<p>Lorem ipsum dolor sit amet consectetur adipiscing elit</p>
+					</div>
+					<div class="panel-content">
+						<div class="col-md-6 panel-content-left">
+							<div class="col-md-6 avatar">
+								<img src="images/avatar.jpg">
+							</div>
+							<div class="col-md-6 person-infor">
+								<div class="infor-item">
+									<label class="upper-case">address: </label>
+									<span class="text-content">
+										121 King St.Melbourne VIC 3000 Australia
+									</span>
+								</div>
+								<div class="infor-item">
+									<label class="upper-case">date of birth: </label>
+									<span class="text-content">
+										31/12/1990
+									</span>
+								</div>
+								<div class="infor-item">
+									<label class="upper-case">email: </label>
+									<span class="text-content">
+										john.l@domain.com
+									</span>
+								</div>
+								<div class="infor-item">
+									<label class="upper-case">phone: </label>
+									<span class="text-content">
+										+(987) 654 321 01
+									</span>
+								</div>
+								<div class="infor-item">
+									<label class="upper-case">skype: </label>
+									<span class="text-content">
+										john.luna
+									</span>
+								</div>
+								<div class="infor-item">
+									<label class="upper-case">language: </label>
+									<span class="text-content">
+										English, Spanish
+									</span>
+								</div>
+							</div>
+						</div>
+						<div class="col-md-6 panel-content-right">
+							<div class="about">
+								<h1>John Luna</h1>
+								<p>Entrepreneur / Web Developer</p>
+							</div>
+
+							<p class="description">
+								Lorem ipsum dolor sit amet consectetur adipiscing elit. Aliquam eget nunc convallis, lacinia tellus eu, tempor libero. Curabitur convallis lacinia diam ac efficitur. Mauris lebero nibh, dictum dignissim consequat a, eleifend vitae eros. Sed vitae mauris risus.
+							</p>
+
+							<ul class="horizontal-menu social">
+								<li>
+									<a href="#"><i class="fa fa-facebook"></i></a>
+								</li>
+								<li>
+									<a href="#"><i class="fa fa-twitter"></i></a>
+								</li>
+								<li>
+									<a href="#"><i class="fa fa-behance"></i></a>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section class="recent-post">
+				<div class="panel">
+					<div class="panel-heading">
+						<h1>Recent Posts</h1>
+						<p>Lorem ipsum dolor sit amet consectetur adipiscing elit</p>
+					</div>
+					<div class="panel-content">
+						<div class="col-md-6">
+							<div class="post-content">
+
+							</div>
+						</div>
+						<div class="col-md-6"></div>
+					</div>
+				</div>
+			</section>
+			<section class="service">
+			</section>
+			<section class="portfolio">
+			</section>
+			<section class="team">
+			</section>
+			<section class="contact">
+			</section>
 		</div>
 		<!--End Main Content-->
+
+		<!--Footer-->
+		<footer>
+		</footer>
+		<!--End Footer-->
 	</div>
 </body>
 
