@@ -117,7 +117,20 @@ a {
     color: #a0a0a0; }
     .page .panel-heading h1 {
       color: #000000;
-      font-size: 3.2rem; }
+      font-size: 3.2rem;
+      position: relative;
+      padding: 1rem; }
+      .page .panel-heading h1:before {
+        content: "";
+        position: absolute;
+        top: 2.3rem;
+        left: -1.5rem;
+        -webkit-transform: rotate(45deg);
+        -ms-transform: rotate(45deg);
+        transform: rotate(45deg);
+        background: #dcdcdc;
+        width: 0.8rem;
+        height: 0.8rem; }
       .page .panel-heading h1 i {
         margin-right: 1rem; }
   .page .panel-content {
@@ -156,9 +169,6 @@ textarea {
   text-align: left;
   height: 17rem; }
 
-.main-container {
-  width: 1170px; }
-
 .menu {
   font-size: 1.2rem;
   background: #FFFFFF;
@@ -171,6 +181,8 @@ textarea {
     color: #a0a0a0; }
     .menu a:hover {
       color: #1e1e1e; }
+  .menu > li:first-child > a {
+    color: #000000; }
 
 header .header-container {
   height: 60rem; }
@@ -310,7 +322,17 @@ header .header-container {
       .portfolio .panel-heading .button-group button:hover {
         border: none; }
 .portfolio .panel-content {
-  background-color: #FFFFFF; }
+  background-color: #FFFFFF;
+  margin-top: 2rem; }
+  .portfolio .panel-content .team-wrapper {
+    display: table;
+    padding-left: 3rem;
+    padding-right: 3rem; }
+    .portfolio .panel-content .team-wrapper .box {
+      float: none;
+      display: table-cell;
+      padding-left: 0;
+      padding-right: 0; }
   .portfolio .panel-content .portfolio-item {
     padding: 2.5rem;
     border: 0.1rem solid #EAE2E2; }

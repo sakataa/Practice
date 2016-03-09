@@ -170,6 +170,21 @@ a{
 			h1{
 				color: $black;
 				font-size: 3.2rem;
+				position: relative;
+				padding: 1rem;
+
+				&:before{
+					content: "";
+					position: absolute;
+				    top: 2.3rem;
+				    left: -1.5rem;
+				    -webkit-transform: rotate(45deg);
+				    -ms-transform: rotate(45deg);
+				    transform: rotate(45deg);
+				    background: #dcdcdc;
+				    width: 0.8rem;
+				    height: 0.8rem;
+				}
 
 				i{
 					margin-right: 1rem;

@@ -1,9 +1,5 @@
 @import 'common';
 
-.main-container{
-	width: 1170px;
-}
-
 .menu{
 	font-size: 1.2rem;
 	background: $white;
@@ -19,6 +15,10 @@
 		&:hover{
 			color: $dark-color;
 		}
+	}
+
+	> li:first-child > a{
+		color: $black;
 	}
 }
 
@@ -252,6 +252,20 @@ header{
 
 		&-content{
 			background-color: $white;
+			margin-top: 2rem;
+
+			.team-wrapper{
+				display: table;
+				padding-left: 3rem;
+				padding-right: 3rem;
+
+				.box{
+					float: none;
+					display: table-cell;
+					padding-left: 0;
+    				padding-right: 0;
+				}
+			}
 			.portfolio-item{
 				padding: 2.5rem;
 				border: 0.1rem solid #EAE2E2;
