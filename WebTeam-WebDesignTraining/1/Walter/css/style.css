@@ -147,8 +147,7 @@ a {
   font-weight: 900;
   text-transform: uppercase; }
   .btn:hover {
-    background-color: #FFFFFF;
-    color: #505050; }
+    background-color: #3E3A3A; }
 
 input[type="text"] {
   border: 0;
@@ -320,6 +319,8 @@ header .header-container {
       border: 0.2rem solid #505050;
       font-size: 1.2rem; }
       .portfolio .panel-heading .button-group button:hover {
+        background-color: #FFFFFF;
+        color: #505050;
         border: none; }
 .portfolio .panel-content {
   background-color: #FFFFFF;
