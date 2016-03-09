@@ -6,8 +6,9 @@
 	<link rel="stylesheet" href="css/font-awesome.min.css">
 	<link rel="stylesheet" type="text/css" href="css/grid.css" />
 	<link rel="stylesheet" type="text/css" href="css/style.css" />
-
-	<title></title>
+	<link rel="stylesheet" type="text/css" href="scripts/owl-carousel/owl.carousel.css" />
+	<link rel="stylesheet" type="text/css" href="scripts/owl-carousel/owl.theme.css" />
+	<title>Test</title>
 </head>
 
 <body>
@@ -124,22 +125,39 @@
 							<p>Lorem ipsum dolor sit amet consectetur adipiscing elit</p>
 						</div>
 						<div class="button-group">
-							<button class="btn">&lt;</button>
-							<button class="btn">&gt;</button>
+							<button id="prev" class="btn">&lt;</button>
+							<button id="next" class="btn">&gt;</button>
 						</div>
 					</div>
 					<div class="panel-content">
-						<div class="col-md-6">
+						<div id="owl-carousel" class="owl-carousel">
 							<div class="post-content">
-								<img src="images/demo-img-3.jpg" atl="health"/>
+								<img src="images/demo-img-1.jpg" atl="health"/>
 								<span class="img-title">Health</span>
 								<div class="note">
 									<h1>Blog Post with Image</h1>
 									<i>by John Luna - Dec 09</i>
 								</div>
 							</div>
-						</div>
-						<div class="col-md-6">
+
+							<div class="post-content">
+								<img src="images/demo-img-2.jpg" atl="health"/>
+								<span class="img-title">LifeStyle</span>
+								<div class="note">
+									<h1>Standart Blog Post</h1>
+									<i>by John Luna - Dec 09</i>
+								</div>
+							</div>
+
+							<div class="post-content">
+								<img src="images/demo-img-3.jpg" atl="health"/>
+								<span class="img-title">LifeStyle</span>
+								<div class="note">
+									<h1>Blog Post with Image</h1>
+									<i>by John Luna - Dec 09</i>
+								</div>
+							</div>
+
 							<div class="post-content">
 								<img src="images/demo-img-4.jpg" atl="health"/>
 								<span class="img-title">LifeStyle</span>
@@ -350,6 +368,10 @@
 		</footer>
 		<!--End Footer-->
 	</div>
+
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <script src="scripts/owl-carousel/owl.carousel.js"></script>
+    <script src="scripts/site.js"></script>
 </body>
 
 </html>
