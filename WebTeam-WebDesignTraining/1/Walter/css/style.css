@@ -307,6 +307,8 @@ header .header-container {
     padding-bottom: 0; }
     .portfolio .panel-heading .heading-content h1 {
       color: #FFFFFF; }
+      .portfolio .panel-heading .heading-content h1:before {
+        background-color: rgba(255, 255, 255, 0.4); }
   .portfolio .panel-heading .button-group {
     display: table-cell;
     vertical-align: middle;
