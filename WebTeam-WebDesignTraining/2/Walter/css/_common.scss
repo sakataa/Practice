@@ -1,0 +1,237 @@
+$font-family: "Lato", sans-serif;
+$white: #FFFFFF;
+$black: #000000;
+
+$text-color: #a0a0a0;
+$dark-color: #1e1e1e;
+$default-color: #505050;
+
+/* reset browser styles */
+html, body, div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp,small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	vertical-align: baseline;
+}
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1.2;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+} 
+
+*, *::before, *::after {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+img {
+    max-width: 100%;
+	vertical-align: middle;
+	border:0;
+}
+/* end reset browser styles */
+
+/* mixin */
+@mixin circle($radius) {
+  	width: $radius * 2;
+	height: $radius * 2;
+	-moz-border-radius: $radius;
+	-webkit-border-radius: $radius;
+	border-radius: $radius;
+	border: 2px solid;
+	display: inline-block;
+	cursor: pointer;
+}
+
+@mixin sprite-position($x, $y, $width, $height){
+	background-position: $x $y;
+	width: $width;
+	height: $height;
+}
+
+body, html {
+  height: 100%;
+}
+
+html{
+	font-size: 10px;
+}
+
+body{
+	font-family: $font-family;
+	color: $default-color;
+}
+
+a{
+	text-decoration: none;
+}
+
+.left{
+	float: left;
+}
+
+.right{
+	float: right;
+}
+
+.clearfix{
+	clear: both;
+}
+
+.align-center{
+	text-align: center;
+}
+
+.align-left{
+	text-align: left;
+}
+
+.bold{
+	font-weight: bold;
+}
+
+.center-block{
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.fixed{
+	position: fixed;
+}
+
+.upper-case{
+	text-transform: uppercase;
+}
+
+.bg-img{
+	background-image: url('../images/bg-img.jpg');
+	background-position: top center;
+	background-repeat: no-repeat;
+    background-attachment: fixed;
+    width: 100%;
+    height: 100%;
+
+    .transbox{
+		background: rgba(255, 255, 255, 0.9);
+		height: 100%;
+		position: relative;
+	}
+}
+
+
+
+.horizontal-menu{
+	list-style: none;
+	> li{
+		float: left;
+
+		> a{
+			padding: 1.5rem;
+			text-decoration: none;
+		}
+	}
+}
+
+.social{
+	li{
+		> a{
+			color: $text-color;
+			padding: 0.6rem 0;
+			@include circle(2rem);
+
+			&:hover{
+				color: $white;
+				background-color: $text-color;
+			}
+		}
+	}
+}
+
+.page{
+	background-color: $white;
+	font-size: 1.4rem;
+
+	.panel{
+		&-heading{
+			padding-left: 4rem;
+		    padding-bottom: 1rem;
+		    line-height: 3.5rem;
+		    color: $text-color;
+
+			h1{
+				color: $black;
+				font-size: 3.2rem;
+				position: relative;
+				padding: 1rem;
+
+				&:before{
+					content: "";
+					position: absolute;
+				    top: 2.3rem;
+				    left: -1.5rem;
+				    -webkit-transform: rotate(45deg);
+				    -ms-transform: rotate(45deg);
+				    transform: rotate(45deg);
+				    background: #dcdcdc;
+				    width: 0.8rem;
+				    height: 0.8rem;
+				}
+
+				i{
+					margin-right: 1rem;
+				}
+			}
+		}
+
+		&-content{
+			padding-top: 2rem;
+		}
+	}
+}
+
+.panel-content{
+	overflow: hidden;
+}
+
+.btn{
+	border: 0.1rem solid $dark-color;
+	background-color: $dark-color;
+	color: $white;
+	padding: 1.5rem;
+	font-weight: 900;
+	text-transform: uppercase;
+
+	&:hover{
+		background-color: #3E3A3A;
+	}
+}
+
+input[type="text"]{
+	border: 0;
+	border-bottom: 1px solid #ECE5E5;
+	padding: 1.5rem;
+	margin: 1.5rem;
+	display: block;
+	outline: 0;
+}
+
+textarea{
+	border-radius: 0.3rem;
+    display: block;
+    border: 0.3rem solid #F5ECEC;
+    background-color: #EEEEEE;
+    padding: 1.2rem;
+    margin: 1.5rem 0;
+    width: 100%;
+    text-align: left;
+    height: 17rem;
+}

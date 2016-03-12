@@ -1,0 +1,397 @@
+/* reset browser styles */
+html, body, div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  vertical-align: baseline; }
+
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+  display: block; }
+
+body {
+  line-height: 1.2; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+*, *::before, *::after {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box; }
+
+img {
+  max-width: 100%;
+  vertical-align: middle;
+  border: 0; }
+
+/* end reset browser styles */
+/* mixin */
+body, html {
+  height: 100%; }
+
+html {
+  font-size: 10px; }
+
+body {
+  font-family: "Lato", sans-serif;
+  color: #505050; }
+
+a {
+  text-decoration: none; }
+
+.left {
+  float: left; }
+
+.right {
+  float: right; }
+
+.clearfix {
+  clear: both; }
+
+.align-center {
+  text-align: center; }
+
+.align-left {
+  text-align: left; }
+
+.bold {
+  font-weight: bold; }
+
+.center-block {
+  margin-left: auto;
+  margin-right: auto; }
+
+.fixed {
+  position: fixed; }
+
+.upper-case {
+  text-transform: uppercase; }
+
+.bg-img {
+  background-image: url("../images/bg-img.jpg");
+  background-position: top center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  width: 100%;
+  height: 100%; }
+  .bg-img .transbox {
+    background: rgba(255, 255, 255, 0.9);
+    height: 100%;
+    position: relative; }
+
+.horizontal-menu {
+  list-style: none; }
+  .horizontal-menu > li {
+    float: left; }
+    .horizontal-menu > li > a {
+      padding: 1.5rem;
+      text-decoration: none; }
+
+.social li > a {
+  color: #a0a0a0;
+  padding: 0.6rem 0;
+  width: 4rem;
+  height: 4rem;
+  -moz-border-radius: 2rem;
+  -webkit-border-radius: 2rem;
+  border-radius: 2rem;
+  border: 2px solid;
+  display: inline-block;
+  cursor: pointer; }
+  .social li > a:hover {
+    color: #FFFFFF;
+    background-color: #a0a0a0; }
+
+.page {
+  background-color: #FFFFFF;
+  font-size: 1.4rem; }
+  .page .panel-heading {
+    padding-left: 4rem;
+    padding-bottom: 1rem;
+    line-height: 3.5rem;
+    color: #a0a0a0; }
+    .page .panel-heading h1 {
+      color: #000000;
+      font-size: 3.2rem;
+      position: relative;
+      padding: 1rem; }
+      .page .panel-heading h1:before {
+        content: "";
+        position: absolute;
+        top: 2.3rem;
+        left: -1.5rem;
+        -webkit-transform: rotate(45deg);
+        -ms-transform: rotate(45deg);
+        transform: rotate(45deg);
+        background: #dcdcdc;
+        width: 0.8rem;
+        height: 0.8rem; }
+      .page .panel-heading h1 i {
+        margin-right: 1rem; }
+  .page .panel-content {
+    padding-top: 2rem; }
+
+.panel-content {
+  overflow: hidden; }
+
+.btn {
+  border: 0.1rem solid #1e1e1e;
+  background-color: #1e1e1e;
+  color: #FFFFFF;
+  padding: 1.5rem;
+  font-weight: 900;
+  text-transform: uppercase; }
+  .btn:hover {
+    background-color: #3E3A3A; }
+
+input[type="text"] {
+  border: 0;
+  border-bottom: 1px solid #ECE5E5;
+  padding: 1.5rem;
+  margin: 1.5rem;
+  display: block;
+  outline: 0; }
+
+textarea {
+  border-radius: 0.3rem;
+  display: block;
+  border: 0.3rem solid #F5ECEC;
+  background-color: #EEEEEE;
+  padding: 1.2rem;
+  margin: 1.5rem 0;
+  width: 100%;
+  text-align: left;
+  height: 17rem; }
+
+.menu {
+  font-size: 1.2rem;
+  background: #FFFFFF;
+  padding: 1.5rem;
+  position: fixed;
+  top: 3rem;
+  left: 15%;
+  z-index: 1111; }
+  .menu a {
+    color: #a0a0a0; }
+    .menu a:hover {
+      color: #1e1e1e; }
+  .menu > li:first-child > a {
+    color: #000000; }
+
+header .header-container {
+  height: 60rem; }
+  header .header-container .greeting {
+    position: relative;
+    top: 40%; }
+    header .header-container .greeting h1 {
+      font-size: 6.4rem;
+      color: #000000; }
+    header .header-container .greeting p {
+      font-size: 1.8rem; }
+  header .header-container .icon-arrow {
+    position: absolute;
+    bottom: 2rem;
+    left: 50%;
+    cursor: pointer; }
+
+.profile {
+  margin-top: 8rem; }
+  .profile .panel-content-left .avatar img {
+    min-width: 100%; }
+  .profile .panel-content-left .person-infor {
+    padding-left: 1rem;
+    padding-right: 3rem; }
+    .profile .panel-content-left .person-infor .infor-item {
+      padding-top: 1.2rem;
+      padding-bottom: 1.2rem;
+      line-height: 1.7rem;
+      border-bottom: 0.1rem solid #D8CECE; }
+      .profile .panel-content-left .person-infor .infor-item:first-child {
+        padding-top: 0; }
+      .profile .panel-content-left .person-infor .infor-item:last-child {
+        border-bottom: none; }
+      .profile .panel-content-left .person-infor .infor-item label {
+        color: #1e1e1e;
+        font-weight: bold; }
+  .profile .panel-content-right {
+    background-color: #eee;
+    padding: 2rem;
+    line-height: 2.5rem; }
+    .profile .panel-content-right .about {
+      font-size: 1.8rem;
+      line-height: 4rem;
+      color: #a0a0a0; }
+      .profile .panel-content-right .about h1 {
+        color: #1e1e1e;
+        font-size: 2.4rem; }
+    .profile .panel-content-right .social {
+      margin-top: 1.6rem; }
+      .profile .panel-content-right .social li {
+        display: inline-block;
+        text-align: center;
+        margin-right: 1rem; }
+
+.recent-post {
+  margin-top: 10rem; }
+  .recent-post .panel-heading {
+    display: table;
+    width: 100%; }
+    .recent-post .panel-heading .button-group {
+      display: table-cell;
+      vertical-align: middle;
+      text-align: right;
+      padding-right: 3rem; }
+      .recent-post .panel-heading .button-group button {
+        padding: 0 1.5rem; }
+  .recent-post .panel-content .post-content {
+    position: relative;
+    margin-right: -15px;
+    margin-left: -15px; }
+    .recent-post .panel-content .post-content img {
+      min-width: 100%; }
+    .recent-post .panel-content .post-content .img-title {
+      position: absolute;
+      top: 2rem;
+      left: 2rem;
+      background-color: #FFFFFF;
+      color: #1e1e1e;
+      padding: 1rem; }
+    .recent-post .panel-content .post-content .note {
+      position: absolute;
+      bottom: 2rem;
+      left: 2rem;
+      color: #FFFFFF;
+      font-size: 1rem;
+      line-height: 2.5rem; }
+      .recent-post .panel-content .post-content .note h1 {
+        font-size: 2rem; }
+  .recent-post .panel-footer {
+    padding-top: 5rem;
+    padding-bottom: 3rem; }
+    .recent-post .panel-footer button {
+      font-weight: bold;
+      font-size: 1.2rem; }
+
+.service {
+  height: 28rem; }
+  .service .transbox {
+    padding: 8rem 4rem; }
+  .service-item {
+    padding: 2rem; }
+    .service-item .heading {
+      display: table;
+      width: 100%; }
+      .service-item .heading h1 {
+        color: #000000;
+        font-size: 1.6rem;
+        display: table-cell;
+        vertical-align: bottom; }
+    .service-item .content-text {
+      font-size: 1.3rem;
+      padding-top: 1rem;
+      line-height: 1.8rem; }
+
+.portfolio .panel-heading {
+  display: table;
+  width: 100%;
+  background-color: #1e1e1e;
+  padding: 8rem 2rem 3rem 4rem; }
+  .portfolio .panel-heading .heading-content {
+    display: table-cell;
+    vertical-align: bottom;
+    padding-bottom: 0; }
+    .portfolio .panel-heading .heading-content h1 {
+      color: #FFFFFF; }
+      .portfolio .panel-heading .heading-content h1:before {
+        background-color: rgba(255, 255, 255, 0.4); }
+  .portfolio .panel-heading .button-group {
+    display: table-cell;
+    vertical-align: middle;
+    text-align: right;
+    padding-right: 3rem; }
+    .portfolio .panel-heading .button-group button {
+      padding: 0 1rem;
+      margin-right: 0.5rem;
+      color: #505050;
+      border: 0.2rem solid #505050;
+      font-size: 1.2rem; }
+      .portfolio .panel-heading .button-group button:hover {
+        background-color: #FFFFFF;
+        color: #505050;
+        border: none; }
+.portfolio .panel-content {
+  background-color: #FFFFFF;
+  margin-top: 2rem; }
+  .portfolio .panel-content .team-wrapper {
+    display: table;
+    padding-left: 3rem;
+    padding-right: 3rem; }
+    .portfolio .panel-content .team-wrapper .box {
+      float: none;
+      display: table-cell;
+      padding-left: 0;
+      padding-right: 0; }
+  .portfolio .panel-content .portfolio-item {
+    padding: 2.5rem;
+    border: 0.1rem solid #EAE2E2; }
+    .portfolio .panel-content .portfolio-item .heading {
+      overflow: hidden; }
+      .portfolio .panel-content .portfolio-item .heading img {
+        border-radius: 50%; }
+      .portfolio .panel-content .portfolio-item .heading .infor {
+        padding-top: 0.5rem;
+        line-height: 2rem; }
+        .portfolio .panel-content .portfolio-item .heading .infor p {
+          color: #a0a0a0;
+          font-size: 1.2rem; }
+    .portfolio .panel-content .portfolio-item .content-text {
+      padding: 1.5rem;
+      font-size: 1.3rem; }
+      .portfolio .panel-content .portfolio-item .content-text blockquote {
+        font-style: italic;
+        position: relative;
+        margin-left: 3rem; }
+        .portfolio .panel-content .portfolio-item .content-text blockquote:before {
+          display: block;
+          padding-left: 10px;
+          content: "\201C";
+          font-size: 4rem;
+          position: absolute;
+          left: -45px;
+          top: -10px;
+          color: #DED3D3;
+          font-weight: 800; }
+
+.contact {
+  padding-top: 8rem;
+  padding-bottom: 5rem; }
+  .contact .panel-content .form-left {
+    padding-right: 5rem; }
+    .contact .panel-content .form-left input {
+      width: 100%; }
+  .contact .panel-content .form-right button {
+    font-weight: bold;
+    font-size: 1.2rem;
+    padding-left: 2.5rem;
+    padding-right: 2.5rem; }
+
+footer {
+  background-color: #1e1e1e;
+  padding-top: 3rem;
+  padding-bottom: 4rem;
+  font-size: 1.4rem; }
+  footer p {
+    padding: 3rem 28rem; }
+  footer .social {
+    display: inline-block; }
+    footer .social li {
+      margin-right: 1.5rem; }
+      footer .social li > a {
+        padding: 1rem 0; }
+
+/*# sourceMappingURL=style.css.map */
