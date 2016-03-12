@@ -1,0 +1,39 @@
+.container {
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 15px;
+  padding-right: 15px;
+  width: 100%;
+ }
+
+ .content-wrapper{
+ 	max-width: 1170px;
+ }
+
+.left{
+	float: left;
+}
+
+.right{
+	float: right;
+}
+
+.clearfix{
+	clear: both;
+}
+
+.align-center{
+	text-align: center;
+}
+
+.align-left{
+	text-align: left;
+}
+
+.bold{
+	font-weight: bold;
+}
+
+.upper-case{
+	text-transform: uppercase;
+}
