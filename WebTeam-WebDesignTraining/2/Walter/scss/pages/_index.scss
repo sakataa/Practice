@@ -1,0 +1,17 @@
+header{
+	.header-top{
+		font-size: 1.3rem;
+
+		.header-content{
+			overflow: hidden;
+			width: 100%;
+
+			a{
+				color: $color-textMenu;
+			}
+		}		
+	}
+
+	nav{
+	}
+}

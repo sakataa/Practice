@@ -1,0 +1,44 @@
+header{
+	.header-item{
+		height: 6rem;
+	}
+
+	.header-top{
+		margin-top: 0.5rem;
+		padding-left: 2rem;
+		padding-right: 2rem;
+
+		.header-content{		
+			display: table;
+
+			.logo{
+				padding-left: 1rem;
+			}
+
+			> ul{
+				display: table-cell;
+				vertical-align: middle;
+
+				> li{
+					float: right;
+
+					> a{
+						padding-left: 0.5rem;
+						padding-right:0.5rem;
+					}
+				}
+			}
+
+			.contact-list{
+				> li{
+					padding-left: 1rem;
+					padding-right: 1rem;
+
+					i.fa{
+						margin-right: 0.5rem;
+					}
+				}
+			}
+		}
+	}
+}

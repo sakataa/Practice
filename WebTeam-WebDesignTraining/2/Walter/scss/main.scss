@@ -3,13 +3,17 @@
   	'abstracts/mixins';
 
 @import
+	'base/reset',
 	'base/base',
 	'base/typography',
-	'base/helpers',
-  	'base/reset';
+	'base/helpers';
 
 @import
+	'layout/header',
   	'layout/grid';
 
 @import
   	'pages/index';
+
+@import
+  'themes/default';
