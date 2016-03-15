@@ -1,17 +1,58 @@
 header{
-	.header-top{
+	.header-content{
+		overflow: hidden;
+		width: 100%;
+
+		a{
+			color: $color-textMenu;
+		}
+	}
+
+	.contact-list{
 		font-size: 1.3rem;
+		color: $color-dark;
+		font-weight: bold;	
+	}
 
-		.header-content{
-			overflow: hidden;
-			width: 100%;
+	.social-list{
+		font-size: 1.8rem;
 
-			a{
-				color: $color-textMenu;
-			}
-		}		
+		a:hover{
+			color: $color-dark;
+		}
 	}
 
 	nav{
+		color: $color-textMenu;
+		.navbar{
+			font-size: 1.5rem;
+			a{
+				font-weight: bold;
+				word-spacing: -0.2rem;
+
+				&:hover{
+					color: $color-lightYellow;
+				}
+			}
+		}
+
+		.search-box{
+			.form-search{
+				border-width: 0;
+				border-bottom: 0.2rem solid #3F3C3E;
+				outline: 0;
+				color: $color-textMenu;		
+			}
+
+			.fa-search{
+				font-size: 1.4rem;
+				cursor: pointer;
+
+				&:hover{
+			    	color: $color-silver;
+			    	font-weight: 900;
+			    }
+			}
+		}
 	}
 }

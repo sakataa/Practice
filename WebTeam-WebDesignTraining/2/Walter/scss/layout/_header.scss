@@ -3,26 +3,34 @@ header{
 		height: 6rem;
 	}
 
+	.header-content{
+		display: table;
+
+		> ul{
+			display: table-cell;
+			vertical-align: middle;
+
+			> li{
+				float: none;
+				display: inline-block;
+			}
+		}
+	}
+
 	.header-top{
 		margin-top: 0.5rem;
 		padding-left: 2rem;
 		padding-right: 2rem;
 
-		.header-content{		
-			display: table;
-
+		.header-content{
 			.logo{
 				padding-left: 1rem;
 			}
 
 			> ul{
-				display: table-cell;
-				vertical-align: middle;
 				text-align: right;
 
 				> li{
-					float: none;
-					display: inline-block;
 					> a{
 						padding-left: 0.5rem;
 						padding-right:0.5rem;
@@ -39,6 +47,39 @@ header{
 						margin-right: 0.5rem;
 					}
 				}
+			}
+
+			.social-list{
+			    width: 12rem;
+			}
+		}
+	}
+
+	nav{
+		.header-content{
+			height: 100%;
+
+			a{
+				padding-left: 1rem;
+			    padding-right: 2rem;
+			}
+		}
+
+		.search-box{
+			display: table-cell;
+			vertical-align: middle;
+			text-align: right;
+			position: relative;
+
+			.form-search{
+				width: 23.5rem;
+				padding: 0.6rem;
+			}
+
+			.fa-search{
+				position: absolute;
+				right: 0.5rem;
+			    top: 2.2rem;
 			}
 		}
 	}
