@@ -10,7 +10,11 @@
 
 @import
 	'layout/header',
+	'layout/banner',
   	'layout/grid';
+
+ @import
+  'components/button';
 
 @import
   	'pages/index';
