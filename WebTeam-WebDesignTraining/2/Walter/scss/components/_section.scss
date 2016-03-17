@@ -1,0 +1,31 @@
+.section{
+	&-content{
+		margin-top: 5rem;
+		margin-bottom: 4rem;
+		color: $color-dark;
+		text-align: center;
+
+		h1{
+			font-size: 2.4rem;
+			text-transform: uppercase;
+		}
+
+		hr{
+			border: 0.3rem solid $color-lightYellow;
+			width: 5.3rem;
+		}
+
+		p{
+			font-size: 1.2rem;
+			width: 60rem;
+			padding: 1.5rem 2.5rem;
+			margin-left: auto;
+			margin-right: auto;
+		}
+
+		.content-block{
+			margin-left: auto;
+			margin-right: auto;
+		}
+	}
+}

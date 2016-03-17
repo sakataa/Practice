@@ -43,6 +43,9 @@ body {
 .text-emphasize {
   color: #FEC722; }
 
+.upper-case {
+  text-transform: uppercase; }
+
 .btn {
   color: #212121; }
 
@@ -69,7 +72,7 @@ body {
   margin-left: auto;
   margin-right: auto;
   padding-left: 5rem;
-  padding-right: 5rem; }
+  padding-right: 4rem; }
 
 .left {
   float: left; }
@@ -88,9 +91,6 @@ body {
 
 .bold {
   font-weight: bold; }
-
-.upper-case {
-  text-transform: uppercase; }
 
 .horizontal-menu {
   list-style: none; }
@@ -264,6 +264,27 @@ header nav .search-box {
   margin-left: auto;
   margin-right: auto; }
 
+.section-content {
+  margin-top: 5rem;
+  margin-bottom: 4rem;
+  color: #212121;
+  text-align: center; }
+  .section-content h1 {
+    font-size: 2.4rem;
+    text-transform: uppercase; }
+  .section-content hr {
+    border: 0.3rem solid #FEC722;
+    width: 5.3rem; }
+  .section-content p {
+    font-size: 1.2rem;
+    width: 60rem;
+    padding: 1.5rem 2.5rem;
+    margin-left: auto;
+    margin-right: auto; }
+  .section-content .content-block {
+    margin-left: auto;
+    margin-right: auto; }
+
 button {
   cursor: pointer; }
   button:focus {
@@ -276,7 +297,15 @@ button {
   border: 0;
   font-weight: bold; }
   .btn:hover {
-    background-color: #FEF722; }
+    background: #F7EF00; }
+
+.btn-navigate {
+  z-index: 100;
+  font-weight: 900;
+  font-size: 1.6rem;
+  border-radius: 0.2rem;
+  width: 3rem;
+  height: 6rem; }
 
 header .header-content {
   overflow: hidden;
@@ -314,20 +343,44 @@ header nav {
 
 .banner .banner-container {
   margin-left: -5rem;
-  margin-right: -5rem;
+  margin-right: -4rem;
   position: relative; }
+  .banner .banner-container .btn-navigate {
+    background: rgba(254, 199, 34, 0.5); }
+    .banner .banner-container .btn-navigate:hover {
+      background: #fec722; }
 .banner .slide-content .title {
   background: rgba(0, 0, 0, 0.5); }
-.banner .btn-navigate {
-  z-index: 100;
-  font-weight: 900;
-  font-size: 1.6rem;
-  border-radius: 0.2rem;
-  width: 3rem;
-  height: 6rem;
-  background: rgba(254, 199, 34, 0.5); }
-  .banner .btn-navigate:hover {
-    background: #fec722; }
+
+.about-team .content-block {
+  width: 40rem; }
+  .about-team .content-block .slide {
+    position: relative; }
+    .about-team .content-block .slide .btn-navigate {
+      position: absolute;
+      top: 40%; }
+    .about-team .content-block .slide .btn-next {
+      right: 3rem; }
+    .about-team .content-block .slide .btn-prev {
+      left: 3rem; }
+  .about-team .content-block h2 {
+    font-size: 1.6rem;
+    padding-top: 1.5rem; }
+
+.next-match .content-wrapper {
+  background-color: #FEC722; }
+.next-match .section-content {
+  color: #212121; }
+  .next-match .section-content hr {
+    border-color: #212121; }
+  .next-match .section-content p {
+    font-size: 1.6rem;
+    text-transform: uppercase; }
+  .next-match .section-content .content-block {
+    height: 40rem;
+    padding-top: 1.5rem;
+    padding-bottom: 1rem;
+    background-color: #FFFFFF; }
 
 body {
   background-color: #FFFFFF; }
@@ -337,7 +390,7 @@ header nav {
 header .form-search {
   background-color: #212121; }
 
-.btn {
-  background-color: #FEC722; }
+.btn-default {
+  background: #FEC722; }
 
 /*# sourceMappingURL=main.css.map */

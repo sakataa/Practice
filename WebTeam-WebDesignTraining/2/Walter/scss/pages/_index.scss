@@ -60,8 +60,15 @@ header{
 .banner{
 	.banner-container{
 		margin-left: -5rem;
-		margin-right: -5rem;
+		margin-right: -4rem;
 		position: relative;
+
+		.btn-navigate{
+			background: rgba(254, 199, 34, 0.5);
+			&:hover{
+				background: rgba(254, 199, 34, 1);
+			}
+		}
 	}
 
 	.slide{
@@ -71,18 +78,56 @@ header{
 			}
 		}
 	}
+}
 
-	.btn-navigate{
-		z-index: 100;
-		font-weight: 900;
-		font-size: 1.6rem;
-		border-radius: 0.2rem;
-		width: 3rem;
-		height: 6rem;
-		background: rgba(254, 199, 34, 0.5);
+.about-team{
+	.content-block{
+		width: 40rem;
 
-		&:hover{
-			background: rgba(254, 199, 34, 1);
+		.slide{
+			position: relative;
+
+			.btn-navigate{
+				position: absolute;
+				top: 40%;
+			}
+
+			.btn-next{
+				right: 3rem;
+			}
+
+			.btn-prev{
+				left: 3rem;
+			}
+		}
+
+		h2{
+			font-size: 1.6rem;
+			padding-top: 1.5rem;
+		}
+	}
+}
+
+.next-match{
+	.content-wrapper{
+		background-color: $color-lightYellow;
+	}
+	.section-content{
+		color: $color-dark;
+
+		hr{
+			border-color: $color-dark;
+		}
+		p{
+			font-size: 1.6rem;
+			text-transform: uppercase;
+		}
+		
+		.content-block{
+			height: 40rem;
+			padding-top: 1.5rem;
+			padding-bottom: 1rem;
+			background-color: $color-white;
 		}
 	}
 }
