@@ -166,9 +166,9 @@ header nav .search-box {
     position: absolute;
     top: 40%; }
   .banner .btn-next {
-    right: 5rem; }
+    right: 0; }
   .banner .btn-prev {
-    left: 5rem; }
+    left: 0; }
 
 .row {
   margin-left: -15px;
@@ -312,6 +312,10 @@ header nav {
       color: #CACACA;
       font-weight: 900; }
 
+.banner .banner-container {
+  margin-left: -5rem;
+  margin-right: -5rem;
+  position: relative; }
 .banner .slide-content .title {
   background: rgba(0, 0, 0, 0.5); }
 .banner .btn-navigate {
