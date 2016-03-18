@@ -33,21 +33,14 @@ img {
 a {
   text-decoration: none; }
 
-.container {
-  margin-left: auto;
-  margin-right: auto;
-  padding-left: 15px;
-  padding-right: 15px;
-  width: 100%; }
-
 .content-wrapper {
   position: relative;
   max-width: 1280px;
   overflow: hidden;
   margin-left: auto;
   margin-right: auto;
-  padding-left: 5rem;
-  padding-right: 4rem; }
+  padding-left: 6rem;
+  padding-right: 5rem; }
 
 .left {
   float: left; }
@@ -84,6 +77,9 @@ a {
 @font-face {
   font-family: 'Roboto';
   src: url("../fonts/roboto.regular.ttf"); }
+@font-face {
+  font-family: 'Roboto-bold';
+  src: url("../fonts/Roboto-Medium.ttf"); }
 html {
   font-size: 10px; }
 
@@ -102,6 +98,10 @@ body {
   font-family: "Bebas", sans-serif;
   word-spacing: 0.2rem;
   font-weight: 200; }
+
+p {
+  font-size: 1.6rem;
+  line-height: 2.4rem; }
 
 header .header-item {
   height: 6rem; }
@@ -284,9 +284,9 @@ header nav {
     font-weight: normal; }
   .section-content > hr {
     border: 0.3rem solid #FEC722;
-    width: 5.3rem; }
+    width: 5.3rem;
+    margin-top: 1rem; }
   .section-content > p {
-    font-size: 1.4rem;
     width: 60rem;
     padding: 1.5rem 2.5rem;
     margin-left: auto;
@@ -313,7 +313,6 @@ header nav {
       font-size: 2.4rem;
       width: 16rem;
       margin-left: 2rem;
-      margin-right: 2rem;
       font-weight: 500;
       word-spacing: 1rem; }
     .match-infor .title hr {
@@ -375,12 +374,34 @@ header nav {
           margin-left: 0.5rem;
           margin-right: 0.5rem; }
 
+.news-container {
+  overflow: hidden; }
+
+.news-item {
+  padding-top: 1rem;
+  padding-bottom: 4rem;
+  text-align: left; }
+  .news-item .content-text {
+    padding-right: 1.5rem; }
+  .news-item img {
+    width: 100%;
+    max-width: 100%; }
+  .news-item h4 {
+    font-size: 1.8rem;
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem; }
+  .news-item button {
+    margin-top: 1.5rem;
+    width: 11rem;
+    height: 4rem;
+    font-size: 1.1rem; }
+
 .banner {
   height: 500px;
   width: 100%; }
   .banner .banner-container {
-    margin-left: -5rem;
-    margin-right: -4rem;
+    margin-left: -6rem;
+    margin-right: -5rem;
     position: relative; }
     .banner .banner-container .btn-navigate {
       background: rgba(254, 199, 34, 0.5); }
@@ -425,6 +446,7 @@ button {
     outline: 0; }
 
 .btn {
+  font-family: "Roboto-bold", sans-serif;
   font-size: 1.2rem;
   padding: 1.2rem;
   border-radius: 2rem;

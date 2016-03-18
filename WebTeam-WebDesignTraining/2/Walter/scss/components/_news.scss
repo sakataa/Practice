@@ -1,0 +1,31 @@
+.news-container{
+	overflow: hidden;
+}
+
+.news-item{
+	padding-top: 1rem;
+	padding-bottom: 4rem;
+	text-align: left;
+
+	.content-text{
+		padding-right: 1.5rem;
+	}
+
+	img{
+		width: 100%;
+		max-width: 100%;
+	}
+
+	h4{
+		font-size: 1.8rem;
+		padding-top: 1.5rem;
+		padding-bottom: 1.5rem;
+	}
+
+	button{
+		margin-top: 1.5rem;
+		width: 11rem;
+		height: 4rem;
+		font-size: 1.1rem;
+	}
+}
