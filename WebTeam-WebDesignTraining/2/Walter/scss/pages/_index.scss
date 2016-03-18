@@ -115,16 +115,17 @@ header{
 	.section-content{
 		color: $color-dark;
 
-		hr{
+		> hr{
 			border-color: $color-dark;
 		}
-		p{
+		> p{
 			font-size: 1.6rem;
 			text-transform: uppercase;
 		}
 		
 		.content-block{
-			height: 40rem;
+			overflow: hidden;
+			height: 32rem;
 			padding-top: 1.5rem;
 			padding-bottom: 1rem;
 			background-color: $color-white;

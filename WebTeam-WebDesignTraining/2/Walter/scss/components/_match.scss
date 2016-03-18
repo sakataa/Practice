@@ -1,0 +1,107 @@
+.match-upcoming, .match-infor{
+	margin-left: -15px;
+    margin-right: -15px;
+}
+
+.match-infor{
+    font-weight: bold;
+
+    .match-section{
+    	padding-top: 1.5rem;
+		padding-bottom: 1.5rem;
+    }
+
+	.title{
+		padding-top:1rem;
+		text-align: left;
+
+		> * {
+			display: inline-block;
+		}
+
+		h1{
+			font-size: 2.4rem;
+			width: 16rem;
+			margin-left: 2rem;
+			margin-right: 2rem;
+		}
+
+		hr{
+			border-width: 0.1rem;
+			width: 60%;
+		}
+	}
+
+	.time-remain{
+		margin-top: 2rem;		
+		background-color: $color-lightGray;
+		border-top: 0.1rem solid $color-silver;
+		border-bottom: 0.1rem solid $color-silver;
+		font-size: 2rem;
+
+		.unit{
+			color: $color-match-emphasize;
+		}
+
+		.colon{
+			padding-left: 1rem;
+			padding-right: 1rem;
+		}
+	}
+
+	.team{
+		font-size: 1.6rem;
+
+		> * {
+			display: inline-block;
+		}
+
+		.vs-block{
+			padding: 1.2rem 1rem;
+			margin-left: 2rem;
+			margin-right: 2rem;
+			background-color: $color-lightYellow;
+		}
+	}
+
+	.time-kickoff{
+		color: $color-match-emphasize;
+		font-size: 1.4rem;
+
+		p{
+			margin-top: 0.5rem;
+		}
+	}
+}
+
+.match-upcoming{
+	margin-top: -1.5rem;
+	.table-match{
+		width: 100%;
+		font-size: 1.6rem;
+	    border-spacing: 0;
+		border-collapse: collapse;
+		background-color: $color-bg-table;
+
+		th, td{
+			padding: 1rem;
+		}
+
+		thead{
+			color: $color-lightYellow;
+			border-bottom: 0.1rem solid $color-lightYellow;
+		}
+
+		tbody{
+			color: $color-text-table;
+
+			tr:nth-child(odd) {
+			    background: $color-dark;
+			}
+
+			tr{
+				border-bottom: 0.1rem solid $color-silver;
+			}
+		}
+	}
+}

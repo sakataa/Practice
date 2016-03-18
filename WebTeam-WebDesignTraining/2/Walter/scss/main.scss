@@ -5,8 +5,7 @@
 @import
 	'base/reset',
 	'base/base',
-	'base/typography',
-	'base/helpers';
+	'base/typography';
 
 @import
 	'layout/header',
@@ -15,6 +14,7 @@
 
  @import
  	'components/section',
+ 	'components/match',
   	'components/button';
 
 @import

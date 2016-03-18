@@ -33,31 +33,6 @@ img {
 a {
   text-decoration: none; }
 
-html {
-  font-size: 10px; }
-
-body {
-  color: #212121;
-  font-family: "Bebas", sans-serif; }
-
-.text-emphasize {
-  color: #FEC722; }
-
-.upper-case {
-  text-transform: uppercase; }
-
-.btn {
-  color: #212121; }
-
-.banner .slide-content {
-  color: #FFFFFF; }
-  .banner .slide-content h1 {
-    font-size: 3.6rem; }
-  .banner .slide-content p {
-    font-size: 1.6rem;
-    line-height: 3.5rem;
-    font-weight: bold; }
-
 .container {
   margin-left: auto;
   margin-right: auto;
@@ -98,6 +73,35 @@ body {
     float: left; }
     .horizontal-menu > li > a {
       padding: 1.5rem; }
+
+.line {
+  border-color: #FEC722;
+  border-style: solid; }
+
+html {
+  font-size: 10px; }
+
+body {
+  color: #212121;
+  font-family: "Bebas", sans-serif; }
+
+.text-emphasize {
+  color: #FEC722; }
+
+.upper-case {
+  text-transform: uppercase; }
+
+.btn {
+  color: #212121; }
+
+.banner .slide-content {
+  color: #FFFFFF; }
+  .banner .slide-content h1 {
+    font-size: 3.6rem; }
+  .banner .slide-content p {
+    font-size: 1.6rem;
+    line-height: 3.5rem;
+    font-weight: bold; }
 
 header .header-item {
   height: 6rem; }
@@ -269,13 +273,13 @@ header nav .search-box {
   margin-bottom: 4rem;
   color: #212121;
   text-align: center; }
-  .section-content h1 {
+  .section-content > h1 {
     font-size: 2.4rem;
     text-transform: uppercase; }
-  .section-content hr {
+  .section-content > hr {
     border: 0.3rem solid #FEC722;
     width: 5.3rem; }
-  .section-content p {
+  .section-content > p {
     font-size: 1.2rem;
     width: 60rem;
     padding: 1.5rem 2.5rem;
@@ -284,6 +288,74 @@ header nav .search-box {
   .section-content .content-block {
     margin-left: auto;
     margin-right: auto; }
+
+.match-upcoming, .match-infor {
+  margin-left: -15px;
+  margin-right: -15px; }
+
+.match-infor {
+  font-weight: bold; }
+  .match-infor .match-section {
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem; }
+  .match-infor .title {
+    padding-top: 1rem;
+    text-align: left; }
+    .match-infor .title > * {
+      display: inline-block; }
+    .match-infor .title h1 {
+      font-size: 2.4rem;
+      width: 16rem;
+      margin-left: 2rem;
+      margin-right: 2rem; }
+    .match-infor .title hr {
+      border-width: 0.1rem;
+      width: 60%; }
+  .match-infor .time-remain {
+    margin-top: 2rem;
+    background-color: #DEDEDE;
+    border-top: 0.1rem solid #CACACA;
+    border-bottom: 0.1rem solid #CACACA;
+    font-size: 2rem; }
+    .match-infor .time-remain .unit {
+      color: #888688; }
+    .match-infor .time-remain .colon {
+      padding-left: 1rem;
+      padding-right: 1rem; }
+  .match-infor .team {
+    font-size: 1.6rem; }
+    .match-infor .team > * {
+      display: inline-block; }
+    .match-infor .team .vs-block {
+      padding: 1.2rem 1rem;
+      margin-left: 2rem;
+      margin-right: 2rem;
+      background-color: #FEC722; }
+  .match-infor .time-kickoff {
+    color: #888688;
+    font-size: 1.4rem; }
+    .match-infor .time-kickoff p {
+      margin-top: 0.5rem; }
+
+.match-upcoming {
+  margin-top: -1.5rem; }
+  .match-upcoming .table-match {
+    width: 100%;
+    font-size: 1.6rem;
+    border-spacing: 0;
+    border-collapse: collapse;
+    background-color: #121212; }
+    .match-upcoming .table-match th, .match-upcoming .table-match td {
+      padding: 1rem; }
+    .match-upcoming .table-match thead {
+      color: #FEC722;
+      border-bottom: 0.1rem solid #FEC722; }
+    .match-upcoming .table-match tbody {
+      color: #A2A2A2; }
+      .match-upcoming .table-match tbody tr:nth-child(odd) {
+        background: #212121; }
+      .match-upcoming .table-match tbody tr {
+        border-bottom: 0.1rem solid #CACACA; }
 
 button {
   cursor: pointer; }
@@ -371,13 +443,14 @@ header nav {
   background-color: #FEC722; }
 .next-match .section-content {
   color: #212121; }
-  .next-match .section-content hr {
+  .next-match .section-content > hr {
     border-color: #212121; }
-  .next-match .section-content p {
+  .next-match .section-content > p {
     font-size: 1.6rem;
     text-transform: uppercase; }
   .next-match .section-content .content-block {
-    height: 40rem;
+    overflow: hidden;
+    height: 32rem;
     padding-top: 1.5rem;
     padding-bottom: 1rem;
     background-color: #FFFFFF; }
