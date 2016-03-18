@@ -379,7 +379,6 @@ header nav {
 
 .news-item {
   padding-top: 1rem;
-  padding-bottom: 4rem;
   text-align: left; }
   .news-item .content-text {
     padding-right: 1.5rem; }
@@ -494,6 +493,25 @@ button {
     padding-top: 1.5rem;
     padding-bottom: 1rem;
     background-color: #FFFFFF; }
+
+.section-forecast .content-wrapper {
+  background: url("../images/Slide03.jpg"); }
+  .section-forecast .content-wrapper .section-content {
+    color: #FFFFFF; }
+.section-forecast .result-block {
+  color: #FFFFFF;
+  padding-top: 2rem;
+  padding-bottom: 2rem; }
+  .section-forecast .result-block > * {
+    display: inline-block; }
+  .section-forecast .result-block .score-block {
+    margin-left: 1rem;
+    margin-right: 1rem;
+    font-size: 4.8rem;
+    font-weight: bold; }
+.section-forecast .btn {
+  width: 12rem;
+  height: 4rem; }
 
 body {
   background-color: #FFFFFF; }

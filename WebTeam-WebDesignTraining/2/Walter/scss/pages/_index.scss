@@ -50,3 +50,35 @@
 		}
 	}
 }
+
+.section-forecast{
+	.content-wrapper{
+		background: url('../images/Slide03.jpg');
+
+		.section-content{
+			color: $color-white;
+		}
+	}
+
+	.result-block{
+		color: $color-white;
+		padding-top: 2rem;
+    	padding-bottom: 2rem;
+
+		> *{
+			display: inline-block;
+		}
+
+		.score-block{
+			margin-left: 1rem;
+    		margin-right: 1rem;
+			font-size: 4.8rem;			
+			font-weight: bold;
+		}
+	}
+
+	.btn{
+		width: 12rem;
+		height: 4rem;
+	}
+}
