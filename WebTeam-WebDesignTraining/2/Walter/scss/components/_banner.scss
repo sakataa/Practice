@@ -1,0 +1,69 @@
+.banner{
+	height: 500px;
+	width: 100%;
+
+	.banner-container{
+		margin-left: -5rem;
+		margin-right: -4rem;
+		position: relative;
+
+		.btn-navigate{
+			background: rgba(254, 199, 34, 0.5);
+			&:hover{
+				background: rgba(254, 199, 34, 1);
+			}
+		}
+	}
+
+	.slide{
+		position: relative;
+
+		img{
+			display: block;
+	    	max-width: 100%;
+	    	height: 100%;
+	    }
+
+	    &-content{
+	    	position: absolute;
+	    	right: 5rem;
+	    	bottom: 6rem;
+	    	color: $color-white;
+
+	    	.title{
+	    		padding: 1rem;
+	    		background: rgba(0, 0, 0, 0.5);
+
+	    		h1{
+					font-size: 3.6rem;
+					font-family: $font-bebas;
+					font-weight: 100;
+					word-spacing: 0.4rem;
+				}
+	    	}
+
+			p{
+				font-size: 1.6rem;
+				line-height: 3.5rem;
+				font-weight: bold;
+			}
+
+	    	.btn{
+	    		margin-top: 0.5rem;
+	    	}
+	    }
+	}
+
+	.btn-navigate{
+		position: absolute;
+		top: 40%;
+	}
+
+	.btn-next{
+		right: 0;
+	}
+
+	.btn-prev{
+		left: 0;
+	}
+}

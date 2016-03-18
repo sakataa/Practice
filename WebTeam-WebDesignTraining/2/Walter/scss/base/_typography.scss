@@ -2,6 +2,10 @@
   font-family: 'Bebas';
   src:  url('../fonts/BEBAS___.TTF');
 }
+@font-face{
+	font-family: 'Roboto';
+	src: url('../fonts/roboto.regular.ttf');
+}
 
 html{
 	font-size: 10px;
@@ -10,6 +14,7 @@ html{
 body {
   color: $color-dark;
   font-family: $font-common;
+  text-transform: none;
 }
 
 .text-emphasize{
@@ -20,23 +25,8 @@ body {
 	text-transform: uppercase;
 }
 
-.btn{
-	color: $color-dark;
-}
-
-.banner{
-	.slide{
-		&-content{
-			color: $color-white;
-			h1{
-				font-size: 3.6rem;
-			}
-
-			p{
-				font-size: 1.6rem;
-				line-height: 3.5rem;
-				font-weight: bold;
-			}
-		}
-	}
+.text-heading{
+	font-family: $font-bebas;
+	word-spacing: 0.2rem;
+	font-weight: 200;
 }

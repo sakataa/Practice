@@ -24,6 +24,8 @@
 			width: 16rem;
 			margin-left: 2rem;
 			margin-right: 2rem;
+			font-weight: 500;
+			word-spacing: 1rem;
 		}
 
 		hr{
@@ -106,6 +108,7 @@
 
 		tbody{
 			color: $color-text-table;
+			word-spacing: 0.2rem;
 
 			tr:nth-child(odd) {
 			    background: $color-dark;
@@ -113,6 +116,11 @@
 
 			tr{
 				border-bottom: 0.1rem solid $color-silver;
+
+				> td > .text-emphasize{
+					margin-left: 0.5rem;
+					margin-right: 0.5rem;
+				}
 			}
 		}
 	}

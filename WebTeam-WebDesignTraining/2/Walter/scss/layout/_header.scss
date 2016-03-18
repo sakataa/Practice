@@ -5,6 +5,12 @@ header{
 
 	.header-content{
 		display: table;
+		overflow: hidden;
+		width: 100%;
+
+		a{
+			color: $color-textMenu;
+		}
 
 		> ul{
 			display: table-cell;
@@ -39,29 +45,48 @@ header{
 			}
 
 			.contact-list{
+				font-size: 1.2rem;
+				color: $color-dark;
+				font-weight: bold;
+
 				> li{
 					padding-left: 1rem;
 					padding-right: 1rem;
-
 					i.fa{
 						margin-right: 0.5rem;
+						font-size: 1.4rem;
+						color: #949494;
 					}
 				}
 			}
 
 			.social-list{
 			    width: 12rem;
+			    font-size: 1.6rem;
+
+			    a:hover{
+					color: $color-dark;
+				}
 			}
 		}
 	}
 
 	nav{
+		color: $color-textMenu;
 		.header-content{
 			height: 100%;
 
 			a{
 				padding-left: 1rem;
-			    padding-right: 2rem;
+			    padding-right: 4rem;
+			    font-family: $font-bebas;
+			}
+		}
+
+		.navbar{
+			font-size: 1.5rem;
+			a:hover{
+				color: $color-lightYellow;
 			}
 		}
 
@@ -74,12 +99,23 @@ header{
 			.form-search{
 				width: 23.5rem;
 				padding: 0.6rem;
+				border-width: 0;
+				border-bottom: 0.2rem solid #3F3C3E;
+				outline: 0;
+				color: $color-textMenu;
 			}
 
 			.fa-search{
 				position: absolute;
 				right: 0.5rem;
 			    top: 2.2rem;
+			    font-size: 1.4rem;
+				cursor: pointer;
+
+				&:hover{
+			    	color: $color-silver;
+			    	font-weight: 900;
+			    }
 			}
 		}
 	}

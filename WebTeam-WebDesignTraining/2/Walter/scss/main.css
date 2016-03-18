@@ -81,12 +81,16 @@ a {
 @font-face {
   font-family: 'Bebas';
   src: url("../fonts/BEBAS___.TTF"); }
+@font-face {
+  font-family: 'Roboto';
+  src: url("../fonts/roboto.regular.ttf"); }
 html {
   font-size: 10px; }
 
 body {
   color: #212121;
-  font-family: "Bebas", sans-serif; }
+  font-family: "Roboto", sans-serif;
+  text-transform: none; }
 
 .text-emphasize {
   color: #FEC722; }
@@ -94,22 +98,19 @@ body {
 .upper-case {
   text-transform: uppercase; }
 
-.btn {
-  color: #212121; }
-
-.banner .slide-content {
-  color: #FFFFFF; }
-  .banner .slide-content h1 {
-    font-size: 3.6rem; }
-  .banner .slide-content p {
-    font-size: 1.6rem;
-    line-height: 3.5rem;
-    font-weight: bold; }
+.text-heading {
+  font-family: "Bebas", sans-serif;
+  word-spacing: 0.2rem;
+  font-weight: 200; }
 
 header .header-item {
   height: 6rem; }
 header .header-content {
-  display: table; }
+  display: table;
+  overflow: hidden;
+  width: 100%; }
+  header .header-content a {
+    color: #AFAFAF; }
   header .header-content > ul {
     display: table-cell;
     vertical-align: middle; }
@@ -127,55 +128,55 @@ header .header-top {
     header .header-top .header-content > ul > li > a {
       padding-left: 0.5rem;
       padding-right: 0.5rem; }
-  header .header-top .header-content .contact-list > li {
-    padding-left: 1rem;
-    padding-right: 1rem; }
-    header .header-top .header-content .contact-list > li i.fa {
-      margin-right: 0.5rem; }
+  header .header-top .header-content .contact-list {
+    font-size: 1.2rem;
+    color: #212121;
+    font-weight: bold; }
+    header .header-top .header-content .contact-list > li {
+      padding-left: 1rem;
+      padding-right: 1rem; }
+      header .header-top .header-content .contact-list > li i.fa {
+        margin-right: 0.5rem;
+        font-size: 1.4rem;
+        color: #949494; }
   header .header-top .header-content .social-list {
-    width: 12rem; }
-header nav .header-content {
-  height: 100%; }
-  header nav .header-content a {
-    padding-left: 1rem;
-    padding-right: 2rem; }
-header nav .search-box {
-  display: table-cell;
-  vertical-align: middle;
-  text-align: right;
-  position: relative; }
-  header nav .search-box .form-search {
-    width: 23.5rem;
-    padding: 0.6rem; }
-  header nav .search-box .fa-search {
-    position: absolute;
-    right: 0.5rem;
-    top: 2.2rem; }
-
-.banner {
-  height: 500px;
-  width: 100%; }
-  .banner .slide {
+    width: 12rem;
+    font-size: 1.6rem; }
+    header .header-top .header-content .social-list a:hover {
+      color: #212121; }
+header nav {
+  color: #AFAFAF; }
+  header nav .header-content {
+    height: 100%; }
+    header nav .header-content a {
+      padding-left: 1rem;
+      padding-right: 4rem;
+      font-family: "Bebas", sans-serif; }
+  header nav .navbar {
+    font-size: 1.5rem; }
+    header nav .navbar a:hover {
+      color: #FEC722; }
+  header nav .search-box {
+    display: table-cell;
+    vertical-align: middle;
+    text-align: right;
     position: relative; }
-    .banner .slide img {
-      display: block;
-      max-width: 100%;
-      height: 100%; }
-    .banner .slide-content {
+    header nav .search-box .form-search {
+      width: 23.5rem;
+      padding: 0.6rem;
+      border-width: 0;
+      border-bottom: 0.2rem solid #3F3C3E;
+      outline: 0;
+      color: #AFAFAF; }
+    header nav .search-box .fa-search {
       position: absolute;
-      right: 5rem;
-      bottom: 6rem; }
-      .banner .slide-content .title {
-        padding: 1rem; }
-      .banner .slide-content .btn {
-        margin-top: 0.5rem; }
-  .banner .btn-navigate {
-    position: absolute;
-    top: 40%; }
-  .banner .btn-next {
-    right: 0; }
-  .banner .btn-prev {
-    left: 0; }
+      right: 0.5rem;
+      top: 2.2rem;
+      font-size: 1.4rem;
+      cursor: pointer; }
+      header nav .search-box .fa-search:hover {
+        color: #CACACA;
+        font-weight: 900; }
 
 .row {
   margin-left: -15px;
@@ -277,13 +278,15 @@ header nav .search-box {
   color: #212121;
   text-align: center; }
   .section-content > h1 {
+    font-family: "Bebas", sans-serif;
     font-size: 2.4rem;
-    text-transform: uppercase; }
+    word-spacing: 0.5rem;
+    font-weight: normal; }
   .section-content > hr {
     border: 0.3rem solid #FEC722;
     width: 5.3rem; }
   .section-content > p {
-    font-size: 1.2rem;
+    font-size: 1.4rem;
     width: 60rem;
     padding: 1.5rem 2.5rem;
     margin-left: auto;
@@ -310,7 +313,9 @@ header nav .search-box {
       font-size: 2.4rem;
       width: 16rem;
       margin-left: 2rem;
-      margin-right: 2rem; }
+      margin-right: 2rem;
+      font-weight: 500;
+      word-spacing: 1rem; }
     .match-infor .title hr {
       border-width: 0.1rem;
       width: 60%; }
@@ -360,11 +365,59 @@ header nav .search-box {
       color: #FEC722;
       border-bottom: 0.1rem solid #FEC722; }
     .match-upcoming .table-match tbody {
-      color: #A2A2A2; }
+      color: #A2A2A2;
+      word-spacing: 0.2rem; }
       .match-upcoming .table-match tbody tr:nth-child(odd) {
         background: #212121; }
       .match-upcoming .table-match tbody tr {
         border-bottom: 0.1rem solid #CACACA; }
+        .match-upcoming .table-match tbody tr > td > .text-emphasize {
+          margin-left: 0.5rem;
+          margin-right: 0.5rem; }
+
+.banner {
+  height: 500px;
+  width: 100%; }
+  .banner .banner-container {
+    margin-left: -5rem;
+    margin-right: -4rem;
+    position: relative; }
+    .banner .banner-container .btn-navigate {
+      background: rgba(254, 199, 34, 0.5); }
+      .banner .banner-container .btn-navigate:hover {
+        background: #fec722; }
+  .banner .slide {
+    position: relative; }
+    .banner .slide img {
+      display: block;
+      max-width: 100%;
+      height: 100%; }
+    .banner .slide-content {
+      position: absolute;
+      right: 5rem;
+      bottom: 6rem;
+      color: #FFFFFF; }
+      .banner .slide-content .title {
+        padding: 1rem;
+        background: rgba(0, 0, 0, 0.5); }
+        .banner .slide-content .title h1 {
+          font-size: 3.6rem;
+          font-family: "Bebas", sans-serif;
+          font-weight: 100;
+          word-spacing: 0.4rem; }
+      .banner .slide-content p {
+        font-size: 1.6rem;
+        line-height: 3.5rem;
+        font-weight: bold; }
+      .banner .slide-content .btn {
+        margin-top: 0.5rem; }
+  .banner .btn-navigate {
+    position: absolute;
+    top: 40%; }
+  .banner .btn-next {
+    right: 0; }
+  .banner .btn-prev {
+    left: 0; }
 
 button {
   cursor: pointer; }
@@ -376,7 +429,8 @@ button {
   padding: 1.2rem;
   border-radius: 2rem;
   border: 0;
-  font-weight: bold; }
+  font-weight: bold;
+  color: #212121; }
   .btn:hover {
     background: #F7EF00; }
 
@@ -387,51 +441,6 @@ button {
   border-radius: 0.2rem;
   width: 3rem;
   height: 6rem; }
-
-header .header-content {
-  overflow: hidden;
-  width: 100%; }
-  header .header-content a {
-    color: #AFAFAF; }
-header .contact-list {
-  font-size: 1.3rem;
-  color: #212121;
-  font-weight: bold; }
-header .social-list {
-  font-size: 1.8rem; }
-  header .social-list a:hover {
-    color: #212121; }
-header nav {
-  color: #AFAFAF; }
-  header nav .navbar {
-    font-size: 1.5rem; }
-    header nav .navbar a {
-      font-weight: bold;
-      word-spacing: -0.2rem; }
-      header nav .navbar a:hover {
-        color: #FEC722; }
-  header nav .search-box .form-search {
-    border-width: 0;
-    border-bottom: 0.2rem solid #3F3C3E;
-    outline: 0;
-    color: #AFAFAF; }
-  header nav .search-box .fa-search {
-    font-size: 1.4rem;
-    cursor: pointer; }
-    header nav .search-box .fa-search:hover {
-      color: #CACACA;
-      font-weight: 900; }
-
-.banner .banner-container {
-  margin-left: -5rem;
-  margin-right: -4rem;
-  position: relative; }
-  .banner .banner-container .btn-navigate {
-    background: rgba(254, 199, 34, 0.5); }
-    .banner .banner-container .btn-navigate:hover {
-      background: #fec722; }
-.banner .slide-content .title {
-  background: rgba(0, 0, 0, 0.5); }
 
 .about-team .content-block {
   width: 40rem; }
@@ -455,7 +464,7 @@ header nav {
   .next-match .section-content > hr {
     border-color: #212121; }
   .next-match .section-content > p {
-    font-size: 1.6rem;
+    font-size: 1.8rem;
     text-transform: uppercase; }
   .next-match .section-content .content-block {
     overflow: hidden;

@@ -1,85 +1,3 @@
-header{
-	.header-content{
-		overflow: hidden;
-		width: 100%;
-
-		a{
-			color: $color-textMenu;
-		}
-	}
-
-	.contact-list{
-		font-size: 1.3rem;
-		color: $color-dark;
-		font-weight: bold;	
-	}
-
-	.social-list{
-		font-size: 1.8rem;
-
-		a:hover{
-			color: $color-dark;
-		}
-	}
-
-	nav{
-		color: $color-textMenu;
-		.navbar{
-			font-size: 1.5rem;
-			a{
-				font-weight: bold;
-				word-spacing: -0.2rem;
-
-				&:hover{
-					color: $color-lightYellow;
-				}
-			}
-		}
-
-		.search-box{
-			.form-search{
-				border-width: 0;
-				border-bottom: 0.2rem solid #3F3C3E;
-				outline: 0;
-				color: $color-textMenu;		
-			}
-
-			.fa-search{
-				font-size: 1.4rem;
-				cursor: pointer;
-
-				&:hover{
-			    	color: $color-silver;
-			    	font-weight: 900;
-			    }
-			}
-		}
-	}
-}
-
-.banner{
-	.banner-container{
-		margin-left: -5rem;
-		margin-right: -4rem;
-		position: relative;
-
-		.btn-navigate{
-			background: rgba(254, 199, 34, 0.5);
-			&:hover{
-				background: rgba(254, 199, 34, 1);
-			}
-		}
-	}
-
-	.slide{
-		&-content{
-			.title{
-				background: rgba(0, 0, 0, 0.5);
-			}
-		}
-	}
-}
-
 .about-team{
 	.content-block{
 		width: 40rem;
@@ -119,7 +37,7 @@ header{
 			border-color: $color-dark;
 		}
 		> p{
-			font-size: 1.6rem;
+			font-size: 1.8rem;
 			text-transform: uppercase;
 		}
 		
