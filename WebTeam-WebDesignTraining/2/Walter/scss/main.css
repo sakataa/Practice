@@ -465,7 +465,6 @@ footer {
     font-size: 1.1rem; }
 
 .banner {
-  height: 500px;
   width: 100%; }
   .banner .banner-container {
     margin-left: -6rem;
@@ -476,7 +475,8 @@ footer {
       .banner .banner-container .btn-navigate:hover {
         background: #fec722; }
   .banner .slide {
-    position: relative; }
+    position: relative;
+    height: 50rem; }
     .banner .slide img {
       display: block;
       max-width: 100%;
