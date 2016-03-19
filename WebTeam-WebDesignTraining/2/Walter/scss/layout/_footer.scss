@@ -75,6 +75,11 @@ footer{
 				margin-left: 0.1rem;
 				margin-right: 0.1rem;
 				cursor: pointer;
+				@include grayscale();
+
+				&:hover{
+					@include clearGrayscale();
+				}
 			}
 
 			.gallery-container{

@@ -234,7 +234,12 @@ footer {
     footer .section-footer-gallery img {
       margin-left: 0.1rem;
       margin-right: 0.1rem;
-      cursor: pointer; }
+      cursor: pointer;
+      -webkit-filter: grayscale(100%);
+      filter: grayscale(100%); }
+      footer .section-footer-gallery img:hover {
+        -webkit-filter: none;
+        filter: none; }
     footer .section-footer-gallery .gallery-container {
       margin-left: -0.1rem;
       margin-right: -0.1rem; }
@@ -504,7 +509,8 @@ footer {
     left: 0; }
 
 .section-contact .content-block {
-  overflow: hidden; }
+  overflow: hidden;
+  margin-top: 3rem; }
 .section-contact .map-block img {
   width: 100%;
   max-width: 100%; }

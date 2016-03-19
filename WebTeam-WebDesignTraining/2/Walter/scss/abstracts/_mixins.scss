@@ -1,10 +1,9 @@
-@mixin circle($radius) {
-  	width: $radius * 2;
-	height: $radius * 2;
-	-moz-border-radius: $radius;
-	-webkit-border-radius: $radius;
-	border-radius: $radius;
-	border: 2px solid;
-	display: inline-block;
-	cursor: pointer;
+@mixin grayscale() {
+  	-webkit-filter: grayscale(100%);
+  	filter: grayscale(100%);
+}
+
+@mixin clearGrayscale() {
+  	-webkit-filter: none;
+  	filter: none;
 }
