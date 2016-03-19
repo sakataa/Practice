@@ -405,13 +405,14 @@ footer {
       display: inline-block; }
     .match-infor .title h1 {
       font-size: 2.4rem;
-      width: 16rem;
+      width: 25%;
       margin-left: 2rem;
       font-weight: 500;
       word-spacing: 1rem; }
     .match-infor .title hr {
       border-width: 0.1rem;
-      width: 60%; }
+      width: 67%;
+      margin-bottom: 0.8rem; }
   .match-infor .time-remain {
     margin-top: 2rem;
     background-color: #DEDEDE;
@@ -468,6 +469,12 @@ footer {
           margin-left: 0.5rem;
           margin-right: 0.5rem; }
 
+@media (min-width: 768px) and (max-width: 979px) {
+  .match-infor .title h1 {
+    font-size: 2rem;
+    width: 38%; }
+  .match-infor .title hr {
+    width: 50%; } }
 .news-container {
   overflow: hidden; }
 
@@ -626,9 +633,7 @@ footer {
     text-transform: uppercase; }
   .next-match .section-content .content-block {
     overflow: hidden;
-    height: 32rem;
     padding-top: 1.5rem;
-    padding-bottom: 1rem;
     background-color: #FFFFFF; }
 
 .section-forecast .content-wrapper {

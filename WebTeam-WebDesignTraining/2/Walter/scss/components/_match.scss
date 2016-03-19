@@ -21,7 +21,7 @@
 
 		h1{
 			font-size: 2.4rem;
-			width: 16rem;
+			width: 25%;
 			margin-left: 2rem;
 			font-weight: 500;
 			word-spacing: 1rem;
@@ -29,7 +29,8 @@
 
 		hr{
 			border-width: 0.1rem;
-			width: 60%;
+			width: 67%;
+			margin-bottom: 0.8rem;
 		}
 	}
 
@@ -123,4 +124,19 @@
 			}
 		}
 	}
+}
+
+@media (min-width: 768px) and (max-width: 979px){
+	.match-infor{
+		.title{
+			h1{
+				font-size: 2rem;
+				width: 38%;
+			}
+
+			hr{
+				width: 50%;
+			}
+		}
+	}	
 }
