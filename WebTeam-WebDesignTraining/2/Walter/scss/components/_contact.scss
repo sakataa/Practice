@@ -1,0 +1,33 @@
+.section-contact{
+	.content-block{
+		overflow: hidden;
+	}
+
+	.map-block{
+		img{
+			width: 100%;
+			max-width: 100%;
+		}
+	}
+
+	.form-block{
+		position: relative;
+		input, textarea{
+			width: 100%;
+			margin-bottom: 2rem;
+			font-family: $font-roboto-bold;
+			font-size: 1.4rem;
+		}
+
+		textarea{
+			height: 13rem;
+    		resize: none;
+		}
+
+		.btn-submit{
+			float: right;
+			height: 4rem;
+			width: 8rem;
+		}
+	}
+}

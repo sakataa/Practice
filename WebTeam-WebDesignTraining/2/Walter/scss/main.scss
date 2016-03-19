@@ -8,15 +8,17 @@
   	'base/typography';
 
 @import
-	 'layout/header',
-	
-  	'layout/grid';
+	  'layout/header',
+    'layout/footer',
+    'layout/grid';
 
  @import
  	  'components/section',
  	  'components/match',
     'components/news',
     'components/banner',
+    'components/contact',
+    'components/input',
   	'components/button';
 
 @import

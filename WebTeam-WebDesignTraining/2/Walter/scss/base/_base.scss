@@ -2,6 +2,14 @@ a{
 	text-decoration: none;
 }
 
+button{
+	cursor: pointer;
+
+	&:focus {
+		outline: 0;
+	}
+}
+
  .content-wrapper{
  	position: relative;
  	max-width: 1280px;
@@ -32,6 +40,10 @@ a{
 	text-align: left;
 }
 
+.text-right{
+	text-align: right;
+}
+
 .bold{
 	font-weight: bold;
 }
@@ -45,6 +57,10 @@ a{
 			padding: 1.5rem;
 		}
 	}
+}
+
+.social-list{
+	overflow: hidden;
 }
 
 .line{

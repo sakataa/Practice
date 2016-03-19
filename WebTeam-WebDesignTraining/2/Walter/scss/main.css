@@ -33,6 +33,11 @@ img {
 a {
   text-decoration: none; }
 
+button {
+  cursor: pointer; }
+  button:focus {
+    outline: 0; }
+
 .content-wrapper {
   position: relative;
   max-width: 1280px;
@@ -57,6 +62,9 @@ a {
 .text-left {
   text-align: left; }
 
+.text-right {
+  text-align: right; }
+
 .bold {
   font-weight: bold; }
 
@@ -66,6 +74,9 @@ a {
     float: left; }
     .horizontal-menu > li > a {
       padding: 1.5rem; }
+
+.social-list {
+  overflow: hidden; }
 
 .line {
   border-color: #FEC722;
@@ -177,6 +188,59 @@ header nav {
       header nav .search-box .fa-search:hover {
         color: #CACACA;
         font-weight: 900; }
+
+footer {
+  color: #AFAFAF;
+  padding-bottom: 2rem; }
+  footer .section-content {
+    color: #AFAFAF;
+    text-align: left; }
+    footer .section-content h1 {
+      font-size: 1.8rem; }
+    footer .section-content > p {
+      padding: 1.5rem 0;
+      width: auto; }
+    footer .section-content > hr {
+      margin-left: 0;
+      width: 8rem;
+      border-width: 0.2rem; }
+    footer .section-content .content-block {
+      overflow: hidden; }
+  footer .section-footer {
+    overflow: hidden; }
+    footer .section-footer .content-wrapper {
+      padding-left: 0;
+      padding-right: 0; }
+    footer .section-footer-about .social-list {
+      font-size: 1.6rem; }
+      footer .section-footer-about .social-list a {
+        color: #AFAFAF;
+        padding-left: 0;
+        padding-right: 1.5rem; }
+        footer .section-footer-about .social-list a:hover {
+          color: #0FB7FE; }
+    footer .section-footer-newsletter input {
+      width: 100%;
+      color: #AFAFAF;
+      background-color: #212121;
+      border-color: #3F3C3E;
+      border-width: 0.2rem;
+      margin-bottom: 2rem; }
+      footer .section-footer-newsletter input:focus {
+        outline: 0; }
+    footer .section-footer-newsletter button {
+      height: 4rem;
+      width: 10rem; }
+    footer .section-footer-gallery img {
+      margin-left: 0.1rem;
+      margin-right: 0.1rem;
+      cursor: pointer; }
+    footer .section-footer-gallery .gallery-container {
+      margin-left: -0.1rem;
+      margin-right: -0.1rem; }
+  footer .footer-latest {
+    font-size: 1.4rem;
+    text-transform: capitalize; }
 
 .row {
   margin-left: -15px;
@@ -439,10 +503,32 @@ header nav {
   .banner .btn-prev {
     left: 0; }
 
-button {
-  cursor: pointer; }
-  button:focus {
-    outline: 0; }
+.section-contact .content-block {
+  overflow: hidden; }
+.section-contact .map-block img {
+  width: 100%;
+  max-width: 100%; }
+.section-contact .form-block {
+  position: relative; }
+  .section-contact .form-block input, .section-contact .form-block textarea {
+    width: 100%;
+    margin-bottom: 2rem;
+    font-family: "Roboto-bold", sans-serif;
+    font-size: 1.4rem; }
+  .section-contact .form-block textarea {
+    height: 13rem;
+    resize: none; }
+  .section-contact .form-block .btn-submit {
+    float: right;
+    height: 4rem;
+    width: 8rem; }
+
+.form-input {
+  height: 4rem;
+  padding: 1rem; }
+
+.form-default {
+  border: 0.2rem solid #CACACA; }
 
 .btn {
   font-family: "Roboto-bold", sans-serif;
@@ -516,9 +602,10 @@ button {
 body {
   background-color: #FFFFFF; }
 
-header nav {
+header nav, header .form-search {
   background-color: #212121; }
-header .form-search {
+
+footer {
   background-color: #212121; }
 
 .btn-default {

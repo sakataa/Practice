@@ -3,13 +3,13 @@ body{
 }
 
 header{
-	nav{
+	nav, .form-search{
 		background-color: $color-dark;
 	}
+}
 
-	.form-search{
-		background-color: $color-dark;
-	}
+footer{
+	background-color: $color-dark;
 }
 
 .btn-default{
