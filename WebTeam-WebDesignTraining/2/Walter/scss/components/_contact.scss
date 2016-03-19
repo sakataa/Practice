@@ -32,3 +32,28 @@
 		}
 	}
 }
+
+@media (min-width: 768px) and (max-width: 979px){
+	.section-contact{
+		.form-input{
+				height: 3rem;
+		}
+		.form-block{
+			input, textarea{
+				margin-bottom: 1rem;
+				font-size: 1.2rem;
+			}
+			
+			textarea{
+				height: 9rem;
+			}
+
+			.btn-submit{
+				padding: 1rem;
+				height: 3rem;
+    			width: 7rem;
+			}
+		}
+
+	}
+}

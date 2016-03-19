@@ -28,3 +28,18 @@
 		font-size: 1.1rem;
 	}
 }
+
+@media (min-width: 768px) and (max-width: 979px){
+	.news-item{
+		padding-top: 1rem;
+		text-align: left;
+
+		h4{
+			font-size: 1.6rem;
+		}
+
+		p{
+			font-size: 1.4rem;
+		}
+	}
+}

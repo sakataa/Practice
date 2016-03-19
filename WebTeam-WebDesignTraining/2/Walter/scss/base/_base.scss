@@ -67,3 +67,9 @@ button{
 	border-color: $color-lightYellow;
     border-style: solid;
 }
+
+@media (min-width: 768px) and (max-width: 979px){
+	.hidden-sm{
+		display: none;
+	}
+}
