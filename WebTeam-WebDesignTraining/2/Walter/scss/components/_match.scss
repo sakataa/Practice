@@ -1,3 +1,25 @@
+.section-next-match{
+	background-color: $color-lightYellow;
+	
+	.section-content{
+		color: $color-dark;
+
+		> hr{
+			border-color: $color-dark;
+		}
+		> p{
+			font-size: 1.8rem;
+			text-transform: uppercase;
+		}
+		
+		.content-block{
+			overflow: hidden;
+			padding-top: 1.5rem;
+			background-color: $color-white;
+		}
+	}
+}
+
 .match-upcoming, .match-infor{
 	margin-left: -15px;
     margin-right: -15px;
@@ -115,7 +137,7 @@
 			}
 
 			tr{
-				border-bottom: 0.1rem solid $color-silver;
+				border-bottom: 0.1rem solid #333131;
 
 				> td > .text-emphasize{
 					margin-left: 0.5rem;

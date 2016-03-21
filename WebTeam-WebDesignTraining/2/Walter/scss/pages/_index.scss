@@ -26,33 +26,13 @@
 	}
 }
 
-.next-match{
-	.content-wrapper{
-		background-color: $color-lightYellow;
-	}
-	.section-content{
-		color: $color-dark;
-
-		> hr{
-			border-color: $color-dark;
-		}
-		> p{
-			font-size: 1.8rem;
-			text-transform: uppercase;
-		}
-		
-		.content-block{
-			overflow: hidden;
-			padding-top: 1.5rem;
-			background-color: $color-white;
-		}
-	}
-}
-
 .section-forecast{
-	.content-wrapper{
-		background: url('../images/Slide03.jpg');
+	background-image: url('../images/Slide03.jpg');
+	background-repeat:no-repeat;
+    background-size:cover;
 
+
+	.content-wrapper{
 		.section-content{
 			color: $color-white;
 		}
