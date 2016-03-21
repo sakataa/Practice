@@ -1,22 +1,26 @@
 .about-team{
 	.content-block{
 		width: 40rem;
+	}
+
+	.photo-container{
+		position: relative;
+
+		.btn-navigate{
+			position: absolute;
+			top: 40%;
+		}
+
+		.btn-next{
+			right: 3rem;
+		}
+
+		.btn-prev{
+			left: 3rem;
+		}
 
 		.slide{
-			position: relative;
-
-			.btn-navigate{
-				position: absolute;
-				top: 40%;
-			}
-
-			.btn-next{
-				right: 3rem;
-			}
-
-			.btn-prev{
-				left: 3rem;
-			}
+			position: relative;			
 		}
 
 		h2{

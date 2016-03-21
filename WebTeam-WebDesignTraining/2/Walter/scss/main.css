@@ -620,16 +620,18 @@ footer {
 
 .about-team .content-block {
   width: 40rem; }
-  .about-team .content-block .slide {
+.about-team .photo-container {
+  position: relative; }
+  .about-team .photo-container .btn-navigate {
+    position: absolute;
+    top: 40%; }
+  .about-team .photo-container .btn-next {
+    right: 3rem; }
+  .about-team .photo-container .btn-prev {
+    left: 3rem; }
+  .about-team .photo-container .slide {
     position: relative; }
-    .about-team .content-block .slide .btn-navigate {
-      position: absolute;
-      top: 40%; }
-    .about-team .content-block .slide .btn-next {
-      right: 3rem; }
-    .about-team .content-block .slide .btn-prev {
-      left: 3rem; }
-  .about-team .content-block h2 {
+  .about-team .photo-container h2 {
     font-size: 1.6rem;
     padding-top: 1.5rem; }
 
