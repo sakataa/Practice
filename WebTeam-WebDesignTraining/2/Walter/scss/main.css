@@ -40,12 +40,10 @@ button {
 
 .content-wrapper {
   position: relative;
-  max-width: 1280px;
+  max-width: 1170px;
   overflow: hidden;
   margin-left: auto;
-  margin-right: auto;
-  padding-left: 6rem;
-  padding-right: 5rem; }
+  margin-right: auto; }
 
 .left {
   float: left; }
@@ -223,7 +221,9 @@ footer {
     footer .section-content .content-block {
       overflow: hidden; }
   footer .section-footer {
-    overflow: hidden; }
+    overflow: hidden;
+    margin-left: -15px;
+    margin-right: -15px; }
     footer .section-footer .content-wrapper {
       padding-left: 0;
       padding-right: 0; }
@@ -568,7 +568,9 @@ footer {
 
 .section-contact .content-block {
   overflow: hidden;
-  margin-top: 3rem; }
+  margin-top: 3rem;
+  margin-left: -15px;
+  margin-right: -15px; }
 .section-contact .map-block img {
   width: 100%;
   max-width: 100%; }
