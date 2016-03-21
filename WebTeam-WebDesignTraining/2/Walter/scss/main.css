@@ -250,7 +250,7 @@ footer {
     footer .section-footer-gallery img {
       margin-left: 0.1rem;
       margin-right: 0.1rem;
-      width: calc(25% - 0.4rem);
+      width: calc(25% - 0.5rem);
       cursor: pointer;
       -webkit-filter: grayscale(100%);
       filter: grayscale(100%); }
