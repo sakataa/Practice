@@ -2,312 +2,254 @@
 <html>
 
 <head>
-	<meta name=viewport content="width=device-width,initial-scale=1">
-	<link rel="stylesheet" href="css/font-awesome.min.css">
-	<link rel="stylesheet" type="text/css" href="css/grid.css" />
-	<link rel="stylesheet" type="text/css" href="css/style.css" />
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="css/font-awesome.min.css">	
 	<link rel="stylesheet" type="text/css" href="scripts/owl-carousel/owl.carousel.css" />
 	<link rel="stylesheet" type="text/css" href="scripts/owl-carousel/owl.theme.css" />
-	<title>Test</title>
+	<link rel="stylesheet" type="text/css" href="scss/main.css" />
+	<title>SkySport</title>
 </head>
 
 <body>
-	<div class="container">
-		<div class="top-menu">
-			<ul class="menu horizontal-menu upper-case">
-				<li><a href="#"><i class="fa fa-times"></i></a></li>
-				<li><a href="#" class="bold">Home</a></li>
-				<li><a href="#" class="bold">About</a></li>
-				<li><a href="#" class="bold">Blog</a></li>
-				<li><a href="#" class="bold">Resume</a></li>
-				<li><a href="#" class="bold">PortFolio</a></li>
-				<li><a href="#" class="bold">Contact</a></li>
-				<li><a href="#" class="bold">404 Page</a></li>
-			</ul>
-		</div>
-		<!--Header-->
+	<div class="main-container">
 		<header>
-			<div class="header-container bg-img">
-				<div class="transbox">
-					<div class="greeting align-center">
-						<h1 class="upper-case">hello, i'm john luna</h1>
-						<p>I have more than 5 years of experience of working as a web developer</p>
-					</div>
+			<div class="header-top header-item">
+				<div class="header-content content-wrapper">
+					<a class="left logo" href="javascript::void(0)">
+						<img src="images/logo.png" alt="logo" />
+					</a>
 
-					<i class="fa fa-long-arrow-down fa-2x icon-arrow"></i>
-				</div>				
+					<ul class="horizontal-menu contact-list">
+						<li><i class="fa fa-phone"></i><span>+880 1710-000-000</span></li>
+						<li><i class="fa fa-envelope"></i><span>Email@Domain.com</span></li>
+					</ul>
+
+					<ul class="horizontal-menu social-list">
+						<li><a href="javascript::void(0)"><i class="fa fa-facebook"></i></a></li>
+						<li><a href="javascript::void(0)"><i class="fa fa-twitter"></i></a></li>
+						<li><a href="javascript::void(0)"><i class="fa fa-linkedin"></i></a></li>
+						<li><a href="javascript::void(0)"><i class="fa fa-pinterest"></i></a></li>
+					</ul>
+				</div>
 			</div>
+			<nav class="header-item" id="headerNavbar">
+				<div class="header-content content-wrapper">
+					<ul class="navbar">
+						<li><a href="javascript::void(0)">home</a></li>
+						<li><a href="javascript::void(0)">about team</a></li>
+						<li><a href="javascript::void(0)">match</a></li>
+						<li><a href="javascript::void(0)">news</a></li>
+						<li><a href="javascript::void(0)">forecast</a></li>
+						<li><a href="javascript::void(0)">contact us</a></li>
+					</ul>
+
+					<div class="search-box">
+						<input class="form-search" placeholder="Enter your search" />
+						<i class="fa fa-search"></i>
+					</div>
+				</div>
+			</nav>
 		</header>
-		<!--End Header-->
 
-		<!--Main Content-->
 		<div class="page">
-			<section class="profile container-fluid">
-				<div class="panel row">
-					<div class="panel-heading">
-						<h1>About me</h1>
-						<p>Lorem ipsum dolor sit amet consectetur adipiscing elit</p>
-					</div>
-					<div class="panel-content">
-						<div class="col-md-6 panel-content-left">
-							<div class="col-md-6 avatar">
-								<img src="images/avatar.jpg">
-							</div>
-							<div class="col-md-6 person-infor">
-								<div class="infor-item">
-									<label class="upper-case">address: </label>
-									<span class="text-content">
-										121 King St.Melbourne VIC 3000 Australia
-									</span>
-								</div>
-								<div class="infor-item">
-									<label class="upper-case">date of birth: </label>
-									<span class="text-content">
-										31/12/1990
-									</span>
-								</div>
-								<div class="infor-item">
-									<label class="upper-case">email: </label>
-									<span class="text-content">
-										john.l@domain.com
-									</span>
-								</div>
-								<div class="infor-item">
-									<label class="upper-case">phone: </label>
-									<span class="text-content">
-										+(987) 654 321 01
-									</span>
-								</div>
-								<div class="infor-item">
-									<label class="upper-case">skype: </label>
-									<span class="text-content">
-										john.luna
-									</span>
-								</div>
-								<div class="infor-item">
-									<label class="upper-case">language: </label>
-									<span class="text-content">
-										English, Spanish
-									</span>
+			<section class="section-banner">
+				<div class="banner-container">
+					<button class="btn btn-navigate btn-prev" id="prev">&lt;</button>					
+					<div class="owl-carousel" id="owl-carousel">
+						<div class="slide">
+							<img src="images/slide01.jpg" alt="slide" />
+							<div class="slide-content">
+								<div class="title">
+									<h1>life is <span class="text-emphasize">about timing</span></h1>
+								</div>								
+								<p class="text-center">Just play. <span class="text-emphasize">Have fun.</span> Enjoy the game</p>
+								<div class="text-center">
+									<button class="btn btn-default upper-case">read more</button>
 								</div>
 							</div>
 						</div>
-						<div class="col-md-6 panel-content-right">
-							<div class="about">
-								<h1>John Luna</h1>
-								<p>Entrepreneur / Web Developer</p>
+						<div class="slide">
+							<img src="images/slide02.jpg" alt="slide" />
+							<div class="slide-content">
+								<div class="title">
+									<h1>life is <span class="text-emphasize">about timing</span></h1>
+								</div>								
+								<p class="text-center">Just play. <span class="text-emphasize">Have fun.</span> Enjoy the game</p>
+								<div class="text-center">
+									<button class="btn btn-default upper-case">read more</button>
+								</div>
 							</div>
+						</div>
+						<div class="slide">
+							<img src="images/slide03.jpg" alt="slide" />
+							<div class="slide-content">
+								<div class="title">
+									<h1>life is <span class="text-emphasize">about timing</span></h1>
+								</div>								
+								<p class="text-center">Just play. <span class="text-emphasize">Have fun.</span> Enjoy the game</p>
+								<div class="text-center">
+									<button class="btn btn-default upper-case">read more</button>
+								</div>
+							</div>
+						</div>
+					</div>
+					<button class="btn btn-navigate btn-next" id="next">&gt;</button>
+				</div>
+			</section>
+			<section class="section about-team">
+				<div class="content-wrapper">
+					<div class="section-content">
+						<h1>about team</h1>
+						<hr/>
+						<p>Nam quis purus sed est interdum sagittis sed in leo. Nunc feugiat enims nunc, sit amet placerat erat consectetur in. Cras consequat enim nunc, sit amet venenatis massa volutpat ut. Cras vitae facilisis nulla.</p>
 
-							<p class="description">
-								Lorem ipsum dolor sit amet consectetur adipiscing elit. Aliquam eget nunc convallis, lacinia tellus eu, tempor libero. Curabitur convallis lacinia diam ac efficitur. Mauris lebero nibh, dictum dignissim consequat a, eleifend vitae eros. Sed vitae mauris risus.
-							</p>
-
-							<ul class="horizontal-menu social">
-								<li>
-									<a href="#"><i class="fa fa-facebook"></i></a>
-								</li>
-								<li>
-									<a href="#"><i class="fa fa-twitter"></i></a>
-								</li>
-								<li>
-									<a href="#"><i class="fa fa-behance"></i></a>
-								</li>
-							</ul>
+						<div class="content-block">
+							<div class="photo-container">
+								<button class="btn btn-default btn-navigate btn-prev" id="photoPrev">&lt;</button>
+								<div class="owl-carousel" id="owl-carousel-aboutTeam">
+									<div class="slide">
+										<img src="images/photo_about_1.png" alt="slide" />
+										<h2 class="upper-case">martin huanez</h2>
+									</div>
+									<div class="slide">
+										<img src="images/photo_about_1.png" alt="slide" />
+										<h2 class="upper-case">jugen klopp</h2>
+									</div>
+									<div class="slide">
+										<img src="images/photo_about_1.png" alt="slide" />
+										<h2 class="upper-case">jose mourinho</h2>
+									</div>								
+								</div>
+								<button class="btn btn-default btn-navigate btn-next" id="photoNext">&gt;</button>
+							</div>							
 						</div>
 					</div>
 				</div>
 			</section>
-			<section class="recent-post">
-				<div class="panel">
-					<div class="panel-heading">
-						<div class="heading-content">
-							<h1>Recent Posts</h1>
-							<p>Lorem ipsum dolor sit amet consectetur adipiscing elit</p>
+			<section class="section section-next-match">
+				<div class="content-wrapper">
+					<div class="section-content">
+						<h1>next match stats in table</h1>
+						<hr/>
+						<p>its next match stats in table view!</p>
+
+						<div class="content-block">
+							<div class="col-md-6">
+								<div class="match-infor">
+									<div class="title">
+										<h1 class="text-heading">next <span class="text-emphasize">match</span></h1>
+										<hr class="line"/>
+									</div>
+									<div class="match-section time-remain">
+										<p class="text-heading">
+											45 <span class="unit">days</span> <span class="colon">:</span>
+											11 <span class="unit">hrs</span> <span class="colon">:</span>
+											44 <span class="unit">min</span> <span class="colon">:</span>
+											01 <span class="unit">sec</span>
+										</p>
+									</div>
+									<div class="match-section team">
+										<div class="team-home">
+											<img src="images/england.png" alt="home team" />
+											<h1 class="upper-case">england</h1>
+										</div>									
+										<div class="vs-block"><h1>VS</h1></div>
+										<div class="team-away">
+											<img src="images/amsterdam.png" alt="away team" />
+											<h1 class="upper-case">amsterdam</h1>
+										</div>		
+									</div>
+									<div class="match-section time-kickoff">
+										<p>November 14, 2015 | 12:00 am</p>
+										<p>Cambridgeshire UK</p>
+									</div>
+								</div>
+							</div>
+							<div class="col-md-6">
+								<div class="match-upcoming">
+									<table class="table-match">
+										<thead class="upper-case">
+											<th>upcoming match</th>
+											<th>date</th>
+										</thead>
+
+										<tbody>
+											<tr>
+												<td class="upper-case">england <span class="text-emphasize">vs</span> amsterdam</td>
+												<td>2017, Thu, Mar 12:00 AM</td>
+											</tr>
+											<tr>
+												<td class="upper-case">cambridgehire <span class="text-emphasize">vs</span> china</td>
+												<td>2017, Thu, Oct 12:00 AM</td>
+											</tr>
+											<tr>
+												<td class="upper-case">cambridgehire <span class="text-emphasize">vs</span> amsterdam</td>
+												<td>2017, Sat, Feb 12:00 AM</td>
+											</tr>
+											<tr>
+												<td class="upper-case">england <span class="text-emphasize">vs</span> china</td>
+												<td>2017, Thu, Jan 12:00 AM</td>
+											</tr>
+											<tr>
+												<td class="upper-case">cambridgehire <span class="text-emphasize">vs</span> china</td>
+												<td>2017, Mon, Dec 12:00 AM</td>
+											</tr>
+											<tr>
+												<td class="upper-case">cambridgehire <span class="text-emphasize">vs</span> china</td>
+												<td>2017, Web, Dec 12:00 AM</td>
+											</tr>
+											<tr>
+												<td class="upper-case">england <span class="text-emphasize">vs</span> china</td>
+												<td>2017, Fri, Dec 12:00 AM</td>
+											</tr>
+										</tbody>
+									</table>
+								</div>
+							</div>
 						</div>
-						<div class="button-group">
-							<button id="prev" class="btn">&lt;</button>
-							<button id="next" class="btn">&gt;</button>
-						</div>
-					</div>
-					<div class="panel-content">
-						<div id="owl-carousel" class="owl-carousel">
-							<div class="post-content">
-								<img src="images/demo-img-1.jpg" atl="health"/>
-								<span class="img-title">Health</span>
-								<div class="note">
-									<h1>Blog Post with Image</h1>
-									<i>by John Luna - Dec 09</i>
-								</div>
-							</div>
-
-							<div class="post-content">
-								<img src="images/demo-img-2.jpg" atl="health"/>
-								<span class="img-title">LifeStyle</span>
-								<div class="note">
-									<h1>Standart Blog Post</h1>
-									<i>by John Luna - Dec 09</i>
-								</div>
-							</div>
-
-							<div class="post-content">
-								<img src="images/demo-img-3.jpg" atl="health"/>
-								<span class="img-title">LifeStyle</span>
-								<div class="note">
-									<h1>Blog Post with Image</h1>
-									<i>by John Luna - Dec 09</i>
-								</div>
-							</div>
-
-							<div class="post-content">
-								<img src="images/demo-img-4.jpg" atl="health"/>
-								<span class="img-title">LifeStyle</span>
-								<div class="note">
-									<h1>Standart Blog Post</h1>
-									<i>by John Luna - Dec 09</i>
-								</div>
-							</div>
-						</div>
-					</div>
-
-					<div class="panel-footer">
-						<button class="btn center-block">View All Posts</button>
 					</div>
 				</div>
 			</section>
+			<section class="section section-news">
+				<div class="content-wrapper">
+					<div class="section-content">
+						<h1>news</h1>
+						<hr />
+						<p>Proin eget tortor risus. Mauris blandit aliquet elit, eget tincidunt nibh pulvinar a. Curabitur aliquet quam id dui posuere blandit</p>
 
-			<section class="service">
-				<div class="bg-img">
-					<div class="transbox">
-						<div class="row">
-							<div class="col-md-3">
-								<div class="service-item">
-									<div class="heading">
-										<h1>Web Design</h1>
-										<i class="fa fa-pencil-square-o fa-2x"></i>
-									</div>
-									<div class="content-text">
-										<p>
-											Vestibulum ac pharetra nibh, id viverra dolor. Ut vel lorem massa. Ut quam enim tempor et sapien non, convallis molestie orci.
-										</p>
+						<div class="content-block">
+							<div class="row news-container">
+								<div class="col-md-4">
+									<div class="news-item">
+										<img src="images/photo1.png" alt="news">
+										<div class="content-text">
+											<h4>Sed ut perspiciatis unde omnisiste natus error hendrerit</h4>
+											<p>Vivamus hendrerit, tortor sed luctux maximus, nunc urna hendrerit nibh, sit amet afficirut libero lorem quis maris. Nunc a pulvinar...</p>
+										</div>										
+										<button class="upper-case btn btn-default">read more</button>
 									</div>
 								</div>
-							</div>
-							<div class="col-md-3">
-								<div class="service-item">
-									<div class="heading">
-										<h1>Photography</h1>
-										<i class="fa fa-camera fa-2x"></i>
-									</div>
-									<div class="content-text">
-										<p>
-											Vestibulum ac pharetra nibh, id viverra dolor. Ut vel lorem massa. Ut quam enim tempor et sapien non, convallis molestie orci.
-										</p>
-									</div>
-								</div>
-							</div>
-							<div class="col-md-3">
-								<div class="service-item">
-									<div class="heading">
-										<h1>Online Marketing</h1>
-										<i class="fa fa-laptop fa-2x"></i>
-									</div>
-									<div class="content-text">
-										<p>
-											Vestibulum ac pharetra nibh, id viverra dolor. Ut vel lorem massa. Ut quam enim tempor et sapien non, convallis molestie orci.
-										</p>
-									</div>
-								</div>
-							</div>
-							<div class="col-md-3">
-								<div class="service-item">
-									<div class="heading">
-										<h1>Web Development</h1>
-										<i class="fa fa-code fa-2x"></i>
-									</div>
-									<div class="content-text">
-										<p>
-											Vestibulum ac pharetra nibh, id viverra dolor. Ut vel lorem massa. Ut quam enim tempor et sapien non, convallis molestie orci.
-										</p>
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>				
-			</section>
 
-			<section class="portfolio">
-				<div class="panel">
-					<div class="panel-heading">
-						<div class="heading-content">
-							<h1>PortFolio</h1>
-							<p>Lorem ipsum dolor sit amet consectetur adipiscing elit</p>
-						</div>
-						<div class="button-group">
-							<button class="btn">all</button>
-							<button class="btn">objective</button>
-							<button class="btn">technology</button>
-						</div>				
-					</div>
-					<div class="panel-content">
-						<div class="team-wrapper">
-							<div class="col-md-4 box">
-								<div class="portfolio-item">
-									<div class="heading">
-										<div class="col-md-3">
-											<div class="avatar">
-												<img src="images/client-1.jpg" atl="client"/>
-											</div>												
-										</div>
-										<div class="col-md-8 infor">
-											<h1>James Carrick</h1>
-											<p class="upper-case bold">ceo of company</p>
-										</div>
-									</div>
-									<div class="content-text">
-										<blockquote>
-											Vestibulum ac pharetra nibh, id viverra dolor. Ut vel lorem massa. Ut quam enim tempor et sapien non, convallis molestie orci.
-										</blockquote>
+								<div class="col-md-4">
+									<div class="news-item">
+										<img src="images/photo2.png" alt="news">
+										<div class="content-text">
+											<h4>Sed ut perspiciatis unde omnisiste natus error hendrerit</h4>
+											<p>Vivamus hendrerit, tortor sed luctux maximus, nunc urna hendrerit nibh, sit amet afficirut libero lorem quis maris. Nunc a pulvinar...</p>
+										</div>										
+										<button class="upper-case btn btn-default">read more</button>
 									</div>
 								</div>
-							</div>
-							<div class="col-md-4 box">
-								<div class="portfolio-item">
-									<div class="heading">
-										<div class="col-md-3">
-											<div class="avatar">
-												<img src="images/client-2.jpg" atl="client"/>
-											</div>												
-										</div>
-										<div class="col-md-8 infor">
-											<h1>Melissa Barkos</h1>
-											<p class="upper-case bold">ceo of company</p>
-										</div>
-									</div>
-									<div class="content-text">
-										<blockquote>
-											Vestibulum ac pharetra nibh, id viverra dolor. Ut vel lorem massa. Ut quam enim tempor et sapien non, convallis molestie orci.
-										</blockquote>
-									</div>
-								</div>
-							</div>
-							<div class="col-md-4 box">
-								<div class="portfolio-item">
-									<div class="heading">
-										<div class="col-md-3">
-											<div class="avatar">
-												<img src="images/client-3.jpg" atl="client"/>
-											</div>												
-										</div>
-										<div class="col-md-8 infor">
-											<h1>Harold Hackett</h1>
-											<p class="upper-case bold">ceo of company</p>
-										</div>
-									</div>
-									<div class="content-text">
-										<blockquote>
-											Vestibulum ac pharetra nibh, id viverra dolor. Ut vel lorem massa. Ut quam enim tempor et sapien non, convallis molestie orci.
-										</blockquote>
+
+								<div class="col-md-4">
+									<div class="news-item">
+										<img src="images/photo3.png" alt="news">
+										<div class="content-text">
+											<h4>Sed ut perspiciatis unde omnisiste natus error hendrerit</h4>
+											<p>Vivamus hendrerit, tortor sed luctux maximus, nunc urna hendrerit nibh, sit amet afficirut libero lorem quis maris. Nunc a pulvinar...</p>
+										</div>										
+										<button class="upper-case btn btn-default">read more</button>
 									</div>
 								</div>
 							</div>
@@ -315,61 +257,119 @@
 					</div>
 				</div>
 			</section>
+			<section class="section section-forecast">
+				<div class="content-wrapper">
+					<div class="section-content">
+						<h1>forecast</h1>
+						<hr />
+						<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</p>
 
-			<section class="contact">
-				<div class="panel">
-					<div class="panel-heading">
-						<div class="heading-content">
-							<h1>Get in Touch</h1>
-							<p>Lorem ipsum dolor sit amet consectetur adipiscing elit</p>
-						</div>			
-					</div>
-					<div class="panel-content">
-						<div class="col-md-6">
-							<div class="form-left">
-								<input type="text" class"form-input" placeholder="Name" />
-								<input type="text" class"form-input" placeholder="E-Mail" />
-								<input type="text" class"form-input" placeholder="Phone" />
+						<div class="content-block">
+							<div class="match-result">
+								<div class="result-block">
+									<img src="images/flag1.png" alt="home team" />								
+									<span class="score-block">1 - 3</span>
+									<img src="images/flag2.png" alt="away team" />		
+								</div>
+
+								<button class="upper-case btn btn-default">score board</button>
 							</div>
 						</div>
-						<div class="col-md-6">
-							<div class="form-right">
-								<textarea placeholder="Message"></textarea>
+					</div>
+				</div>
+			</section>
+			<section class="section section-contact">
+				<div class="content-wrapper">
+					<div class="section-content">
+						<h1>contact</h1>
+						<hr />
+						<p>Cras convallis feugiat fellis eget venenatis. Sed leo tellus, luctus eget ante quis, rutrum dignissim enim. Morbi efficitur tellus non mauris tincidunt feugiat. Vestibulum quis nunc in nibh eleifend convallis. Vestibulum nec viverra dui.</p>
 
-								<button class="btn">Send Message</button>
+						<div class="content-block">
+							<div class="col-md-6">
+								<div class="map-block form-default">
+									<img src="images/map.png" alt="map"/>
+								</div>
+							</div>
+							<div class="col-md-6">
+								<div class="form-block">
+									<input class="form-input form-default" placeholder="Full Name" />
+									<input class="form-input form-default" placeholder="EMail" />
+									<textarea class="form-input form-default" placeholder="Message"></textarea>
+									<button class="upper-case btn btn-default btn-submit">send</button>
+								</div>
 							</div>
 						</div>
 					</div>
 				</div>
 			</section>
 		</div>
-		<!--End Main Content-->
 
-		<!--Footer-->
 		<footer>
-			<div class="footer-container align-center">
-				<p>Vestibulum ac pharetra nibh, id viverra dolor. Ut vel lorem massa. Ut quam enim tempor et sapien non, convallis molestie orci, Vestibulum ac pharetra nibh, id viverra dolor.</p>
+			<div class="content-wrapper">
+				<section class="section-footer">
+					<div class="col-md-4">
+						<section class="section section-footer-about">
+							<div class="section-content">
+								<h1>about us</h1>
+								<hr />
+								<p>Cum soclis natoque penatibus et magnis dis parturent montest, nascetus ridiculus mus. Morbi leo risus, porta ac sonsecutur ac, vestibulum at eros.</p>
 
-				<ul class="horizontal-menu social">
-					<li>
-						<a href="#"><i class="fa fa-facebook"></i></a>
-					</li>
-					<li>
-						<a href="#"><i class="fa fa-twitter"></i></a>
-					</li>
-					<li>
-						<a href="#"><i class="fa fa-youtube-play"></i></a>
-					</li>
-					<li>
-						<a href="#"><i class="fa fa-behance"></i></a>
-					</li>
-				</ul>
+								<div class="content-block">
+									<ul class="horizontal-menu social-list">
+										<li><a href="javascript::void(0)"><i class="fa fa-facebook"></i></a></li>
+										<li><a href="javascript::void(0)"><i class="fa fa-twitter"></i></a></li>
+										<li><a href="javascript::void(0)"><i class="fa fa-linkedin"></i></a></li>
+										<li><a href="javascript::void(0)"><i class="fa fa-pinterest"></i></a></li>
+									</ul>
+								</div>
+							</div>					
+						</section>
+					</div>
+					<div class="col-md-4">
+						<section class="section section-footer-gallery">
+							<div class="section-content">
+								<h1>gallery</h1>
+								<hr />
+								<p>Cum soclis natoque penatibus et magnis dis parturent montest.</p>
+
+								<div class="content-block">
+									<div class="gallery-container">
+										<img src="images/1_hover.png" alt="gallery" />
+										<img src="images/2_hover.png" alt="gallery" />
+										<img src="images/3_hover.png" alt="gallery" />
+										<img src="images/4_hover.png" alt="gallery" />
+										
+										<img src="images/6_hover.png" alt="gallery" />
+										<img src="images/7_hover.png" alt="gallery" />
+										<img src="images/8_hover.png" alt="gallery" />
+										<img src="images/9_hover.png" alt="gallery" />										
+									</div>										
+								</div>
+							</div>					
+						</section>
+					</div>
+					<div class="col-md-4">
+						<section class="section section-footer-newsletter">
+							<div class="section-content">
+								<h1>newsletter</h1>
+								<hr />
+								<p>Cum soclis natoque penatibus et magnis dis parturent montest, nascetus ridiculus mus. Morbi leo risus, porta ac sonsecutur ac, vestibulum at eros.</p>
+
+								<div class="content-block">
+									<input class="right form-input form-default" placeholder="Enter your email" />
+									<button class="right upper-case btn btn-default btn-submit">subcribe</button>
+								</div>
+							</div>
+						</section>
+					</div>
+				</section>
+
+				<p class="footer-latest text-right">&copy; coppyright 2014, sky sport. all rights reserved.</p>
 			</div>
 		</footer>
-		<!--End Footer-->
 	</div>
-
-	<script src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+	<script src="scripts/jquery-2.2.0.min.js"></script>
     <script src="scripts/owl-carousel/owl.carousel.js"></script>
     <script src="scripts/site.js"></script>
 </body>

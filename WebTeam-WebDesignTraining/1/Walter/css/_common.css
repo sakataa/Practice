@@ -74,9 +74,11 @@ a {
 
 .bg-img {
   background-image: url("../images/bg-img.jpg");
-  background-position: top center;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -ms-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
   width: 100%;
   height: 100%; }
   .bg-img .transbox {
@@ -89,8 +91,7 @@ a {
   .horizontal-menu > li {
     float: left; }
     .horizontal-menu > li > a {
-      padding: 1.5rem;
-      text-decoration: none; }
+      padding: 1.5rem; }
 
 .social li > a {
   color: #a0a0a0;
@@ -111,26 +112,13 @@ a {
   background-color: #FFFFFF;
   font-size: 1.4rem; }
   .page .panel-heading {
-    padding-left: 4rem;
+    padding-left: 3rem;
     padding-bottom: 1rem;
     line-height: 3.5rem;
     color: #a0a0a0; }
     .page .panel-heading h1 {
       color: #000000;
-      font-size: 3.2rem;
-      position: relative;
-      padding: 1rem; }
-      .page .panel-heading h1:before {
-        content: "";
-        position: absolute;
-        top: 2.3rem;
-        left: -1.5rem;
-        -webkit-transform: rotate(45deg);
-        -ms-transform: rotate(45deg);
-        transform: rotate(45deg);
-        background: #dcdcdc;
-        width: 0.8rem;
-        height: 0.8rem; }
+      font-size: 3.2rem; }
       .page .panel-heading h1 i {
         margin-right: 1rem; }
   .page .panel-content {
@@ -147,7 +135,8 @@ a {
   font-weight: 900;
   text-transform: uppercase; }
   .btn:hover {
-    background-color: #3E3A3A; }
+    background-color: #FFFFFF;
+    color: #505050; }
 
 input[type="text"] {
   border: 0;
