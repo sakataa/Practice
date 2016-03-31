@@ -1,0 +1,23 @@
+.header{
+	&-top{
+		padding-top: 2.5rem;
+		height: 12rem;
+		text-align: center;
+	}
+
+	&-bottom{
+		margin-bottom: 2.5rem;
+
+		&-left{
+			float: left;
+			
+			p{
+				font-size: 1.3rem;
+			}			
+		}
+
+		&-right{
+			float: right;
+		}
+	}
+}

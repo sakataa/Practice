@@ -1,0 +1,23 @@
+@font-face {
+  font-family: 'Pathway Gothic One';
+  src:  url('../fonts/PathwayGothicOne-Regular.ttf');
+}
+
+html{
+	font-size: 10px;
+}
+
+body {
+  color: $color-dark;
+  font-family: $font-common;
+  text-transform: none;
+}
+
+.upper-case{
+	text-transform: uppercase;
+}
+
+p{
+	font-size: 1.6rem;
+	line-height: 2.4rem;
+}
