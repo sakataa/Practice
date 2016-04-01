@@ -1,0 +1,8 @@
+.btn{
+	@include border-radius(0.3rem);
+}
+
+.btn-default{
+	border: 0.1rem solid $color-bg-common-button;
+	background: $color-bg-common-button;
+}

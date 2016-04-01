@@ -2,5 +2,12 @@
 	height: 4.3rem;
 	width: 26rem;
 	border: 0.1rem solid $color-bg-body;
-	border-radius: 0.2rem;
+	padding: 1rem;
+	color: $color-black;
+	@include border-radius(0.3rem);
+}
+
+input:focus{
+	outline: none;
+	border-color: #DACECE;
 }

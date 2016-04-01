@@ -1,4 +1,6 @@
 .header{
+	overflow: hidden;
+	
 	&-top{
 		padding-top: 2.5rem;
 		height: 12rem;
@@ -18,6 +20,25 @@
 
 		&-right{
 			float: right;
+
+			> *{
+				display: inline-block;
+				height: 4.3rem;
+			}
+
+			.btn{
+				color: $color-white;
+				margin-left: 0.2rem;
+			}
+
+			.form-search{
+				background-color: #FAF8FA;
+				margin-right: 0.3rem;
+			}
+
+			.btn-search{
+				width: 4.3rem;
+			}
 		}
 	}
 }

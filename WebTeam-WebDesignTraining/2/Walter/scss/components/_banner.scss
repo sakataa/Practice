@@ -1,0 +1,19 @@
+.col-banner{
+	&-1, &-2, &-3{
+		float: left;
+		padding-left: 15px;
+		padding-right: 15px;
+	}
+	
+	&-1{
+		width: 25%;
+	}
+
+	&-2{
+		width: 45%;
+	}
+
+	&-3{
+		width: 30%;
+	}
+}

@@ -1,0 +1,29 @@
+.navbar-default{
+	margin-top: 2rem;
+	height: $height-navbar;
+}
+
+.menu-bar{
+	list-style: none;
+	height: 100%;
+
+	> li{
+		float: left;
+		height: 100%;
+
+		> a{
+			line-height: $height-navbar;
+			padding: 0 2rem;
+			color: $color-dark;
+			font-size: 1.8rem;
+			text-transform: uppercase;
+		}
+	}
+
+	.active{
+		background: $color-bg-active;
+		> a{
+			color: $color-white;
+		}		
+	}
+}
