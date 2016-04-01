@@ -1,7 +1,7 @@
 .shipping-infor{
 	height: 12rem;
 	background-color: $color-bg-infor-item;
-	margin: 3rem 0;
+	margin-top: 3rem;
 
 	display: table;
 	width: 100%;
@@ -39,9 +39,5 @@
 
 	&:first-child{
 		margin-top: 0;
-	}
-
-	&:last-child{
-		margin-bottom: 0;
 	}
 }

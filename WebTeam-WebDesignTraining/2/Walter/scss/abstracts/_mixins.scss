@@ -10,4 +10,11 @@
   @include border-radius($radius);
   display: inline-block;
   cursor: default;
+  text-align: center;
+}
+
+@mixin rotate($degree){
+	-ms-transform: rotate($degree); /* IE 9 */
+    -webkit-transform: rotate($degree); /* Chrome, Safari, Opera */
+    transform: rotate($degree);
 }

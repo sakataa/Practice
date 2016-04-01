@@ -1,0 +1,45 @@
+.section-list-heading{
+	> *{
+		display: inline-block;
+	}
+
+	.section-name{
+		text-transform: uppercase;
+		font-size: 2.4rem;
+	}
+
+	.right{
+		> * {
+			display: inline-block;
+		}
+
+		.breadcum{
+			text-transform: capitalize;
+			margin-right: 2.5rem;
+			font-size: 1.6rem;
+
+			span{
+				font-size: 1.8rem;
+				margin-left: 0.5rem;
+			}
+			
+			.active{
+				color: $color-orange;
+			}
+		}
+
+		.navigation{
+			.btn-nav{
+				@include circle($radius-nav-button);
+				font-size: 1.6rem;
+				color: $color-section-nav-button;
+				border: $width-border-nav-button solid $color-section-nav-button;
+				margin-left: 0.5rem;
+
+				.nav-icon{
+					line-height: $radius-nav-button * 2 - $width-border-nav-button;
+				}
+			}
+		}
+	}
+}
