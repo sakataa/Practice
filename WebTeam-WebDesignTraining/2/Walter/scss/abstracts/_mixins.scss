@@ -18,3 +18,21 @@
     -webkit-transform: rotate($degree); /* Chrome, Safari, Opera */
     transform: rotate($degree);
 }
+
+@mixin setColorPlaceholder($color){
+  ::-webkit-input-placeholder {
+    color: $color;
+  }
+
+  :-moz-placeholder { /* Firefox 18- */
+    color: $color;  
+  }
+
+  ::-moz-placeholder {  /* Firefox 19+ */
+    color: $color;  
+  }
+
+  :-ms-input-placeholder {  
+    color: $color;  
+  }
+}

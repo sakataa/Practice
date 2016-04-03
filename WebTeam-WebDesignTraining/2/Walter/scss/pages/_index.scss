@@ -29,6 +29,7 @@
 }
 
 .section-collection-feature{
+	overflow: hidden;
 	margin-top: 3.5rem;
 
 	.section-first{
@@ -37,5 +38,13 @@
 
 	.section-last{
 		margin-right: -15px;
+	}
+}
+
+.section-ourbrand{
+	overflow: hidden;
+
+	img{
+		width: 100%;
 	}
 }
