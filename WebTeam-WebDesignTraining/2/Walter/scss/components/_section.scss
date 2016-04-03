@@ -55,8 +55,16 @@
 				}
 
 				.nav-icon{
-					line-height: $radius-nav-button * 2 - $width-border-nav-button;
+					line-height: ($radius-nav-button - $width-border-nav-button) * 2 ;
 				}
+			}
+
+			.nav-prev{
+				padding-right: 0.2rem;
+			}
+
+			.nav-next{
+				padding-left: 0.2rem;
 			}
 		}
 	}
