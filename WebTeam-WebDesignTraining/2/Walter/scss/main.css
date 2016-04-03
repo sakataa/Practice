@@ -248,8 +248,47 @@ p, span {
   margin-left: -15px;
   margin-right: -15px; }
 
+.product-wrapper {
+  overflow: hidden; }
+  .product-wrapper .product-img {
+    background-color: #FFFFFF; }
+    .product-wrapper .product-img-top {
+      padding: 1rem; }
+      .product-wrapper .product-img-top .btn-product {
+        height: 2.8rem;
+        color: #FFFFFF;
+        background-color: #000000;
+        text-transform: uppercase;
+        border: none;
+        font-family: "Pathway Gothic One", sans-serif;
+        font-size: 1.6rem; }
+      .product-wrapper .product-img-top .btn-sale {
+        background-color: #FF8401;
+        text-align: left; }
+      .product-wrapper .product-img-top .btn-new {
+        text-align: right; }
+  .product-wrapper .product-infor > p {
+    text-align: center; }
+  .product-wrapper .product-infor .product-name {
+    text-transform: capitalize; }
+  .product-wrapper .product-infor .product-price {
+    color: #FF8401; }
+    .product-wrapper .product-infor .product-price > * {
+      margin-right: 0.2rem; }
+    .product-wrapper .product-infor .product-price .fa-star-o {
+      color: #B7B5B7; }
+
+.section-list, .section-list-heading, .section-list-content {
+  overflow: hidden; }
+
 .section-list-heading > * {
   display: inline-block; }
+.section-list-heading:after {
+  content: '';
+  display: block;
+  height: 0.1rem;
+  background-color: #B7B5B7;
+  margin-top: 3rem; }
 .section-list-heading .section-name {
   text-transform: uppercase;
   font-size: 2.4rem; }
@@ -276,9 +315,17 @@ p, span {
   font-size: 1.6rem;
   color: #BCBABC;
   border: 0.2rem solid #BCBABC;
-  margin-left: 0.5rem; }
+  margin-left: 0.5rem;
+  cursor: pointer; }
+  .section-list-heading .right .navigation .btn-nav:hover {
+    color: #535455;
+    border-color: #535455; }
   .section-list-heading .right .navigation .btn-nav .nav-icon {
     line-height: 2.3rem; }
+
+.section-list-content {
+  margin-top: 2rem;
+  margin-bottom: 2rem; }
 
 .col-banner-1, .col-banner-2, .col-banner-3 {
   float: left;
@@ -379,6 +426,14 @@ input:focus {
     width: 100%; }
 
 .section-weekly-feature {
+  margin-top: 3.5rem; }
+
+.section-new-watches-fashion {
+  margin-top: 1rem; }
+  .section-new-watches-fashion .img-wrapper img {
+    width: 100%; }
+
+.section-collection-feature {
   margin-top: 3.5rem; }
 
 body {

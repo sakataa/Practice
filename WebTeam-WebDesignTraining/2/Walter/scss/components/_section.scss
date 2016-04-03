@@ -1,6 +1,18 @@
-.section-list-heading{
+.section-list, .section-list-heading, .section-list-content{
+	overflow: hidden;
+}
+
+.section-list-heading{	
 	> *{
 		display: inline-block;
+	}
+
+	&:after{
+		content: '';
+		display: block;
+		height: 0.1rem;
+		background-color: $color-line;
+		margin-top: 3rem;
 	}
 
 	.section-name{
@@ -35,6 +47,12 @@
 				color: $color-section-nav-button;
 				border: $width-border-nav-button solid $color-section-nav-button;
 				margin-left: 0.5rem;
+				cursor: pointer;
+
+				&:hover{
+					color: $color-dark;
+					border-color: $color-dark;
+				}
 
 				.nav-icon{
 					line-height: $radius-nav-button * 2 - $width-border-nav-button;
@@ -42,4 +60,9 @@
 			}
 		}
 	}
+}
+
+.section-list-content{
+	margin-top: 2rem;
+	margin-bottom: 2rem;
 }

@@ -1,0 +1,52 @@
+.product-wrapper{
+	overflow: hidden;
+
+	.product-img{
+		background-color: $color-white;
+
+		&-top{
+			padding: 1rem;
+
+			.btn-product{
+				height: 2.8rem;
+				color: $color-white;
+				background-color: $color-black;
+				text-transform: uppercase;
+				border: none;
+				font-family: $font-common;
+				font-size: 1.6rem;
+			}
+
+			.btn-sale{
+				background-color: $color-orange;
+				text-align: left;
+			}
+
+			.btn-new{
+				text-align: right;
+			}
+		}
+	}
+
+	.product-infor{
+		> p{
+			text-align: center;
+		}
+
+		.product-name{
+			text-transform: capitalize;
+		}
+
+		.product-price{
+			color: $color-orange;
+
+			> *{
+				margin-right: 0.2rem;
+			}
+
+			.fa-star-o{
+				color: $color-line;
+			}
+		}
+	}
+}
