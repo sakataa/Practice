@@ -107,6 +107,8 @@ p, span {
       .header-bottom-right .form-search {
         background-color: #FAF8FA;
         margin-right: 0.3rem; }
+      .header-bottom-right .btn-search {
+        width: 4.3rem; }
 
 footer {
   margin-top: 5rem;
@@ -125,6 +127,22 @@ footer {
   footer .col-footer-large {
     width: 30%;
     padding-left: 0; }
+    footer .col-footer-large .circle-wrapper {
+      width: 3.2rem;
+      height: 3.2rem;
+      -moz-border-radius: 1.6rem;
+      -webkit-border-radius: 1.6rem;
+      border-radius: 1.6rem;
+      display: inline-block;
+      cursor: default;
+      text-align: center;
+      margin-right: 1.2rem;
+      background-color: #FFFFFF;
+      border: none; }
+      footer .col-footer-large .circle-wrapper > .fa {
+        color: #535455;
+        font-size: 1.6rem;
+        line-height: 3.2rem; }
   footer .col-footer-medium {
     width: 25%;
     padding-right: 0; }
@@ -505,6 +523,10 @@ footer {
       color: #535455;
       font-size: 1.8rem;
       text-transform: uppercase; }
+    .menu-bar > li:hover {
+      background: #343234; }
+      .menu-bar > li:hover > a {
+        color: #FFFFFF; }
   .menu-bar .active {
     background: #343234; }
     .menu-bar .active > a {
@@ -547,8 +569,37 @@ input:focus {
 
 .section-new-watches-fashion {
   margin-top: 1rem; }
-  .section-new-watches-fashion .img-wrapper img {
-    width: 100%; }
+  .section-new-watches-fashion .img-wrapper {
+    position: relative; }
+    .section-new-watches-fashion .img-wrapper img {
+      width: 100%; }
+    .section-new-watches-fashion .img-wrapper .block-description {
+      position: absolute;
+      top: 4.5rem;
+      left: 10rem;
+      color: #FFFFFF; }
+      .section-new-watches-fashion .img-wrapper .block-description .title {
+        text-transform: capitalize;
+        font-size: 2rem; }
+        .section-new-watches-fashion .img-wrapper .block-description .title:after {
+          content: '';
+          display: block;
+          height: 0.1rem;
+          width: 6rem;
+          background-color: #FFFFFF;
+          margin: 2rem auto; }
+      .section-new-watches-fashion .img-wrapper .block-description .text-large {
+        margin-top: 2rem;
+        font-size: 3.6rem; }
+      .section-new-watches-fashion .img-wrapper .block-description .btn-viewdetail {
+        display: block;
+        margin: 3rem auto;
+        color: #FFFFFF;
+        font-size: 1.4rem;
+        border: 0.1rem solid #FFFFFF;
+        width: 13rem;
+        height: 4rem;
+        padding: 1rem 2.5rem; }
 
 .section-collection-feature {
   overflow: hidden;

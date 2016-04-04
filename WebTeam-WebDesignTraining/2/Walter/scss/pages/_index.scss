@@ -18,12 +18,47 @@
 	margin-top: 1rem;
 
 	.img-wrapper{
+		position: relative;
+
 		img{
 			width: 100%;
 		}
 
 		.block-description{
+			position: absolute;
+			top: 4.5rem;
+			left: 10rem;
+			color: $color-white;
 
+			.title{
+				text-transform: capitalize;
+				font-size: 2rem;
+
+				&:after{
+					content: '';
+					display: block;
+					height: 0.1rem;
+					width: 6rem;
+					background-color: $color-white;
+					margin: 2rem auto;
+				}
+			}
+
+			.text-large{
+				margin-top: 2rem;
+				font-size: 3.6rem;
+			}
+
+			.btn-viewdetail{
+				display: block;
+				margin: 3rem auto;
+				color: $color-white;
+				font-size: 1.4rem;
+				border: 0.1rem solid $color-white;
+				width: 13rem;
+				height: 4rem;
+				padding: 1rem 2.5rem;
+			}
 		}
 	}
 }

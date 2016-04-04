@@ -18,6 +18,13 @@
 			font-size: 1.8rem;
 			text-transform: uppercase;
 		}
+
+		&:hover{
+			background: $color-bg-active;
+			> a{
+				color: $color-white;
+			}
+		}
 	}
 
 	.active{

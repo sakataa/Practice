@@ -26,6 +26,19 @@ footer{
 	.col-footer-large{
 		width: 30%;
 		padding-left: 0;
+
+		.circle-wrapper{
+			@include circle($radius-circle-footer);
+			margin-right: 1.2rem;
+			background-color: $color-white;
+			border: none;
+
+			> .fa{
+				color: $color-dark;
+				font-size: 1.6rem;
+				line-height: $radius-circle-footer * 2;
+			}
+		}
 	}
 	.col-footer-medium{
 		width: 25%;
