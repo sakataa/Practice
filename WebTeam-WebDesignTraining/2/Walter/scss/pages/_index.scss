@@ -83,3 +83,19 @@
 		width: 100%;
 	}
 }
+
+.moving-up{
+	.circle-wrapper{
+		@include circle($radius-moving-button);
+		background-color: $color-orange;
+		color: $color-white;
+		position: absolute;
+		bottom: 0;
+		right: 1rem;
+		z-index: 9999;
+
+		.fa{
+			line-height: $radius-moving-button * 2;
+		}
+	}
+}

@@ -62,6 +62,11 @@ footer{
 				border: 0;
 				color: $color-footer-line;
 				font-size: 2rem;
+
+				&:hover{
+					background-color: $color-orange;
+					color: $color-white;
+				}
 			}
 		}
 	}
@@ -76,6 +81,10 @@ footer{
 
 		a{
 			text-transform: capitalize;
+
+			&:hover{
+				color: $color-orange;
+			}
 		}
 	}
 

@@ -168,12 +168,17 @@ footer {
       border: 0;
       color: #797779;
       font-size: 2rem; }
+      footer .col-footer-medium .footer-item-wrapper .btn-subcribe:hover {
+        background-color: #FF8401;
+        color: #FFFFFF; }
   footer .col-footer-small {
     width: 15%; }
     footer .col-footer-small .footer-item-wrapper ul {
       list-style-type: disc; }
     footer .col-footer-small a {
       text-transform: capitalize; }
+      footer .col-footer-small a:hover {
+        color: #FF8401; }
   footer p, footer a {
     font-size: 1.6rem;
     color: #FFFFFF; }
@@ -477,7 +482,12 @@ footer {
   background-color: #D1CFD1;
   margin-top: 3rem;
   display: table;
-  width: 100%; }
+  width: 100%;
+  cursor: pointer; }
+  .shipping-infor:hover {
+    -webkit-box-shadow: 0px 0px 30px 5px #d1cdc6;
+    -moz-box-shadow: 0px 0px 30px 5px #d1cdc6;
+    box-shadow: 0px 0px 30px 5px #d1cdc6; }
   .shipping-infor-icon, .shipping-infor-text {
     display: inline-block;
     display: table-cell;
@@ -537,6 +547,9 @@ footer {
   -webkit-border-radius: 0.3rem;
   border-radius: 0.3rem;
   height: 4.3rem; }
+  .btn:hover {
+    background-color: #FF8401;
+    border-color: #FF8401; }
 
 .btn-default {
   border: 0.1rem solid #343234;
@@ -613,6 +626,24 @@ input:focus {
   overflow: hidden; }
   .section-ourbrand img {
     width: 100%; }
+
+.moving-up .circle-wrapper {
+  width: 4.5rem;
+  height: 4.5rem;
+  -moz-border-radius: 2.25rem;
+  -webkit-border-radius: 2.25rem;
+  border-radius: 2.25rem;
+  display: inline-block;
+  cursor: default;
+  text-align: center;
+  background-color: #FF8401;
+  color: #FFFFFF;
+  position: absolute;
+  bottom: 0;
+  right: 1rem;
+  z-index: 9999; }
+  .moving-up .circle-wrapper .fa {
+    line-height: 4.5rem; }
 
 body {
   background-color: #F3F1F3; }
