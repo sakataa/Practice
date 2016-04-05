@@ -20,10 +20,18 @@
 			.btn-sale{
 				background-color: $color-orange;
 				text-align: left;
+
+				&:hover{
+					background-color: #EAA050;
+				}
 			}
 
 			.btn-new{
 				text-align: right;
+
+				&:hover{
+					background-color: #5D5757;
+				}
 			}
 		}
 	}

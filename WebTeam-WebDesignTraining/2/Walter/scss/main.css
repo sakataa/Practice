@@ -400,8 +400,12 @@ footer {
       .product-wrapper .product-img-top .btn-sale {
         background-color: #FF8401;
         text-align: left; }
+        .product-wrapper .product-img-top .btn-sale:hover {
+          background-color: #EAA050; }
       .product-wrapper .product-img-top .btn-new {
         text-align: right; }
+        .product-wrapper .product-img-top .btn-new:hover {
+          background-color: #5D5757; }
   .product-wrapper .product-infor > p {
     text-align: center; }
   .product-wrapper .product-infor .product-name {
@@ -485,6 +489,7 @@ footer {
   width: 100%;
   cursor: pointer; }
   .shipping-infor:hover {
+    border: 0.2rem solid #CAC7C3;
     -webkit-box-shadow: 0px 0px 30px 5px #d1cdc6;
     -moz-box-shadow: 0px 0px 30px 5px #d1cdc6;
     box-shadow: 0px 0px 30px 5px #d1cdc6; }
@@ -569,6 +574,9 @@ input:focus {
   outline: none;
   border-color: #DACECE; }
 
+.main-container {
+  position: relative; }
+
 .page-content {
   margin-top: 2rem; }
 
@@ -613,6 +621,8 @@ input:focus {
         width: 13rem;
         height: 4rem;
         padding: 1rem 2.5rem; }
+        .section-new-watches-fashion .img-wrapper .block-description .btn-viewdetail:hover {
+          background-color: #EA9F4E; }
 
 .section-collection-feature {
   overflow: hidden;
@@ -627,7 +637,7 @@ input:focus {
   .section-ourbrand img {
     width: 100%; }
 
-.moving-up .circle-wrapper {
+.circle-wrapper {
   width: 4.5rem;
   height: 4.5rem;
   -moz-border-radius: 2.25rem;
@@ -642,8 +652,15 @@ input:focus {
   bottom: 0;
   right: 1rem;
   z-index: 9999; }
-  .moving-up .circle-wrapper .fa {
-    line-height: 4.5rem; }
+  .circle-wrapper .fa {
+    line-height: 4.5rem;
+    font-weight: bold;
+    font-size: 2.5rem; }
+
+.fixed-bottom {
+  position: fixed;
+  bottom: 0;
+  right: 0.5rem; }
 
 body {
   background-color: #F3F1F3; }
