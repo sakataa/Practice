@@ -7,7 +7,7 @@
 @mixin circle($radius) {
   width: $radius * 2;
   height: $radius * 2;
-  @include border-radius($radius);
+  @include border-radius(50%);
   display: inline-block;
   cursor: default;
   text-align: center;

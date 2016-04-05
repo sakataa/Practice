@@ -2,20 +2,24 @@
 	$(window).scroll(function(){
 		var currentHeight = $(this).scrollTop();
 		if(currentHeight > 0){
-			$('#btnMoveTop').show();
+			$('#btnMoveTop').fadeIn(1000);;
 		}
 		else{
-			$('#btnMoveTop').hide();
+			$('#btnMoveTop').fadeOut(2000);
 		}
 	});
 
 	$('.product-img').hover(function(){
-		$(this).parent()
-			.find('.block-action').css('display', 'block');
+		//$(this).parent()
+		//	.find('.block-action').css('display', 'block');
 	});
 
 	$('.block-action').mouseout(function(){
-		$(this).css('display', 'none');
+		//$(this).css('display', 'none');
+	});
+
+	$('#btnMoveTop').click(function(){
+		$(window).scrollTop(0);
 	});
 
 })();
