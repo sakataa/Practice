@@ -384,7 +384,8 @@ footer {
       font-size: 1.3rem; }
 
 .product-wrapper {
-  overflow: hidden; }
+  overflow: hidden;
+  position: relative; }
   .product-wrapper .product-img {
     background-color: #FFFFFF; }
     .product-wrapper .product-img-top {
@@ -416,6 +417,28 @@ footer {
       margin-right: 0.2rem; }
     .product-wrapper .product-infor .product-price .fa-star-o {
       color: #B7B5B7; }
+  .product-wrapper .block-action {
+    position: absolute;
+    width: 100%;
+    top: 0;
+    bottom: 4.8rem;
+    right: 0;
+    background-color: rgba(255, 255, 255, 0.5);
+    display: none; }
+    .product-wrapper .block-action .button-wrapper {
+      position: absolute;
+      bottom: 1rem;
+      right: 0; }
+      .product-wrapper .block-action .button-wrapper .btn-action {
+        display: block;
+        height: 3.8rem;
+        width: 3.5rem;
+        color: #FFFFFF;
+        text-align: center;
+        margin-top: 0.2rem; }
+        .product-wrapper .block-action .button-wrapper .btn-action .fa {
+          line-height: 3.8rem;
+          font-size: 1.8rem; }
 
 .section-list, .section-list-heading, .section-list-content {
   overflow: hidden; }
@@ -651,7 +674,8 @@ input:focus {
   position: absolute;
   bottom: 0;
   right: 1rem;
-  z-index: 9999; }
+  z-index: 9999;
+  display: none; }
   .circle-wrapper .fa {
     line-height: 4.5rem;
     font-weight: bold;

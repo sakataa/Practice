@@ -1,5 +1,6 @@
 .product-wrapper{
 	overflow: hidden;
+	position: relative;
 
 	.product-img{
 		background-color: $color-white;
@@ -56,5 +57,37 @@
 				color: $color-line;
 			}
 		}
+	}
+
+	.block-action{
+		position: absolute;
+		width: 100%;
+		top:0;
+		bottom: 4.8rem;
+		right: 0;
+		background-color: rgba(255,255,255,0.5);
+		display: none;
+
+		.button-wrapper{
+		    position: absolute;
+		    bottom: 1rem;
+		    right: 0;
+
+			.btn-action{
+				display: block;
+				height: $height-button-action;
+				width: 3.5rem;
+				color: $color-white;
+				text-align: center;
+				margin-top: 0.2rem;
+
+				.fa{
+					line-height: $height-button-action;
+					font-size: 1.8rem;
+				}
+			}
+		}
+
+		
 	}
 }
