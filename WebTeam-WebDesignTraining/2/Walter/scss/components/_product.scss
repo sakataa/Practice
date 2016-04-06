@@ -16,23 +16,23 @@
 				border: none;
 				font-family: $font-common;
 				font-size: 1.6rem;
+				cursor: default;
+				position: absolute;
+				top: 1rem;
+				z-index: 999;
+
+				&:hover{
+					color: yellow;
+				}
 			}
 
 			.btn-sale{
 				background-color: $color-orange;
-				text-align: left;
-
-				&:hover{
-					background-color: #EAA050;
-				}
+				left: 1rem;
 			}
 
 			.btn-new{
-				text-align: right;
-
-				&:hover{
-					background-color: #5D5757;
-				}
+				right: 1rem;
 			}
 		}
 

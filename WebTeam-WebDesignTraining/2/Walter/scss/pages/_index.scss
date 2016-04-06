@@ -66,7 +66,7 @@
 				padding: 1rem 2.5rem;
 
 				&:hover{
-					background-color: #EA9F4E;
+					background-color: #F3DC35;
 				}
 			}
 		}
@@ -109,6 +109,10 @@
 		line-height: $radius-moving-button * 2;
 		font-weight: bold;
 		font-size: 2.5rem;
+	}
+
+	&:hover{
+		background-color: #F3DC35;
 	}
 }
 

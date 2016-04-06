@@ -33,6 +33,9 @@ img {
 a {
   text-decoration: none; }
 
+*:focus {
+  outline: 0; }
+
 button {
   cursor: pointer; }
   button:focus {
@@ -375,7 +378,10 @@ footer {
     margin-top: 2rem; }
     .post-wrapper .content-text .title {
       font-size: 2.4rem;
-      margin-bottom: 3rem; }
+      margin-bottom: 3rem;
+      cursor: pointer; }
+      .post-wrapper .content-text .title:hover {
+        color: #FF8401; }
     .post-wrapper .content-text .description {
       line-height: 2.8rem; }
     .post-wrapper .content-text .more {
@@ -399,16 +405,18 @@ footer {
         text-transform: uppercase;
         border: none;
         font-family: "Pathway Gothic One", sans-serif;
-        font-size: 1.6rem; }
+        font-size: 1.6rem;
+        cursor: default;
+        position: absolute;
+        top: 1rem;
+        z-index: 999; }
+        .product-wrapper .product-img-top .btn-product:hover {
+          color: yellow; }
       .product-wrapper .product-img-top .btn-sale {
         background-color: #FF8401;
-        text-align: left; }
-        .product-wrapper .product-img-top .btn-sale:hover {
-          background-color: #EAA050; }
+        left: 1rem; }
       .product-wrapper .product-img-top .btn-new {
-        text-align: right; }
-        .product-wrapper .product-img-top .btn-new:hover {
-          background-color: #5D5757; }
+        right: 1rem; }
     .product-wrapper .product-img:hover ~ .block-action {
       display: block; }
   .product-wrapper .product-infor > p {
@@ -507,7 +515,10 @@ footer {
   font-size: 1.6rem; }
   .section-list-heading .right .breadcum span {
     font-size: 1.8rem;
-    margin-left: 0.5rem; }
+    margin-left: 0.5rem;
+    cursor: pointer; }
+    .section-list-heading .right .breadcum span:hover {
+      color: #FF8401; }
   .section-list-heading .right .breadcum .active {
     color: #FF8401; }
 .section-list-heading .right .navigation .btn-nav {
@@ -742,7 +753,7 @@ input:focus {
         height: 4rem;
         padding: 1rem 2.5rem; }
         .section-new-watches-fashion .img-wrapper .block-description .btn-viewdetail:hover {
-          background-color: #EA9F4E; }
+          background-color: #F3DC35; }
 
 .section-collection-feature {
   overflow: hidden;
@@ -778,6 +789,8 @@ input:focus {
     line-height: 4.5rem;
     font-weight: bold;
     font-size: 2.5rem; }
+  .circle-movingup:hover {
+    background-color: #F3DC35; }
 
 .fixed-bottom {
   position: fixed;
