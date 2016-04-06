@@ -557,9 +557,9 @@ footer {
   width: 100%;
   cursor: pointer; }
   .shipping-infor:hover {
-    -webkit-box-shadow: 0px 0px 10px 2px rgba(209, 205, 198, 0.8);
-    -moz-box-shadow: 0px 0px 10px 2px rgba(209, 205, 198, 0.8);
-    box-shadow: 0px 0px 10px 2px rgba(209, 205, 198, 0.8);
+    -webkit-box-shadow: 0px 0px 10px 2px rgba(162, 161, 158, 0.8);
+    -moz-box-shadow: 0px 0px 10px 2px rgba(162, 161, 158, 0.8);
+    box-shadow: 0px 0px 10px 2px rgba(162, 161, 158, 0.8);
     transition: 0.5s ease-in-out;
     -webkit-transition: 0.5s ease-in-out;
     -ms-transition: 0.5s ease-in-out; }
@@ -640,7 +640,9 @@ footer {
 
 .navbar-default {
   margin-top: 2rem;
-  height: 5.7rem; }
+  height: 5.7rem;
+  width: 1170px;
+  z-index: 9999; }
 
 .menu-bar {
   list-style: none;
@@ -781,6 +783,11 @@ input:focus {
   position: fixed;
   bottom: 0;
   right: 0.5rem; }
+
+.fixed-top {
+  position: fixed;
+  top: 0;
+  margin-top: 0; }
 
 body {
   background-color: #F3F1F3; }
