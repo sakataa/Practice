@@ -178,8 +178,29 @@ footer {
         color: #FFFFFF; }
   footer .col-footer-small {
     width: 15%; }
-    footer .col-footer-small .footer-item-wrapper ul {
-      list-style-type: disc; }
+    footer .col-footer-small .footer-item-wrapper ul > li > a {
+      transition: 0.3s ease-in-out;
+      -webkit-transition: 0.3s ease-in-out;
+      -ms-transition: 0.3s ease-in-out; }
+    footer .col-footer-small .footer-item-wrapper ul > li > a:before {
+      content: '';
+      display: inline;
+      margin-right: 1.2rem;
+      width: 0.8rem;
+      height: 0.8rem;
+      -moz-border-radius: 50%;
+      -webkit-border-radius: 50%;
+      border-radius: 50%;
+      display: inline-block;
+      cursor: default;
+      text-align: center;
+      background-color: #FFFFFF;
+      transition: 0.3s ease-in-out;
+      -webkit-transition: 0.3s ease-in-out;
+      -ms-transition: 0.3s ease-in-out; }
+    footer .col-footer-small .footer-item-wrapper ul > li > a:hover:before {
+      content: '';
+      background-color: #FF8401; }
     footer .col-footer-small a {
       text-transform: capitalize; }
       footer .col-footer-small a:hover {
@@ -197,8 +218,6 @@ footer {
       background-color: #797779; }
   footer .footer-item-wrapper ul {
     margin-top: 3rem;
-    padding-left: 1.6rem;
-    font-size: 1.6rem;
     color: #FFFFFF;
     list-style: none; }
     footer .footer-item-wrapper ul li {
@@ -408,10 +427,7 @@ footer {
         font-size: 1.6rem;
         cursor: default;
         position: absolute;
-        top: 1rem;
-        z-index: 999; }
-        .product-wrapper .product-img-top .btn-product:hover {
-          color: yellow; }
+        top: 1rem; }
       .product-wrapper .product-img-top .btn-sale {
         background-color: #FF8401;
         left: 1rem; }
@@ -800,7 +816,12 @@ input:focus {
 .fixed-top {
   position: fixed;
   top: 0;
-  margin-top: 0; }
+  left: 0;
+  margin-top: 0;
+  width: 100%; }
+  .fixed-top .menu-bar {
+    width: 1170px;
+    margin: auto; }
 
 body {
   background-color: #F3F1F3; }
