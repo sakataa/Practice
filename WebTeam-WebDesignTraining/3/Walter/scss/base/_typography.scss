@@ -1,0 +1,18 @@
+@font-face {
+  font-family: 'Ruda';
+  src:  url('../fonts/Ruda-Regular.ttf');
+}
+
+html{
+	font-size: 10px;
+}
+
+body {
+  font-family: $font-common;
+  text-transform: none;
+}
+
+p, span{
+	font-size: 1.6rem;
+	line-height: 2.4rem;
+}

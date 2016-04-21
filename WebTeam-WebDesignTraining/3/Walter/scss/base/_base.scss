@@ -1,0 +1,59 @@
+a{
+	text-decoration: none;
+}
+
+*{
+	&:focus {
+		outline: 0;
+	}
+}
+
+button{
+	cursor: pointer;
+
+	&:focus {
+		outline: 0;
+	}
+}
+
+.content-wrapper{
+	position: relative;
+	max-width: 1200px;
+	overflow: hidden;
+	margin-left: auto;
+	margin-right: auto;
+	padding-left: 15px;
+	padding-right: 15px;
+}
+
+.left{
+	float: left;
+}
+
+.right{
+	float: right;
+}
+
+.clearfix{
+	clear: both;
+}
+
+.text-center{
+	text-align: center;
+}
+
+.text-left{
+	text-align: left;
+}
+
+.text-right{
+	text-align: right;
+}
+
+.bold{
+	font-weight: bold;
+}
+
+.upper-case{
+	text-transform: uppercase;
+}

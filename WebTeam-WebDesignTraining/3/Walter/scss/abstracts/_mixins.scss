@@ -1,0 +1,38 @@
+@mixin border-radius($radius){
+  -moz-border-radius: $radius;
+  -webkit-border-radius: $radius;
+  border-radius: $radius;
+}
+
+@mixin circle($radius) {
+  width: $radius * 2;
+  height: $radius * 2;
+  @include border-radius(50%);
+  display: inline-block;
+  cursor: default;
+  text-align: center;
+}
+
+@mixin rotate($degree){
+	-ms-transform: rotate($degree); /* IE 9 */
+    -webkit-transform: rotate($degree); /* Chrome, Safari, Opera */
+    transform: rotate($degree);
+}
+
+@mixin setColorPlaceholder($color){
+  ::-webkit-input-placeholder {
+    color: $color;
+  }
+
+  :-moz-placeholder { /* Firefox 18- */
+    color: $color;  
+  }
+
+  ::-moz-placeholder {  /* Firefox 19+ */
+    color: $color;  
+  }
+
+  :-ms-input-placeholder {  
+    color: $color;  
+  }
+}
