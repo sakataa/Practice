@@ -1,0 +1,121 @@
+header{
+    background: $color-bg-header;
+    border-bottom: 0.2rem solid $color-border-header;
+    height: 6rem;
+    
+    nav{
+        height: 100%;
+    }
+    
+    .navbar{
+        list-style: none;
+        height: 100%;
+    }
+    
+    .navbar__item{
+        padding-right: 1.5rem;
+    }
+    
+    .navbar--left{
+        float: left;
+                  
+        .navbar__item{                  
+            &--toggle-menu{
+                .icon--bar{
+                    background: $color-bg-toggle-menu;
+                }
+            }
+            &--title{
+                color: $color-bright-gray;
+                font-size: 1.4rem;
+            }
+        }
+    }
+    
+    .navbar--notification{
+        float: left;
+        margin-left: 1.5rem;
+        
+        .navbar__item{
+            &--notification{
+                display: inline-block;
+                overflow: visible;
+                height: $height-item-notification-xs;
+                width: $height-item-notification-xs;
+                border: 0.1rem solid $color-dark;
+                color: $color-dark;
+                @include border-radius(0.4rem);
+                
+                .fa{
+                    font-size: 1rem;
+                    line-height: $height-item-notification-xs;
+                }
+            }
+            
+            &--number{
+                position: absolute;
+                top: -1rem;
+                right: -1rem;
+                color: $color-white;
+                background: $color-success;
+                font-weight: bold;
+                font-size: 1rem;
+                line-height: $height-item-number-xs;
+            }
+            
+            .circle{
+                @include circle($height-item-number-xs/2)
+            }       
+        }
+    }
+    
+    .navbar--right{
+        float: right;
+        padding-right: 0;       
+    }
+    
+    
+    .btn{
+        padding: 1rem 1rem;
+        font-size: 1.3rem;
+    }
+}
+
+@media (min-width: 992){
+    header{
+        .navbar--left{                    
+            .navbar__item{                  
+                &--title{
+                    font-size: 2rem;
+                }
+            }
+            
+        }
+        
+        .navbar--right{
+            padding-right: 15px;       
+        }
+        
+        .navbar--notification{
+            margin-left: 8rem;
+            
+            .navbar__item{
+                &--notification{
+                    height: $height-item-notification-md;
+                    width: $height-item-notification-md;
+                    @include border-radius(0.4rem);
+                    
+                    .fa{
+                        font-size: 1.3rem;
+                        line-height: $height-item-notification-md;
+                    }
+                }       
+            }
+        }
+        
+        .btn{
+            padding: 1rem 1.5rem;
+            padding-right: 15px;
+        }
+    }   
+}
