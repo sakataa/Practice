@@ -1,0 +1,78 @@
+.block__section--table{
+    .table__box{
+        background: $color-white;
+        color: $color-bg-light-gray;
+        @include box-shadow(0, 3px, 10px, 2px, rgba(189,176,189,0.8));
+        border-bottom: 2px solid #ABB2BD;
+        
+        .table{            
+            &__title{
+                font-size: 1.8rem;
+                height: $height-table-title; 
+                border-bottom: 0.1rem solid $color-bg-light-gray;
+                
+                p{
+                    padding-left: 1rem;
+                    line-height: $height-table-title;
+                }           
+            }
+            
+            &__content{
+                margin-top: 2rem;
+                width: 100%;
+                
+                th, tr{
+                    padding-top: 1rem;
+                    padding-bottom: 1rem;
+                }
+                
+                th, td{
+                    padding-left: 1rem;
+                }
+                
+                td{
+                    vertical-align: middle;
+                }
+                
+                td:first-child{
+                    color: $color-company-name;
+                }
+                
+                tr{
+                    border-top: 0.1rem solid #EEE;
+                    
+                    p{
+                        min-height: $height-table-row;
+                        line-height: $height-table-row;
+                    }
+                }
+                
+                thead{
+                    height: 3.5rem;
+                    vertical-align: middle;
+                    
+                    tr{
+                        border-top: none;
+                        border-bottom: 0.3rem solid #EEE;
+                    }
+                    
+                    th{
+                        text-align: left;
+                    }
+                }
+                
+                tbody{
+                    tr{                        
+                        &:nth-child(odd){
+                            background: #FAF8FA;
+                        }
+                    }
+                }
+                
+                th, p{
+                    font-size: 1.3rem;
+                }
+            }
+        }
+    }
+}

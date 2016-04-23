@@ -1,5 +1,6 @@
 $color-white: #FFFFFF;
 $color-black: #000000;
+$color-dark: #333333;
 $color-bright-dark: #535455;
 
 $color-orange: #FF8401;
@@ -7,9 +8,6 @@ $color-orange: #FF8401;
 $color-bg-body: #F3F1F3;
 $color-bg-footer: #3F3D3F;
 $font-common: "Ruda", sans-serif;
-
-$color-white: #FFFEFF;
-$color-dark: #333333;
 
 $color-bg-common: #F3F1F3;
 
@@ -22,14 +20,18 @@ $color-bg-title-rightComponent: #FF855D;
 
 $color-bg-light-gray: #999799;
 
-$color-success: #3985BD;
+$color-primary: #3985BD;
+$color-success: #5EB85D;
 $color-danger: #5EB85D;
+$color-warning: #F0AC4E;
 
 $color-panel-title: #DEDCDE;
 
 $color-bg-panel-product: #DBD9D3;
 $color-bg-button-common: #EE5465;
 $color-bg-footer-share: #1E2123;
+
+$color-company-name: #3985BD;
 
 $height-item-notification-xs: 2rem;
 $height-item-notification-md: 3rem;
@@ -40,6 +42,9 @@ $height-item-number-md: 1.6rem;
 $height-panel-footer: 5rem;
 $height-panel-title: 4rem;
 $height-panel-footer-share: 4rem;
+
+$height-table-title: 6.5rem;
+$height-table-row: 3.5rem;
 
 $radius-avatar: 4rem;
 $radius-product-hot: 3.5rem;

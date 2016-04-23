@@ -92,6 +92,22 @@ button {
 .block__section--new {
   margin-top: 6.5rem; }
 
+.label__status {
+  font-size: 1.1rem;
+  color: #FFFFFF;
+  padding: 0.2rem 0.5rem;
+  -moz-border-radius: 0.2rem;
+  -webkit-border-radius: 0.2rem;
+  border-radius: 0.2rem; }
+  .label__status--primary {
+    background: #3985BD; }
+  .label__status--success {
+    background: #5EB85D; }
+  .label__status--warning {
+    background: #F0AC4E; }
+  .label__status--danger {
+    background: #5EB85D; }
+
 @font-face {
   font-family: 'Ruda';
   src: url("../fonts/Ruda-Regular.ttf"); }
@@ -154,8 +170,8 @@ header {
       position: absolute;
       top: -1rem;
       right: -1rem;
-      color: #FFFEFF;
-      background: #3985BD;
+      color: #FFFFFF;
+      background: #5EB85D;
       font-weight: bold;
       font-size: 1rem;
       line-height: 1.4rem; }
@@ -271,6 +287,10 @@ header {
 .col-xs-1 {
   width: 8.33333333%; }
 
+@media (max-width: 767px) {
+  .hidden-xs {
+    display: none; } }
+
 @media (min-width: 992px) and (max-width: 1200px) {
   .col-md-1, .col-md-2, .col-md-3, .col-md-4, .col-md-5, .col-md-6, .col-md-7, .col-md-8, .col-md-9, .col-md-10, .col-md-11, .col-md-12 {
     float: left; }
@@ -377,7 +397,7 @@ header {
     -webkit-box-shadow: 0 3px 10px 2px rgba(189, 176, 189, 0.8);
     -moz-box-shadow: 0 3px 10px 2px rgba(189, 176, 189, 0.8);
     box-shadow: 0 3px 10px 2px rgba(189, 176, 189, 0.8);
-    border-bottom: 2px solid #BBB4B4; }
+    border-bottom: 2px solid #ABB2BD; }
 
 .panel__item {
   height: 25rem; }
@@ -399,11 +419,11 @@ header {
     overflow: hidden; }
   .panel__item--author-content .content__profile--name {
     display: block;
-    color: #FFFEFF;
+    color: #FFFFFF;
     font-size: 1.8rem; }
 
 .panel__item--author .panel__item--footer {
-  background: #FFFEFF;
+  background: #FFFFFF;
   height: 5rem; }
   .panel__item--author .panel__item--footer .footer__profile {
     color: #DEDCDE;
@@ -436,7 +456,7 @@ header {
     .panel__item--product-content .circle--hot .text {
       line-height: 7rem; }
   .panel__item--product-content .btn-report, .panel__item--product-content .circle--hot {
-    color: #FFFEFF; }
+    color: #FFFFFF; }
   .panel__item--product-content .btn-report {
     height: 3.4rem; }
   .panel__item--product-content img {
@@ -488,7 +508,7 @@ header {
   background: #1E2123;
   padding: 1.5rem 1rem; }
   .panel__item--share-content .panel__item--content-description .content--left {
-    color: #FFFEFF;
+    color: #FFFFFF;
     font-size: 1.5rem;
     font-weight: 600; }
   .panel__item--share-content .panel__item--content-description .content--right {
@@ -508,6 +528,89 @@ header {
   .panel__item--share-footer .footer__share {
     line-height: 4rem; }
 
+.panel__item--newfeed-content {
+  color: #FFFFFF;
+  width: 100%;
+  height: 100%; }
+  .panel__item--newfeed-content .content__newfeed {
+    background: url("../images/instagram.jpg");
+    background-size: 100% 100%;
+    height: 100%; }
+    .panel__item--newfeed-content .content__newfeed--text {
+      font-size: 1.2rem;
+      line-height: 1.6rem; }
+      .panel__item--newfeed-content .content__newfeed--text:nth-child(2) {
+        padding-top: 1.5rem; }
+      .panel__item--newfeed-content .content__newfeed--text:nth-child(4) {
+        padding-top: 4rem; }
+      .panel__item--newfeed-content .content__newfeed--text .fa {
+        margin-right: 0.3rem; }
+    .panel__item--newfeed-content .content__newfeed .fa-instagram {
+      font-size: 4rem; }
+
+.panel__item--weather-content {
+  color: #FFFFFF;
+  width: 100%;
+  height: 100%; }
+  .panel__item--weather-content .content__weather {
+    background: url("../images/weather.jpg");
+    background-size: 100% 100%;
+    height: 100%; }
+    .panel__item--weather-content .content__weather .fa-cloud {
+      font-size: 4rem; }
+    .panel__item--weather-content .content__weather .content__newfeed--text {
+      font-weight: 900; }
+      .panel__item--weather-content .content__weather .content__newfeed--text:nth-child(2) {
+        font-size: 3rem;
+        padding-top: 3rem; }
+      .panel__item--weather-content .content__weather .content__newfeed--text:nth-child(3) {
+        font-size: 1.8rem;
+        padding-top: 1.5rem; }
+
+.block__section--table .table__box {
+  background: #FFFFFF;
+  color: #999799;
+  -webkit-box-shadow: 0 3px 10px 2px rgba(189, 176, 189, 0.8);
+  -moz-box-shadow: 0 3px 10px 2px rgba(189, 176, 189, 0.8);
+  box-shadow: 0 3px 10px 2px rgba(189, 176, 189, 0.8);
+  border-bottom: 2px solid #ABB2BD; }
+  .block__section--table .table__box .table__title {
+    font-size: 1.8rem;
+    height: 6.5rem;
+    border-bottom: 0.1rem solid #999799; }
+    .block__section--table .table__box .table__title p {
+      padding-left: 1rem;
+      line-height: 6.5rem; }
+  .block__section--table .table__box .table__content {
+    margin-top: 2rem;
+    width: 100%; }
+    .block__section--table .table__box .table__content th, .block__section--table .table__box .table__content tr {
+      padding-top: 1rem;
+      padding-bottom: 1rem; }
+    .block__section--table .table__box .table__content th, .block__section--table .table__box .table__content td {
+      padding-left: 1rem; }
+    .block__section--table .table__box .table__content td {
+      vertical-align: middle; }
+    .block__section--table .table__box .table__content td:first-child {
+      color: #3985BD; }
+    .block__section--table .table__box .table__content tr {
+      border-top: 0.1rem solid #EEE; }
+      .block__section--table .table__box .table__content tr p {
+        min-height: 3.5rem;
+        line-height: 3.5rem; }
+    .block__section--table .table__box .table__content thead {
+      height: 3.5rem;
+      vertical-align: middle; }
+      .block__section--table .table__box .table__content thead tr {
+        border-top: none;
+        border-bottom: 0.3rem solid #EEE; }
+      .block__section--table .table__box .table__content thead th {
+        text-align: left; }
+    .block__section--table .table__box .table__content tbody tr:nth-child(odd) {
+      background: #FAF8FA; }
+    .block__section--table .table__box .table__content th, .block__section--table .table__box .table__content p {
+      font-size: 1.3rem; }
+
 .btn {
   border: none;
   padding: 1rem 1.5rem;
@@ -518,8 +621,8 @@ header {
   border-radius: 0.4rem; }
 
 .btn--success {
-  color: #FFFEFF;
-  background: #3985BD; }
+  color: #FFFFFF;
+  background: #5EB85D; }
 
 .btn-common {
   background: #EE5465; }

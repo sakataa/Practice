@@ -5,17 +5,7 @@
         
         .panel__item{          
             @include box-shadow(0, 3px, 10px, 2px, rgba(189,176,189,0.8));
-            border-bottom: 2px solid #BBB4B4;      
-            &--title{
-                
-            }
-            
-            &--content{
-            }
-            
-            &--footer{
-                
-            }
+            border-bottom: 2px solid #ABB2BD;
         }
     }
 }
@@ -188,6 +178,71 @@
         
         .footer__share{
             line-height: $height-panel-footer-share;
+        }
+    }
+}
+
+.panel__item--newfeed{
+    &-content{
+        color: $color-white;
+        width: 100%;
+        height: 100%;
+        
+        .content__newfeed{
+            background: url('../images/instagram.jpg');
+            background-size: 100% 100%;          
+            height: 100%;
+            
+            &--text{
+                font-size: 1.2rem;
+                line-height: 1.6rem;
+                
+                &:nth-child(2) {
+                    padding-top: 1.5rem;
+                }
+                
+                &:nth-child(4) {
+                    padding-top: 4rem;
+                }
+                
+                .fa{
+                    margin-right: 0.3rem;
+                }
+            }          
+            
+            .fa-instagram{
+                font-size: 4rem;
+            }
+        }
+    }
+}
+
+.panel__item--weather{
+    &-content{
+        color: $color-white;
+        width: 100%;
+        height: 100%;
+        
+        .content__weather{
+            background: url('../images/weather.jpg');
+            background-size: 100% 100%;          
+            height: 100%;
+            
+            .fa-cloud{
+                font-size: 4rem;
+            }
+            
+            .content__newfeed--text{
+                font-weight: 900;
+                &:nth-child(2){
+                    font-size: 3rem;
+                    padding-top: 3rem;                   
+                }
+                &:nth-child(3){
+                    font-size: 1.8rem;
+                    padding-top: 1.5rem;
+                }
+            }
         }
     }
 }
