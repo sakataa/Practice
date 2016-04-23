@@ -13,7 +13,7 @@
 	<div class="wrapper block--container">
 		<header class="container wrapper">
 			<nav class="wrapper">
-				<ul class="navbar navbar--left block--display-table wrapper">
+				<ul class="navbar navbar__list--left block--display-table wrapper">
 					<li class="navbar__item block--display-table-cell">
 						<a href="#" class="navbar__item--toggle-menu">
 							<span class="icon--bar"></span>
@@ -28,7 +28,7 @@
 					</li>
 				</ul>
 				
-				<ul class="navbar navbar--notification block--display-table wrapper"">
+				<ul class="navbar navbar__list--notification block--display-table wrapper"">
 					<li class="navbar__item block--display-table-cell">
 						<a href="#" class="navbar__item--notification navbar__item--message text--center wrapper">
 							<i class="fa fa-envelope-o" aria-hidden="true"></i>
@@ -37,19 +37,142 @@
 					</li>
 					<li class="navbar__item block--display-table-cell">
 						<a href="#" class="navbar__item--notification navbar__item--task text--center wrapper">
-							<i class="fa fa-server" aria-hidden="true"></i>
+							<i class="fa fa-tasks" aria-hidden="true"></i>
 							<span class="navbar__item--number circle">5</span>
 						</a>
 					</li>
 				</ul>
 				
-				<ul class="navbar navbar--right block--display-table wrapper"">
+				<ul class="navbar navbar__list--right block--display-table wrapper"">
 					<li class="navbar__item block--display-table-cell">
 						<button class="btn btn--success text--capitalize text--center">logout</button>
 					</li>
 				</ul>
 			</nav>
 		</header>
+		
+		<div class="mainpage--container wrapper block--container container">
+			<section class="block__section--new block__section--statistics">
+				<div class="statistics__box">
+					<div class="statistics__item text--center">
+						<i class="fa fa-heart-o" aria-hidden="true"></i>
+						<p class="data--statistics">933</p>
+					</div>
+				</div>
+				<div class="statistics__box">
+					<div class="statistics__item text--center">
+						<i class="fa fa-cloud" aria-hidden="true"></i>
+						<p class="data--statistics">+48</p>
+					</div>
+				</div>
+				<div class="statistics__box">
+					<div class="statistics__item text--center">
+						<i class="fa fa-inbox" aria-hidden="true"></i>
+						<p class="data--statistics">23</p>
+					</div>
+				</div>
+				<div class="statistics__box">
+					<div class="statistics__item text--center">
+						<i class="fa fa-newspaper-o" aria-hidden="true"></i>
+						<p class="data--statistics">+10</p>
+					</div>
+				</div>
+				<div class="statistics__box">
+					<div class="statistics__item text--center">
+						<i class="fa fa-database" aria-hidden="true"></i>
+						<p class="data--statistics">OK!</p>
+					</div>
+				</div>
+			</section>
+			
+			<section class="block__section--new block__section--panel">
+				<div class="row">
+					<div class="panel__box col-xs-12">
+						<div class="panel__item panel__item--author">
+							<div class="panel__item--title">		
+							</div>
+							<div class="panel__item--content panel__item--author-content text--center">
+								<div class="content__profile">
+									<span class="content__profile--avatar wrapper">
+										<img src="images/ui-sherman.jpg" alt="avatar" />
+									</span>
+									<span class="content__profile--name text--uppercase">dj sherman</span>
+								</div>
+							</div>
+							<div class="panel__item--footer text--center">
+								<span class="footer__profile">
+									<i class="fa fa-twitter" aria-hidden="true"></i>
+									<i class="fa fa-facebook" aria-hidden="true"></i>
+									<i class="fa fa-dribbble" aria-hidden="true"></i>
+								</span>	
+							</div>
+						</div>
+					</div>
+					
+					<div class="panel__box col-xs-12">
+						<div class="panel__item panel__item--product">
+							<div class="panel__item--content panel__item--product-content text--center">
+								<div class="circle--hot">
+									<span class="text text--uppercase">hot</span>
+								</div>
+								<img src="images/product.jpg" alt="product">
+								<p class="content__product--name text--capitalize">flat pack heritage</p>
+								<p class="content__product--total text--uppercase">total sales: 1388</p>
+								<button class="btn btn-common btn-report text--uppercase">full report</button>
+							</div>
+						</div>
+					</div>
+					
+					<div class="panel__box col-xs-12">
+						<div class="panel__item panel__item--user">
+							<div class="panel__item--title text--uppercase text--center">
+								<span class="text--title">top user</span>	
+							</div>
+							<div class="panel__item--content panel__item--user-content text--center">
+								<div class="content__profile">
+									<span class="content__profile--avatar wrapper">
+										<img src="images/ui-zac.jpg" alt="avatar" />
+									</span>
+									<span class="content__profile--text content__profile--text-username text--capitalize">zac snider</span>
+									<span class="content__profile--text text--label text--uppercase">member since</span>
+									<span class="content__profile--text">2012</span>
+									<span class="content__profile--text text--label text--uppercase">total spend</span>
+									<span class="content__profile--text">$ 47,60</span>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				
+				<div class="row">
+					<div class="panel__box col-xs-12">
+						<div class="panel__item panel__item--share">
+							<div class="panel__item--content panel__item--share-content">
+								<div class="panel__item--content-chart">
+									<img src="images/8.png" alt="chart" />
+								</div>
+								<div class="panel__item--content-description block--display-table">
+									<div class="block--display-table-cell content--left text--left">
+										<p class="content--text">AAPL</p>
+										<p class="text--capitalize content--note">yesterday</p>
+									</div>
+									<div class="block--display-table-cell content--right text--right">
+										<p class="content--text"><i class="fa fa-caret-up" aria-hidden="true"></i><span>694.00</span></p>
+										<p class="content--note">+4.95 (3.49%)</p>
+									</div>
+								</div>
+							</div>
+							<div class="panel__item--share-footer text--center text--uppercase">
+								<span class="footer__share">
+									<span class="text--bold">18.3 M</span>
+									<span class="text--uppercase">shares trades</span>
+								</span>	
+							</div>
+						</div>
+					</div>
+				</div>				
+			</section>
+		</div>
 	</div>
 	<script src="scripts/jquery-2.2.0.min.js"></script>	
     <!--<script src="scripts/site.js"></script>-->

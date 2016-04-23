@@ -1,0 +1,25 @@
+.block__section--statistics{
+    .statistics__box{
+        border-bottom: 0.1rem solid $color-bg-light-gray;
+        
+        .statistics__item{
+            color: $color-bg-light-gray;
+            padding-top: 4rem;
+            padding-bottom: 1rem;
+            
+            .fa, .data--statistics{
+                padding-top: 1.5rem;
+                padding-bottom: 1.5rem;
+            }
+            
+            .fa{
+                font-size: 5rem;        
+            }
+            
+            .data--statistics{
+                font-size: 2.4rem;
+                font-weight: 500;
+            }
+        }
+    }
+}

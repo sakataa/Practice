@@ -77,11 +77,6 @@ button{
 	text-transform: capitalize;
 }
 
-.icon--bar{
-	display: block;
-	margin-top: 0.2rem;
-	margin-bottom: 0.2rem;
-	height: 0.3rem;
-	width: 2rem;
-	@include border-radius(0.1rem);
+.block__section--new{
+	margin-top: 6.5rem;
 }

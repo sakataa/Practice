@@ -3,6 +3,15 @@ header{
     border-bottom: 0.2rem solid $color-border-header;
     height: 6rem;
     
+    .icon--bar{
+        display: block;
+        margin-top: 0.2rem;
+        margin-bottom: 0.2rem;
+        height: 0.3rem;
+        width: 1.5rem;
+        @include border-radius(0.1rem);
+    }
+    
     nav{
         height: 100%;
     }
@@ -13,28 +22,28 @@ header{
     }
     
     .navbar__item{
-        padding-right: 1.5rem;
+        padding-right: 1rem;
     }
     
-    .navbar--left{
+    .navbar__list--left{
         float: left;
                   
         .navbar__item{                  
             &--toggle-menu{
                 .icon--bar{
-                    background: $color-bg-toggle-menu;
+                    background: $color-bg-light-gray;
                 }
             }
             &--title{
                 color: $color-bright-gray;
-                font-size: 1.4rem;
+                font-size: 1.2rem;
             }
         }
     }
     
-    .navbar--notification{
+    .navbar__list--notification{
         float: left;
-        margin-left: 1.5rem;
+        margin-left: 1rem;
         
         .navbar__item{
             &--notification{
@@ -69,21 +78,55 @@ header{
         }
     }
     
-    .navbar--right{
+    .navbar__list--right{
         float: right;
-        padding-right: 0;       
     }
     
     
     .btn{
-        padding: 1rem 1rem;
-        font-size: 1.3rem;
+        padding: 0.8rem 0.8rem;
+        font-size: 1.1rem;
     }
 }
 
-@media (min-width: 992){
+@media (max-width: 290px){
     header{
-        .navbar--left{                    
+        .navbar__item{
+            padding-right: 0.9rem;
+        }
+        
+        .navbar__list--notification{
+            margin-left: 0;
+        }
+        
+        .btn{
+            padding: 0.6rem 0.6rem;
+            font-size: 1rem;
+        }
+    }
+}
+
+@media (max-width: 768px){
+    header{
+        .navbar__list--right{
+            .navbar__item{
+                padding-right: 0;
+            } 
+        }
+    }
+}
+
+@media (min-width: 768px){
+    header{
+        .icon--bar{
+            width: 2rem;
+        }
+        
+        .navbar__item{
+            padding-right: 1.5rem;
+        }
+        
+        .navbar__list--left{                    
             .navbar__item{                  
                 &--title{
                     font-size: 2rem;
@@ -92,19 +135,25 @@ header{
             
         }
         
-        .navbar--right{
-            padding-right: 15px;       
-        }
-        
-        .navbar--notification{
-            margin-left: 8rem;
+        .__list--right{
+            padding-right: 15px;
             
             .navbar__item{
+                padding-right: 0;
+            }       
+        }
+        
+        .navbar__list--notification{
+            margin-left: 8rem;
+            
+            .navbar__item{               
                 &--notification{
                     height: $height-item-notification-md;
                     width: $height-item-notification-md;
-                    @include border-radius(0.4rem);
                     
+                    .circle{
+                        @include circle($height-item-number-md/2)
+                    }
                     .fa{
                         font-size: 1.3rem;
                         line-height: $height-item-notification-md;
@@ -115,6 +164,7 @@ header{
         
         .btn{
             padding: 1rem 1.5rem;
+            font-size: 1.3rem;
             padding-right: 15px;
         }
     }   

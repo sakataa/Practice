@@ -2,10 +2,15 @@
     border: none;
     padding: 1rem 1.5rem;
     font-size: 1.4rem;
+    font-family: $font-common;
     @include border-radius(0.4rem);
 }
 
 .btn--success{
     color: $color-white;
     background: $color-success;
+}
+
+.btn-common{
+    background: $color-bg-button-common;
 }
