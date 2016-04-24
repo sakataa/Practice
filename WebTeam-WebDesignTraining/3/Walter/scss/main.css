@@ -225,6 +225,13 @@ header {
     font-size: 1.3rem;
     padding-right: 15px; } }
 
+footer {
+  height: 4rem;
+  background: #3985BD; }
+  footer p {
+    color: #FFFFFF;
+    line-height: 4rem; }
+
 .row {
   margin-left: -15px;
   margin-right: -15px; }
@@ -627,7 +634,7 @@ header {
     background: #5BBFDF; }
 
 .article__box {
-  padding: 2rem 1.5rem 0.5rem 1.5rem;
+  padding: 0rem 1.5rem 0.5rem 1.5rem;
   background: #FFFFFF; }
   .article__box .article__title {
     height: 6rem;
@@ -636,35 +643,38 @@ header {
     font-size: 1.6rem; }
     .article__box .article__title .text {
       line-height: 6rem; }
-  .article__box .article__content p, .article__box .article__content span {
-    font-size: 1.3rem;
-    color: #333333; }
-  .article__box .article__content--item {
-    padding: 1.5rem 2rem 3rem 2rem;
-    border-bottom: 0.1rem solid #DEDCDE; }
-  .article__box .article__content .text--emphasize {
-    color: #3985BD; }
+  .article__box .article__content {
+    padding-top: 0.5rem; }
+    .article__box .article__content p, .article__box .article__content span {
+      font-size: 1.3rem;
+      color: #333333; }
+    .article__box .article__content--item {
+      padding: 1rem 2rem 3rem 2rem;
+      border-bottom: 0.1rem solid #DEDCDE; }
+    .article__box .article__content .text--emphasize {
+      color: #3985BD; }
 
-.article__box--notification .article__content--item-left {
-  margin-right: 1.2rem; }
-  .article__box--notification .article__content--item-left .circle__clock {
-    background: #3985BD;
-    width: 2.5rem;
-    height: 2.5rem;
-    -moz-border-radius: 50%;
-    -webkit-border-radius: 50%;
-    border-radius: 50%;
-    display: inline-block;
-    cursor: default;
-    text-align: center;
-    overflow: hidden; }
-  .article__box--notification .article__content--item-left .fa-clock-o {
-    font-size: 1.2rem;
-    color: #FFFFFF;
-    line-height: 2.5rem; }
-
-.article__box--notification .article__content--item-right .text-description {
-  color: #999799; }
+.article__box--notification {
+  padding-top: 2rem; }
+  .article__box--notification .article__content--item-left {
+    margin-right: 1.2rem; }
+    .article__box--notification .article__content--item-left .circle__clock {
+      background: #3985BD;
+      width: 2.5rem;
+      height: 2.5rem;
+      -moz-border-radius: 50%;
+      -webkit-border-radius: 50%;
+      border-radius: 50%;
+      display: inline-block;
+      cursor: default;
+      text-align: center;
+      overflow: hidden; }
+    .article__box--notification .article__content--item-left .fa-clock-o {
+      font-size: 1.2rem;
+      color: #FFFFFF;
+      line-height: 2.5rem; }
+  .article__box--notification .article__content--item-right .text-description {
+    color: #999799; }
 
 .article__box--team-members .article__content--item-left {
   margin-right: 0.5rem; }
@@ -679,9 +689,12 @@ header {
     text-align: center;
     overflow: hidden; }
 
-.article__box--todo-list .article__content--item {
-  padding: 1.5rem 0.5rem;
-  border-bottom: 0.1rem dashed #DEDCDE; }
+.article__box--todo-list .article__content {
+  padding-left: 0.5rem;
+  padding-right: 0.5rem; }
+  .article__box--todo-list .article__content--item {
+    padding: 1.5rem 0.5rem;
+    border-bottom: 0.1rem dashed #DEDCDE; }
 
 .article__box--todo-list .article__content--item .label__status {
   margin-left: 0.5rem;
@@ -697,12 +710,18 @@ header {
   bottom: 1.5rem; }
 
 .article__box--todo-list .block__button {
-  margin-top: 3rem; }
+  margin-top: 3rem;
+  padding-bottom: 2rem; }
   .article__box--todo-list .block__button .btn {
     height: 3rem;
     padding-top: 0.5rem;
-    padding-bottom: 0.5rem;
-    font-size: 1.2rem; }
+    padding-bottom: 0.5rem; }
+
+.article__content--item-checked {
+  background: #F7F5F7; }
+  .article__content--item-checked span.text--description {
+    color: #999799;
+    text-decoration: line-through; }
 
 .btn {
   border: none;
@@ -728,6 +747,24 @@ header {
 
 .btn-common {
   background: #EE5465; }
+
+.block__circle--moving-top {
+  position: absolute;
+  bottom: 1rem;
+  right: 1.5rem;
+  background: rgba(255, 255, 255, 0.5);
+  width: 2rem;
+  height: 2rem;
+  -moz-border-radius: 50%;
+  -webkit-border-radius: 50%;
+  border-radius: 50%;
+  display: inline-block;
+  cursor: default;
+  text-align: center;
+  overflow: hidden; }
+  .block__circle--moving-top .fa-angle-up {
+    vertical-align: middle;
+    height: 100%; }
 
 @media (max-width: 767px) {
   .block__right {

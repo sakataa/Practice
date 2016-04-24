@@ -1,5 +1,5 @@
 .article__box{
-    padding: 2rem 1.5rem 0.5rem 1.5rem;
+    padding: 0rem 1.5rem 0.5rem 1.5rem;
     background: $color-white;
     
     .article__title{
@@ -13,14 +13,15 @@
         }
     }
     
-    .article__content{       
+    .article__content{
+        padding-top: 0.5rem;       
         p, span{
             font-size: 1.3rem;
             color: $color-dark;
         }
         
         &--item{
-            padding: 1.5rem 2rem 3rem 2rem;
+            padding: 1rem 2rem 3rem 2rem;
             border-bottom: 0.1rem solid $color-panel-title;           
         }
         
@@ -31,6 +32,7 @@
 }
 
 .article__box--notification{
+    padding-top: 2rem;
     .article__content--item{
         &-left{
             margin-right: 1.2rem;                
@@ -66,7 +68,10 @@
 }
 
 .article__box--todo-list{
-    .article__content{       
+    .article__content{
+        padding-left: 0.5rem;
+        padding-right: 0.5rem;
+               
         &--item{
             padding: 1.5rem 0.5rem;
             border-bottom: 0.1rem dashed $color-panel-title;           
@@ -90,12 +95,20 @@
     
     .block__button{
         margin-top: 3rem;
+        padding-bottom: 2rem;
         
         .btn{
             height: 3rem;
             padding-top: 0.5rem;
             padding-bottom: 0.5rem;
-            font-size: 1.2rem;
         }
+    }
+}
+
+.article__content--item-checked{
+    background: $color-bg-checked;   
+    span.text--description{
+        color: $color-bg-light-gray;
+        text-decoration: line-through;
     }
 }
