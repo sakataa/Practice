@@ -1,0 +1,22 @@
+.label__status{
+	font-size: 1.1rem;
+	color: $color-white;
+	padding: 0.2rem 0.5rem;
+	@include border-radius(0.2rem);
+	
+	&--primary{
+		background: $color-primary;
+	}
+	&--success{
+		background: $color-success;
+	}
+	&--warning{
+		background: $color-warning;
+	}
+	&--danger{
+		background: $color-danger;
+	}
+    &--light-blue{
+        background: $color-light-blue;
+    }
+}

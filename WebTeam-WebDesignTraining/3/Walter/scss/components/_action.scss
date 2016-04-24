@@ -1,0 +1,16 @@
+.icon{
+    margin-right: 0.5rem;
+    font-size: 1.4rem;
+    
+    &--check{
+        color: $color-success;
+    }
+    
+    &--edit{
+        color: $color-primary;
+    }
+    
+    &--remove{
+        color: $color-danger;
+    }
+}

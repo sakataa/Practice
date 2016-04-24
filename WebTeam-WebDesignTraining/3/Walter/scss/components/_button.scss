@@ -6,9 +6,20 @@
     @include border-radius(0.4rem);
 }
 
-.btn--success{
+.btn--primary{
     color: $color-white;
-    background: $color-success;
+    background: $color-primary;
+}
+
+.btn--danger{
+    color: $color-white;
+    background: $color-danger;
+}
+
+.btn--default{
+    color: $color-dark;
+    background: $color-white;
+    border: 0.1rem solid $color-btn-border-default;
 }
 
 .btn-common{

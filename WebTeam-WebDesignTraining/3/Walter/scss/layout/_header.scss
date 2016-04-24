@@ -66,7 +66,7 @@ header{
                 top: -1rem;
                 right: -1rem;
                 color: $color-white;
-                background: $color-success;
+                background: $color-primary;
                 font-weight: bold;
                 font-size: 1rem;
                 line-height: $height-item-number-xs;
@@ -106,7 +106,7 @@ header{
     }
 }
 
-@media (max-width: 768px){
+@media (max-width: 767px){
     header{
         .navbar__list--right{
             .navbar__item{
