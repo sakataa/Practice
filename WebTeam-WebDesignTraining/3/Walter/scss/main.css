@@ -369,6 +369,61 @@ footer {
   .col-lg-1 {
     width: 8.33333333%; } }
 
+.block__nav--menu {
+  width: 21rem;
+  background: #44495E;
+  padding-left: 1.5rem;
+  padding-right: 1.5rem; }
+  .block__nav--menu a > * {
+    color: #DBDBE0; }
+  .block__nav--menu ul {
+    list-style: none; }
+  .block__nav--menu .block__logo {
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem; }
+    .block__nav--menu .block__logo .circle__logo {
+      width: 6rem;
+      height: 6rem;
+      -moz-border-radius: 50%;
+      -webkit-border-radius: 50%;
+      border-radius: 50%;
+      display: inline-block;
+      cursor: default;
+      text-align: center;
+      overflow: hidden; }
+    .block__nav--menu .block__logo p {
+      font-size: 1.2rem;
+      color: #FFFFFF;
+      font-weight: 700; }
+  .block__nav--menu .block__menu--content .menu--content-main {
+    list-style: none; }
+    .block__nav--menu .block__menu--content .menu--content-main li a {
+      display: block; }
+      .block__nav--menu .block__menu--content .menu--content-main li a > * {
+        line-height: 4.3rem; }
+      .block__nav--menu .block__menu--content .menu--content-main li a > .fa, .block__nav--menu .block__menu--content .menu--content-main li a > .menu--item-icon-expand .fa {
+        font-size: 1.5rem; }
+      .block__nav--menu .block__menu--content .menu--content-main li a .menu--item-name {
+        font-size: 1.2rem;
+        font-weight: 700; }
+      .block__nav--menu .block__menu--content .menu--content-main li a .menu--item-icon-first {
+        margin-right: 1.5rem; }
+      .block__nav--menu .block__menu--content .menu--content-main li a .menu--item-icon-expand {
+        float: right; }
+    .block__nav--menu .block__menu--content .menu--content-main li .submenu-content-main {
+      padding-left: 3rem; }
+      .block__nav--menu .block__menu--content .menu--content-main li .submenu-content-main a {
+        color: #BDB8BD;
+        font-size: 1.1rem;
+        padding: 1rem 0; }
+
+@media (max-width: 767px) {
+  .block__nav--menu {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 999; } }
+
 .block__section--statistics .statistics__box {
   border-bottom: 0.1rem solid #999799; }
   .block__section--statistics .statistics__box .statistics__item {

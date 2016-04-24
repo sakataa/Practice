@@ -1,0 +1,80 @@
+.block__nav--menu{
+    width: 21rem;
+    background: $color-bright-gray;
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+    
+    a > *{
+        color: $color-text-menu;
+    }
+    
+    ul{
+        list-style: none;
+    }
+    
+    .block__logo{
+        padding-top: 1.5rem;
+        padding-bottom: 1.5rem;
+        
+        .circle__logo{
+            @include circle ($radius-logo);
+        }
+        
+        p{
+            font-size: 1.2rem;
+            color: $color-white;
+            font-weight: 700;
+        }
+    }
+    
+    .block__menu--content{
+        .menu--content-main{
+            list-style: none;
+            
+            li{                
+                a{
+                    display: block;
+                    
+                    > *{
+                        line-height: $height-menu-item - 0.2rem;
+                    }                                    
+                    
+                    > .fa, > .menu--item-icon-expand .fa{
+                        font-size: 1.5rem;
+                    }
+                    
+                    .menu--item-name{
+                        font-size: 1.2rem;
+                        font-weight: 700;
+                    }
+                    
+                    .menu--item-icon-first{
+                        margin-right: 1.5rem;
+                    }
+                    
+                    .menu--item-icon-expand{
+                        float: right;
+                    }
+                }
+                
+                .submenu-content-main{
+                    padding-left: 3rem;
+                    a{
+                        color: $color-text-submenu;
+                        font-size: 1.1rem;
+                        padding: 1rem 0;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 767px){
+    .block__nav--menu{
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: 999;
+    }
+}
