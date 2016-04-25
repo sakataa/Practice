@@ -1,47 +1,31 @@
 (function(){
-	var headerHeight = $("header").outerHeight(true);
-	$(window).scroll(function(){
-		var currentHeight = $(this).scrollTop();
-		if(currentHeight > 0){
-			$('#btnMoveTop').fadeIn(1000);
-
-			if(currentHeight > headerHeight + 20){
-				$('#menu').addClass("fixed-top");
-			}
-			else{
-				$('#menu').removeClass("fixed-top");
-			}
-		}
-		else{
-			$('#btnMoveTop').fadeOut(2000);
-			$('#menu').removeClass("fixed-top");
-		}
+	$(".navbar__item--notification").click(function(){
+		$(this).parent().find(".block__notification").toggle();
 	});
-
-	$('#btnMoveTop').click(function(){
-		$(window).scrollTop(0);
+	
+	$(".navbar__item--notification").blur(function(){
+		$(this).parent().find(".block__notification").hide();
 	});
-
-	var $productList = $('#productList');
-	registerSlick($productList, 4, "#prevMainProduct", "#nextMainProduct");
-
-	var $popularProducts = $('#popularProductList');
-	registerSlick($popularProducts, 3, "#prevPopularProduct", "#nextPopularProduct");
-
-	var $recentPost = $('#recentPost');
-	registerSlick($recentPost, 2, "#prevPost", "#nextPost");
-
-	var $ourBrandList = $('#ourBrandList');
-	registerSlick($ourBrandList, 6, "#prevBrand", "#nextBrand");
-
-	function registerSlick($element, slideToShow, idPrev, idNext){
-		$element.slick({
-		  	infinite: true,
-		  	slidesToShow: slideToShow,
-		  	slidesToScroll: 1,
-		  	prevArrow: idPrev,
-	        nextArrow: idNext
-		});
-	}
-
+	
+	$(".menu--item-main").click(function(){
+		var element = $(this);
+		var isActive = element.hasClass("menu-active");
+		
+		$(".menu--item-icon-expand")
+			.removeClass("fa-angle-down")
+			.addClass("fa-angle-right");
+			
+		if(!isActive){
+			element.find(".menu--item-icon-expand")
+			.removeClass("fa-angle-right")
+			.addClass("fa-angle-down");
+		}
+		
+		$(".menu--item-main").removeClass("menu-active");
+		element.toggleClass("menu-active", !isActive);
+	});
+	
+	$("#menu-toggle").click(function(){
+		$(".block__nav--menu").toggle();
+	})
 })();

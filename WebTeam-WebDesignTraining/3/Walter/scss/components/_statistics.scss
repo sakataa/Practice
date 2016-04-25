@@ -20,6 +20,26 @@
                 font-size: 2.4rem;
                 font-weight: 500;
             }
+            
+            .text--hover{
+                display: none;
+                padding-top: 3rem;
+                color: #FF855D;
+            }            
+        }
+        
+        &:hover{
+            background: $color-white;
+            border-left: 0.1rem solid $color-panel-title;
+            border-right: 0.1rem solid $color-panel-title;
+            border-bottom: 0.1rem solid $color-panel-title;
+            border-top: 0;
+            z-index: 903;
+            
+            @include box-shadow(0, 0.1rem, 0.2rem, 0,  rgba(168,146,168,1));
+            .text--hover{
+                display: block;
+            }
         }
     }
 }

@@ -61,6 +61,10 @@ header{
                     font-size: 1rem;
                     line-height: $height-item-notification-xs;
                 }
+                
+                &:hover, &:focus{
+                    background: $color-bg-common; 
+                }
             }
             
             &--number{
@@ -76,7 +80,7 @@ header{
             
             .circle{
                 @include circle($height-item-number-xs/2)
-            }       
+            }           
         }
     }
     
@@ -157,7 +161,7 @@ header{
                         @include circle($height-item-number-md/2)
                     }
                     .fa{
-                        font-size: 1.3rem;
+                        font-size: 1.8rem;
                         line-height: $height-item-notification-md;
                     }
                 }       

@@ -9,6 +9,10 @@
 .btn--primary{
     color: $color-white;
     background: $color-primary;
+    
+    &:hover{
+        background: $color-light-blue;
+    }
 }
 
 .btn--danger{

@@ -15,7 +15,7 @@
 			<nav>
 				<ul class="navbar navbar__list--left block--display-table">
 					<li class="navbar__item block--display-table-cell">
-						<a href="#" class="navbar__item--toggle-menu">
+						<a href="#" id="menu-toggle" class="navbar__item--toggle-menu">
 							<span class="icon--bar"></span>
 							<span class="icon--bar"></span>
 							<span class="icon--bar"></span>
@@ -30,42 +30,155 @@
 				
 				<ul class="navbar navbar__list--notification block--display-table">
 					<li class="navbar__item block--display-table-cell">
-						<a href="#" class="navbar__item--notification navbar__item--message text--center wrapper">
+						<a href="#" id="message" class="navbar__item--notification navbar__item--message text--center wrapper">
 							<i class="fa fa-envelope-o" aria-hidden="true"></i>
 							<span class="navbar__item--number circle">4</span>
 						</a>
 						
-						<div class="block__notification block__notification--task">
+						<div id="message-detail" class="block__notification block__notification--message">
 							<div class="notification--title">
-								<p>You have 4 pending tasks</p>
+								<p class="notification__content--wrapper">You have 5 new message</p>
 							</div>
 							
 							<div class="notification--content">
-								<div class="notification--content-item">
+								<div class="notification--content-item notification__content--wrapper">
+									<div class="notification--content-item-left left">
+										<img src="images/ui-zac.jpg" alt="avatar" />
+									</div>
+									<div class="notification--content-item-right left">
+										<div class="message--infor wrapper">
+											<span class="text--bold nickname left">Zac Snider</span>
+											<span class="text--bold time right">Just now</span>
+										</div>
+										<p class="message--content">Hi mate, how is everything?</p>
+									</div>
+								</div>
+							</div>
+							
+							<div class="notification--content">
+								<div class="notification--content-item notification__content--wrapper">
+									<div class="notification--content-item-left left">
+										<img src="images/ui-divya.jpg" alt="avatar" />
+									</div>
+									<div class="notification--content-item-right left">
+										<div class="message--infor wrapper">
+											<span class="text--bold nickname left">Divya Manian</span>
+											<span class="text--bold time right">40 mins.</span>
+										</div>
+										<p class="message--content">Hi, I need your help with this.</p>
+									</div>
+								</div>
+							</div>
+							
+							<div class="notification--content">
+								<div class="notification--content-item notification__content--wrapper">
+									<div class="notification--content-item-left left">
+										<img src="images/ui-danro.jpg" alt="avatar" />
+									</div>
+									<div class="notification--content-item-right left">
+										<div class="message--infor wrapper">
+											<span class="text--bold nickname left">Dan Rogers</span>
+											<span class="text--bold time right">2 hrs.</span>
+										</div>
+										<p class="message--content">Love your new Dashboard.</p>
+									</div>
+								</div>
+							</div>
+							
+							<div class="notification--content">
+								<div class="notification--content-item notification__content--wrapper">
+									<div class="notification--content-item-left left">
+										<img src="images/ui-sherman.jpg" alt="avatar" />
+									</div>
+									<div class="notification--content-item-right left">
+										<div class="message--infor wrapper">
+											<span class="text--bold nickname left">Dj Sherman</span>
+											<span class="text--bold time right">4 hrs.</span>
+										</div>
+										<p class="message--content">Please, answer asap.</p>
+									</div>
+								</div>
+							</div>
+							
+							<div class="notification--fotter notification__content--wrapper">
+								<p class="text--capitalize">See all messages</p>
+							</div>
+						</div>
+					</li>
+					
+					<li class="navbar__item block--display-table-cell">
+						<a id="task" href="#" class="navbar__item--notification navbar__item--task text--center wrapper">
+							<i class="fa fa-tasks" aria-hidden="true"></i>
+							<span class="navbar__item--number circle">5</span>
+						</a>
+						
+						<div id="task-detail" class="block__notification block__notification--task">
+							<div class="notification--title">
+								<p class="notification__content--wrapper">You have 4 pending tasks</p>
+							</div>
+							
+							<div class="notification--content">
+								<div class="notification--content-item notification__content--wrapper">
 									<p class="content-title">
 										DashGum Admin Panel
 									</p>
 									
 									<div class="content-detail">
 										<div class="block__progress-bar left">
-											<div class="progress-bar-done left"></div>
-											<div class="progress-bar-remain left"></div>
+											<div class="progress-bar-item progress-bar-success progress-bar-striped left" style="width: 40%;"></div>
+											<div class="progress-bar-item progress-bar-remain left"></div>
 										</div>
 										<span class="text--percent left">40%</span>
 									</div>
 								</div>
+								
+								<div class="notification--content-item notification__content--wrapper">
+									<p class="content-title">
+										Database Update
+									</p>
+									
+									<div class="content-detail">
+										<div class="block__progress-bar left">
+											<div class="progress-bar-item progress-bar-warning progress-bar-striped left" style="width: 60%;"></div>
+											<div class="progress-bar-item progress-bar-remain left"></div>
+										</div>
+										<span class="text--percent left">60%</span>
+									</div>
+								</div>
+								
+								<div class="notification--content-item notification__content--wrapper">
+									<p class="content-title">
+										Product Development
+									</p>
+									
+									<div class="content-detail">
+										<div class="block__progress-bar left">
+											<div class="progress-bar-item progress-bar-light-blue progress-bar-striped left" style="width: 80%;"></div>
+											<div class="progress-bar-item progress-bar-remain left"></div>
+										</div>
+										<span class="text--percent left">80%</span>
+									</div>
+								</div>
+								
+								<div class="notification--content-item notification__content--wrapper">
+									<p class="content-title">
+										Payments Sent
+									</p>
+									
+									<div class="content-detail">
+										<div class="block__progress-bar left">
+											<div class="progress-bar-item progress-bar-danger progress-bar-striped left" style="width: 70%;"></div>
+											<div class="progress-bar-item progress-bar-remain left"></div>
+										</div>
+										<span class="text--percent left">70%</span>
+									</div>
+								</div>
 							</div>
 							
-							<div class="notification--fotter">
+							<div class="notification--fotter notification__content--wrapper">
 								<p class="text--capitalize">See all task</p>
 							</div>
 						</div>
-					</li>
-					<li class="navbar__item block--display-table-cell">
-						<a href="#" class="navbar__item--notification navbar__item--task text--center wrapper">
-							<i class="fa fa-tasks" aria-hidden="true"></i>
-							<span class="navbar__item--number circle">5</span>
-						</a>
 					</li>
 				</ul>
 				
@@ -89,14 +202,14 @@
 					
 					<div class="block__menu--content">
 						<ul class="menu--content-main">
-							<li>
+							<li class="menu--item-main">
 								<a href="#">
 									<i class="fa fa-tachometer menu--item-icon-first" aria-hidden="true"></i>
 									<span class="menu--item-name text--capitalize">dashboard</span>
 								</a>
 							</li>
 							
-							<li>
+							<li class="menu--item-main">
 								<a href="#">
 									<i class="fa fa-desktop menu--item-icon-first" aria-hidden="true"></i>
 									<span class="menu--item-name text--capitalize">UI element</span>
@@ -122,43 +235,115 @@
 								</ul>
 							</li>
 							
-							<li>
+							<li class="menu--item-main">
 								<a href="#">
 									<i class="fa fa-cogs menu--item-icon-first" aria-hidden="true"></i>
 									<span class="menu--item-name text--capitalize">components</span>
-									<span class="menu--item-icon-expand"><i class="fa fa-angle-right" aria-hidden="true"></i></span>
+									<i class="menu--item-icon-expand fa fa-angle-right" aria-hidden="true"></i>
 								</a>
+								
+								<ul class="submenu-content-main">
+									<li>
+										<a href="#" class="text--capitalize">
+											general
+										</a>
+									</li>
+									<li>
+										<a href="#" class="text--capitalize">
+											buttons
+										</a>
+									</li>
+									<li>
+										<a href="#" class="text--capitalize">
+											panels
+										</a>
+									</li>
+								</ul>
 							</li>
 							
-							<li>
+							<li class="menu--item-main">
 								<a href="#">
 									<i class="fa fa-book menu--item-icon-first" aria-hidden="true"></i>
 									<span class="menu--item-name text--capitalize">extra pages</span>
-									<span class="menu--item-icon-expand"><i class="fa fa-angle-right" aria-hidden="true"></i></span>
+									<i class="menu--item-icon-expand fa fa-angle-right" aria-hidden="true"></i>
 								</a>
+								
+								<ul class="submenu-content-main">
+									<li>
+										<a href="#" class="text--capitalize">
+											general
+										</a>
+									</li>
+									<li>
+										<a href="#" class="text--capitalize">
+											buttons
+										</a>
+									</li>
+									<li>
+										<a href="#" class="text--capitalize">
+											panels
+										</a>
+									</li>
+								</ul>
 							</li>
 							
-							<li>
+							<li class="menu--item-main">
 								<a href="#">
 									<i class="fa fa-tasks menu--item-icon-first" aria-hidden="true"></i>
 									<span class="menu--item-name text--capitalize">forms</span>
 								</a>
 							</li>
 							
-							<li>
+							<li class="menu--item-main">
 								<a href="#">
 									<i class="fa fa-th menu--item-icon-first" aria-hidden="true"></i>
 									<span class="menu--item-name text--capitalize">data tables</span>
-									<span class="menu--item-icon-expand"><i class="fa fa-angle-right" aria-hidden="true"></i></span>
+									<i class="menu--item-icon-expand fa fa-angle-right" aria-hidden="true"></i>
 								</a>
+								
+								<ul class="submenu-content-main">
+									<li>
+										<a href="#" class="text--capitalize">
+											general
+										</a>
+									</li>
+									<li>
+										<a href="#" class="text--capitalize">
+											buttons
+										</a>
+									</li>
+									<li>
+										<a href="#" class="text--capitalize">
+											panels
+										</a>
+									</li>
+								</ul>
 							</li>
 							
-							<li>
+							<li class="menu--item-main">
 								<a href="#">
 									<i class="fa fa-bar-chart menu--item-icon-first" aria-hidden="true"></i>
 									<span class="menu--item-name text--capitalize">charts</span>
-									<span class="menu--item-icon-expand"><i class="fa fa-angle-right" aria-hidden="true"></i></span>
+									<i class="menu--item-icon-expand fa fa-angle-right" aria-hidden="true"></i>
 								</a>
+								
+								<ul class="submenu-content-main">
+									<li>
+										<a href="#" class="text--capitalize">
+											general
+										</a>
+									</li>
+									<li>
+										<a href="#" class="text--capitalize">
+											buttons
+										</a>
+									</li>
+									<li>
+										<a href="#" class="text--capitalize">
+											panels
+										</a>
+									</li>
+								</ul>
 							</li>
 						</ul>
 					</div>
@@ -171,12 +356,18 @@
 						<div class="statistics__item text--center">
 							<i class="fa fa-heart-o" aria-hidden="true"></i>
 							<p class="data--statistics">933</p>
+							<p class="text--hover">
+								933 People liked your page the last 24hrs. Whoohoo!
+							</p>
 						</div>
 					</div>
 					<div class="statistics__box">
 						<div class="statistics__item text--center">
 							<i class="fa fa-cloud" aria-hidden="true"></i>
 							<p class="data--statistics">+48</p>
+							<p class="text--hover">
+								48 new file were added in your cloud storage.
+							</p>
 						</div>
 					</div>
 					<div class="statistics__box">
@@ -613,7 +804,7 @@
 		</footer>
 	</div>
 	<script src="scripts/jquery-2.2.0.min.js"></script>	
-    <!--<script src="scripts/site.js"></script>-->
+    <script src="scripts/site.js"></script>
 </body>
 
 </html>
