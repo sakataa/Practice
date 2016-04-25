@@ -1,0 +1,46 @@
+.block__notification{
+    position: absolute;
+    top: 6rem;
+    z-index: 999;
+    
+    p, span{
+        font-size: 1.2rem;
+    }
+    
+    .notification--title{
+        width: 100%;
+        height: $height-notification-title;
+        background: $color-primary;
+        
+        p{
+            color: $color-white;            
+            line-height: $height-notification-title;
+        }
+    }
+    
+    .notification--content{
+        &-item{
+            height: 6.2rem;
+            border-bottom: 0.1rem solid $color-panel-title;
+        }
+    }
+}
+
+.block__notification--task{
+    .content-detail{
+        .block__progress-bar{
+            width: 18rem;
+            height: 1rem;
+            border: 0.1rem solid $color-panel-title;
+            @include border-radius($radius-progress-bar);
+            
+            .progress-bar-done{
+                width: 40%;
+                height: 100%;
+                background: $color-danger;
+                border-top-left-radius: $radius-progress-bar;
+                border-bottom-left-radius: $radius-progress-bar;
+            }
+        }
+    }
+}

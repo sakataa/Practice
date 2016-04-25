@@ -11,9 +11,9 @@
 
 <body>
 	<div class="wrapper block--container">
-		<header class="container wrapper">
-			<nav class="wrapper">
-				<ul class="navbar navbar__list--left block--display-table wrapper">
+		<header class="container">
+			<nav>
+				<ul class="navbar navbar__list--left block--display-table">
 					<li class="navbar__item block--display-table-cell">
 						<a href="#" class="navbar__item--toggle-menu">
 							<span class="icon--bar"></span>
@@ -28,12 +28,38 @@
 					</li>
 				</ul>
 				
-				<ul class="navbar navbar__list--notification block--display-table wrapper">
+				<ul class="navbar navbar__list--notification block--display-table">
 					<li class="navbar__item block--display-table-cell">
 						<a href="#" class="navbar__item--notification navbar__item--message text--center wrapper">
 							<i class="fa fa-envelope-o" aria-hidden="true"></i>
 							<span class="navbar__item--number circle">4</span>
 						</a>
+						
+						<div class="block__notification block__notification--task">
+							<div class="notification--title">
+								<p>You have 4 pending tasks</p>
+							</div>
+							
+							<div class="notification--content">
+								<div class="notification--content-item">
+									<p class="content-title">
+										DashGum Admin Panel
+									</p>
+									
+									<div class="content-detail">
+										<div class="block__progress-bar left">
+											<div class="progress-bar-done left"></div>
+											<div class="progress-bar-remain left"></div>
+										</div>
+										<span class="text--percent left">40%</span>
+									</div>
+								</div>
+							</div>
+							
+							<div class="notification--fotter">
+								<p class="text--capitalize">See all task</p>
+							</div>
+						</div>
 					</li>
 					<li class="navbar__item block--display-table-cell">
 						<a href="#" class="navbar__item--notification navbar__item--task text--center wrapper">
@@ -43,7 +69,7 @@
 					</li>
 				</ul>
 				
-				<ul class="navbar navbar__list--right block--display-table wrapper">
+				<ul class="navbar navbar__list--right block--display-table">
 					<li class="navbar__item block--display-table-cell">
 						<button class="btn btn--primary text--capitalize text--center">logout</button>
 					</li>

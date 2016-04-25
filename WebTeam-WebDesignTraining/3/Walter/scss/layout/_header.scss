@@ -46,6 +46,8 @@ header{
         margin-left: 1rem;
         
         .navbar__item{
+            position: relative;
+            
             &--notification{
                 display: inline-block;
                 overflow: visible;

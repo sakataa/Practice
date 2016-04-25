@@ -140,38 +140,40 @@ header {
   header .navbar__list--notification {
     float: left;
     margin-left: 1rem; }
-    header .navbar__list--notification .navbar__item--notification {
-      display: inline-block;
-      overflow: visible;
-      height: 2rem;
-      width: 2rem;
-      border: 0.1rem solid #333333;
-      color: #333333;
-      -moz-border-radius: 0.4rem;
-      -webkit-border-radius: 0.4rem;
-      border-radius: 0.4rem; }
-      header .navbar__list--notification .navbar__item--notification .fa {
+    header .navbar__list--notification .navbar__item {
+      position: relative; }
+      header .navbar__list--notification .navbar__item--notification {
+        display: inline-block;
+        overflow: visible;
+        height: 2rem;
+        width: 2rem;
+        border: 0.1rem solid #333333;
+        color: #333333;
+        -moz-border-radius: 0.4rem;
+        -webkit-border-radius: 0.4rem;
+        border-radius: 0.4rem; }
+        header .navbar__list--notification .navbar__item--notification .fa {
+          font-size: 1rem;
+          line-height: 2rem; }
+      header .navbar__list--notification .navbar__item--number {
+        position: absolute;
+        top: -1rem;
+        right: -1rem;
+        color: #FFFFFF;
+        background: #3985BD;
+        font-weight: bold;
         font-size: 1rem;
-        line-height: 2rem; }
-    header .navbar__list--notification .navbar__item--number {
-      position: absolute;
-      top: -1rem;
-      right: -1rem;
-      color: #FFFFFF;
-      background: #3985BD;
-      font-weight: bold;
-      font-size: 1rem;
-      line-height: 1.4rem; }
-    header .navbar__list--notification .navbar__item .circle {
-      width: 1.4rem;
-      height: 1.4rem;
-      -moz-border-radius: 50%;
-      -webkit-border-radius: 50%;
-      border-radius: 50%;
-      display: inline-block;
-      cursor: default;
-      text-align: center;
-      overflow: hidden; }
+        line-height: 1.4rem; }
+      header .navbar__list--notification .navbar__item .circle {
+        width: 1.4rem;
+        height: 1.4rem;
+        -moz-border-radius: 50%;
+        -webkit-border-radius: 50%;
+        border-radius: 50%;
+        display: inline-block;
+        cursor: default;
+        text-align: center;
+        overflow: hidden; }
   header .navbar__list--right {
     float: right; }
   header .btn {
@@ -728,8 +730,10 @@ footer {
       font-size: 1.2rem;
       color: #FFFFFF;
       line-height: 2.5rem; }
-  .article__box--notification .article__content--item-right .text-description {
-    color: #999799; }
+  .article__box--notification .article__content--item-right {
+    width: 85%; }
+    .article__box--notification .article__content--item-right .text-description {
+      color: #999799; }
 
 .article__box--team-members .article__content--item-left {
   margin-right: 0.5rem; }
@@ -777,6 +781,37 @@ footer {
   .article__content--item-checked span.text--description {
     color: #999799;
     text-decoration: line-through; }
+
+.block__notification {
+  position: absolute;
+  top: 6rem;
+  z-index: 999; }
+  .block__notification p, .block__notification span {
+    font-size: 1.2rem; }
+  .block__notification .notification--title {
+    width: 100%;
+    height: 4rem;
+    background: #3985BD; }
+    .block__notification .notification--title p {
+      color: #FFFFFF;
+      line-height: 4rem; }
+  .block__notification .notification--content-item {
+    height: 6.2rem;
+    border-bottom: 0.1rem solid #DEDCDE; }
+
+.block__notification--task .content-detail .block__progress-bar {
+  width: 18rem;
+  height: 1rem;
+  border: 0.1rem solid #DEDCDE;
+  -moz-border-radius: 2rem;
+  -webkit-border-radius: 2rem;
+  border-radius: 2rem; }
+  .block__notification--task .content-detail .block__progress-bar .progress-bar-done {
+    width: 40%;
+    height: 100%;
+    background: #5EB85D;
+    border-top-left-radius: 2rem;
+    border-bottom-left-radius: 2rem; }
 
 .btn {
   border: none;
