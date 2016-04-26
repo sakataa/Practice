@@ -1,6 +1,8 @@
 footer{
+    clear: both;
     height: $height-footer;
     background: $color-primary;
+    z-index: 800;
     p{
         color: $color-white;
         line-height: $height-footer;

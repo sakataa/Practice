@@ -1,5 +1,5 @@
 .block__nav--menu{
-    width: 21rem;
+    width: $width-left-menu;
     position: absolute;
     top: 0;
     left: 0;
@@ -93,9 +93,9 @@
     }
 }
 
-@media (max-width: 767px){
-}
-
-@media (min-width: 768px){
-
+@media (min-width: 992px){
+    .block__nav--menu{
+        display: block;
+        height: 100%;
+    }
 }
