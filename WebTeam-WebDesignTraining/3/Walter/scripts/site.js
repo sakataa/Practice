@@ -9,7 +9,8 @@
 	
 	$(".menu--item-main").click(function(){
 		var element = $(this);
-		var isActive = element.hasClass("menu-active");
+		var parent = element.parent();
+		var isActive = parent.hasClass("menu-active");
 		
 		$(".menu--item-icon-expand")
 			.removeClass("fa-angle-down")
@@ -21,8 +22,8 @@
 			.addClass("fa-angle-down");
 		}
 		
-		$(".menu--item-main").removeClass("menu-active");
-		element.toggleClass("menu-active", !isActive);
+		$(".menu--item-main").parent().removeClass("menu-active");
+		parent.toggleClass("menu-active", !isActive);
 	});
 	
 	$("#menu-toggle").click(function(){

@@ -141,3 +141,14 @@
         @include tooltip-top(1rem, $color-primary);
     }
 }
+
+@media (max-width: 425px){
+    .block__notification{
+        left: -12rem;
+        
+        &:before{
+            content: '';
+            left: 12rem;
+        }
+    }
+}

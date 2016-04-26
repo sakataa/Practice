@@ -16,7 +16,7 @@
     .article__content{
         padding-top: 0.5rem;       
         p, span, label{
-            font-size: 1.3rem;
+            font-size: 1.2rem;
             color: $color-dark;
         }
         
@@ -49,7 +49,7 @@
         }
                 
         &-right{
-            width: 85%;
+            max-width: 84%;
             .text-description{
                 color: $color-bg-light-gray;
             }           

@@ -235,6 +235,7 @@ footer {
   background: #3985BD;
   z-index: 800; }
   footer p {
+    font-size: 1.2rem;
     color: #FFFFFF;
     line-height: 4rem; }
 
@@ -406,7 +407,7 @@ footer {
       font-weight: 700; }
   .block__nav--menu .block__menu--content .menu--content-main {
     list-style: none; }
-    .block__nav--menu .block__menu--content .menu--content-main .menu--item-main:hover > a {
+    .block__nav--menu .block__menu--content .menu--content-main .menu--item-main:hover {
       background: #3985BD;
       color: #FFFFFF; }
     .block__nav--menu .block__menu--content .menu--content-main li a {
@@ -431,6 +432,8 @@ footer {
         color: #BDB8BD;
         font-size: 1.1rem;
         padding: 1rem 0; }
+        .block__nav--menu .block__menu--content .menu--content-main li .submenu-content-main a:hover {
+          color: #E8DFE2; }
     .block__nav--menu .block__menu--content .menu--content-main li.menu-active > a {
       background: #3985BD;
       color: #FFFFFF; }
@@ -583,12 +586,12 @@ footer {
       overflow: hidden; }
     .panel__item--user-content .content__profile--text {
       color: #333333;
-      font-size: 1.4rem;
+      font-size: 1.3rem;
       display: block; }
       .panel__item--user-content .content__profile--text-username {
         padding-top: 1rem; }
     .panel__item--user-content .content__profile .text--label {
-      font-size: 1.2rem; }
+      font-size: 1.1rem; }
 
 .panel__item--share-content .panel__item--content-chart {
   height: 14rem; }
@@ -759,7 +762,7 @@ footer {
   .article__box .article__content {
     padding-top: 0.5rem; }
     .article__box .article__content p, .article__box .article__content span, .article__box .article__content label {
-      font-size: 1.3rem;
+      font-size: 1.2rem;
       color: #333333; }
     .article__box .article__content--item {
       padding: 1rem 2rem 3rem 2rem;
@@ -787,7 +790,7 @@ footer {
       color: #FFFFFF;
       line-height: 2.5rem; }
   .article__box--notification .article__content--item-right {
-    width: 85%; }
+    max-width: 84%; }
     .article__box--notification .article__content--item-right .text-description {
       color: #999799; }
 
@@ -947,6 +950,13 @@ footer {
     border-right: 1rem solid transparent;
     border-bottom: 1rem solid #3985BD;
     border-top: 1rem solid transparent; }
+
+@media (max-width: 425px) {
+  .block__notification {
+    left: -12rem; }
+    .block__notification:before {
+      content: '';
+      left: 12rem; } }
 
 .btn {
   border: none;
