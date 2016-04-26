@@ -27,8 +27,7 @@
 	});
 	
 	$("#menu-toggle").click(function(){
-		$(".block__nav--menu").toggle();
-		
+		$(".block__nav--menu").toggle();		
 		var isVisible = $('.block__nav--menu').is(':visible');		
 		$("#mainContent").toggleClass("mainpage--container-fullwidth", !isVisible);
 	});

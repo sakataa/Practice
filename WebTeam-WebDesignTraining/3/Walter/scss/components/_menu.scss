@@ -7,6 +7,8 @@
     display: none;
     background: $color-bright-gray;
     
+    @include transition(1s);
+    
     a > *{
         color: $color-text-menu;
     }

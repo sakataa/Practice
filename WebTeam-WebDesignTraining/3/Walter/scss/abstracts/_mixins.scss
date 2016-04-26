@@ -21,6 +21,12 @@
 	border-top: $width solid transparent;
 }
 
+@mixin transition($time: 0.3s, $style: ease-in-out){
+    transition: all $time $style;
+	  -webkit-transition: all $time $style;
+	  -ms-transition: all $time $style;
+}
+
 @mixin box-shadow($h-shadow, $v-shadow, $blur, $spread, $color){
   -webkit-box-shadow: $h-shadow $v-shadow $blur $spread $color;
   -moz-box-shadow: $h-shadow $v-shadow $blur $spread $color;
