@@ -27,5 +27,21 @@
 	
 	$("#menu-toggle").click(function(){
 		$(".block__nav--menu").toggle();
-	})
+	});
+	
+	$(".chkTodo").change(function(){
+		var checkBox = $(this);
+		var isChecked = checkBox.prop("checked");
+		
+		if(isChecked === true){
+			checkBox.parent().addClass("article__content--item-checked");
+		}
+		else{
+			checkBox.parent().removeClass("article__content--item-checked");
+		}
+	});
+	
+	$("#topMoving").click(function(){
+		$(window).scrollTop(0);
+	});
 })();

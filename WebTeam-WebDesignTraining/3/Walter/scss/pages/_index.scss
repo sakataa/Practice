@@ -2,17 +2,34 @@
     position: absolute;
     bottom: 1rem;
     right: 1.5rem;
-    background: rgba(255, 255, 255, 0.5);
+    background: rgba(255, 255, 255, 0.5);   
     @include circle($radius-circle-moving-top);
-    
+    cursor: pointer;
     .fa-angle-up{
         vertical-align: middle;
         height: 100%;
+    }
+    
+    &:hover{
+        background: $color-light-blue;
+        color: $color-white;
     }
 }
 
 @media (max-width: 767px){
     .block__right{
         margin-top: 3rem;
+    }
+}
+
+@media (min-width: 992px){
+    .mainpage--container{        
+        &-right{
+            width: 75%;
+        }
+        
+        .block__right{
+            width: 25%;
+        }
     }
 }

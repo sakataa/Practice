@@ -120,7 +120,7 @@
                 display: block;
                 
                 &-username{
-                    padding-top: 1.5rem;
+                    padding-top: 1rem;
                 }
             }
             
@@ -244,5 +244,30 @@
                 }
             }
         }
+    }
+}
+
+@media (min-width: 768px){
+    .panel__item--user{
+        height: 25rem;
+        &-content{
+            .content__profile{                
+                &--text{
+                    &-username{
+                        margin-bottom: 1rem;
+                    }
+                    
+                    &-left{
+                        float: left;
+                        margin-left: 1.5rem;
+                    }
+                    
+                    &-right{
+                        float: right;
+                        margin-right: 1.5rem;
+                    }
+                }    
+            }
+        }  
     }
 }

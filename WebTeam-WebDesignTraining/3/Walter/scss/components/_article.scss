@@ -15,7 +15,7 @@
     
     .article__content{
         padding-top: 0.5rem;       
-        p, span{
+        p, span, label{
             font-size: 1.3rem;
             color: $color-dark;
         }
@@ -108,7 +108,7 @@
 
 .article__content--item-checked{
     background: $color-bg-checked;   
-    span.text--description{
+    label.text--description{
         color: $color-bg-light-gray;
         text-decoration: line-through;
     }

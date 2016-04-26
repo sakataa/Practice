@@ -18,12 +18,20 @@
 .btn--danger{
     color: $color-white;
     background: $color-danger;
+    
+    &:hover{
+        background: #59DC57;
+    }
 }
 
 .btn--default{
     color: $color-dark;
     background: $color-white;
     border: 0.1rem solid $color-btn-border-default;
+    
+    &:hover{
+        background: #E6E6E6;
+    }
 }
 
 .btn-common{

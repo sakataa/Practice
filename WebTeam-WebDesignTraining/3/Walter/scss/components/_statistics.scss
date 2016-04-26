@@ -1,45 +1,61 @@
 .block__section--statistics{
     .statistics__box{
-        border-bottom: 0.1rem solid $color-bg-light-gray;
-        
+        padding-bottom: 1rem;
+        cursor: pointer;
+              
         .statistics__item{
             color: $color-bg-light-gray;
             padding-top: 4rem;
             padding-bottom: 1rem;
+            border-bottom: 0.1rem solid $color-bg-light-gray;
             
-            .fa, .data--statistics{
-                padding-top: 1.5rem;
+            .fa, .data--statistics{               
                 padding-bottom: 1.5rem;
             }
             
             .fa{
+                padding-top: 1.5rem;
                 font-size: 5rem;        
             }
             
             .data--statistics{
+                padding-top: 0.5rem;
                 font-size: 2.4rem;
                 font-weight: 500;
             }
             
             .text--hover{
                 display: none;
-                padding-top: 3rem;
+                padding-top: 1.5rem;
                 color: #FF855D;
+                font-size: 1.3rem;
             }            
         }
         
         &:hover{
             background: $color-white;
-            border-left: 0.1rem solid $color-panel-title;
-            border-right: 0.1rem solid $color-panel-title;
-            border-bottom: 0.1rem solid $color-panel-title;
+            border-bottom: 0.3rem solid $color-panel-title;
             border-top: 0;
             z-index: 903;
             
-            @include box-shadow(0, 0.1rem, 0.2rem, 0,  rgba(168,146,168,1));
+            @include box-shadow(0, 0.5rem, 0.1rem, 0,  rgba(168,146,168,1));
             .text--hover{
                 display: block;
             }
+            .statistics__item{
+                border-bottom: none;
+            }
+        }
+    }
+}
+
+@media (min-width: 768px){
+    .block__section--statistics{        
+        .statistics__box{
+            float: left;
+            width: 20%;
+            padding-left: 1.5rem;
+            padding-right: 1.5rem;
         }
     }
 }

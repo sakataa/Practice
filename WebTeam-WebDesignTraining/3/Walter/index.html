@@ -351,7 +351,7 @@
 			</div>
 			
 			<div class="mainpage--container-right wrapper">						
-				<section class="block__section--new block__section--statistics">
+				<section class="block__section--new block__section--statistics wrapper">
 					<div class="statistics__box">
 						<div class="statistics__item text--center">
 							<i class="fa fa-heart-o" aria-hidden="true"></i>
@@ -374,25 +374,34 @@
 						<div class="statistics__item text--center">
 							<i class="fa fa-inbox" aria-hidden="true"></i>
 							<p class="data--statistics">23</p>
+							<p class="text--hover">
+								You have 23 unread messages in your inbox.
+							</p>
 						</div>
 					</div>
 					<div class="statistics__box">
 						<div class="statistics__item text--center">
 							<i class="fa fa-newspaper-o" aria-hidden="true"></i>
 							<p class="data--statistics">+10</p>
+							<p class="text--hover">
+								More than 10 news were added in your reader.
+							</p>
 						</div>
 					</div>
 					<div class="statistics__box">
 						<div class="statistics__item text--center">
 							<i class="fa fa-database" aria-hidden="true"></i>
 							<p class="data--statistics">OK!</p>
+							<p class="text--hover">
+								Your server is working perfectly Relax & enjoy.
+							</p>
 						</div>
 					</div>
 				</section>
 				
 				<section class="block__section--new block__section--panel wrapper">
 					<div class="row">
-						<div class="panel__box col-xs-12">
+						<div class="panel__box col-xs-12 col-sm-4">
 							<div class="panel__item panel__item--author">
 								<div class="panel__item--title">		
 								</div>
@@ -414,7 +423,7 @@
 							</div>
 						</div>
 						
-						<div class="panel__box col-xs-12">
+						<div class="panel__box col-xs-12 col-sm-4">
 							<div class="panel__item panel__item--product">
 								<div class="panel__item--content panel__item--product-content text--center">
 									<div class="circle--hot">
@@ -428,7 +437,7 @@
 							</div>
 						</div>
 						
-						<div class="panel__box col-xs-12">
+						<div class="panel__box col-xs-12 col-sm-4">
 							<div class="panel__item panel__item--user">
 								<div class="panel__item--title text--uppercase text--center">
 									<span class="text--title">top user</span>	
@@ -439,10 +448,15 @@
 											<img src="images/ui-zac.jpg" alt="avatar" />
 										</span>
 										<span class="content__profile--text content__profile--text-username text--capitalize">zac snider</span>
-										<span class="content__profile--text text--label text--uppercase">member since</span>
-										<span class="content__profile--text">2012</span>
-										<span class="content__profile--text text--label text--uppercase">total spend</span>
-										<span class="content__profile--text">$ 47,60</span>
+											<div class="content__profile--text-left">
+												<span class="content__profile--text text--label text--uppercase">member since</span>
+												<span class="content__profile--text">2012</span>
+											</div>
+											
+											<div class="content__profile--text-right">
+												<span class="content__profile--text text--label text--uppercase">total spend</span>
+												<span class="content__profile--text">$ 47,60</span>
+											</div>				
 									</div>
 								</div>
 							</div>
@@ -450,7 +464,7 @@
 					</div>
 					
 					<div class="row">
-						<div class="panel__box col-xs-12">
+						<div class="panel__box col-xs-12 col-sm-4">
 							<div class="panel__item panel__item--share">
 								<div class="panel__item--content panel__item--share-content">
 									<div class="panel__item--content-chart">
@@ -476,7 +490,7 @@
 							</div>
 						</div>
 						
-						<div class="panel__box col-xs-12">
+						<div class="panel__box col-xs-12 col-sm-4">
 							<div class="panel__item panel__item--newfeed">
 								<div class="panel__item--content panel__item--newfeed-content block--display-table text--center">
 									<div class="content__newfeed block--display-table-cell">
@@ -489,7 +503,7 @@
 							</div>
 						</div>
 						
-						<div class="panel__box col-xs-12">
+						<div class="panel__box col-xs-12 col-sm-4">
 							<div class="panel__item panel__item--weather">
 								<div class="panel__item--content panel__item--weather-content block--display-table text--center">
 									<div class="content__weather block--display-table-cell">
@@ -742,8 +756,8 @@
 						</div>
 						<div class="article__content">
 							<div class="article__content--item wrapper article__content--item-checked">
-								<input type="checkbox"/>
-								<span class="text--description">Nexcel Solutions - Admin Themes</span>
+								<input type="checkbox" checked="checked" class="chkTodo" id="todo1"/>
+								<label for="todo1" class="text--description">Nexcel Solutions - Admin Themes</label>
 								<span class="label__status label__status--primary">Done</span>
 								<span class="item__action">
 									<i class="fa fa-check icon icon--check" aria-hidden="true"></i>
@@ -753,8 +767,8 @@
 							</div>
 							
 							<div class="article__content--item wrapper">
-								<input type="checkbox"/>
-								<span class="text--description">Extensive collection of plugins</span>
+								<input type="checkbox" class="chkTodo" id="todo2"/>
+								<label for="todo2" class="text--description">Extensive collection of plugins</label >
 								<span class="label__status label__status--warning">Cool</span>
 								<span class="item__action">
 									<i class="fa fa-check icon icon--check" aria-hidden="true"></i>
@@ -764,8 +778,8 @@
 							</div>
 							
 							<div class="article__content--item wrapper">
-								<input type="checkbox"/>
-								<span class="text--description">Free updates always, no extra fees</span>
+								<input type="checkbox" class="chkTodo" id="todo3"/>
+								<label for="todo3" class="text--description">Free updates always, no extra fees</label>
 								<span class="label__status label__status--danger">2&nbsp;Days</span>
 								<span class="item__action">
 									<i class="fa fa-check icon icon--check" aria-hidden="true"></i>
@@ -775,8 +789,8 @@
 							</div>
 							
 							<div class="article__content--item wrapper">
-								<input type="checkbox"/>
-								<span class="text--description">More features coming soon</span>
+								<input type="checkbox" class="chkTodo" id="todo4"/>
+								<label for="todo4" class="text--description">More features coming soon</label>
 								<span class="label__status label__status--light-blue">Tomorrow</span>
 								<span class="item__action">
 									<i class="fa fa-check icon icon--check" aria-hidden="true"></i>
@@ -798,7 +812,7 @@
 		
 		<footer class="wrapper text--center">
 			<p>2016 - Nexcel Solution</p>		
-			<span class="block__circle--moving-top">
+			<span class="block__circle--moving-top" id="topMoving">
 				<i class="fa fa-angle-up" aria-hidden="true"></i>
 			</span>
 		</footer>
