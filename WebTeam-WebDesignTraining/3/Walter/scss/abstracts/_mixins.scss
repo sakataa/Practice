@@ -21,7 +21,7 @@
 	border-top: $width solid transparent;
 }
 
-@mixin transition($time: 0.3s, $style: ease-in-out){
+@mixin transition($time: 0.5s, $style: ease-in-out){
     transition: all $time $style;
 	  -webkit-transition: all $time $style;
 	  -ms-transition: all $time $style;

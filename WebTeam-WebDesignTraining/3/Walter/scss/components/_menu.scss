@@ -69,8 +69,9 @@
                 }
                 
                 .submenu-content-main{
-                    display: none;
+                    max-height: 0;
                     padding-left: 3rem;
+                    overflow: hidden;
                     a{
                         color: $color-text-submenu;
                         font-size: 1.1rem;
@@ -80,6 +81,8 @@
                             color: #E8DFE2;
                         }                                             
                     }
+                    
+                    @include transition(1s);
                 }
                 
                 &.menu-active{
@@ -89,7 +92,7 @@
                     }
                     
                     .submenu-content-main{
-                        display: block;
+                        max-height: 100%;                       
                     }
                 }
             }

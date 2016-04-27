@@ -429,8 +429,12 @@ footer {
       .block__nav--menu .block__menu--content .menu--content-main li a .menu--item-icon-expand {
         float: right; }
     .block__nav--menu .block__menu--content .menu--content-main li .submenu-content-main {
-      display: none;
-      padding-left: 3rem; }
+      max-height: 0;
+      padding-left: 3rem;
+      overflow: hidden;
+      transition: all 1s ease-in-out;
+      -webkit-transition: all 1s ease-in-out;
+      -ms-transition: all 1s ease-in-out; }
       .block__nav--menu .block__menu--content .menu--content-main li .submenu-content-main a {
         color: #BDB8BD;
         font-size: 1.1rem;
@@ -441,7 +445,7 @@ footer {
       background: #3985BD;
       color: #FFFFFF; }
     .block__nav--menu .block__menu--content .menu--content-main li.menu-active .submenu-content-main {
-      display: block; }
+      max-height: 100%; }
 
 @media (min-width: 992px) {
   .block__nav--menu {
