@@ -132,21 +132,9 @@
             }
         }
     }
-    /*
-    .article__box--team-members{
-        .article__content--item{
-            &-left{
-                width: 15%;            
-            }
-                    
-            &-right{
-                width: 80%;          
-            }
-        }
-    }*/
 }
 
-@media(min-width: 992px){
+@media(min-width: 992px) and (max-width: 1199px){
     .article__box--notification{
         .article__content--item{
             &-left{
@@ -158,18 +146,14 @@
             }
         }
     }
-    /*
-    .article__box--team-members{
-        .article__content--item{
-            &-left{
-                width: 30%;            
-            }
-                    
-            &-right{
-                width: 65%;          
+    
+    .article__box--todo-list{        
+        .block__button{          
+            .btn{
+                font-size: 0.9rem;
             }
         }
-    }*/
+    }
 }
 
 @media(min-width: 1200px){

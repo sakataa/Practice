@@ -6,8 +6,11 @@
     z-index: 900;
     background: $color-bright-gray;
     
-    @include transition(1s);
+    @include transition();
     
+    &.toggleMainMenu{
+        left: 0;
+    }
     a > *{
         color: $color-text-menu;
     }
@@ -104,5 +107,9 @@
     .block__nav--menu{
         left: 0;
         height: 100%;
+        
+        &.toggleMainMenu{
+            left: -21rem;
+        }      
     }
 }

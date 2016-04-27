@@ -33,6 +33,12 @@ header{
                 .icon--bar{
                     background: $color-bg-light-gray;
                 }
+                
+                &:hover{
+                    > .icon--bar{
+                        background: #544E54;
+                    }
+                }
             }
             &--title{
                 color: $color-bright-gray;

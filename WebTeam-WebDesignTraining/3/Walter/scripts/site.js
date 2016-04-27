@@ -35,9 +35,8 @@
 	
 	$("#menu-toggle").click(function(){
 		var mainMenu = $(".block__nav--menu");
-		//$(".block__nav--menu").toggle();		
-		var isVisible = mainMenu.hasClass("showMainMenu");	
-		$("#mainContent").toggleClass("mainpage--container-fullwidth", !isVisible);
+		mainMenu.toggleClass("toggleMainMenu");	
+		$("#mainContent").toggleClass("mainpage--container-fullwidth");		
 	});
 	
 	$(".chkTodo").change(function(){

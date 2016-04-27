@@ -134,6 +134,8 @@ header {
     float: left; }
     header .navbar__list--left .navbar__item--toggle-menu .icon--bar {
       background: #999799; }
+    header .navbar__list--left .navbar__item--toggle-menu:hover > .icon--bar {
+      background: #544E54; }
     header .navbar__list--left .navbar__item--title {
       color: #44495E;
       font-size: 1.2rem; }
@@ -383,9 +385,11 @@ footer {
   left: -21rem;
   z-index: 900;
   background: #44495E;
-  transition: all 1s ease-in-out;
-  -webkit-transition: all 1s ease-in-out;
-  -ms-transition: all 1s ease-in-out; }
+  transition: all 0.5s ease-in-out;
+  -webkit-transition: all 0.5s ease-in-out;
+  -ms-transition: all 0.5s ease-in-out; }
+  .block__nav--menu.toggleMainMenu {
+    left: 0; }
   .block__nav--menu a > * {
     color: #DBDBE0; }
   .block__nav--menu ul {
@@ -450,7 +454,9 @@ footer {
 @media (min-width: 992px) {
   .block__nav--menu {
     left: 0;
-    height: 100%; } }
+    height: 100%; }
+    .block__nav--menu.toggleMainMenu {
+      left: -21rem; } }
 
 .block__section--statistics .statistics__box {
   padding-bottom: 1rem;
@@ -856,37 +862,15 @@ footer {
   .article__box--notification .article__content--item-left {
     width: 10%; }
   .article__box--notification .article__content--item-right {
-    width: 90%; }
-  /*
-    .article__box--team-members{
-        .article__content--item{
-            &-left{
-                width: 15%;            
-            }
-                    
-            &-right{
-                width: 80%;          
-            }
-        }
-    }*/ }
+    width: 90%; } }
 
-@media (min-width: 992px) {
+@media (min-width: 992px) and (max-width: 1199px) {
   .article__box--notification .article__content--item-left {
     width: 15%; }
   .article__box--notification .article__content--item-right {
     width: 85%; }
-  /*
-    .article__box--team-members{
-        .article__content--item{
-            &-left{
-                width: 30%;            
-            }
-                    
-            &-right{
-                width: 65%;          
-            }
-        }
-    }*/ }
+  .article__box--todo-list .block__button .btn {
+    font-size: 0.9rem; } }
 
 @media (min-width: 1200px) {
   .article__box--notification .article__content--item-left {
@@ -1064,6 +1048,11 @@ footer {
   .block__circle--moving-top:hover {
     background: #5BBFDF;
     color: #FFFFFF; }
+
+.mainpage--container-content {
+  transition: all 0.5s ease-in-out;
+  -webkit-transition: all 0.5s ease-in-out;
+  -ms-transition: all 0.5s ease-in-out; }
 
 .mainpage--container-right {
   margin-top: 3rem; }
