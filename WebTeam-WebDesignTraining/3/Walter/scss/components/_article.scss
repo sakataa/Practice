@@ -34,8 +34,7 @@
 .article__box--notification{
     padding-top: 2rem;
     .article__content--item{
-        &-left{
-            margin-right: 1.2rem;                
+        &-left{            
             .circle__clock{
                 background: $color-primary;
                 @include circle($radius-article-clock);
@@ -49,7 +48,7 @@
         }
                 
         &-right{
-            max-width: 84%;
+            padding-left: 1rem;
             .text-description{
                 color: $color-bg-light-gray;
             }           
@@ -59,11 +58,15 @@
 
 .article__box--team-members{
     .article__content--item{
-        &-left{
-            margin-right: 0.5rem;               
+        &-left{              
             .circle__avatar{
                 @include circle(1.75rem);
             }
+        }
+        
+        &-right{
+            padding-left: 1rem;
+            width: 70%;
         }
     }   
 }
@@ -98,10 +101,13 @@
         margin-top: 3rem;
         padding-bottom: 2rem;
         
+        &--left, &--right{
+            width: 50%;
+        }
+        
         .btn{
-            height: 3rem;
-            padding-top: 0.5rem;
-            padding-bottom: 0.5rem;
+            font-size: 1.2rem;
+            padding: 0.75rem 1rem;
         }
     }
 }
@@ -111,5 +117,71 @@
     label.text--description{
         color: $color-bg-light-gray;
         text-decoration: line-through;
+    }
+}
+
+@media(max-width: 767px){
+    .article__box--notification{
+        .article__content--item{
+            &-left{
+                width: 10%;            
+            }
+                    
+            &-right{
+                width: 90%;          
+            }
+        }
+    }
+    /*
+    .article__box--team-members{
+        .article__content--item{
+            &-left{
+                width: 15%;            
+            }
+                    
+            &-right{
+                width: 80%;          
+            }
+        }
+    }*/
+}
+
+@media(min-width: 992px){
+    .article__box--notification{
+        .article__content--item{
+            &-left{
+                width: 15%;            
+            }
+                    
+            &-right{
+                width: 85%;          
+            }
+        }
+    }
+    /*
+    .article__box--team-members{
+        .article__content--item{
+            &-left{
+                width: 30%;            
+            }
+                    
+            &-right{
+                width: 65%;          
+            }
+        }
+    }*/
+}
+
+@media(min-width: 1200px){
+    .article__box--notification{
+        .article__content--item{
+            &-left{
+                width: 10%;            
+            }
+                    
+            &-right{
+                width: 90%;          
+            }
+        }
     }
 }
