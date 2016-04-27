@@ -2,9 +2,8 @@
     width: $width-left-menu;
     position: absolute;
     top: 0;
-    left: 0;
+    left: -21rem;
     z-index: 900;
-    display: none;
     background: $color-bright-gray;
     
     @include transition(1s);
@@ -70,6 +69,7 @@
                 
                 .submenu-content-main{
                     max-height: 0;
+                    visibility: hidden;
                     padding-left: 3rem;
                     overflow: hidden;
                     a{
@@ -82,7 +82,7 @@
                         }                                             
                     }
                     
-                    @include transition(1s);
+                    @include transition();
                 }
                 
                 &.menu-active{
@@ -92,7 +92,7 @@
                     }
                     
                     .submenu-content-main{
-                        max-height: 100%;                       
+                        visibility: visible;             
                     }
                 }
             }
@@ -102,7 +102,7 @@
 
 @media (min-width: 992px){
     .block__nav--menu{
-        display: block;
+        left: 0;
         height: 100%;
     }
 }

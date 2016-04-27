@@ -11,24 +11,32 @@
 		var element = $(this);
 		var parent = element.parent();
 		var isActive = parent.hasClass("menu-active");
+		var subMenu = parent.find(".submenu-content-main");
 		
 		$(".menu--item-icon-expand")
 			.removeClass("fa-angle-down")
 			.addClass("fa-angle-right");
 			
+		$(".menu--item-main").parent().removeClass("menu-active");
+		$(".submenu-content-main").css({"max-height": "0px"});
+		
 		if(!isActive){
 			element.find(".menu--item-icon-expand")
 			.removeClass("fa-angle-right")
 			.addClass("fa-angle-down");
+			
+			var itemHeight = 35;
+			var itemSubmenu = subMenu.find("li");
+			var height = itemSubmenu.length * itemHeight;
+			subMenu.css({"max-height": height + "px"});
 		}
-		
-		$(".menu--item-main").parent().removeClass("menu-active");
-		parent.toggleClass("menu-active", !isActive);
+		parent.toggleClass("menu-active", !isActive);		
 	});
 	
 	$("#menu-toggle").click(function(){
-		$(".block__nav--menu").toggle();		
-		var isVisible = $('.block__nav--menu').is(':visible');		
+		var mainMenu = $(".block__nav--menu");
+		//$(".block__nav--menu").toggle();		
+		var isVisible = mainMenu.hasClass("showMainMenu");	
 		$("#mainContent").toggleClass("mainpage--container-fullwidth", !isVisible);
 	});
 	
