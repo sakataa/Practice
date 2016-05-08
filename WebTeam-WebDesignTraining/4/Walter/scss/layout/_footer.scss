@@ -1,0 +1,11 @@
+footer{
+    clear: both;
+    height: $height-footer;
+    background: $color-primary;
+    z-index: 800;
+    p{
+        font-size: 1.2rem;
+        color: $color-white;
+        line-height: $height-footer;
+    }
+}

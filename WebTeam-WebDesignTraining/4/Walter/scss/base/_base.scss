@@ -1,0 +1,46 @@
+a{
+	text-decoration: none;
+}
+
+*{
+	&:focus {
+		outline: 0;
+	}
+}
+
+.block--display-table{
+	display: table;
+	height: 100%;
+}
+
+.block--display-table-cell{
+	display: table-cell;
+	vertical-align: middle;
+}
+
+.left{
+	float: left;
+}
+
+.right{
+	float: right;
+}
+
+.text--bold{
+	font-weight: bold;
+}
+
+.text--uppercase{
+	text-transform: uppercase;
+}
+.text--capitalize{
+	text-transform: capitalize;
+}
+
+.text--italic{
+	font-style: italic;
+}
+
+.block__section--new{
+	margin-top: 5rem;
+}

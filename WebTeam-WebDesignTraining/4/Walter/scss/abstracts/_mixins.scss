@@ -1,0 +1,58 @@
+@mixin border-radius($radius){
+  -moz-border-radius: $radius;
+  -webkit-border-radius: $radius;
+  border-radius: $radius;
+}
+
+@mixin circle($radius) {
+  width: $radius * 2;
+  height: $radius * 2;
+  @include border-radius(50%);
+  display: inline-block;
+  cursor: default;
+  text-align: center;
+  overflow: hidden;
+}
+
+@mixin tooltip-top($width, $color){
+  border-left: $width solid transparent;
+	border-right: $width solid transparent;
+  border-bottom: $width solid $color;
+	border-top: $width solid transparent;
+}
+
+@mixin transition($time: 0.5s, $style: ease-in-out){
+    transition: all $time $style;
+	  -webkit-transition: all $time $style;
+	  -ms-transition: all $time $style;
+}
+
+@mixin box-shadow($h-shadow, $v-shadow, $blur, $spread, $color){
+  -webkit-box-shadow: $h-shadow $v-shadow $blur $spread $color;
+  -moz-box-shadow: $h-shadow $v-shadow $blur $spread $color;
+  box-shadow: $h-shadow $v-shadow $blur $spread $color;
+}
+
+@mixin rotate($degree){
+	-ms-transform: rotate($degree); /* IE 9 */
+    -webkit-transform: rotate($degree); /* Chrome, Safari, Opera */
+    transform: rotate($degree);
+}
+
+@mixin setColorPlaceholder($color){
+  ::-webkit-input-placeholder {
+    color: $color;
+  }
+
+  :-moz-placeholder { /* Firefox 18- */
+    color: $color;  
+  }
+
+  ::-moz-placeholder {  /* Firefox 19+ */
+    color: $color;  
+  }
+
+  :-ms-input-placeholder {  
+    color: $color;  
+  }
+}

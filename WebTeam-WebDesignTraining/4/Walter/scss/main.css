@@ -1,0 +1,126 @@
+/* reset browser styles */
+html, body, div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  vertical-align: baseline; }
+
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+  display: block; }
+
+body {
+  line-height: 1.2; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+*, *::before, *::after {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box; }
+
+img {
+  max-width: 100%;
+  vertical-align: middle;
+  border: 0; }
+
+/* end reset browser styles */
+a {
+  text-decoration: none; }
+
+*:focus {
+  outline: 0; }
+
+.block--display-table {
+  display: table;
+  height: 100%; }
+
+.block--display-table-cell {
+  display: table-cell;
+  vertical-align: middle; }
+
+.left {
+  float: left; }
+
+.right {
+  float: right; }
+
+.text--bold {
+  font-weight: bold; }
+
+.text--uppercase {
+  text-transform: uppercase; }
+
+.text--capitalize {
+  text-transform: capitalize; }
+
+.text--italic {
+  font-style: italic; }
+
+.block__section--new {
+  margin-top: 5rem; }
+
+@font-face {
+  font-family: 'Ruda';
+  src: url("../fonts/Ruda-Regular.ttf"); }
+html {
+  font-size: 10px; }
+
+body {
+  font-family: "Ruda", sans-serif;
+  text-transform: none; }
+
+header {
+  background: #FFD677;
+  border-bottom: 0.2rem solid #C9AA60;
+  height: 6rem; }
+  header nav {
+    height: 100%; }
+  header .navbar {
+    list-style: none;
+    height: 100%; }
+  header .navbar__item {
+    padding-right: 1rem; }
+
+footer {
+  clear: both;
+  height: 4rem;
+  background: #3985BD;
+  z-index: 800; }
+  footer p {
+    font-size: 1.2rem;
+    color: #FFFFFF;
+    line-height: 4rem; }
+
+.block__circle--moving-top {
+  position: absolute;
+  bottom: 1rem;
+  right: 1.5rem;
+  background: rgba(255, 255, 255, 0.5);
+  width: 2rem;
+  height: 2rem;
+  -moz-border-radius: 50%;
+  -webkit-border-radius: 50%;
+  border-radius: 50%;
+  display: inline-block;
+  cursor: default;
+  text-align: center;
+  overflow: hidden;
+  cursor: pointer;
+  z-index: 900; }
+  .block__circle--moving-top .fa-angle-up {
+    vertical-align: middle;
+    height: 100%; }
+  .block__circle--moving-top:hover {
+    background: #5BBFDF;
+    color: #FFFFFF; }
+
+body {
+  background-color: #F3F1F3; }
+
+/*# sourceMappingURL=main.css.map */
