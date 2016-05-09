@@ -5,14 +5,73 @@ header{
     
     nav{
         height: 100%;
+        float: left;
+        
+        &.container-fluid{
+            padding-left: 0;
+        }
+    }
+
+    .navbar-nav{
+        > li{
+            float: left;
+        }
+
+        .header__title{
+            color: $color-bright-gray;
+            font-size: 1.2rem;
+            padding-left: 0;
+        }
+    }
+
+    .icon__bar{
+        display: block;
+        background: $color-bg-light-gray;
+        margin-top: 0.2rem;
+        margin-bottom: 0.2rem;
+        height: 0.3rem;
+        width: 1.5rem;
+        @include border-radius(0.1rem);
+    }
+
+    /*Notification*/
+    .notification{
+        > li{
+            margin-right: 1.5rem;
+        }
+
+        .notification__message{
+            display: inline-block;
+            overflow: visible;
+            height: $height-item-notification-xs;
+            width: $height-item-notification-xs;
+            border: 0.1rem solid $color-dark;
+            color: $color-dark;
+            padding: 0;
+            @include border-radius(0.4rem);
+
+            .glyphicon-envelope{
+                font-size: 1.2rem;
+                line-height: $height-item-notification-xs;
+                font-family: inherit;
+            }
+
+            .notification__number{
+                position: absolute;
+                padding: 1px 5px;
+                top: -1rem;
+                right: -1rem;
+                color: $color-white;
+                background: $color-primary;
+                font-weight: bold;
+                font-size: 1rem;
+                line-height: $height-item-number-xs;
+            }
+        }
+    }
+
+    .btn-logout{
+        font-size: 1rem;
     }
     
-    .navbar{
-        list-style: none;
-        height: 100%;
-    }
-    
-    .navbar__item{
-        padding-right: 1rem;
-    }
 }

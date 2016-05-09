@@ -10,38 +10,44 @@
 </head>
 
 <body>
-	<div class="wrapper block--container">
-		<header class="container">
-			<nav>
-				<ul class="navbar navbar__list--left block--display-table">
-					<li class="navbar__item block--display-table-cell">
-						<a href="javascript:" id="menu-toggle" class="navbar__item--toggle-menu">
-							<span class="icon--bar"></span>
-							<span class="icon--bar"></span>
-							<span class="icon--bar"></span>
+	<div class="page">
+		<header>
+			<nav class="container-fluid block--display-table">
+				<ul class="nav navbar-nav block--display-table-cell">
+					<li>
+						<a href="javascript:">
+							<span class="icon__bar"></span>
+							<span class="icon__bar"></span>
+							<span class="icon__bar"></span>
 						</a>
 					</li>
-					<li class="navbar__item block--display-table-cell">
-						<a class="navbar__item--title text--uppercase text--bold">
-							html css training
+        			<li><a href="javascript:" class="header__title text--uppercase text--bold">html css training</a></li>
+				</ul>
+
+				<ul class="nav navbar-nav block--display-table-cell notification">
+					<li>
+						<a href="javascript:" id="message" class="notification__message text-center">
+							<i class="glyphicon glyphicon-envelope" aria-hidden="true"></i>
+							<span class="notification__number badge">4</span>
 						</a>
 					</li>
-				</ul>				
+					<li>
+						<a href="javascript:" id="message" class="notification__message text-center">
+							<i class="glyphicon glyphicon-tasks" aria-hidden="true"></i>
+							<span class="notification__number badge">5</span>
+						</a>
+					</li>
+				</ul>
+
+				<ul class="nav navbar-nav navbar-right block--display-table-cell">
+		        	<li><button type="button" class="btn btn-primary btn-logout">Logout</button></li>
+		        </ul>	
 			</nav>
 		</header>
-		
-		<div id="mainContent" class="mainpage--container wrapper block--container">
-			<div class="mainpage--container-left">
-			</div>
-			
-			<div class="mainpage--container-content wrapper">											
-				<footer class="wrapper text--center">
-					<p>2016 - Nexcel Solution</p>		
-					<span class="block__circle--moving-top" id="topMoving">
-						<i class="fa fa-angle-up" aria-hidden="true"></i>
-					</span>
-				</footer>
-			</div>
+
+		<div class="page__content">
+			<div class="page__content--left"></div>
+			<div class="page__content--right"></div>
 		</div>						
 	</div>
 	<script src="scripts/jquery-2.2.0.min.js"></script>
