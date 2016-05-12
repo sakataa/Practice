@@ -5,6 +5,7 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="scss/vendor/bootstrap/css/bootstrap.css" />
+	<link rel="stylesheet" href="scss/vendor/font-awesome/css/font-awesome.min.css">
 	<link rel="stylesheet" type="text/css" href="scss/main.css" />
 	<title>HTML CSS TRAINING</title>
 </head>
@@ -12,8 +13,8 @@
 <body>
 	<div class="page">
 		<header>
-			<nav class="container-fluid block--display-table">
-				<ul class="nav navbar-nav block--display-table-cell">
+			<nav class="container-fluid">
+				<ul class="nav navbar-nav">
 					<li>
 						<a href="javascript:">
 							<span class="icon__bar"></span>
@@ -21,27 +22,29 @@
 							<span class="icon__bar"></span>
 						</a>
 					</li>
-        			<li><a href="javascript:" class="header__title text--uppercase text--bold">html css training</a></li>
+        			<li>
+        				<a href="javascript:" class="header__title text--uppercase text--bold">html css training</a>
+        			</li>
 				</ul>
 
-				<ul class="nav navbar-nav block--display-table-cell notification">
+				<ul class="nav navbar-nav notification">
 					<li>
 						<a href="javascript:" id="message" class="notification__message text-center">
-							<i class="glyphicon glyphicon-envelope" aria-hidden="true"></i>
+							<i class="fa fa-envelope-o" aria-hidden="true"></i>
 							<span class="notification__number badge">4</span>
 						</a>
 					</li>
 					<li>
 						<a href="javascript:" id="message" class="notification__message text-center">
-							<i class="glyphicon glyphicon-tasks" aria-hidden="true"></i>
+							<i class="fa fa-tasks" aria-hidden="true"></i>
 							<span class="notification__number badge">5</span>
 						</a>
 					</li>
 				</ul>
 
-				<ul class="nav navbar-nav navbar-right block--display-table-cell">
-		        	<li><button type="button" class="btn btn-primary btn-logout">Logout</button></li>
-		        </ul>	
+				<ul class="nav navbar-nav navbar-right">
+		        	<li><a><button type="button" class="btn btn-primary btn-logout">Logout</button></a></li>
+		        </ul>
 			</nav>
 		</header>
 

@@ -2,25 +2,66 @@ header{
     background: $color-bg-header;
     border-bottom: 0.2rem solid $color-border-header;
     height: 6rem;
+    position: relative;
     
     nav{
-        height: 100%;
-        float: left;
-        
-        &.container-fluid{
-            padding-left: 0;
-        }
-    }
-
-    .navbar-nav{
-        > li{
+        .nav{
             float: left;
+            margin-top: 1rem;
+
+            >li{
+                float: left;
+
+                >a{
+                    &:hover, &:focus{
+                        background: transparent;
+                    }
+                }
+            }
+        }
+
+        .navbar-right{
+            float: right;
+            margin-top: 0.5rem;
         }
 
         .header__title{
             color: $color-bright-gray;
             font-size: 1.2rem;
             padding-left: 0;
+        }
+
+        .notification{
+            margin: 2rem 0;
+            padding-left: 1rem;
+            padding-right: 0;
+
+            >li{
+                margin-right: 1.5rem;
+            }
+
+            .notification__message{
+                display: inline-block;
+                overflow: visible;
+                height: $height-item-notification-xs;
+                width: $height-item-notification-xs;
+                border: 0.1rem solid $color-dark;
+                color: $color-dark;
+                padding: 0;
+                @include border-radius(0.4rem);
+
+                .notification__number{
+                    position: absolute;
+                    padding: 1px 5px;
+                    top: -1rem;
+                    right: -1rem;
+                    color: $color-white;
+                    background: $color-primary;
+                    font-weight: bold;
+                    font-size: 1rem;
+                    line-height: $height-item-number-xs;
+                }
+            }
         }
     }
 
@@ -34,44 +75,27 @@ header{
         @include border-radius(0.1rem);
     }
 
-    /*Notification*/
-    .notification{
-        > li{
-            margin-right: 1.5rem;
-        }
-
-        .notification__message{
-            display: inline-block;
-            overflow: visible;
-            height: $height-item-notification-xs;
-            width: $height-item-notification-xs;
-            border: 0.1rem solid $color-dark;
-            color: $color-dark;
-            padding: 0;
-            @include border-radius(0.4rem);
-
-            .glyphicon-envelope{
-                font-size: 1.2rem;
-                line-height: $height-item-notification-xs;
-                font-family: inherit;
-            }
-
-            .notification__number{
-                position: absolute;
-                padding: 1px 5px;
-                top: -1rem;
-                right: -1rem;
-                color: $color-white;
-                background: $color-primary;
-                font-weight: bold;
-                font-size: 1rem;
-                line-height: $height-item-number-xs;
-            }
-        }
-    }
-
     .btn-logout{
         font-size: 1rem;
     }
     
+}
+
+@media (min-width: 768px){
+    header nav{
+        .nav{
+            margin-top: 1rem;
+        }
+
+
+        .notification{
+            margin-top: 2rem;
+            margin-left: 8.5rem;
+        }
+
+        .navbar-right{
+            float: right;
+            margin-top: 0.5rem;
+        }
+    }
 }
