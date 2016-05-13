@@ -1,0 +1,24 @@
+.table__box{
+	background: $color-white;
+    color: $color-bg-light-gray;
+    @include box-shadow(0, 3px, 10px, 2px, rgba(189,176,189,0.8));
+    border-bottom: 2px solid #ABB2BD;
+
+    .table{
+    	margin-top: 2rem;
+    	th, p{
+    		font-size: 1.2rem;
+    	}
+
+    	&__title{
+            font-size: 1.8rem;
+            height: $height-table-title; 
+            border-bottom: 0.1rem solid $color-bg-light-gray;
+            
+            p{
+                padding-left: 1rem;
+                line-height: $height-table-title;
+            }           
+        }
+    }
+}

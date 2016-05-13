@@ -11,7 +11,11 @@
 	'layout/header',
     'layout/footer';
 
-
+@import
+	'components/article',
+	'components/table',
+	'components/panel',
+	'components/statistics';
 
 @import
   	'pages/index';

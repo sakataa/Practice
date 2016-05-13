@@ -12,8 +12,10 @@
 
 <body>
 	<div class="page">
-		<header>
+		<!--Header-->
+		<header>			
 			<nav class="container-fluid">
+				<!--Header Left-->
 				<ul class="nav navbar-nav">
 					<li>
 						<a href="javascript:">
@@ -23,10 +25,12 @@
 						</a>
 					</li>
         			<li>
-        				<a href="javascript:" class="header__title text--uppercase text--bold">html css training</a>
+        				<a href="javascript:" class="header__title text-uppercase text--bold">html css training</a>
         			</li>
 				</ul>
+				<!--End Header Left-->
 
+				<!--Header Center-->
 				<ul class="nav navbar-nav notification">
 					<li>
 						<a href="javascript:" id="message" class="notification__message text-center">
@@ -41,16 +45,496 @@
 						</a>
 					</li>
 				</ul>
+				<!--End Header Center-->
 
+				<!--Header Right-->
 				<ul class="nav navbar-nav navbar-right">
 		        	<li><a><button type="button" class="btn btn-primary btn-logout">Logout</button></a></li>
 		        </ul>
+		        <!--End Header Right-->
 			</nav>
 		</header>
+		<!--End Header-->
 
-		<div class="page__content">
-			<div class="page__content--left"></div>
-			<div class="page__content--right"></div>
+		<div class="mainpage">
+			<!--Left menu-->
+			<div class="sidebar">
+			</div>
+			<!--End left menu-->
+
+			<!--Main Content-->
+			<div class="mainpage__content">
+				<!--Main Content Left-->
+				<div class="container-fluid mainpage__content--left">
+					<!--Section Statistics-->
+					<section class="section__new section__statistics">
+						<div class="statistics__box">
+							<div class="statistics__item text-center">
+								<i class="fa fa-heart-o" aria-hidden="true"></i>
+								<p class="data--statistics">933</p>
+								<p class="text--hover">
+									933 People liked your page the last 24hrs. Whoohoo!
+								</p>
+							</div>
+						</div>
+
+						<div class="statistics__box">
+							<div class="statistics__item text-center">
+								<i class="fa fa-cloud" aria-hidden="true"></i>
+								<p class="data--statistics">+48</p>
+								<p class="text--hover">
+									48 new file were added in your cloud storage.
+								</p>
+							</div>
+						</div>
+
+						<div class="statistics__box">
+							<div class="statistics__item text-center">
+								<i class="fa fa-inbox" aria-hidden="true"></i>
+								<p class="data--statistics">23</p>
+								<p class="text--hover">
+									You have 23 unread messages in your inbox.
+								</p>
+							</div>
+						</div>
+
+						<div class="statistics__box">
+							<div class="statistics__item text-center">
+								<i class="fa fa-newspaper-o" aria-hidden="true"></i>
+								<p class="data--statistics">+10</p>
+								<p class="text--hover">
+									More than 10 news were added in your reader.
+								</p>
+							</div>
+						</div>
+
+						<div class="statistics__box">
+							<div class="statistics__item text-center">
+								<i class="fa fa-database" aria-hidden="true"></i>
+								<p class="data--statistics">OK!</p>
+								<p class="text--hover">
+									Your server is working perfectly Relax & enjoy.
+								</p>
+							</div>
+						</div>
+					</section>
+					<!--End Section Statistics-->
+
+					<!--Section Information-->
+					<section class="section__new section__information">
+						<!--Row 1-->
+						<div class="row">
+							<div class="panel col-xs-12 col-sm-4">
+								<div class="panel__item panel__item--author">
+									<div class="panel__item--content panel__item--author-content text-center">
+										<div class="content__profile">
+											<span class="content__profile--avatar wrapper">
+												<img src="images/ui-sherman.jpg" alt="avatar" />
+											</span>
+											<span class="content__profile--name text-uppercase">dj sherman</span>
+										</div>
+									</div>
+									<div class="panel__item--footer text-center">
+										<span class="footer__profile">
+											<i class="fa fa-twitter" aria-hidden="true"></i>
+											<i class="fa fa-facebook" aria-hidden="true"></i>
+											<i class="fa fa-dribbble" aria-hidden="true"></i>
+										</span>	
+									</div>
+								</div>
+							</div>
+
+							<div class="panel col-xs-12 col-sm-4">
+								<div class="panel__item panel__item--product">
+									<div class="panel__item--content panel__item--product-content text-center">
+										<div class="circle--hot">
+											<span class="text text-uppercase">hot</span>
+										</div>
+										<img src="images/product.jpg" alt="product">
+										<p class="content__product--name text-capitalize">flat pack heritage</p>
+										<p class="content__product--total text-uppercase">total sales: 1388</p>
+										<button class="btn btn-danger btn-report text-uppercase">full report</button>
+									</div>
+								</div>
+							</div>
+
+							<div class="panel col-xs-12 col-sm-4">
+								<div class="panel__item panel__item--user">
+									<div class="panel__item--title text-uppercase text-center">
+										<span class="text--title">top user</span>	
+									</div>
+									<div class="panel__item--content panel__item--user-content text-center">
+										<div class="content__profile">
+											<span class="content__profile--avatar wrapper">
+												<img src="images/ui-zac.jpg" alt="avatar" />
+											</span>
+											<span class="content__profile--text content__profile--text-username text-capitalize">zac snider</span>
+												<div class="content__profile--text-left">
+													<span class="content__profile--text text--label text-uppercase">member since</span>
+													<span class="content__profile--text">2012</span>
+												</div>
+												
+												<div class="content__profile--text-right">
+													<span class="content__profile--text text--label text-uppercase">total spend</span>
+													<span class="content__profile--text">$ 47,60</span>
+												</div>				
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<!--End Row 1-->
+
+						<!--Row 2-->
+						<div class="row">
+							<div class="panel col-xs-12 col-sm-4">
+								<div class="panel__item panel__item--share">
+									<div class="panel__item--content panel__item--share-content">
+										<div class="panel__item--content-chart">
+											<img src="images/8.png" alt="chart" />
+										</div>
+										<div class="panel__item--content-description block--display-table">
+											<div class="block--display-table-cell content--left text-left">
+												<p class="content--text">AAPL</p>
+												<p class="text-capitalize content--note">yesterday</p>
+											</div>
+											<div class="block--display-table-cell content--right text-right">
+												<p class="content--text"><i class="fa fa-caret-up" aria-hidden="true"></i><span>694.00</span></p>
+												<p class="content--note">+4.95 (3.49%)</p>
+											</div>
+										</div>
+									</div>
+									<div class="panel__item--share-footer text-center text-uppercase">
+										<span class="footer__share">
+											<span class="text--bold">18.3 M</span>
+											<span class="text-uppercase">shares trades</span>
+										</span>	
+									</div>
+								</div>
+							</div>
+
+							<div class="panel col-xs-12 col-sm-4">
+								<div class="panel__item panel__item--newfeed">
+									<div class="panel__item--content panel__item--newfeed-content block--display-table text-center">
+										<div class="content__newfeed block--display-table-cell">
+											<i class="fa fa-instagram" aria-hidden="true"></i>
+											<p class="content__newfeed--text text-uppercase">@thisisyou</p>
+											<p class="content__newfeed--text">5 min. ago</p>
+											<p class="content__newfeed--text"><i class="fa fa-comment" aria-hidden="true"></i> 18 | <i class="fa fa-heart" aria-hidden="true"></i>49</p>
+										</div>
+									</div>
+								</div>
+							</div>
+
+							<div class="panel col-xs-12 col-sm-4">
+								<div class="panel__item panel__item--weather">
+									<div class="panel__item--content panel__item--weather-content block--display-table text-center">
+										<div class="content__weather block--display-table-cell">
+											<i class="fa fa-cloud" aria-hidden="true"></i>
+											<p class="content__newfeed--text">11&#8451;</p>
+											<p class="content__newfeed--text text-uppercase">budapest</p>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<!--End Row 2-->
+					</section>
+					<!--End Section Information-->
+
+					<!--Section Table-->
+					<section class="section__new section__table">
+						<div class="table__box">
+							<div class="table__title">
+								<p class="text-capitalize">advanced table</p>
+							</div>
+							
+							<div class="table__wrapper">
+								<table class="table table-striped">
+									<thead class="text-capitalize">
+										<tr>
+											<th><i class="fa fa-bullhorn" aria-hidden="true"></i> company</th>
+											<th class="hidden-xs"><i class="fa fa-question-circle-o" aria-hidden="true"></i> description</th>
+											<th><i class="fa fa-bookmark" aria-hidden="true"></i> profit</th>
+											<th><i class="fa fa-pencil-square-o" aria-hidden="true"></i> status</th>
+											<th>&nbsp;</th>
+										</tr>
+									</thead>
+									
+									<tbody>
+										<tr>
+											<td><p class="text-primary">Company Ltd</p></td>
+											<td class="hidden-xs"><p>Lorem Ipsum dolor</p></td>
+											<td><p>12000.00$</p></td>
+											<td><p><span class="label label-info">Due</span></p></td>
+											<td>
+												<p>
+													<i class="fa fa-check text-danger" aria-hidden="true"></i>
+													<i class="fa fa-pencil text-info" aria-hidden="true"></i>
+													<i class="fa fa-trash-o" aria-hidden="true"></i>
+												</p>
+											</td>
+										</tr>
+										<tr>
+											<td><p class="text-primary">Dashgum co</p></td>
+											<td class="hidden-xs"><p>Lorem Ipsum dolor</p></td>
+											<td><p>17900.00$</p></td>
+											<td><p><span class="label label-warning">Due</span></p></td>
+											<td>
+												<p>
+													<i class="fa fa-check text-danger" aria-hidden="true"></i>
+													<i class="fa fa-pencil text-info" aria-hidden="true"></i>
+													<i class="fa fa-trash-o" aria-hidden="true"></i>
+												</p>
+											</td>
+										</tr>
+										<tr>
+											<td><p class="text-primary">Another co</p></td>
+											<td class="hidden-xs"><p>Lorem Ipsum dolor</p></td>
+											<td><p>12000.00$</p></td>
+											<td><p><span class="label label-danger">Due</span></p></td>
+											<td>
+												<p>
+													<i class="fa fa-check text-danger" aria-hidden="true"></i>
+													<i class="fa fa-pencil text-info" aria-hidden="true"></i>
+													<i class="fa fa-trash-o" aria-hidden="true"></i>
+												</p>
+											</td>
+										</tr>
+										<tr>
+											<td><p class="text-primary">Dashgum ext</p></td>
+											<td class="hidden-xs"><p>Lorem Ipsum dolor</p></td>
+											<td><p>17900.00$</p></td>
+											<td><p><span class="label label-danger">Due</span></p></td>
+											<td>
+												<p>
+													<i class="fa fa-check text-danger" aria-hidden="true"></i>
+													<i class="fa fa-pencil text-info" aria-hidden="true"></i>
+													<i class="fa fa-trash-o" aria-hidden="true"></i>
+												</p>
+											</td>
+										</tr>
+										<tr>
+											<td><p class="text-primary">Total Ltd</p></td>
+											<td class="hidden-xs"><p>Lorem Ipsum dolor</p></td>
+											<td><p>17900.00$</p></td>
+											<td><p><span class="label label-warning">Due</span></p></td>
+											<td>
+												<p>
+													<i class="fa fa-check text-danger" aria-hidden="true"></i>
+													<i class="fa fa-pencil text-info" aria-hidden="true"></i>
+													<i class="fa fa-trash-o" aria-hidden="true"></i>
+												</p>
+											</td>
+										</tr>
+									</tbody>
+								</table>
+							</div>				
+						</div>
+					</section>
+					<!--End Section Table-->
+				</div>
+				<!--End Main Content Left-->
+
+				<!--Main Content Right-->
+				<div class="container-fluid mainpage__content--right">				
+					<section class="section__article">
+						<!--Notification-->
+						<div class="article article__notification">
+							<div class="article__title text-center">
+								<p class="text text-uppercase">notifications</p>
+							</div>
+							<div class="article__content">
+								<div class="article__content--item">
+									<div class="article__content--item-left left">
+										<span class="circle__clock">
+											<i class="fa fa-clock-o" aria-hidden="true"></i>
+										</span>							
+									</div>
+									<div class="article__content--item-right">
+										<p class="text-uppercase text--bold text--italic">2 minutes ago</p>
+										<p class="text-description text-bold">
+											<span class="text-primary">James Brown</span> subscribed to your newsletter
+										</p>
+									</div>
+								</div>
+
+								<div class="article__content--item">
+									<div class="article__content--item-left left">
+										<span class="circle__clock">
+											<i class="fa fa-clock-o" aria-hidden="true"></i>
+										</span>							
+									</div>
+									<div class="article__content--item-right">
+										<p class="text-uppercase text--bold text--italic">3 hours ago</p>
+										<p class="text-description text-bold">
+											<span class="text-primary">Dianna Kennedy</span> purchased a year description
+										</p>
+									</div>
+								</div>
+
+								<div class="article__content--item">
+									<div class="article__content--item-left left">
+										<span class="circle__clock">
+											<i class="fa fa-clock-o" aria-hidden="true"></i>
+										</span>							
+									</div>
+									<div class="article__content--item-right">
+										<p class="text-uppercase text--bold text--italic">7 hours ago</p>
+										<p class="text-description text-bold">
+											<span class="text-primary">Brandon Page</span> subscribed to your newsletter
+										</p>
+									</div>
+								</div>
+
+								<div class="article__content--item">
+									<div class="article__content--item-left left">
+										<span class="circle__clock">
+											<i class="fa fa-clock-o" aria-hidden="true"></i>
+										</span>							
+									</div>
+									<div class="article__content--item-right">
+										<p class="text-uppercase text--bold text--italic">3 hours ago</p>
+										<p class="text-description text-bold">
+											<span class="text-primary">Daniel Pratt</span> purchased a wallet in your store
+										</p>
+									</div>
+								</div>
+							</div>
+						</div>
+						<!--End Notification-->
+
+						<!--Team Member-->
+						<div class="article article__team-member">
+							<div class="article__title text-center">
+								<p class="text text-uppercase">team members</p>
+							</div>
+							<div class="article__content">
+								<div class="article__content--item">
+									<div class="article__content--item-left left">
+										<span class="circle__avatar">
+											<img src="images/ui-divya.jpg" alt="avatar">
+										</span>
+									</div>
+
+									<div class="article__content--item-right text--bold">
+										<p class="text-primary">
+											DIVYA MANIAN
+										</p>
+										<p class="text--italic text-uppercase">available</p>
+									</div>
+								</div>
+
+								<div class="article__content--item">
+									<div class="article__content--item-left left">
+										<span class="circle__avatar">
+											<img src="images/ui-sherman.jpg" alt="avatar">
+										</span>
+									</div>
+
+									<div class="article__content--item-right text--bold">
+										<p class="text-primary">
+											DJ SHERMAN
+										</p>
+										<p class="text--italic text-uppercase">i am busy</p>
+									</div>
+								</div>
+
+								<div class="article__content--item">
+									<div class="article__content--item-left left">
+										<span class="circle__avatar">
+											<img src="images/ui-danro.jpg" alt="avatar">
+										</span>
+									</div>
+
+									<div class="article__content--item-right text--bold">
+										<p class="text-primary">
+											DAN ROGERS
+										</p>
+										<p class="text--italic text-uppercase">available</p>
+									</div>
+								</div>
+
+								<div class="article__content--item">
+									<div class="article__content--item-left left">
+										<span class="circle__avatar">
+											<img src="images/ui-zac.jpg" alt="avatar">
+										</span>
+									</div>
+
+									<div class="article__content--item-right text--bold">
+										<p class="text-primary">
+											Zac Sniders
+										</p>
+										<p class="text--italic text-uppercase">available</p>
+									</div>
+								</div>
+
+								<div class="article__content--item">
+									<div class="article__content--item-left left">
+										<span class="circle__avatar">
+											<img src="images/ui-sam.jpg" alt="avatar">
+										</span>
+									</div>
+
+									<div class="article__content--item-right text--bold">
+										<p class="text-primary">
+											Marcel Newman
+										</p>
+										<p class="text--italic text-uppercase">available</p>
+									</div>
+								</div>
+							</div>
+						</div>
+						<!--End Team Member-->
+
+						<!--To Do List-->
+						<div class="article article__todo-list">
+							<div class="article__title text-center">
+								<p class="text text-uppercase">to do list</p>
+							</div>
+							<div class="article__content">
+								<div class="article__content--item item-checked">
+									<input type="checkbox" checked="checked" class="chkTodo" id="todo1"/>
+									<label for="todo1" class="text--description">Nexcel Solutions - Admin Themes</label>
+									<span class="label label-primary label__status">Done</span>
+									<span class="item__action">
+										<i class="fa fa-check text-danger" aria-hidden="true"></i>
+										<i class="fa fa-pencil text-info" aria-hidden="true"></i>
+										<i class="fa fa-trash-o" aria-hidden="true"></i>
+									</span>
+								</div>
+
+								<div class="article__content--item">
+									<input type="checkbox" checked="checked" class="chkTodo" id="todo1"/>
+									<label for="todo1" class="text--description">Extensive collection of plugins</label>
+									<span class="label label-warning label__status">Cool</span>
+									<span class="item__action">
+										<i class="fa fa-check text-danger" aria-hidden="true"></i>
+										<i class="fa fa-pencil text-info" aria-hidden="true"></i>
+										<i class="fa fa-trash-o" aria-hidden="true"></i>
+									</span>
+								</div>
+
+								<div class="article__content--item">
+									<input type="checkbox" checked="checked" class="chkTodo" id="todo1"/>
+									<label for="todo1" class="text--description">Free updates always, no extra fees</label>
+									<span class="label label-danger label__status">2&nbsp;Days</span>
+									<span class="item__action">
+										<i class="fa fa-check text-danger" aria-hidden="true"></i>
+										<i class="fa fa-pencil text-info" aria-hidden="true"></i>
+										<i class="fa fa-trash-o" aria-hidden="true"></i>
+									</span>
+								</div>
+							</div>
+						</div>
+						<!--End To Do List-->
+					</section>
+					
+				</div>
+				<!--End Main Content Right-->
+			</div>
+			<!--End Main Content-->			
 		</div>						
 	</div>
 	<script src="scripts/jquery-2.2.0.min.js"></script>
