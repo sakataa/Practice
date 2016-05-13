@@ -184,6 +184,19 @@ footer {
         color: #E8DFE2;
         background: transparent; }
 
+@media (min-width: 768px) {
+  .sidebar {
+    width: 21rem;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: -21rem;
+    z-index: 900;
+    transition: all 0.3s ease-in-out;
+    -webkit-transition: all 0.3s ease-in-out;
+    -ms-transition: all 0.3s ease-in-out; }
+    .sidebar.collapse.in {
+      left: 0; } }
 .article .article__title {
   height: 6rem;
   background: #FF855D;
@@ -544,6 +557,9 @@ footer {
   .block__circle--moving-top:hover {
     background: #5BBFDF;
     color: #FFFFFF; }
+
+.mainpage {
+  position: relative; }
 
 .mainpage__content--right {
   background: #FFFFFF;
