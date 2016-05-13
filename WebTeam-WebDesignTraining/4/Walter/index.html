@@ -18,7 +18,7 @@
 				<!--Header Left-->
 				<ul class="nav navbar-nav">
 					<li>
-						<a href="javascript:">
+						<a href="javascript:" class="collapsed" data-toggle="collapse" data-target="#sideBar" aria-expanded="false">
 							<span class="icon__bar"></span>
 							<span class="icon__bar"></span>
 							<span class="icon__bar"></span>
@@ -58,7 +58,100 @@
 
 		<div class="mainpage">
 			<!--Left menu-->
-			<div class="sidebar">
+			<div class="sidebar collapse" id="sideBar" aria-expand="false" aria-expanded="false">
+				<div class="logo text-center">
+					<img src="images/ui-sam.jpg" alt="logo" class="img-circle" />
+					<p class="text-capitalize">nexcel solution</p>
+				</div>
+				<!--Menu-->
+				<ul class="nav nav-stacked main-menu" id="mainMenu">
+					<li>
+						<a class="menu__item" href="javascript:">
+							<i class="fa fa-tachometer menu__item--icon" aria-hidden="true"></i>
+							<span class="menu__item-name text-capitalize">dashboard</span>
+						</a>
+					</li>
+
+					<li>
+						<a class="menu__item collapsed" href="javascript:" data-toggle="collapse" data-target="#ui-submenu" aria-expanded="false">
+							<i class="fa fa-desktop menu__item--icon" aria-hidden="true"></i>
+							<span class="menu__item-name text-capitalize">UI element</span>
+							<i class="fa fa-angle-right menu__item--icon-expand pull-right" aria-hidden="true"></i>
+						</a>
+
+						<ul class="nav nav-stacked submenu collapse" id="ui-submenu" aria-expanded="false">
+							<li><a href="javascript:" class="text-capitalize">general</a></li>
+							<li><a href="javascript:" class="text-capitalize">buttons</a></li>
+							<li><a href="javascript:" class="text-capitalize">panels</a></li>
+							<li><a href="javascript:" class="text-capitalize">general1</a></li>
+							<li><a href="javascript:" class="text-capitalize">buttons1</a></li>
+							<li><a href="javascript:" class="text-capitalize">panels1</a></li>
+						</ul>
+					</li>
+
+					<li>
+						<a class="menu__item collapsed" href="javascript:" data-toggle="collapse" data-target="#component" aria-expanded="false">
+							<i class="fa fa-cogs menu__item--icon" aria-hidden="true"></i>
+							<span class="menu__item-name text-capitalize">components</span>
+							<i class="fa fa-angle-right menu__item--icon-expand pull-right" aria-hidden="true"></i>
+						</a>
+						<ul class="nav nav-stacked submenu collapse" id="component" aria-expanded="false">
+							<li><a href="javascript:" class="text-capitalize">general</a></li>
+							<li><a href="javascript:" class="text-capitalize">buttons</a></li>
+							<li><a href="javascript:" class="text-capitalize">panels</a></li>
+						</ul>
+					</li>
+
+					<li>
+						<a class="menu__item collapsed" href="javascript:" data-toggle="collapse" data-target="#extra-page" aria-expanded="false">
+							<i class="fa fa-book menu__item--icon" aria-hidden="true"></i>
+							<span class="menu__item-name text-capitalize">extra pages</span>
+							<i class="fa fa-angle-right menu__item--icon-expand pull-right" aria-hidden="true"></i>
+						</a>
+
+						<ul class="nav nav-stacked submenu collapse" id="extra-page" aria-expanded="false">
+							<li><a href="javascript:" class="text-capitalize">general</a></li>
+							<li><a href="javascript:" class="text-capitalize">buttons</a></li>
+							<li><a href="javascript:" class="text-capitalize">panels</a></li>
+						</ul>
+					</li>
+
+					<li>
+						<a class="menu__item" href="javascript:">
+							<i class="fa fa-tasks menu__item--icon" aria-hidden="true"></i>
+							<span class="menu__item-name text-capitalize">forms</span>
+						</a>
+					</li>
+
+					<li>
+						<a class="menu__item collapsed" href="javascript:" data-toggle="collapse" data-target="#data-table" aria-expanded="false">
+							<i class="fa fa-th menu__item--icon" aria-hidden="true"></i>
+							<span class="menu__item-name text-capitalize">data tables</span>
+							<i class="fa fa-angle-right menu__item--icon-expand pull-right" aria-hidden="true"></i>
+						</a>
+
+						<ul class="nav nav-stacked submenu collapse" id="data-table" aria-expanded="false">
+							<li><a href="javascript:" class="text-capitalize">general</a></li>
+							<li><a href="javascript:" class="text-capitalize">buttons</a></li>
+							<li><a href="javascript:" class="text-capitalize">panels</a></li>
+						</ul>
+					</li>
+
+					<li>
+						<a class="menu__item collapsed" href="javascript:" data-toggle="collapse" data-target="#chart" aria-expanded="false">
+							<i class="fa fa-bar-chart menu__item--icon" aria-hidden="true"></i>
+							<span class="menu__item-name text-capitalize">charts</span>
+							<i class="fa fa-angle-right menu__item--icon-expand pull-right" aria-hidden="true"></i>
+						</a>
+
+						<ul class="nav nav-stacked submenu collapse" id="chart" aria-expanded="false">
+							<li><a href="javascript:" class="text-capitalize">general</a></li>
+							<li><a href="javascript:" class="text-capitalize">buttons</a></li>
+							<li><a href="javascript:" class="text-capitalize">panels</a></li>
+						</ul>
+					</li>
+				</ul>
+				<!--End Menu-->
 			</div>
 			<!--End left menu-->
 
@@ -124,7 +217,7 @@
 					<section class="section__new section__information">
 						<!--Row 1-->
 						<div class="row">
-							<div class="panel col-xs-12 col-sm-4">
+							<div class="panel col-xs-12 col-sm-4 col-md-4 col-lg-4">
 								<div class="panel__item panel__item--author">
 									<div class="panel__item--content panel__item--author-content text-center">
 										<div class="content__profile">
@@ -144,7 +237,7 @@
 								</div>
 							</div>
 
-							<div class="panel col-xs-12 col-sm-4">
+							<div class="panel col-xs-12 col-sm-4 col-md-4 col-lg-4">
 								<div class="panel__item panel__item--product">
 									<div class="panel__item--content panel__item--product-content text-center">
 										<div class="circle--hot">
@@ -158,7 +251,7 @@
 								</div>
 							</div>
 
-							<div class="panel col-xs-12 col-sm-4">
+							<div class="panel col-xs-12 col-sm-4 col-md-4 col-lg-4">
 								<div class="panel__item panel__item--user">
 									<div class="panel__item--title text-uppercase text-center">
 										<span class="text--title">top user</span>	
@@ -187,7 +280,7 @@
 
 						<!--Row 2-->
 						<div class="row">
-							<div class="panel col-xs-12 col-sm-4">
+							<div class="panel col-xs-12 col-sm-4 col-md-4 col-lg-4">
 								<div class="panel__item panel__item--share">
 									<div class="panel__item--content panel__item--share-content">
 										<div class="panel__item--content-chart">
@@ -213,7 +306,7 @@
 								</div>
 							</div>
 
-							<div class="panel col-xs-12 col-sm-4">
+							<div class="panel col-xs-12 col-sm-4 col-md-4 col-lg-4">
 								<div class="panel__item panel__item--newfeed">
 									<div class="panel__item--content panel__item--newfeed-content block--display-table text-center">
 										<div class="content__newfeed block--display-table-cell">
@@ -226,7 +319,7 @@
 								</div>
 							</div>
 
-							<div class="panel col-xs-12 col-sm-4">
+							<div class="panel col-xs-12 col-sm-4 col-md-4 col-lg-4">
 								<div class="panel__item panel__item--weather">
 									<div class="panel__item--content panel__item--weather-content block--display-table text-center">
 										<div class="content__weather block--display-table-cell">
@@ -527,12 +620,29 @@
 									</span>
 								</div>
 							</div>
+
+							<div class="container__submit">
+								<div class="container__submit--left left text-left">
+									<button class="btn btn-danger text-capitalize">add new tasks</button>
+								</div>
+								<div class="container__submit--right right text-right">
+									<button class="btn btn-default text-capitalize">see all tasks</button>
+								</div>																
+							</div>
 						</div>
 						<!--End To Do List-->
 					</section>
-					
 				</div>
 				<!--End Main Content Right-->
+
+				<!--Footer-->
+				<footer class="label-info text-center">
+					<p>2016 - Nexcel Solution</p>		
+					<span class="block__circle--moving-top" id="topMoving">
+						<i class="fa fa-angle-up" aria-hidden="true"></i>
+					</span>
+				</footer>
+				<!--End Footer-->
 			</div>
 			<!--End Main Content-->			
 		</div>						

@@ -1,0 +1,65 @@
+.sidebar{
+    position: relative;
+    width: 100%;
+    background: $color-bright-gray;
+
+	.logo{
+		padding-top: 1.5rem;
+        padding-bottom: 1.5rem;
+
+		.img-circle{
+			width: $radius-logo * 2;
+			height: $radius-logo * 2;
+		}
+
+		p{
+			margin-top: 1.5rem;
+            font-size: 1.2rem;
+            color: $color-white;
+            font-weight: 700;
+        }
+	}
+
+	.main-menu{
+		> li{
+			> a{
+				color: $color-text-menu;
+				font-size: 1.3rem;
+                font-weight: 700;
+
+                &:hover, &:focus{
+                	background: $color-primary;
+            		color: $color-white;
+                }
+
+                .menu__item{
+                	&--icon{
+	                	width: 2rem;
+	                	margin-right: 1rem;
+	                }	                
+                }
+                
+
+                .fa{
+                	font-size: 1.5rem;
+                }
+			}
+
+			.submenu{
+				margin-left: 3rem;
+
+				> li{
+					> a{
+		                color: $color-text-submenu;
+		                font-size: 1.1rem;
+		                
+		                &:hover, &:focus{
+		                    color: #E8DFE2;
+		                    background: transparent;
+		                }                                             
+		            }
+		        }
+			}
+		}
+	}
+}

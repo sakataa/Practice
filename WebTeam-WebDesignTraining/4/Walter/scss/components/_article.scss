@@ -100,9 +100,10 @@
         }
     }
     
-    .block__button{
+    .container__submit{
         margin-top: 3rem;
         padding-bottom: 2rem;
+        overflow: hidden;
         
         &--left, &--right{
             width: 50%;
@@ -125,7 +126,7 @@
 
 @media(min-width: 992px) and (max-width: 1199px){    
     .article__box--todo-list{        
-        .block__button{          
+        .container__submit{          
             .btn{
                 font-size: 0.9rem;
             }

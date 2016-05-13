@@ -2,7 +2,7 @@ footer{
     clear: both;
     height: $height-footer;
     background: $color-primary;
-    z-index: 800;
+    position: relative;
     p{
         font-size: 1.2rem;
         color: $color-white;
