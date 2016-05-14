@@ -16,7 +16,7 @@
 		<header>			
 			<nav class="container-fluid">
 				<!--Header Left-->
-				<ul class="nav navbar-nav">
+				<ul class="nav navbar-nav nav__logo">
 					<li>
 						<a href="javascript:" class="collapsed" data-toggle="collapse" data-target="#sideBar" aria-expanded="false">
 							<span class="icon__bar"></span>
@@ -32,17 +32,159 @@
 
 				<!--Header Center-->
 				<ul class="nav navbar-nav notification">
-					<li>
-						<a href="javascript:" id="message" class="notification__message text-center">
+					<li class="dropdown">
+						<a href="javascript:" id="message" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" class="notification__message text-center">
 							<i class="fa fa-envelope-o" aria-hidden="true"></i>
 							<span class="notification__number badge">4</span>
 						</a>
+
+						<div id="message-detail" aria-labelledby="dLabel" class="dropdown-menu block__notification block__notification--message">
+							<div class="notification--title">
+								<p class="notification__content--wrapper">You have 5 new message</p>
+							</div>
+							
+							<div class="notification--content">
+								<div class="notification--content-item notification__content--wrapper">
+									<div class="notification--content-item-left left">
+										<img src="images/ui-zac.jpg" alt="avatar" />
+									</div>
+									<div class="notification--content-item-right">
+										<div class="message--infor wrapper">
+											<span class="text--bold nickname left">Zac Snider</span>
+											<span class="text--bold time right">Just now</span>
+										</div>
+										<p class="message--content">Hi mate, how is everything?</p>
+									</div>
+								</div>
+							</div>
+							
+							<div class="notification--content">
+								<div class="notification--content-item notification__content--wrapper">
+									<div class="notification--content-item-left left">
+										<img src="images/ui-divya.jpg" alt="avatar" />
+									</div>
+									<div class="notification--content-item-right">
+										<div class="message--infor wrapper">
+											<span class="text--bold nickname left">Divya Manian</span>
+											<span class="text--bold time right">40 mins.</span>
+										</div>
+										<p class="message--content">Hi, I need your help with this.</p>
+									</div>
+								</div>
+							</div>
+							
+							<div class="notification--content">
+								<div class="notification--content-item notification__content--wrapper">
+									<div class="notification--content-item-left left">
+										<img src="images/ui-danro.jpg" alt="avatar" />
+									</div>
+									<div class="notification--content-item-right">
+										<div class="message--infor wrapper">
+											<span class="text--bold nickname left">Dan Rogers</span>
+											<span class="text--bold time right">2 hrs.</span>
+										</div>
+										<p class="message--content">Love your new Dashboard.</p>
+									</div>
+								</div>
+							</div>
+							
+							<div class="notification--content">
+								<div class="notification--content-item notification__content--wrapper">
+									<div class="notification--content-item-left left">
+										<img src="images/ui-sherman.jpg" alt="avatar" />
+									</div>
+									<div class="notification--content-item-right">
+										<div class="message--infor wrapper">
+											<span class="text--bold nickname left">Dj Sherman</span>
+											<span class="text--bold time right">4 hrs.</span>
+										</div>
+										<p class="message--content">Please, answer asap.</p>
+									</div>
+								</div>
+							</div>
+							
+							<div class="notification--fotter notification__content--wrapper">
+								<p class="text--capitalize">See all messages</p>
+							</div>
+						</div>
 					</li>
-					<li>
-						<a href="javascript:" id="message" class="notification__message text-center">
+					<li class="dropdown">
+						<a href="javascript:" id="message" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" class="notification__message text-center">
 							<i class="fa fa-tasks" aria-hidden="true"></i>
 							<span class="notification__number badge">5</span>
 						</a>
+
+						<div id="task-detail" aria-labelledby="dLabel" class="dropdown-menu block__notification block__notification--task">
+							<div class="notification--title">
+								<p class="notification__content--wrapper">You have 4 pending tasks</p>
+							</div>
+							
+							<div class="notification--content">
+								<div class="notification--content-item notification__content--wrapper">
+									<p class="content-title">
+										DashGum Admin Panel
+									</p>
+									
+									<div class="content-detail">
+										<div class="progress">
+											  <div class="progress-bar progress-bar-success progress-bar-striped" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width: 40%">
+											    <span class="sr-only">40% Complete (success)</span>
+											  </div>
+										</div>
+										<span class="text--percent left">40%</span>
+									</div>
+								</div>
+								
+								<div class="notification--content-item notification__content--wrapper">
+									<p class="content-title">
+										Database Update
+									</p>
+									
+									<div class="content-detail">
+										<div class="progress">
+											  <div class="progress-bar progress-bar-warning progress-bar-striped" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 40%">
+											    <span class="sr-only">60% Complete (success)</span>
+											  </div>
+										</div>
+										<span class="text--percent left">60%</span>
+									</div>
+								</div>
+								
+								<div class="notification--content-item notification__content--wrapper">
+									<p class="content-title">
+										Product Development
+									</p>
+									
+									<div class="content-detail">
+										<div class="progress">
+											  <div class="progress-bar progress-bar-info progress-bar-striped" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100" style="width: 40%">
+											    <span class="sr-only">80% Complete (success)</span>
+											  </div>
+										</div>
+										<span class="text--percent left">80%</span>
+									</div>
+								</div>
+								
+								<div class="notification--content-item notification__content--wrapper">
+									<p class="content-title">
+										Payments Sent
+									</p>
+									
+									<div class="content-detail">
+										<div class="progress">
+											  <div class="progress-bar progress-bar-success progress-bar-striped" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100" style="width: 40%">
+											    <span class="sr-only">70% Complete (success)</span>
+											  </div>
+										</div>
+										<span class="text--percent left">70%</span>
+									</div>
+								</div>
+							</div>
+							
+							<div class="notification--fotter notification__content--wrapper">
+								<p class="text--capitalize">See all task</p>
+							</div>
+						</div>
 					</li>
 				</ul>
 				<!--End Header Center-->
