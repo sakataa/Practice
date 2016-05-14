@@ -33,11 +33,13 @@
 .article__notification{
     padding-top: 2rem;
     .article__content--item{
-        &-left{            
-            .circle__clock{
+        &-left{
+            .img-circle{
+                display: inline-block;
                 background: $color-primary;
-                @include circle($radius-article-clock);
-            }
+                width: $radius-article-clock * 2;
+                height: $radius-article-clock * 2;
+            }           
             
             .fa-clock-o{
                 font-size: 1.2rem;
@@ -57,10 +59,11 @@
 .article__team-member{
     .article__content--item{
         padding-top: 2rem;
-        &-left{              
-            .circle__avatar{
-                @include circle(1.75rem);
-            }
+        &-left{
+            .img-circle{
+                width: 3.5rem;
+                height: 3.5rem;
+            }            
         }
 
         .text--italic{

@@ -60,6 +60,11 @@ a {
   margin-top: 5rem;
   overflow: hidden; }
 
+.icon-action {
+  margin-right: 0.5rem;
+  font-size: 1.4rem;
+  cursor: pointer; }
+
 @font-face {
   font-family: 'Ruda';
   src: url("../fonts/Ruda-Regular.ttf"); }
@@ -74,7 +79,8 @@ header {
   background: #FFD677;
   border-bottom: 0.2rem solid #C9AA60;
   height: 6rem;
-  position: relative; }
+  position: relative;
+  overflow: hidden; }
   header nav .nav {
     float: left;
     margin-top: 1rem; }
@@ -150,7 +156,6 @@ footer {
 
 .sidebar {
   position: relative;
-  width: 100%;
   background: #44495E; }
   .sidebar .logo {
     padding-top: 1.5rem;
@@ -185,9 +190,35 @@ footer {
         background: transparent; }
 
 @media (min-width: 768px) {
+  header nav .icon__bar {
+    width: 2rem; }
+  header nav .header__title {
+    font-size: 2rem; }
+  header nav .notification {
+    margin-top: 1.5rem; }
+    header nav .notification .notification__message {
+      width: 3rem;
+      height: 3rem; }
+    header nav .notification .fa {
+      font-size: 1.8rem;
+      line-height: 3rem; }
+    header nav .notification .notification__message .notification__number {
+      font-size: 1.3rem;
+      padding: 2px 6px; }
+  header nav .nav.navbar-right {
+    padding-right: 1.5rem; }
+    header nav .nav.navbar-right > li > a {
+      padding: 5px 15px; }
+  header nav .nav > li > a {
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem; }
+  header nav .btn {
+    padding: 1rem 1.5rem;
+    font-size: 1.3rem; }
+
   .sidebar {
     width: 21rem;
-    height: 100%;
+    height: 100% !important;
     position: absolute;
     top: 0;
     left: -21rem;
@@ -197,6 +228,21 @@ footer {
     -ms-transition: all 0.3s ease-in-out; }
     .sidebar.collapse.in {
       left: 0; } }
+@media (min-width: 992px) {
+  .sidebar {
+    display: inline-block;
+    left: 0;
+    transition: all 0.3s ease-in-out;
+    -webkit-transition: all 0.3s ease-in-out;
+    -ms-transition: all 0.3s ease-in-out; }
+    .sidebar.collapse.in {
+      left: -21rem; }
+    .sidebar .main-menu > li > a {
+      padding-top: 1.5rem;
+      padding-bottom: 1.5rem; }
+      .sidebar .main-menu > li > a .submenu > li > a {
+        padding-top: 1rem;
+        padding-bottom: 1rem; } }
 .article .article__title {
   height: 6rem;
   background: #FF855D;
@@ -218,17 +264,11 @@ footer {
 
 .article__notification {
   padding-top: 2rem; }
-  .article__notification .article__content--item-left .circle__clock {
+  .article__notification .article__content--item-left .img-circle {
+    display: inline-block;
     background: #337ab7;
     width: 2.5rem;
-    height: 2.5rem;
-    -moz-border-radius: 50%;
-    -webkit-border-radius: 50%;
-    border-radius: 50%;
-    display: inline-block;
-    cursor: default;
-    text-align: center;
-    overflow: hidden; }
+    height: 2.5rem; }
   .article__notification .article__content--item-left .fa-clock-o {
     font-size: 1.2rem;
     color: #FFFFFF;
@@ -238,16 +278,9 @@ footer {
 
 .article__team-member .article__content--item {
   padding-top: 2rem; }
-  .article__team-member .article__content--item-left .circle__avatar {
+  .article__team-member .article__content--item-left .img-circle {
     width: 3.5rem;
-    height: 3.5rem;
-    -moz-border-radius: 50%;
-    -webkit-border-radius: 50%;
-    border-radius: 50%;
-    display: inline-block;
-    cursor: default;
-    text-align: center;
-    overflow: hidden; }
+    height: 3.5rem; }
   .article__team-member .article__content--item .text--italic {
     font-weight: normal; }
 
@@ -296,6 +329,8 @@ footer {
   border-bottom: 2px solid #ABB2BD; }
   .table__box .table {
     margin-top: 2rem; }
+    .table__box .table th {
+      min-width: 6.5rem; }
     .table__box .table th, .table__box .table p {
       font-size: 1.2rem; }
     .table__box .table__title {
@@ -306,9 +341,13 @@ footer {
         padding-left: 1rem;
         line-height: 6.5rem; }
 
-.section__information .panel {
-  background: transparent; }
-  .section__information .panel .panel__item {
+@media (max-width: 320px) {
+  .table .icon-action {
+    margin-right: 0; } }
+.section__information .panel-wrapper {
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem; }
+  .section__information .panel-wrapper .panel__item {
     -webkit-box-shadow: 0 3px 10px 2px rgba(189, 176, 189, 0.8);
     -moz-box-shadow: 0 3px 10px 2px rgba(189, 176, 189, 0.8);
     box-shadow: 0 3px 10px 2px rgba(189, 176, 189, 0.8);
@@ -322,16 +361,9 @@ footer {
   padding: 4rem 0;
   background: url("../images/profile-02.jpg");
   background-size: 100% 100%; }
-  .panel__item--author-content .content__profile--avatar {
+  .panel__item--author-content .content__profile .img-circle {
     width: 8rem;
-    height: 8rem;
-    -moz-border-radius: 50%;
-    -webkit-border-radius: 50%;
-    border-radius: 50%;
-    display: inline-block;
-    cursor: default;
-    text-align: center;
-    overflow: hidden; }
+    height: 8rem; }
   .panel__item--author-content .content__profile--name {
     display: block;
     color: #FFFFFF;
@@ -354,21 +386,18 @@ footer {
     color: #535455;
     padding-top: 1rem;
     padding-bottom: 2.6rem; }
-    .panel__item--product-content .circle--hot {
+    .panel__item--product-content .product {
+      position: relative;
+      display: inline-block; }
+    .panel__item--product-content .img-circle {
       position: absolute;
-      left: 2rem;
-      top: 2rem;
+      left: 0.5rem;
+      top: 1.5rem;
       background: #EE5465;
       width: 7rem;
-      height: 7rem;
-      -moz-border-radius: 50%;
-      -webkit-border-radius: 50%;
-      border-radius: 50%;
-      display: inline-block;
-      cursor: default;
-      text-align: center;
-      overflow: hidden; }
-      .panel__item--product-content .circle--hot .text {
+      height: 7rem; }
+      .panel__item--product-content .img-circle .text {
+        color: #FFFFFF;
         line-height: 7rem; }
     .panel__item--product-content .btn-report, .panel__item--product-content .circle--hot {
       color: #FFFFFF; }
@@ -392,20 +421,14 @@ footer {
   .panel__item--user-content {
     height: 24rem;
     padding-top: 1.5rem; }
-    .panel__item--user-content .content__profile--avatar {
+    .panel__item--user-content .content__profile .img-circle {
       width: 8rem;
-      height: 8rem;
-      -moz-border-radius: 50%;
-      -webkit-border-radius: 50%;
-      border-radius: 50%;
-      display: inline-block;
-      cursor: default;
-      text-align: center;
-      overflow: hidden; }
+      height: 8rem; }
     .panel__item--user-content .content__profile--text {
       color: #333333;
       font-size: 1.3rem;
-      display: block; }
+      display: block;
+      line-height: 2.4rem; }
       .panel__item--user-content .content__profile--text-username {
         padding-top: 1rem; }
     .panel__item--user-content .content__profile .text--label {
@@ -517,10 +540,7 @@ footer {
     background: #FFFFFF;
     border-bottom: 0.3rem solid #DEDCDE;
     border-top: 0;
-    z-index: 903;
-    -webkit-box-shadow: 0 0.5rem 0.1rem 0 #a892a8;
-    -moz-box-shadow: 0 0.5rem 0.1rem 0 #a892a8;
-    box-shadow: 0 0.5rem 0.1rem 0 #a892a8; }
+    z-index: 903; }
     .section__statistics .statistics__box:hover .text--hover {
       visibility: visible; }
     .section__statistics .statistics__box:hover .data--statistics {
@@ -530,11 +550,12 @@ footer {
   .section__statistics .statistics__box {
     float: left;
     width: 20%;
+    height: 24rem;
     padding-left: 1.5rem;
     padding-right: 1.5rem;
-    transition: all 0.6s ease-in-out;
-    -webkit-transition: all 0.6s ease-in-out;
-    -ms-transition: all 0.6s ease-in-out; } }
+    transition: all 0.1s ease-in-out;
+    -webkit-transition: all 0.1s ease-in-out;
+    -ms-transition: all 0.1s ease-in-out; } }
 .block__circle--moving-top {
   position: absolute;
   bottom: 1rem;
@@ -558,13 +579,29 @@ footer {
     background: #5BBFDF;
     color: #FFFFFF; }
 
+html, body, .page {
+  height: 100%; }
+
 .mainpage {
-  position: relative; }
+  position: relative;
+  width: 100%;
+  overflow: hidden; }
 
 .mainpage__content--right {
   background: #FFFFFF;
   margin-top: 5rem; }
 
+@media (min-width: 992px) {
+  .mainpage__content {
+    margin-left: 21rem;
+    transition: all 0.3s ease-in-out;
+    -webkit-transition: all 0.3s ease-in-out;
+    -ms-transition: all 0.3s ease-in-out; }
+    .mainpage__content--right {
+      margin-top: 0; }
+
+  .collapse.in + .mainpage__content {
+    margin-left: 0; } }
 body {
   background-color: #F3F1F3; }
 

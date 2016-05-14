@@ -6,6 +6,10 @@
 
     .table{
     	margin-top: 2rem;
+        th{
+            min-width: 6.5rem;
+        }
+
     	th, p{
     		font-size: 1.2rem;
     	}
@@ -19,6 +23,14 @@
                 padding-left: 1rem;
                 line-height: $height-table-title;
             }           
+        }
+    }
+}
+
+@media(max-width: 320px){
+    .table{
+        .icon-action{
+            margin-right: 0;
         }
     }
 }

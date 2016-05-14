@@ -1,7 +1,7 @@
 .section__information{
-    .panel{
-        background: transparent;
-        
+    .panel-wrapper{
+        padding-top: 1.5rem;
+        padding-bottom: 1.5rem;     
         .panel__item{          
             @include box-shadow(0, 3px, 10px, 2px, rgba(189,176,189,0.8));
             border-bottom: 2px solid #ABB2BD;
@@ -21,8 +21,9 @@
         background-size: 100% 100%;
         
         .content__profile{
-            &--avatar{
-                @include circle($radius-avatar);
+            .img-circle{
+                width: $radius-avatar * 2;
+                height: $radius-avatar * 2;
             }
             
             &--name{
@@ -58,14 +59,20 @@
         padding-top: 1rem;
         padding-bottom: 2.6rem;
         
-        .circle--hot{
+        .product{
+            position: relative;
+            display: inline-block;
+        }
+        .img-circle{
             position: absolute;
-            left: 2rem;
-            top: 2rem;
+            left: 0.5rem;
+            top: 1.5rem;
             background: $color-bg-button-common;
-            @include circle($radius-product-hot);
+            width: $radius-product-hot * 2;
+            height: $radius-product-hot * 2;
             
             .text{
+                color: $color-white;
                 line-height: $radius-product-hot * 2;
             }
         }
@@ -109,14 +116,16 @@
         height: 24rem;
         padding-top: 1.5rem;
         .content__profile{
-            &--avatar{
-                @include circle($radius-avatar);
+            .img-circle{
+                width: $radius-avatar * 2;
+                height: $radius-avatar * 2;
             }
             
             &--text{
                 color: $color-dark;
                 font-size: 1.3rem;
                 display: block;
+                line-height: 2.4rem;
                 
                 &-username{
                     padding-top: 1rem;

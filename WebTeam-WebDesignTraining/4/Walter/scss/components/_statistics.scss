@@ -37,8 +37,7 @@
             border-bottom: 0.3rem solid $color-panel-title;
             border-top: 0;
             z-index: 903;
-            
-            @include box-shadow(0, 0.5rem, 0.1rem, 0,  rgba(168,146,168,1));
+                       
             .text--hover{
                 visibility: visible;
             }
@@ -54,10 +53,11 @@
         .statistics__box{
             float: left;
             width: 20%;
+            height: 24rem;
             padding-left: 1.5rem;
             padding-right: 1.5rem;
             
-            @include transition(0.6s);
+            @include transition(0.1s);
         }
     }
 }

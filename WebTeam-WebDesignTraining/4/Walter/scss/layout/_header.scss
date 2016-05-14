@@ -3,6 +3,7 @@ header{
     border-bottom: 0.2rem solid $color-border-header;
     height: 6rem;
     position: relative;
+    overflow: hidden;
     
     nav{
         .nav{

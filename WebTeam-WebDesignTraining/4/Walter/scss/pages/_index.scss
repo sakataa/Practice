@@ -17,10 +17,30 @@
     }
 }
 
+html, body, .page{
+    height: 100%;
+}
+
 .mainpage{
     position: relative;
+    width: 100%;
+    overflow: hidden;
 }
 .mainpage__content--right{
     background: $color-white;
     margin-top: 5rem;
+}
+
+@media (min-width: 992px){
+    .mainpage__content{
+        margin-left: $width-left-menu;
+        @include transition(0.3s);
+        &--right{
+            margin-top: 0;
+        }
+    }
+
+    .collapse.in + .mainpage__content{
+        margin-left: 0;
+    }
 }

@@ -1,6 +1,5 @@
 .sidebar{
     position: relative;
-    width: 100%;
     background: $color-bright-gray;
 
 	.logo{
@@ -65,9 +64,58 @@
 }
 
 @media (min-width: 768px){
+	header{
+		nav{
+			.icon__bar{
+				width: 2rem;
+			}
+
+			.header__title{
+				font-size: 2rem;
+			}
+
+			.notification{
+				margin-top: 1.5rem;
+				.notification__message{
+					width: 3rem;
+					height: 3rem;
+				}
+
+				.fa{
+					font-size: 1.8rem;
+					line-height: 3rem;
+				}
+
+				.notification__message .notification__number{
+					font-size: 1.3rem;
+					padding: 2px 6px;
+				}
+			}
+
+			.nav.navbar-right{
+				padding-right: 1.5rem;
+				> li > a{
+					padding: 5px 15px;
+				}
+			}
+
+			.nav{
+				> li > a{
+					padding-top: 1.5rem;
+					padding-bottom: 1.5rem;
+				}
+			}
+
+			.btn{
+				padding: 1rem 1.5rem;
+    			font-size: 1.3rem;
+			}
+		}
+	}
+	
 	.sidebar{
 	    width: $width-left-menu;
-	    height: 100%;
+	    height: 100% !important;
 	    position: absolute;
 	    top: 0;
 	    left: -21rem;
@@ -76,6 +124,28 @@
 
 	    &.collapse.in{	    	
 	    	left: 0;
+	    }
+	}
+}
+
+@media (min-width: 992px){
+	.sidebar{
+	    display: inline-block;
+	    left: 0;
+	    @include transition(0.3s);
+
+	    &.collapse.in{    	
+	    	left: -21rem;
+	    }
+
+	    .main-menu > li > a{
+	    	padding-top: 1.5rem;
+	    	padding-bottom: 1.5rem;
+
+	    	.submenu > li > a{
+	    		padding-top: 1rem;
+	    		padding-bottom: 1rem;
+	    	}
 	    }
 	}
 }

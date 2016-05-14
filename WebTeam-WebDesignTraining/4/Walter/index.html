@@ -158,7 +158,7 @@
 			<!--Main Content-->
 			<div class="mainpage__content">
 				<!--Main Content Left-->
-				<div class="container-fluid mainpage__content--left">
+				<div class="container-fluid col-md-9 mainpage__content--left">
 					<!--Section Statistics-->
 					<section class="section__new section__statistics">
 						<div class="statistics__box">
@@ -217,12 +217,12 @@
 					<section class="section__new section__information">
 						<!--Row 1-->
 						<div class="row">
-							<div class="panel col-xs-12 col-sm-4 col-md-4 col-lg-4">
+							<div class="panel-wrapper col-xs-12 col-sm-4 col-md-4 col-lg-4">
 								<div class="panel__item panel__item--author">
 									<div class="panel__item--content panel__item--author-content text-center">
 										<div class="content__profile">
-											<span class="content__profile--avatar wrapper">
-												<img src="images/ui-sherman.jpg" alt="avatar" />
+											<span class="wrapper">
+												<img src="images/ui-sherman.jpg" class="img-circle" alt="avatar" />
 											</span>
 											<span class="content__profile--name text-uppercase">dj sherman</span>
 										</div>
@@ -237,13 +237,15 @@
 								</div>
 							</div>
 
-							<div class="panel col-xs-12 col-sm-4 col-md-4 col-lg-4">
+							<div class="panel-wrapper col-xs-12 col-sm-4 col-md-4 col-lg-4">
 								<div class="panel__item panel__item--product">
 									<div class="panel__item--content panel__item--product-content text-center">
-										<div class="circle--hot">
-											<span class="text text-uppercase">hot</span>
+										<div class="product">
+											<img src="images/product.jpg" alt="product">
+											<div class="img-circle">
+												<span class="text text-uppercase text--bold">hot</span>
+											</div>
 										</div>
-										<img src="images/product.jpg" alt="product">
 										<p class="content__product--name text-capitalize">flat pack heritage</p>
 										<p class="content__product--total text-uppercase">total sales: 1388</p>
 										<button class="btn btn-danger btn-report text-uppercase">full report</button>
@@ -251,15 +253,15 @@
 								</div>
 							</div>
 
-							<div class="panel col-xs-12 col-sm-4 col-md-4 col-lg-4">
+							<div class="panel-wrapper col-xs-12 col-sm-4 col-md-4 col-lg-4">
 								<div class="panel__item panel__item--user">
 									<div class="panel__item--title text-uppercase text-center">
 										<span class="text--title">top user</span>	
 									</div>
 									<div class="panel__item--content panel__item--user-content text-center">
 										<div class="content__profile">
-											<span class="content__profile--avatar wrapper">
-												<img src="images/ui-zac.jpg" alt="avatar" />
+											<span class="wrapper">
+												<img src="images/ui-zac.jpg" class="img-circle" alt="avatar" />
 											</span>
 											<span class="content__profile--text content__profile--text-username text-capitalize">zac snider</span>
 												<div class="content__profile--text-left">
@@ -280,7 +282,7 @@
 
 						<!--Row 2-->
 						<div class="row">
-							<div class="panel col-xs-12 col-sm-4 col-md-4 col-lg-4">
+							<div class="panel-wrapper col-xs-12 col-sm-4 col-md-4 col-lg-4">
 								<div class="panel__item panel__item--share">
 									<div class="panel__item--content panel__item--share-content">
 										<div class="panel__item--content-chart">
@@ -306,7 +308,7 @@
 								</div>
 							</div>
 
-							<div class="panel col-xs-12 col-sm-4 col-md-4 col-lg-4">
+							<div class="panel-wrapper col-xs-12 col-sm-4 col-md-4 col-lg-4">
 								<div class="panel__item panel__item--newfeed">
 									<div class="panel__item--content panel__item--newfeed-content block--display-table text-center">
 										<div class="content__newfeed block--display-table-cell">
@@ -319,7 +321,7 @@
 								</div>
 							</div>
 
-							<div class="panel col-xs-12 col-sm-4 col-md-4 col-lg-4">
+							<div class="panel-wrapper col-xs-12 col-sm-4 col-md-4 col-lg-4">
 								<div class="panel__item panel__item--weather">
 									<div class="panel__item--content panel__item--weather-content block--display-table text-center">
 										<div class="content__weather block--display-table-cell">
@@ -349,7 +351,7 @@
 											<th><i class="fa fa-bullhorn" aria-hidden="true"></i> company</th>
 											<th class="hidden-xs"><i class="fa fa-question-circle-o" aria-hidden="true"></i> description</th>
 											<th><i class="fa fa-bookmark" aria-hidden="true"></i> profit</th>
-											<th><i class="fa fa-pencil-square-o" aria-hidden="true"></i> status</th>
+											<th><i class="fa fa-pencil icon-action-square-o" aria-hidden="true"></i> status</th>
 											<th>&nbsp;</th>
 										</tr>
 									</thead>
@@ -362,9 +364,9 @@
 											<td><p><span class="label label-info">Due</span></p></td>
 											<td>
 												<p>
-													<i class="fa fa-check text-danger" aria-hidden="true"></i>
-													<i class="fa fa-pencil text-info" aria-hidden="true"></i>
-													<i class="fa fa-trash-o" aria-hidden="true"></i>
+													<i class="fa fa-check icon-action text-danger" aria-hidden="true"></i>
+													<i class="fa fa-pencil icon-action text-info" aria-hidden="true"></i>
+													<i class="fa fa-trash-o icon-action" aria-hidden="true"></i>
 												</p>
 											</td>
 										</tr>
@@ -375,9 +377,9 @@
 											<td><p><span class="label label-warning">Due</span></p></td>
 											<td>
 												<p>
-													<i class="fa fa-check text-danger" aria-hidden="true"></i>
-													<i class="fa fa-pencil text-info" aria-hidden="true"></i>
-													<i class="fa fa-trash-o" aria-hidden="true"></i>
+													<i class="fa fa-check icon-action text-danger" aria-hidden="true"></i>
+													<i class="fa fa-pencil icon-action text-info" aria-hidden="true"></i>
+													<i class="fa fa-trash-o icon-action" aria-hidden="true"></i>
 												</p>
 											</td>
 										</tr>
@@ -388,9 +390,9 @@
 											<td><p><span class="label label-danger">Due</span></p></td>
 											<td>
 												<p>
-													<i class="fa fa-check text-danger" aria-hidden="true"></i>
-													<i class="fa fa-pencil text-info" aria-hidden="true"></i>
-													<i class="fa fa-trash-o" aria-hidden="true"></i>
+													<i class="fa fa-check icon-action text-danger" aria-hidden="true"></i>
+													<i class="fa fa-pencil icon-action text-info" aria-hidden="true"></i>
+													<i class="fa fa-trash-o icon-action" aria-hidden="true"></i>
 												</p>
 											</td>
 										</tr>
@@ -401,9 +403,9 @@
 											<td><p><span class="label label-danger">Due</span></p></td>
 											<td>
 												<p>
-													<i class="fa fa-check text-danger" aria-hidden="true"></i>
-													<i class="fa fa-pencil text-info" aria-hidden="true"></i>
-													<i class="fa fa-trash-o" aria-hidden="true"></i>
+													<i class="fa fa-check icon-action text-danger" aria-hidden="true"></i>
+													<i class="fa fa-pencil icon-action text-info" aria-hidden="true"></i>
+													<i class="fa fa-trash-o icon-action" aria-hidden="true"></i>
 												</p>
 											</td>
 										</tr>
@@ -414,9 +416,9 @@
 											<td><p><span class="label label-warning">Due</span></p></td>
 											<td>
 												<p>
-													<i class="fa fa-check text-danger" aria-hidden="true"></i>
-													<i class="fa fa-pencil text-info" aria-hidden="true"></i>
-													<i class="fa fa-trash-o" aria-hidden="true"></i>
+													<i class="fa fa-check icon-action text-danger" aria-hidden="true"></i>
+													<i class="fa fa-pencil icon-action text-info" aria-hidden="true"></i>
+													<i class="fa fa-trash-o icon-action" aria-hidden="true"></i>
 												</p>
 											</td>
 										</tr>
@@ -430,7 +432,7 @@
 				<!--End Main Content Left-->
 
 				<!--Main Content Right-->
-				<div class="container-fluid mainpage__content--right">				
+				<div class="container-fluid col-md-3 mainpage__content--right">				
 					<section class="section__article">
 						<!--Notification-->
 						<div class="article article__notification">
@@ -440,7 +442,7 @@
 							<div class="article__content">
 								<div class="article__content--item">
 									<div class="article__content--item-left left">
-										<span class="circle__clock">
+										<span class="img-circle text-center">
 											<i class="fa fa-clock-o" aria-hidden="true"></i>
 										</span>							
 									</div>
@@ -454,7 +456,7 @@
 
 								<div class="article__content--item">
 									<div class="article__content--item-left left">
-										<span class="circle__clock">
+										<span class="img-circle text-center">
 											<i class="fa fa-clock-o" aria-hidden="true"></i>
 										</span>							
 									</div>
@@ -468,7 +470,7 @@
 
 								<div class="article__content--item">
 									<div class="article__content--item-left left">
-										<span class="circle__clock">
+										<span class="img-circle text-center">
 											<i class="fa fa-clock-o" aria-hidden="true"></i>
 										</span>							
 									</div>
@@ -482,7 +484,7 @@
 
 								<div class="article__content--item">
 									<div class="article__content--item-left left">
-										<span class="circle__clock">
+										<span class="img-circle text-center">
 											<i class="fa fa-clock-o" aria-hidden="true"></i>
 										</span>							
 									</div>
@@ -505,9 +507,7 @@
 							<div class="article__content">
 								<div class="article__content--item">
 									<div class="article__content--item-left left">
-										<span class="circle__avatar">
-											<img src="images/ui-divya.jpg" alt="avatar">
-										</span>
+										<img src="images/ui-divya.jpg" class="img-circle" alt="avatar"/>
 									</div>
 
 									<div class="article__content--item-right text--bold">
@@ -520,9 +520,7 @@
 
 								<div class="article__content--item">
 									<div class="article__content--item-left left">
-										<span class="circle__avatar">
-											<img src="images/ui-sherman.jpg" alt="avatar">
-										</span>
+										<img src="images/ui-sherman.jpg" class="img-circle" alt="avatar"/>
 									</div>
 
 									<div class="article__content--item-right text--bold">
@@ -535,9 +533,7 @@
 
 								<div class="article__content--item">
 									<div class="article__content--item-left left">
-										<span class="circle__avatar">
-											<img src="images/ui-danro.jpg" alt="avatar">
-										</span>
+										<img src="images/ui-danro.jpg" class="img-circle" alt="avatar"/>
 									</div>
 
 									<div class="article__content--item-right text--bold">
@@ -550,9 +546,7 @@
 
 								<div class="article__content--item">
 									<div class="article__content--item-left left">
-										<span class="circle__avatar">
-											<img src="images/ui-zac.jpg" alt="avatar">
-										</span>
+										<img src="images/ui-zac.jpg" class="img-circle" alt="avatar" />
 									</div>
 
 									<div class="article__content--item-right text--bold">
@@ -565,9 +559,7 @@
 
 								<div class="article__content--item">
 									<div class="article__content--item-left left">
-										<span class="circle__avatar">
-											<img src="images/ui-sam.jpg" alt="avatar">
-										</span>
+										<img src="images/ui-sam.jpg" class="img-circle" alt="avatar" />
 									</div>
 
 									<div class="article__content--item-right text--bold">
@@ -592,31 +584,42 @@
 									<label for="todo1" class="text--description">Nexcel Solutions - Admin Themes</label>
 									<span class="label label-primary label__status">Done</span>
 									<span class="item__action">
-										<i class="fa fa-check text-danger" aria-hidden="true"></i>
-										<i class="fa fa-pencil text-info" aria-hidden="true"></i>
-										<i class="fa fa-trash-o" aria-hidden="true"></i>
+										<i class="fa fa-check icon-action text-danger" aria-hidden="true"></i>
+										<i class="fa fa-pencil icon-action text-info" aria-hidden="true"></i>
+										<i class="fa fa-trash-o icon-action" aria-hidden="true"></i>
 									</span>
 								</div>
 
 								<div class="article__content--item">
-									<input type="checkbox" checked="checked" class="chkTodo" id="todo1"/>
-									<label for="todo1" class="text--description">Extensive collection of plugins</label>
+									<input type="checkbox" checked="checked" class="chkTodo" id="todo2"/>
+									<label for="todo2" class="text--description">Extensive collection of plugins</label>
 									<span class="label label-warning label__status">Cool</span>
 									<span class="item__action">
-										<i class="fa fa-check text-danger" aria-hidden="true"></i>
-										<i class="fa fa-pencil text-info" aria-hidden="true"></i>
-										<i class="fa fa-trash-o" aria-hidden="true"></i>
+										<i class="fa fa-check icon-action text-danger" aria-hidden="true"></i>
+										<i class="fa fa-pencil icon-action text-info" aria-hidden="true"></i>
+										<i class="fa fa-trash-o icon-action" aria-hidden="true"></i>
 									</span>
 								</div>
 
 								<div class="article__content--item">
-									<input type="checkbox" checked="checked" class="chkTodo" id="todo1"/>
-									<label for="todo1" class="text--description">Free updates always, no extra fees</label>
+									<input type="checkbox" checked="checked" class="chkTodo" id="todo3"/>
+									<label for="todo3" class="text--description">Free updates always, no extra fees</label>
 									<span class="label label-danger label__status">2&nbsp;Days</span>
 									<span class="item__action">
-										<i class="fa fa-check text-danger" aria-hidden="true"></i>
-										<i class="fa fa-pencil text-info" aria-hidden="true"></i>
-										<i class="fa fa-trash-o" aria-hidden="true"></i>
+										<i class="fa fa-check icon-action text-danger" aria-hidden="true"></i>
+										<i class="fa fa-pencil icon-action text-info" aria-hidden="true"></i>
+										<i class="fa fa-trash-o icon-action" aria-hidden="true"></i>
+									</span>
+								</div>
+
+								<div class="article__content--item">
+									<input type="checkbox" checked="checked" class="chkTodo" id="todo4"/>
+									<label for="todo4" class="text--description">More features coming soon.</label>
+									<span class="label label-info label__status">Tomorrow</span>
+									<span class="item__action">
+										<i class="fa fa-check icon-action text-danger" aria-hidden="true"></i>
+										<i class="fa fa-pencil icon-action text-info" aria-hidden="true"></i>
+										<i class="fa fa-trash-o icon-action" aria-hidden="true"></i>
 									</span>
 								</div>
 							</div>
