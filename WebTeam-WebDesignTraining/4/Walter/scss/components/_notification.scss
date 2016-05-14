@@ -122,12 +122,21 @@
 }
 
 @media (max-width: 425px){
-    .block__notification{
-        left: -12rem;
-        
+    .block__notification{        
         &:before{
             content: '';
             left: 12rem;
+        }
+    }
+}
+
+@media (max-width: 767px){
+    .navbar-nav .open .dropdown-menu {
+        &.block__notification{
+            position: absolute;
+            top: 4.5rem;
+            left: -12rem;
+            width: 23.5rem;
         }
     }
 }
