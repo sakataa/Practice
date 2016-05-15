@@ -399,8 +399,9 @@ footer {
     text-decoration: line-through; }
 
 @media (min-width: 992px) and (max-width: 1199px) {
-  .article__box--todo-list .container__submit .btn {
-    font-size: 0.9rem; } }
+  .article__todo-list .container__submit .btn {
+    font-size: 1rem;
+    padding: 0.75rem; } }
 .table__box {
   background: #FFFFFF;
   color: #999799;
