@@ -1,0 +1,46 @@
+a{
+	text-decoration: none;
+}
+
+*{
+	&:focus {
+		outline: 0;
+	}
+}
+
+.block--display-table{
+	display: table;
+	height: 100%;
+}
+
+.block--display-table-cell{
+	display: table-cell;
+	vertical-align: middle;
+}
+
+.left{
+	float: left;
+}
+
+.right{
+	float: right;
+}
+
+.text--bold{
+	font-weight: bold;
+}
+
+.text--italic{
+	font-style: italic;
+}
+
+.section__new{
+	margin-top: 5rem;
+	overflow: hidden;
+}
+
+.icon-action {
+    margin-right: 0.5rem;
+    font-size: 1.4rem;
+    cursor: pointer;
+}

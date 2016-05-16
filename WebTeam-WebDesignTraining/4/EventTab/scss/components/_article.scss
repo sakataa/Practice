@@ -1,0 +1,139 @@
+.article{    
+    .article__title{
+        height: $height-article-title;
+        background: $color-bg-article-title;
+        color: $color-white;
+        font-size: 1.6rem;
+        
+        .text{
+            line-height: $height-article-title;
+        }
+    }
+    
+    .article__content{
+        padding-top: 0.5rem;
+        line-height: 2rem;
+
+        p, span, label{
+            font-size: 1.3rem;
+        }
+        
+        &--item{
+            position: relative;
+            padding: 1rem 0 3rem 1.5rem;
+            border-bottom: 0.1rem solid $color-panel-title;
+
+            &-right{
+                margin-left: 4rem;
+            }      
+        }
+    }
+}
+
+.article__notification{
+    padding-top: 2rem;
+    .article__content--item{
+        &-left{
+            .img-circle{
+                display: inline-block;
+                background: $color-primary;
+                width: $radius-article-clock * 2;
+                height: $radius-article-clock * 2;
+            }           
+            
+            .fa-clock-o{
+                font-size: 1.2rem;
+                color: $color-white;
+                line-height: $radius-article-clock * 2;
+            }
+        }
+                
+        &-right{
+            .text-description{
+                color: $color-bg-light-gray;
+            }           
+        }
+    }
+}
+
+.article__team-member{
+    .article__content--item{
+        padding-top: 2rem;
+        &-left{
+            .img-circle{
+                width: 3.5rem;
+                height: 3.5rem;
+            }            
+        }
+
+        .text--italic{
+            font-weight: normal;
+        }
+    }   
+}
+
+.article__todo-list{
+    .article__content{
+        padding-left: 0.5rem;
+        padding-right: 0.5rem;
+
+        label, span{
+            font-weight: normal;
+            font-size: 1.2rem;
+
+        }
+               
+        &--item{
+            padding: 1.5rem 0.5rem;
+            border-bottom: 0.1rem dashed $color-panel-title;           
+        }
+    }
+    
+    .article__content--item{
+        .label__status{
+            margin-left: 0.5rem;
+            margin-right: 8rem;
+            border-radius: 2rem;
+        }
+
+        .item__action{
+            position: absolute;
+            right: 1.5rem;
+            bottom: 1.5rem;
+        }
+    }
+    
+    .container__submit{
+        margin-top: 3rem;
+        padding-bottom: 2rem;
+        overflow: hidden;
+        
+        &--left, &--right{
+            width: 50%;
+        }
+        
+        .btn{
+            font-size: 1.2rem;
+            padding: 0.75rem 1rem;
+        }
+    }
+}
+
+.item-checked{
+    background: $color-bg-checked;   
+    label.text--description{
+        color: $color-bg-light-gray;
+        text-decoration: line-through;
+    }
+}
+
+@media(min-width: 992px) and (max-width: 1199px){    
+    .article__todo-list{        
+        .container__submit{          
+            .btn{
+                font-size: 1rem;
+                padding: 0.75rem;
+            }
+        }
+    }
+}
