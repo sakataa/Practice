@@ -168,19 +168,20 @@ footer {
     color: #FFFFFF;
     line-height: 4rem; }
 
-.modal .form-horizontal .control-label {
-  text-align: left;
-  font-size: 1.2rem;
+.modal .form-horizontal .control-label, .modal .form-horizontal .checkbox label, .modal .form-horizontal .fa {
   color: #999799; }
-.modal .checkbox-inline {
+.modal .form-horizontal .control-label, .modal .form-horizontal .checkbox label {
   text-align: left;
-  font-size: 1.2rem;
-  color: #999799; }
+  font-size: 1.3rem;
+  font-weight: normal; }
+.modal .form-horizontal .checkbox label {
+  line-height: 20px; }
+.modal .form-horizontal .btn-link .fa-angle-double-right {
+  color: #337ab7; }
 .modal .has-feedback .fa-calendar {
   line-height: 34px; }
 .modal .tab-content {
-  padding-top: 3rem;
-  padding-bottom: 3rem; }
+  padding-top: 3rem; }
 .modal .nav-tabs > li > a {
   font-size: 1.3rem;
   color: #333333; }

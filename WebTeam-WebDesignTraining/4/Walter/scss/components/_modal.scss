@@ -1,16 +1,24 @@
 .modal{
 	.form-horizontal{
-		.control-label{
-			text-align: left;
-			font-size: 1.2rem;
+		.control-label, .checkbox label, .fa{
 			color: $color-bg-light-gray;
 		}
-	}
 
-	.checkbox-inline{
-		text-align: left;
-		font-size: 1.2rem;
-		color: $color-bg-light-gray;
+		.control-label, .checkbox label{
+			text-align: left;
+			font-size: 1.3rem;
+			font-weight: normal;
+		}
+
+		.checkbox label{
+			line-height: 20px;
+		}
+
+		.btn-link{
+			.fa-angle-double-right{
+				color: #337ab7;
+			}
+		}
 	}
 
 	.has-feedback{
@@ -21,7 +29,6 @@
 
 	.tab-content{
 		padding-top: 3rem;
-		padding-bottom: 3rem;
 	}
 
 	.nav-tabs{

@@ -810,9 +810,9 @@
 				    		<div class="row">
 				    			<div class="col-md-6">
 				    				<div class="form-horizontal">
-				    					<div class="form-group has-feedback">
-										    <label for="startDate" class="col-sm-4 col-md-4 control-label">Start date:</label>
-										    <div class="col-sm-7 col-md-7">
+				    					<div class="form-group">
+										    <label for="startDate" class="col-xs-12 col-sm-4 control-label">Start date:</label>
+										    <div class="col-sm-7 has-feedback">
 										      <input type="text" class="form-control" id="startDate" placeholder="2016-04-05" />
 										      <span class="fa fa-calendar fa-2x form-control-feedback" aria-hidden="true"></span>
 										    </div>
@@ -821,9 +821,9 @@
 				    			</div>
 				    			<div class="col-md-6">
 				    				<div class="form-horizontal">
-				    					<div class="form-group has-feedback">
-										    <label for="dueDate" class="col-sm-4 col-md-4 control-label">Due date:</label>
-										    <div class="col-sm-7 col-md-7">
+				    					<div class="form-group">
+										    <label for="dueDate" class="col-xs-12 col-sm-4 control-label">Due date:</label>
+										    <div class="col-sm-7 has-feedback">
 										      <input type="text" class="form-control" id="dueDate" placeholder="2016-04-05" />
 										      <span class="fa fa-calendar fa-2x form-control-feedback" aria-hidden="true"></span>
 										    </div>
@@ -835,8 +835,8 @@
 				    			<div class="col-md-6">
 				    				<div class="form-horizontal">
 				    					<div class="form-group">
-										    <label for="status" class="col-sm-4 col-md-4 control-label">Status:</label>
-										    <div class="col-sm-7 col-md-7">
+										    <label for="status" class="col-xs-12 col-sm-4 col-md-4 control-label">Status:</label>
+										    <div class="col-sm-7">
 										      <select class="form-control" id="status">
 										      	<option>New</option>
 										      	<option>Pending</option>
@@ -849,8 +849,8 @@
 				    			<div class="col-md-6">
 				    				<div class="form-horizontal">
 				    					<div class="form-group">
-										    <label for="assignee" class="col-sm-4 col-md-4 control-label">Assignee:</label>
-										    <div class="col-sm-8 col-md-8">
+										    <label for="assignee" class="col-xs-12 col-sm-4 col-md-4 control-label">Assignee:</label>
+										    <div class="col-sm-8">
 										      <select class="form-control" id="assignee">
 										      	<option>- Me -</option>
 										      	<option>Messi</option>
@@ -863,27 +863,80 @@
 				    		</div>
 				    		<div class="form-horizontal">
 		    					<div class="form-group">
-		    						<label for="title" class="col-sm-2 col-md-2 control-label title">Title:</label>
-		    						<div class="col-sm-10 col-md-10">
+		    						<label for="title" class="col-xs-12 col-sm-2 control-label title">Title:</label>
+		    						<div class="col-sm-10">
 			    						<input type="text" class="form-control" id="title"/>
 			    					</div>
 		    					</div>
-			    			</div>
 
-			    			<div class="col-md-offset-2">
-		    					<label class="checkbox-inline col-md-3">
-									<input type="checkbox" id="inlineCheckbox1" value="option1"> Is milestone
-								</label>
-								<label class="checkbox-inline col-md-3">
-								  <input type="checkbox" id="inlineCheckbox2" value="option2"> Mark as private
-								</label>
-								<a href="#" class="col-md-3">Event details >></a>
-		    				</div>
+		    					<div class="form-group">
+								    <div class="col-sm-offset-2 col-sm-3">
+								      <div class="checkbox">
+								        <label>
+								          <input type="checkbox"> Is milestone
+								        </label>
+								      </div>
+								    </div>
+
+								    <div class="col-sm-3">
+								      <div class="checkbox">
+								        <label>
+								          <input type="checkbox"> Mark as private
+								        </label>
+								      </div>
+								    </div>
+
+								    <div class="col-sm-3">
+								    	<a class="btn btn-link text--bold">Event details <i class="fa fa-angle-double-right" aria-hidden="true"></i></a>
+								    </div>
+							  	</div>
+			    			</div>
 				    	</div>
 				    	<!--End Tab Task-->
 
 				    	<!--Tab Event-->
-				    	<div role="tabpanel" class="tab-pane" id="event-content" aria-labelledby="tabItem-event">Event</div>
+				    	<div role="tabpanel" class="tab-pane" id="event-content" aria-labelledby="tabItem-event">
+				    		<div class="form-horizontal">
+							  <div class="form-group">
+							  	<label for="inputWhat" class="col-xs-12 col-sm-2 control-label">What:</label>
+							    <div class="col-sm-10">
+							      <input type="text" class="form-control" id="inputWhat" placeholder="Event Name"/>
+							    </div>
+							  </div>
+							  <div class="form-group">
+							  	<label for="inputFrom" class="col-xs-12 col-sm-2 control-label">From:</label>
+							    <div class="col-xs-8 col-sm-4 has-feedback">
+							      <input type="text" class="form-control" id="inputFrom" placeholder="Mon,April 25,2016"/>
+							      <span class="fa fa-calendar fa-2x form-control-feedback" aria-hidden="true"></span>
+							    </div>
+							    <div class="col-xs-4 col-sm-2">
+							      <input type="text" class="form-control" placeholder="16:30"/>
+							    </div>
+							  </div>
+							  <div class="form-group">
+							  	<label for="inputTo" class="col-xs-12 col-sm-2 control-label">To:</label>
+							    <div class="col-xs-8 col-sm-4 has-feedback">
+							      <input type="text" class="form-control" id="inputTo" placeholder="Mon,April 25,2016"/>
+							      <span class="fa fa-calendar fa-2x form-control-feedback" aria-hidden="true"></span>
+							    </div>
+							    <div class="col-xs-4 col-sm-2">
+							      <input type="text" class="form-control" placeholder="17:30"/>
+							    </div>
+							  </div>
+							  <div class="form-group">
+							  	<label for="inputWhere" class="col-xs-12 col-sm-2 control-label">Where:</label>
+							    <div class="col-sm-10">
+							      <input type="text" class="form-control" id="inputWhere" placeholder="Event Location"/>
+							    </div>
+							  </div>
+							  <div class="form-group">
+							  	<label for="inputDescription" class="col-xs-12 col-sm-2 control-label">Description:</label>
+							    <div class="col-sm-10">
+							      <textarea type="text" class="form-control" id="inputDescription" placeholder="Event Description"/></textarea>
+							    </div>
+							  </div>
+							</div>
+				    	</div>
 				    	<!--End Tab Event-->
 				  	</div>
 		      	</div>
