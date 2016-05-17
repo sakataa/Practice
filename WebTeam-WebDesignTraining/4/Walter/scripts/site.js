@@ -5,4 +5,8 @@
 		
 		checkBox.parent().toggleClass("item-checked", isChecked);
 	});
+
+	$("#topMoving").click(function(){
+		$(window).scrollTop(0);
+	});
 })();
