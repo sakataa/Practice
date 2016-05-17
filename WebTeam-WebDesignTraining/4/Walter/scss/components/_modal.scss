@@ -1,0 +1,39 @@
+.modal{
+	.form-horizontal{
+		.control-label{
+			text-align: left;
+			font-size: 1.2rem;
+			color: $color-bg-light-gray;
+		}
+	}
+
+	.checkbox-inline{
+		text-align: left;
+		font-size: 1.2rem;
+		color: $color-bg-light-gray;
+	}
+
+	.has-feedback{
+		.fa-calendar{
+			line-height: 34px;
+		}
+	}
+
+	.tab-content{
+		padding-top: 3rem;
+		padding-bottom: 3rem;
+	}
+
+	.nav-tabs{
+		> li {
+			> a{
+				font-size: 1.3rem;
+				color: $color-dark;
+			}
+
+			&.active > a{
+				color: $color-bg-article-title;
+			}
+		}
+	}
+}

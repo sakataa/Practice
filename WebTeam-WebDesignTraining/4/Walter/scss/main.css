@@ -168,6 +168,25 @@ footer {
     color: #FFFFFF;
     line-height: 4rem; }
 
+.modal .form-horizontal .control-label {
+  text-align: left;
+  font-size: 1.2rem;
+  color: #999799; }
+.modal .checkbox-inline {
+  text-align: left;
+  font-size: 1.2rem;
+  color: #999799; }
+.modal .has-feedback .fa-calendar {
+  line-height: 34px; }
+.modal .tab-content {
+  padding-top: 3rem;
+  padding-bottom: 3rem; }
+.modal .nav-tabs > li > a {
+  font-size: 1.3rem;
+  color: #333333; }
+.modal .nav-tabs > li.active > a {
+  color: #FF855D; }
+
 .block__notification {
   position: absolute;
   top: 4.5rem;

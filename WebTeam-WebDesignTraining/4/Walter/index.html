@@ -768,7 +768,7 @@
 
 							<div class="container__submit">
 								<div class="container__submit--left left text-left">
-									<button class="btn btn-danger text-capitalize">add new tasks</button>
+									<button id="btnAddTask" class="btn btn-danger text-capitalize" data-toggle="modal" data-target="#taskModal">add new tasks</button>
 								</div>
 								<div class="container__submit--right right text-right">
 									<button class="btn btn-default text-capitalize">see all tasks</button>
@@ -792,6 +792,109 @@
 			<!--End Main Content-->			
 		</div>						
 	</div>
+
+	<!--Modal Dialog-->
+	<div class="modal fade" id="taskModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel">
+	  	<div class="modal-dialog" role="document">
+		    <div class="modal-content">
+		      	<div class="modal-body">
+		      		<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+		        	<ul class="nav nav-tabs" id="myTabs">
+					  <li role="presentation" class="active"><a href="#task-content" role="tab" data-toggle="tab" class="text--bold" id="tabItem-task" aria-controls="task-content">Task</a></li>
+					  <li role="presentation"><a href="#event-content" role="tab" data-toggle="tab" class="text--bold" id="tabItem-event" aria-controls="event-content">Event</a></li>
+					</ul>
+
+					<div class="tab-content">
+						<!--Tab Task-->
+				    	<div role="tabpanel" class="tab-pane active task-content" id="task-content" aria-labelledby="tabItem-task">
+				    		<div class="row">
+				    			<div class="col-md-6">
+				    				<div class="form-horizontal">
+				    					<div class="form-group has-feedback">
+										    <label for="startDate" class="col-sm-4 col-md-4 control-label">Start date:</label>
+										    <div class="col-sm-7 col-md-7">
+										      <input type="text" class="form-control" id="startDate" placeholder="2016-04-05" />
+										      <span class="fa fa-calendar fa-2x form-control-feedback" aria-hidden="true"></span>
+										    </div>
+									  	</div>
+				    				</div>
+				    			</div>
+				    			<div class="col-md-6">
+				    				<div class="form-horizontal">
+				    					<div class="form-group has-feedback">
+										    <label for="dueDate" class="col-sm-4 col-md-4 control-label">Due date:</label>
+										    <div class="col-sm-7 col-md-7">
+										      <input type="text" class="form-control" id="dueDate" placeholder="2016-04-05" />
+										      <span class="fa fa-calendar fa-2x form-control-feedback" aria-hidden="true"></span>
+										    </div>
+									  	</div>
+				    				</div>
+				    			</div>
+				    		</div>
+				    		<div class="row">
+				    			<div class="col-md-6">
+				    				<div class="form-horizontal">
+				    					<div class="form-group">
+										    <label for="status" class="col-sm-4 col-md-4 control-label">Status:</label>
+										    <div class="col-sm-7 col-md-7">
+										      <select class="form-control" id="status">
+										      	<option>New</option>
+										      	<option>Pending</option>
+										      	<option>In Process</option>
+										      </select>
+										    </div>
+									  	</div>
+				    				</div>
+				    			</div>
+				    			<div class="col-md-6">
+				    				<div class="form-horizontal">
+				    					<div class="form-group">
+										    <label for="assignee" class="col-sm-4 col-md-4 control-label">Assignee:</label>
+										    <div class="col-sm-8 col-md-8">
+										      <select class="form-control" id="assignee">
+										      	<option>- Me -</option>
+										      	<option>Messi</option>
+										      	<option>Suarez</option>
+										      </select>
+										    </div>
+									  	</div>
+				    				</div>
+				    			</div>
+				    		</div>
+				    		<div class="form-horizontal">
+		    					<div class="form-group">
+		    						<label for="title" class="col-sm-2 col-md-2 control-label title">Title:</label>
+		    						<div class="col-sm-10 col-md-10">
+			    						<input type="text" class="form-control" id="title"/>
+			    					</div>
+		    					</div>
+			    			</div>
+
+			    			<div class="col-md-offset-2">
+		    					<label class="checkbox-inline col-md-3">
+									<input type="checkbox" id="inlineCheckbox1" value="option1"> Is milestone
+								</label>
+								<label class="checkbox-inline col-md-3">
+								  <input type="checkbox" id="inlineCheckbox2" value="option2"> Mark as private
+								</label>
+								<a href="#" class="col-md-3">Event details >></a>
+		    				</div>
+				    	</div>
+				    	<!--End Tab Task-->
+
+				    	<!--Tab Event-->
+				    	<div role="tabpanel" class="tab-pane" id="event-content" aria-labelledby="tabItem-event">Event</div>
+				    	<!--End Tab Event-->
+				  	</div>
+		      	</div>
+		      	<div class="modal-footer">
+		        	<button type="button" class="btn btn-default" data-dismiss="modal">Cancel</button>
+		        	<button type="button" class="btn btn-success">Save</button>
+		      	</div>
+		    </div>
+	  	</div>
+	</div>
+	<!--End Modal Dialog-->
 	<script src="scripts/jquery-2.2.0.min.js"></script>
 	<script src="scss/vendor/bootstrap/js/bootstrap.js"></script>
     <script src="scripts/site.js"></script>
