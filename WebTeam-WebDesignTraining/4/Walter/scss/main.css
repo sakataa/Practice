@@ -324,9 +324,9 @@ footer {
     top: 0;
     left: -21rem;
     z-index: 900;
-    transition: left 0.3s ease-in-out;
-    -webkit-transition: left 0.3s ease-in-out;
-    -ms-transition: left 0.3s ease-in-out; }
+    transition: left 0.2s ease-in-out;
+    -webkit-transition: left 0.2s ease-in-out;
+    -ms-transition: left 0.2s ease-in-out; }
     .sidebar.collapse.in {
       left: 0; } }
 @media (min-width: 992px) {
@@ -336,7 +336,7 @@ footer {
     transition: left 0.3s ease-in-out;
     -webkit-transition: left 0.3s ease-in-out;
     -ms-transition: left 0.3s ease-in-out; }
-    .sidebar.collapse.in {
+    .sidebar.collapse.in, .sidebar.collapsing {
       left: -21rem; }
     .sidebar .main-menu > li > a {
       padding-top: 1.5rem;

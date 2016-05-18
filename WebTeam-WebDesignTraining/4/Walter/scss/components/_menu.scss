@@ -71,7 +71,7 @@
 	    top: 0;
 	    left: -21rem;
 	    z-index: 900;
-	    @include transition(0.3s, ease-in-out, left);
+	    @include transition(0.2s, ease-in-out, left);
 
 	    &.collapse.in{	    	
 	    	left: 0;
@@ -85,8 +85,8 @@
 	    left: 0;
 	    @include transition(0.3s, ease-in-out, left);
 
-	    &.collapse.in{    	
-	    	left: -21rem;
+	    &.collapse.in, &.collapsing{
+	    	left: -21rem;   	
 	    }
 
 	    .main-menu > li > a{
