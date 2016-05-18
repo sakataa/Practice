@@ -71,7 +71,7 @@
 	    top: 0;
 	    left: -21rem;
 	    z-index: 900;
-	    @include transition(0.3s);
+	    @include transition(0.3s, ease-in-out, left);
 
 	    &.collapse.in{	    	
 	    	left: 0;
@@ -83,7 +83,7 @@
 	.sidebar{
 	    display: inline-block;
 	    left: 0;
-	    @include transition(0.3s);
+	    @include transition(0.3s, ease-in-out, left);
 
 	    &.collapse.in{    	
 	    	left: -21rem;

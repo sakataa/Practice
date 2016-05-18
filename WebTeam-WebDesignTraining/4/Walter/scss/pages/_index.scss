@@ -2,8 +2,9 @@
     position: absolute;
     bottom: 1rem;
     right: 1.5rem;
+    width: 2rem;
+    height: 2rem;
     background: rgba(255, 255, 255, 0.5);   
-    @include circle($radius-circle-moving-top);
     cursor: pointer;
     z-index: 900;
     .fa-angle-up{

@@ -324,18 +324,18 @@ footer {
     top: 0;
     left: -21rem;
     z-index: 900;
-    transition: all 0.3s ease-in-out;
-    -webkit-transition: all 0.3s ease-in-out;
-    -ms-transition: all 0.3s ease-in-out; }
+    transition: left 0.3s ease-in-out;
+    -webkit-transition: left 0.3s ease-in-out;
+    -ms-transition: left 0.3s ease-in-out; }
     .sidebar.collapse.in {
       left: 0; } }
 @media (min-width: 992px) {
   .sidebar {
     display: inline-block;
     left: 0;
-    transition: all 0.3s ease-in-out;
-    -webkit-transition: all 0.3s ease-in-out;
-    -ms-transition: all 0.3s ease-in-out; }
+    transition: left 0.3s ease-in-out;
+    -webkit-transition: left 0.3s ease-in-out;
+    -ms-transition: left 0.3s ease-in-out; }
     .sidebar.collapse.in {
       left: -21rem; }
     .sidebar .main-menu > li > a {
@@ -662,16 +662,9 @@ footer {
   position: absolute;
   bottom: 1rem;
   right: 1.5rem;
-  background: rgba(255, 255, 255, 0.5);
   width: 2rem;
   height: 2rem;
-  -moz-border-radius: 50%;
-  -webkit-border-radius: 50%;
-  border-radius: 50%;
-  display: inline-block;
-  cursor: default;
-  text-align: center;
-  overflow: hidden;
+  background: rgba(255, 255, 255, 0.5);
   cursor: pointer;
   z-index: 900; }
   .block__circle--moving-top .fa-angle-up {
