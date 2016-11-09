@@ -44,11 +44,23 @@
             this.panel3 = new System.Windows.Forms.Panel();
             this.textBox2 = new System.Windows.Forms.TextBox();
             this.label5 = new System.Windows.Forms.Label();
+            this.groupBoxB = new System.Windows.Forms.GroupBox();
+            this.radioRoundB3 = new System.Windows.Forms.RadioButton();
+            this.radioRoundB2 = new System.Windows.Forms.RadioButton();
+            this.radioRoundB1 = new System.Windows.Forms.RadioButton();
+            this.radioRoundB4 = new System.Windows.Forms.RadioButton();
+            this.groupBoxA = new System.Windows.Forms.GroupBox();
+            this.radioRoundA4 = new System.Windows.Forms.RadioButton();
+            this.radioRoundA3 = new System.Windows.Forms.RadioButton();
+            this.radioRoundA2 = new System.Windows.Forms.RadioButton();
+            this.radioRoundA1 = new System.Windows.Forms.RadioButton();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.panel2.SuspendLayout();
             this.panel3.SuspendLayout();
+            this.groupBoxB.SuspendLayout();
+            this.groupBoxA.SuspendLayout();
             this.SuspendLayout();
             // 
             // panel1
@@ -161,6 +173,7 @@
             // panel2
             // 
             this.panel2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panel2.Controls.Add(this.groupBoxA);
             this.panel2.Controls.Add(this.textBox1);
             this.panel2.Controls.Add(this.label2);
             this.panel2.Dock = System.Windows.Forms.DockStyle.Top;
@@ -188,6 +201,7 @@
             // 
             // panel3
             // 
+            this.panel3.Controls.Add(this.groupBoxB);
             this.panel3.Controls.Add(this.textBox2);
             this.panel3.Controls.Add(this.label5);
             this.panel3.Dock = System.Windows.Forms.DockStyle.Fill;
@@ -213,6 +227,116 @@
             this.label5.TabIndex = 3;
             this.label5.Text = "Team B:";
             // 
+            // groupBoxB
+            // 
+            this.groupBoxB.Controls.Add(this.radioRoundB4);
+            this.groupBoxB.Controls.Add(this.radioRoundB3);
+            this.groupBoxB.Controls.Add(this.radioRoundB2);
+            this.groupBoxB.Controls.Add(this.radioRoundB1);
+            this.groupBoxB.Location = new System.Drawing.Point(225, 76);
+            this.groupBoxB.Name = "groupBoxB";
+            this.groupBoxB.Size = new System.Drawing.Size(568, 70);
+            this.groupBoxB.TabIndex = 5;
+            this.groupBoxB.TabStop = false;
+            this.groupBoxB.Text = "Round";
+            // 
+            // radioRoundB3
+            // 
+            this.radioRoundB3.AutoSize = true;
+            this.radioRoundB3.Location = new System.Drawing.Point(139, 32);
+            this.radioRoundB3.Name = "radioRoundB3";
+            this.radioRoundB3.Size = new System.Drawing.Size(38, 26);
+            this.radioRoundB3.TabIndex = 8;
+            this.radioRoundB3.Text = "3";
+            this.radioRoundB3.UseVisualStyleBackColor = true;
+            // 
+            // radioRoundB2
+            // 
+            this.radioRoundB2.AutoSize = true;
+            this.radioRoundB2.Location = new System.Drawing.Point(75, 32);
+            this.radioRoundB2.Name = "radioRoundB2";
+            this.radioRoundB2.Size = new System.Drawing.Size(38, 26);
+            this.radioRoundB2.TabIndex = 7;
+            this.radioRoundB2.Text = "2";
+            this.radioRoundB2.UseVisualStyleBackColor = true;
+            // 
+            // radioRoundB1
+            // 
+            this.radioRoundB1.AutoSize = true;
+            this.radioRoundB1.Checked = true;
+            this.radioRoundB1.Location = new System.Drawing.Point(12, 32);
+            this.radioRoundB1.Name = "radioRoundB1";
+            this.radioRoundB1.Size = new System.Drawing.Size(38, 26);
+            this.radioRoundB1.TabIndex = 6;
+            this.radioRoundB1.TabStop = true;
+            this.radioRoundB1.Text = "1";
+            this.radioRoundB1.UseVisualStyleBackColor = true;
+            // 
+            // radioRoundB4
+            // 
+            this.radioRoundB4.AutoSize = true;
+            this.radioRoundB4.Location = new System.Drawing.Point(208, 32);
+            this.radioRoundB4.Name = "radioRoundB4";
+            this.radioRoundB4.Size = new System.Drawing.Size(38, 26);
+            this.radioRoundB4.TabIndex = 9;
+            this.radioRoundB4.Text = "4";
+            this.radioRoundB4.UseVisualStyleBackColor = true;
+            // 
+            // groupBoxA
+            // 
+            this.groupBoxA.Controls.Add(this.radioRoundA4);
+            this.groupBoxA.Controls.Add(this.radioRoundA3);
+            this.groupBoxA.Controls.Add(this.radioRoundA2);
+            this.groupBoxA.Controls.Add(this.radioRoundA1);
+            this.groupBoxA.Location = new System.Drawing.Point(224, 74);
+            this.groupBoxA.Name = "groupBoxA";
+            this.groupBoxA.Size = new System.Drawing.Size(568, 70);
+            this.groupBoxA.TabIndex = 6;
+            this.groupBoxA.TabStop = false;
+            this.groupBoxA.Text = "Round";
+            // 
+            // radioRoundA4
+            // 
+            this.radioRoundA4.AutoSize = true;
+            this.radioRoundA4.Location = new System.Drawing.Point(208, 32);
+            this.radioRoundA4.Name = "radioRoundA4";
+            this.radioRoundA4.Size = new System.Drawing.Size(38, 26);
+            this.radioRoundA4.TabIndex = 9;
+            this.radioRoundA4.Text = "4";
+            this.radioRoundA4.UseVisualStyleBackColor = true;
+            // 
+            // radioRoundA3
+            // 
+            this.radioRoundA3.AutoSize = true;
+            this.radioRoundA3.Location = new System.Drawing.Point(139, 32);
+            this.radioRoundA3.Name = "radioRoundA3";
+            this.radioRoundA3.Size = new System.Drawing.Size(38, 26);
+            this.radioRoundA3.TabIndex = 8;
+            this.radioRoundA3.Text = "3";
+            this.radioRoundA3.UseVisualStyleBackColor = true;
+            // 
+            // radioRoundA2
+            // 
+            this.radioRoundA2.AutoSize = true;
+            this.radioRoundA2.Location = new System.Drawing.Point(75, 32);
+            this.radioRoundA2.Name = "radioRoundA2";
+            this.radioRoundA2.Size = new System.Drawing.Size(38, 26);
+            this.radioRoundA2.TabIndex = 7;
+            this.radioRoundA2.Text = "2";
+            this.radioRoundA2.UseVisualStyleBackColor = true;
+            // 
+            // radioRoundA1
+            // 
+            this.radioRoundA1.AutoSize = true;
+            this.radioRoundA1.Checked = true;
+            this.radioRoundA1.Location = new System.Drawing.Point(12, 32);
+            this.radioRoundA1.Name = "radioRoundA1";
+            this.radioRoundA1.Size = new System.Drawing.Size(38, 26);
+            this.radioRoundA1.TabIndex = 6;
+            this.radioRoundA1.TabStop = true;
+            this.radioRoundA1.Text = "1";
+            this.radioRoundA1.UseVisualStyleBackColor = true;
+            // 
             // MainForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 20F);
@@ -224,6 +348,7 @@
             this.Font = new System.Drawing.Font("Microsoft Sans Serif", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Margin = new System.Windows.Forms.Padding(5);
             this.Name = "MainForm";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "The Dangerous Race";
             this.Load += new System.EventHandler(this.MainForm_Load);
             this.panel1.ResumeLayout(false);
@@ -234,6 +359,10 @@
             this.panel2.PerformLayout();
             this.panel3.ResumeLayout(false);
             this.panel3.PerformLayout();
+            this.groupBoxB.ResumeLayout(false);
+            this.groupBoxB.PerformLayout();
+            this.groupBoxA.ResumeLayout(false);
+            this.groupBoxA.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -256,6 +385,16 @@
         private System.Windows.Forms.Panel panel3;
         private System.Windows.Forms.TextBox textBox2;
         private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.GroupBox groupBoxA;
+        private System.Windows.Forms.RadioButton radioRoundA4;
+        private System.Windows.Forms.RadioButton radioRoundA3;
+        private System.Windows.Forms.RadioButton radioRoundA2;
+        private System.Windows.Forms.RadioButton radioRoundA1;
+        private System.Windows.Forms.GroupBox groupBoxB;
+        private System.Windows.Forms.RadioButton radioRoundB4;
+        private System.Windows.Forms.RadioButton radioRoundB3;
+        private System.Windows.Forms.RadioButton radioRoundB2;
+        private System.Windows.Forms.RadioButton radioRoundB1;
     }
 }
 

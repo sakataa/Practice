@@ -7,6 +7,8 @@ using System.Linq;
 
 namespace DangerousRaceGame
 {
+    using Forms;
+
     public partial class MainForm : Form
     {
         private readonly Dictionary<int, string> _dicePicture = new Dictionary<int, string>()
@@ -24,6 +26,8 @@ namespace DangerousRaceGame
 
         private int _dice1Value;
         private int _dice2Value;
+
+        private bool isTurnOfTeamA = false;
 
         public MainForm()
         {
@@ -93,6 +97,7 @@ namespace DangerousRaceGame
                     Location = location
                 };
                 question.Click += label_Click;
+                question.DoubleClick += label_DoubleClick;
 
                 if (i == 11)
                 {
@@ -120,6 +125,7 @@ namespace DangerousRaceGame
                 };
 
                 question.Click += label_Click;
+                question.DoubleClick += label_DoubleClick;
 
                 questions.Add(question);
                 index++;
@@ -134,8 +140,10 @@ namespace DangerousRaceGame
 
             if (clickedLabel != null)
             {
-                var isTurnOfTeamA = _questionsForTeamA.Any(p => p.Name == clickedLabel.Name);
-                Label currentStep = isTurnOfTeamA
+                isTurnOfTeamA = _questionsForTeamA.Any(p => p.Name == clickedLabel.Name);
+                Label currentStep = null;
+
+                currentStep = isTurnOfTeamA
                     ? _questionsForTeamA.Find(p => p.BackColor == Color.DarkOliveGreen)
                     : _questionsForTeamB.Find(p => p.BackColor == Color.DarkOliveGreen);
 
@@ -147,6 +155,38 @@ namespace DangerousRaceGame
 
                 clickedLabel.ForeColor = Color.White;
                 clickedLabel.BackColor = Color.DarkOliveGreen;
+            }
+        }
+
+        private void label_DoubleClick(object sender, EventArgs e)
+        {
+            Label clickedLabel = sender as Label;
+
+            if (clickedLabel != null)
+            {
+                var pattern = "{0}_{1}_{2}.txt";
+                var roundNumber = string.Empty;
+                string fileName;
+
+                if (isTurnOfTeamA)
+                {
+                    var radioRound =
+                        this.groupBoxA.Controls.OfType<RadioButton>()
+                            .FirstOrDefault(p => p.Checked);
+                    if (radioRound != null) roundNumber = radioRound.Text;
+                    fileName = string.Format(pattern, "A", roundNumber, clickedLabel.Text);
+                }
+                else
+                {
+                    var radioRound =
+                        this.groupBoxB.Controls.OfType<RadioButton>()
+                            .FirstOrDefault(p => p.Checked);
+                    if (radioRound != null) roundNumber = radioRound.Text;
+                    fileName = string.Format(pattern, "B", roundNumber, clickedLabel.Text);
+                }
+
+                var questionForm = new Question(fileName);
+                questionForm.ShowDialog();
             }
         }
     }

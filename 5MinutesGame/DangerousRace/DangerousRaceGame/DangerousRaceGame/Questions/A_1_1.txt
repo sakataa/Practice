@@ -1,0 +1,5 @@
+﻿Team A - Round 1 - Question 1
+
+Say:
+- 5 words begin with "h"
+- 5 words end with "g"
