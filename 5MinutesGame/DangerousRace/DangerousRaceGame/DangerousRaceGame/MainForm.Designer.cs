@@ -111,12 +111,13 @@
             // 
             // btnRollDice
             // 
+            this.btnRollDice.BackColor = System.Drawing.SystemColors.Control;
             this.btnRollDice.Location = new System.Drawing.Point(348, 85);
             this.btnRollDice.Name = "btnRollDice";
             this.btnRollDice.Size = new System.Drawing.Size(103, 39);
             this.btnRollDice.TabIndex = 4;
             this.btnRollDice.Text = "Roll Dices";
-            this.btnRollDice.UseVisualStyleBackColor = true;
+            this.btnRollDice.UseVisualStyleBackColor = false;
             this.btnRollDice.Click += new System.EventHandler(this.btnRollDice_Click);
             // 
             // lblDice2

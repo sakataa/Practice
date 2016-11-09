@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Drawing;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Linq;
 
 namespace DangerousRaceGame
 {
@@ -81,9 +82,8 @@ namespace DangerousRaceGame
                 var location = new Point(x * i, y);
                 var question = new Label
                 {
-                    BackColor =
-                        System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))),
-                            ((int)(((byte)(192))))),
+                    BackColor = Color.FromArgb(255, 255, 192),
+                    ForeColor = Color.Black,
                     BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle,
                     Name = teamName + i.ToString(),
                     Size = new System.Drawing.Size(67, 45),
@@ -92,6 +92,7 @@ namespace DangerousRaceGame
                     Cursor = Cursors.Hand,
                     Location = location
                 };
+                question.Click += label_Click;
 
                 if (i == 11)
                 {
@@ -107,11 +108,10 @@ namespace DangerousRaceGame
                 var location = new Point(x * index, y + 140);
                 var question = new Label
                 {
-                    BackColor =
-                        System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))),
-                            ((int)(((byte)(192))))),
+                    BackColor = Color.FromArgb(255, 255, 192),
+                    ForeColor = Color.Black,
                     BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle,
-                    Name = "question" + i.ToString(),
+                    Name = teamName + i.ToString(),
                     Size = new System.Drawing.Size(67, 45),
                     Text = i.ToString(),
                     TextAlign = System.Drawing.ContentAlignment.MiddleCenter,
@@ -119,11 +119,35 @@ namespace DangerousRaceGame
                     Location = location
                 };
 
+                question.Click += label_Click;
+
                 questions.Add(question);
                 index++;
             }
 
             return questions;
+        }
+
+        private void label_Click(object sender, EventArgs e)
+        {
+            Label clickedLabel = sender as Label;
+
+            if (clickedLabel != null)
+            {
+                var isTurnOfTeamA = _questionsForTeamA.Any(p => p.Name == clickedLabel.Name);
+                Label currentStep = isTurnOfTeamA
+                    ? _questionsForTeamA.Find(p => p.BackColor == Color.DarkOliveGreen)
+                    : _questionsForTeamB.Find(p => p.BackColor == Color.DarkOliveGreen);
+
+                if (currentStep != null)
+                {
+                    currentStep.BackColor = Color.FromArgb(255, 255, 192);
+                    currentStep.ForeColor = Color.Black;
+                }
+
+                clickedLabel.ForeColor = Color.White;
+                clickedLabel.BackColor = Color.DarkOliveGreen;
+            }
         }
     }
 }
