@@ -1,0 +1,4 @@
+40
+Say:
+- 5 words begin with "f"
+- 5 words end with "e"

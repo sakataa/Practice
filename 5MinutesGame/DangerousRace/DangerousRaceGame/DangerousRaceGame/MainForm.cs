@@ -21,6 +21,12 @@ namespace DangerousRaceGame
             {6, "../../Images/6.png"}
         };
 
+        private Dictionary<string, int> _turns = new Dictionary<string, int>()
+        {
+            {"A", 0},
+            {"B", 0}
+        };
+
         private readonly List<Label> _questionsForTeamA;
         private readonly List<Label> _questionsForTeamB;
 
@@ -164,25 +170,19 @@ namespace DangerousRaceGame
 
             if (clickedLabel != null)
             {
-                var pattern = "{0}_{1}_{2}.txt";
+                var pattern = "{0}_{1}.txt";
                 var roundNumber = string.Empty;
                 string fileName;
 
                 if (isTurnOfTeamA)
                 {
-                    var radioRound =
-                        this.groupBoxA.Controls.OfType<RadioButton>()
-                            .FirstOrDefault(p => p.Checked);
-                    if (radioRound != null) roundNumber = radioRound.Text;
-                    fileName = string.Format(pattern, "A", roundNumber, clickedLabel.Text);
+                    _turns["A"]++;
+                    fileName = string.Format(pattern, "A", _turns["A"]);
                 }
                 else
                 {
-                    var radioRound =
-                        this.groupBoxB.Controls.OfType<RadioButton>()
-                            .FirstOrDefault(p => p.Checked);
-                    if (radioRound != null) roundNumber = radioRound.Text;
-                    fileName = string.Format(pattern, "B", roundNumber, clickedLabel.Text);
+                    _turns["B"]++;
+                    fileName = string.Format(pattern, "B", _turns["B"]);
                 }
 
                 var questionForm = new Question(fileName);

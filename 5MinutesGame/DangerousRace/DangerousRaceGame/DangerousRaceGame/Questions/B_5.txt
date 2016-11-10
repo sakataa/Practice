@@ -1,0 +1,4 @@
+40
+Say 8 words:
+4 words begin with "n"
+4 words end with "t"

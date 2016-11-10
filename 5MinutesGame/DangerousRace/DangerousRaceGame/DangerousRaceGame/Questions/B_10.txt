@@ -1,0 +1,3 @@
+120
+Make the words with following letters: (at least 2 words, if greater than 4 words, you will get bonus)
+g, s, o, e, n, r, u, i, t, m, l
