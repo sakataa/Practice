@@ -1,0 +1,33 @@
+﻿@import "../../scss/abstracts/_variables.scss";
+
+$colorDisabledText: #6c8da6;
+$bgDisabledTab: transparent;
+$colorActiveText: $white;
+$bgActiveTab: $bgHeaderTableLevel1;
+
+.page-tab{
+    margin: 1.5rem;
+
+    .parlay-tab{
+        display: inline-block;
+        padding: 5px 12px;
+        border: 1px solid $colorDisabledText;
+        border-radius: 3px;
+        margin-right: 12px;
+        font-size: 14px;
+        color: $colorDisabledText;
+        background: $bgDisabledTab;
+
+        &:hover{
+            color: $colorActiveText;
+            background: $bgActiveTab;
+        }
+
+        &.active{
+            color: $colorActiveText;
+            background: $bgActiveTab;
+            font-weight: bold;
+            border: none;
+        }
+    }
+}

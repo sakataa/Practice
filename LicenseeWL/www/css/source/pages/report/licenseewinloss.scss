@@ -1,0 +1,64 @@
+﻿@import "../../scss/abstracts/_variables.scss";
+
+$bgheaderButton: #2c3d4b;
+$colorTextTotal: $black;
+
+.header-button {
+    margin: 0;
+    height: 16px;
+    width: 16px;
+    border-radius: 2px;
+    padding: 0;
+    margin-left: 10px;
+    background: $bgheaderButton;
+    box-shadow: none;
+
+    .btn-icon {
+        display: block;
+        transform: rotate(-90deg);
+        font-size: 7px;
+        color: $white;
+        font-weight: bold;
+        height: 100%;
+        line-height: 16px;
+    }
+
+    &.btnCollapse {
+        .btn-icon {
+            transform: rotate(90deg);
+        }
+    }
+
+    &:hover {
+        background: lighten($bgheaderButton, 5%);
+        box-shadow: none;
+    }
+}
+
+.ui-jqgrid .ui-jqgrid-hdiv table.ui-jqgrid-htable > thead > tr > th {
+    &.ui-th-column-header, &.ui-th-column {
+        background: $bgHeaderTableLevel2;
+        color: #2c3d4b;
+        font-weight: bold;
+    }
+}
+
+.grandTotal, .total-eur {
+    color: $colorTextTotal;
+
+    > td {
+        border: 1px solid $white !important;
+
+        &:first-child {
+            border-left-color: $colorBorderTable !important;
+        }
+    }
+}
+
+.grandTotal {
+    background: $bgTotalLevel1;
+}
+
+.total-eur {
+    background-color: $bgTotalLevel3;
+}

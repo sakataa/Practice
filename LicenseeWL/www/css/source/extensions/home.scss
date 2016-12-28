@@ -1,0 +1,27 @@
+﻿@import '../vendors/materialize/_materialize-home.scss';
+.licensees-block {
+    padding: 0 1rem;
+}
+
+.dropdown-header{
+    max-height: 400px;
+}
+
+.dropdown-content {
+    opacity: 1;
+    top: 50px;
+    width: 20rem;
+
+    .ac-item {
+        &.ac-hover {
+            background: #eee;
+        }
+    }
+}
+
+/*Hack for IE*/
+.logo {
+    .logo-image {
+        vertical-align: top;
+    }
+}

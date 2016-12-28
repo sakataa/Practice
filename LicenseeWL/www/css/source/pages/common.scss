@@ -1,0 +1,27 @@
+﻿@import "../scss/abstracts/_variables.scss";
+
+.page-title {
+    .title {
+        font-size: 16px;
+        color: $blue-dark;
+        text-transform: uppercase;
+        margin: 0;
+        padding-top: 2rem;
+        padding-bottom: 0.5rem;
+    }
+
+    .sub-title {
+        font-size: 1.2rem;
+    }
+}
+
+.table{
+    table-layout: fixed;
+}
+
+.no-info-row {
+    text-align: center;
+    border: 1px solid #ccc;
+    padding: 5px;
+    background: $white;
+}

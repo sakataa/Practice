@@ -1,0 +1,41 @@
+﻿body{
+    background: #fff;
+}
+
+.error-content {
+    padding-top: 40px;
+
+    img, .back {
+        margin: 10px auto;
+        display: block;
+    }
+
+    p {
+        text-align: center;
+        font-size: 18px;
+        line-height: 20px;
+    }
+
+    .first-line {
+        color: #0b3d6b;
+        font-size: 45px;
+    }
+
+    .second-line {
+        color: #545454;
+    }
+
+    .back {
+        color: #007fea;
+        text-align: center;
+        font-size: 18px;
+        line-height: 30px;
+        text-decoration: none;
+
+        .text {
+            padding: 8px;
+            border: 1px solid #007fea;
+            border-radius: 3px;
+        }
+    }
+}

@@ -1,0 +1,274 @@
+﻿@import "../scss/abstracts/_variables.scss";
+
+.page-form {
+    .input-field {
+        input[type=radio] + label {
+            left: 0;
+            padding-right: 10px;
+            padding-left: 25px;
+        }
+    }
+
+    input[type="radio"] + label {
+        margin: 0 0 10px 0;
+    }
+
+    .date-range {
+        min-width: 200px;
+    }
+
+    .button-block {
+        .btn {
+            margin-bottom: 10px;
+        }
+    }
+
+    @media only screen and (min-width: 993px) {
+        .button-block {
+            width: 10% !important;
+        }
+    }
+}
+
+.page-results {
+    .result-content {
+        box-shadow: none;
+        border: 0;
+        margin: 0.5rem 0 1rem 0;
+    }
+}
+
+.multiselect-container {
+    min-width: 250px;
+
+    > label {
+        position: absolute;
+        top: -14px;
+    }
+
+    > a.ui-multiselect {
+        height: 2.5rem;
+        line-height: 2.5rem;
+        border: none;
+        border-bottom: 1px solid #ccc;
+        cursor: pointer;
+        position: relative;
+        border-radius: 0;
+        width: 100% !important;
+        margin: 0 0 10px 0;
+
+        > input {
+            width: 100% !important;
+            height: 100% !important;
+            cursor: pointer;
+        }
+
+        .ui-multiselect-icon {
+            font-family: 'icomoon' !important;
+
+            &:before {
+                content: "\E916";
+                color: #4d6273;
+                font-size: 18px;
+                position: absolute;
+                top: 7px;
+                right: -5px;
+                line-height: 1;
+            }
+        }
+    }
+}
+
+.breadCrumbHolder {
+    display: none;
+
+    .level {
+        display: none;
+    }
+}
+
+.breadcrumb {
+    text-align: center;
+    display: inline-block;
+    overflow: hidden;
+
+    > a {
+        text-decoration: none;
+        outline: none;
+        display: block;
+        float: left;
+        font-size: 12px;
+        line-height: 30px;
+        color: #fff;
+        padding: 0 10px 0 25px;
+        position: relative;
+
+        &:first-child {
+            padding-left: 10px;
+
+            &::before {
+                left: 14px;
+            }
+        }
+
+        &:last-child {
+            padding-right: 20px;
+
+            &::after {
+                content: none;
+            }
+        }
+
+        &::after {
+            content: '';
+            position: absolute;
+            top: 0;
+            right: -16px;
+            width: 30px;
+            height: 30px;
+            transform: scale(0.8) rotate(45deg);
+            z-index: 1;
+            border-right: 3px solid #ca1e58;
+            border-top: 3px solid #ca1e58;
+            border-radius: 0 5px 0 50px;
+        }
+    }
+
+    &.flat {
+        a {
+            &, &::after {
+                background: #fff;
+                color: #4C6375;
+            }
+
+            &::before {
+                background: #fff;
+                box-shadow: 0 0 0 1px #ec407a;
+            }
+
+            &:hover, &.active {
+                color: #fff;
+
+                &, &::after {
+                    background: #4C6375;
+                }
+
+                &::before {
+                    color: #4C6375;
+                }
+            }
+
+            &.active:hover {
+                background: #4C6375;
+            }
+        }
+    }
+}
+
+.calendar .icon-calendar {
+    color: #4c6375;
+    font-size: 17px;
+    cursor: pointer;
+}
+
+.negative-number, .positive-number {
+    color: $colorPositiveNumber;
+}
+
+.highlight, .table > tbody > tr > td.highlight {
+    background-color: #F8F1A0;
+}
+
+//---------------------- Form input style customize ----------------------//
+
+//----- Select dropdown -----//
+.select-wrapper {
+    input.select-dropdown {
+        font-size: 13px;
+    }
+
+    span.caret {
+        font-family: 'icomoon' !important;
+        color: transparent !important;
+
+        &:before {
+            content: "\E916";
+            color: #282d38;
+            font-size: 18px;
+            position: absolute;
+            top: -6px;
+            right: -5px;
+        }
+    }
+}
+
+//----- Radio button -----//
+.input-field input[type="radio"] + label {
+    padding-left: 20px !important;
+}
+
+[type="radio"] + label:before, [type="radio"] + label:after {
+    margin: 4px 0;
+}
+
+[type="radio"].with-gap:checked + label:before, [type="radio"].with-gap:checked + label:after {
+    border-color: #6790b0;
+}
+
+[type="radio"]:not(:checked) + label:before, [type="radio"]:not(:checked) + label:after {
+    border-color: #6790b0;
+}
+
+[type="radio"].with-gap:checked + label:after {
+    background-color: #6790b0;
+}
+
+table {
+    td, th {
+        border-radius: 0;
+    }
+}
+
+//----- Table Column Width -----//
+.col-small {
+    width: 5%;
+}
+
+.col-extra-small {
+    width: 2%;
+}
+
+.col-medium {
+    width: 15%;
+
+    &.small {
+        width: 10%;
+    }
+}
+
+.col-large {
+    width: 40%;
+
+    &.small {
+        width: 35%;
+    }
+}
+
+.col-child {
+    width: 10%;
+
+    &.small {
+        width: 6%;
+    }
+}
+
+//----- User Guide -----//
+#UserGuidePopup {
+    ul li {
+        list-style-type: disc;
+
+        ul li {
+            list-style-type: circle;
+        }
+    }
+}
